@@ -440,6 +440,19 @@
       letter-spacing: 0.02em;
       margin-right: 0.2rem;
     }
+    .sub-badge {
+      display: inline;
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      font-weight: 500;
+      background: #f0ede8;
+      color: #5a6b5c;
+      padding: 2px 5px;
+      border-radius: 4px;
+      vertical-align: middle;
+      letter-spacing: 0.02em;
+      border: 1px solid #d8d4cc;
+    }
     .schema-tab-panel .k { color: #7ec8a0; }
     .schema-tab-panel .c { color: #4d6349; font-style: italic; }
     .schema-tab-panel .v { color: #f0a080; }
@@ -757,7 +770,7 @@
       <div class="btn-row">
         <a href="https://huggingface.co/datasets/human-centered-eval/OpenEval" class="btn-hero btn-hero-green">
           <img src="hf-logo.svg" width="35" height="35" alt="" style="display:block;flex-shrink:0;">
-          View Repository
+          View Dataset
         </a>
         <a href="#schema" class="btn-hero btn-hero-green">
           <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="4" x2="12" y2="20"/><polyline points="6 14 12 20 18 14"/></svg>
@@ -841,20 +854,20 @@
           <ul>
             <li><span class="field-badge">item_id</span> Unique identifier for the item.</li>
             <li><span class="field-badge">item_metadata</span> Ingestion timestamp, contributor info, and benchmark provenance.</li>
-            <li><span class="field-badge">item_content[]</span> Original item content from the benchmark (question, dialogue, prompt, etc.)</li>
+            <li><span class="field-badge">item_content[]</span> <span>Original item content from the source benchmark, which is divided into <span class="sub-badge">input[]</span> and <span class="sub-badge">references[]</span>.</span></li>
             <li><span class="field-badge">responses[]</span> Response(s) to the item (see the next tab).</li>
           </ul>
         </div>
         <div class="prose-panel" id="prose-response">
-          <p>Given the item, each <strong>response</strong> records the test conditions and outcomes for a single model run.</p>
+          <p>Given the item, each <strong>response</strong> records the test conditions and outcomes for a single request.</p>
           <ul>
-            <li><span class="field-badge">response_id</span> Unique identifier for the response.</li>
+            <li><span class="field-badge">response_id</span> <span>Unique identifier for the response, prefixed with the associated <span class="sub-badge">item_id</span>.</span></li>
             <li><span class="field-badge">model</span> Respondent model (see the next tab).</li>
             <li><span class="field-badge">item_adaptation</span> 
-              How the item was adapted for the evaluation run, including the actual model input, 
-              few-shot demonstrations, and test environment resources.
+              <span>How the item was adapted for the evaluation run, including the actual <span class="sub-badge">request_input[]</span>, 
+              few-shot demonstrations, and test environment resources.</span>
             </li>
-            <li><span class="field-badge">response_content[]</span> The output produced by the model.</li>
+            <li><span class="field-badge">response_content[]</span> The output returned by the model.</li>
             <li><span class="field-badge">scores[]</span> Metric score(s) of the response (see the last tab).</li>
           </ul>
         </div>
@@ -873,9 +886,8 @@
           <p>Each <strong>metric</strong> extracts capability evidence from a response and produces a score.</p>
           <ul>
             <li><span class="field-badge">name</span>Name of the evaluation metric.</li>
-            <li><span class="field-badge">references[]</span> Reference(s) used, if the metric is reference-based.</li>
             <li><span class="field-badge">models[]</span> Judge model(s) used, if the metric is model-based.</li>
-            <li><span class="field-badge">extra_artifacts[]</span> Additional artifact(s) used for scoring, e.g., rubrics.</li>
+            <li><span class="field-badge">extra_artifacts[]</span> Additional artifact(s) used for scoring, e.g., evaluation rubrics.</li>
           </ul>
         </div>
       </div>
@@ -893,12 +905,13 @@
         <span class="k">"contributor":</span> <span class="p3">{</span>
             <span class="k">"name":</span> <span class="v">"Anonymous"</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
             <span class="k">"email":</span> <span class="v">""</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
-            <span class="k">"affiliation":</span> <span class="v">"HCEval"</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
+            <span class="k">"affiliation":</span> <span class="v">"Human-Centered Eval"</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
         <span class="p3">}</span><span class="k">,</span>
         <span class="k">"source":</span> <span class="p3">{</span>
             <span class="k">"benchmark_name":</span> <span class="v">"WildBench"</span><span class="k">,</span>
             <span class="k">"benchmark_version":</span> <span class="v">"v2"</span><span class="k">,</span>
-            <span class="k">"benchmark_url":</span> <span class="v">"https://huggingface.co/datasets/allenai/WildBench/viewer/v2"</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
+            <span class="k">"paper_url":</span> <span class="v">"https://iclr.cc/virtual/2025/poster/29940"</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
+            <span class="k">"dataset_url":</span> <span class="v">"https://huggingface.co/datasets/allenai/WildBench/viewer/v2"</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
             <span class="k">"benchmark_tags":</span> <span class="p1">[</span>
                 <span class="v">"real-world"</span><span class="k">,</span>
                 <span class="v">"Instruction Following"</span><span class="k">,</span>
@@ -906,20 +919,23 @@
             <span class="p1">]</span>  <span class="c"># OPTIONAL</span>
         <span class="p3">}</span>
     <span class="p2">}</span><span class="k">,</span>
-    <span class="k">"item_content":</span> <span class="p2">[</span> 
-        <span class="p3">{</span>
-            <span class="k">"role":</span> <span class="v">"user"</span><span class="k">,</span>
-            <span class="k">"content":</span> <span class="v">"answer all of the questions you can (put the question and then the answer under it): ..."</span>
-        <span class="p3">}</span><span class="k">,</span>
-        <span class="p3">{</span>
-            <span class="k">"role":</span> <span class="v">"assistant"</span><span class="k">,</span>
-            <span class="k">"content":</span> <span class="v">"The function that models the data in the table is:\n\nF(x) = 200 * (1/2)^x"</span>
-        <span class="p3">}</span><span class="k">,</span>
-        <span class="p3">{</span>
-            <span class="k">"role":</span> <span class="v">"user"</span><span class="k">,</span>
-            <span class="k">"content":</span> <span class="v">"no answer all of the questions given"</span>
-        <span class="p3">}</span>
-    <span class="p2">]</span><span class="k">,</span>
+    <span class="k">"item_content":</span> <span class="p2">{</span> 
+        <span class="k">"input":</span> <span class="p3">[</span>
+            <span class="p1">{</span>
+                <span class="k">"role":</span> <span class="v">"user"</span><span class="k">,</span>
+                <span class="k">"content":</span> <span class="v">"answer all of the questions you can (put the question and then the answer under it): ..."</span>
+            <span class="p1">}</span><span class="k">,</span>
+            <span class="p1">{</span>
+                <span class="k">"role":</span> <span class="v">"assistant"</span><span class="k">,</span>
+                <span class="k">"content":</span> <span class="v">"The function that models the data in the table is:\n\nF(x) = 200 * (1/2)^x"</span>
+            <span class="p1">}</span><span class="k">,</span>
+            <span class="p1">{</span>
+                <span class="k">"role":</span> <span class="v">"user"</span><span class="k">,</span>
+                <span class="k">"content":</span> <span class="v">"no answer all of the questions given"</span>
+            <span class="p1">}</span>
+        <span class="p3">]</span><span class="k">,</span>
+        <span class="k">"references":</span> <span class="p3">[]</span>
+    <span class="p2">}</span><span class="k">,</span>
     <span class="k">"responses":</span> <span class="p2">[</span>
         <span class="p3">{</span> <span class="c"># See the next tab for a response</span> <span class="p3">}</span><span class="k">,</span>
         <span class="k">...</span>
@@ -930,7 +946,7 @@
     <span class="k">"response_id":</span> <span class="v">"wildbench_20260220T224823Z_0_gemini-3-pro-preview_0"</span><span class="k">,</span>  <span class="c"># AUTO</span>     
     <span class="k">"model":</span> <span class="p2">{</span> <span class="c"># See the next tab for a model</span> <span class="p2">}</span><span class="k">,</span>
     <span class="k">"item_adaptation":</span> <span class="p2">{</span>
-        <span class="k">"input_content":</span><span class="k"> <span class="p3">[</span> 
+        <span class="k">"request_input":</span><span class="k"> <span class="p3">[</span> 
             <span class="p1">{</span>
                 <span class="k">"role":</span> <span class="v">"user"</span><span class="k">,</span>
                 <span class="k">"content":</span> <span class="v">"answer all of the questions you can (put the question and then the answer under it): ..."</span>
@@ -945,7 +961,7 @@
             <span class="p1">}</span>
         <span class="p3">]</span><span class="k">,</span>
         <span class="k">"demonstrations":</span> <span class="p3">[]</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
-        <span class="k">"external_resources":</span> <span class="p3">[]</span>  <span class="c"># OPTIONAL</span>
+        <span class="k">"external_resources":</span> <span class="p3">[]</span> 
     <span class="p2">}</span><span class="k">,</span>
     <span class="k">"response_content":</span> <span class="p2">[</span>  
         <span class="p3">{</span>
@@ -970,13 +986,14 @@
 <span class="p1">}</span></div>
         <div class="schema-tab-panel" id="tab-model"><span class="p1">{</span>
     <span class="k">"name":</span> <span class="v">"Gemini 3 Pro Preview"</span><span class="k">,</span>               
-    <span class="k">"size":</span> <span class="n">null</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
+    <span class="k">"size":</span> <span class="v">""</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
     <span class="k">"model_adaptation":</span> <span class="p2">{</span>
         <span class="k">"system_instruction":</span> <span class="v">""</span><span class="k">,</span>   
         <span class="k">"generation_parameters":</span> <span class="p3">{</span>
             <span class="k">"temperature":</span> <span class="n">0.0</span><span class="k">,</span> 
+            <span class="k">"do_sample":</span> <span class="n">false</span><span class="k">,</span>
             <span class="k">"top_k":</span> <span class="n">1</span><span class="k">,</span>
-            <span class="k">"top_p":</span> <span class="n">1</span><span class="k">,</span>
+            <span class="k">"top_p":</span> <span class="n">1.0</span><span class="k">,</span>
             <span class="k">"max_tokens":</span> <span class="n">12000</span><span class="k">,</span>
             <span class="k">...</span>
         <span class="p3">}</span><span class="k">,</span>
@@ -985,7 +1002,6 @@
 <span class="p1">}</span></div>
         <div class="schema-tab-panel" id="tab-metric"><span class="p1">{</span>
     <span class="k">"name":</span> <span class="v">"wildbench_score_rescaled"</span><span class="k">,</span>           
-    <span class="k">"references":</span> <span class="p2">[]</span><span class="k">,</span> 
     <span class="k">"models":</span> <span class="p2">[</span>
         <span class="v">"gpt-4o"</span>
     <span class="p2">]</span><span class="k">,</span>
