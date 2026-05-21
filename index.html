@@ -665,20 +665,25 @@
 
     .footer-partners {
       width: 100%;
-      padding: 1.25rem 10% 0;
-      margin-top: 1.25rem;
+      padding: 0.5rem 10% 0;
+      margin-top: 0.5rem;
       border-top: 1px solid var(--border);
       display: flex;
       align-items: center;
-      gap: 1.75rem;
+      column-gap: 0.2rem;
+      row-gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .footer-partners-label {
-      font-size: 0.7rem;
+      font-size: 0.5rem;
       font-weight: 600;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       color: var(--faint);
+      flex-basis: 100%;
+      text-align: center;
     }
 
     .partner-logo {
@@ -693,11 +698,16 @@
     .footer-partners a {
       display: flex;
       align-items: center;
+      flex: 0 0 calc(20%);
+      justify-content: center;
     }
 
-    .partner-logo-jhu { height: 35px; }
-    .partner-logo-msr { height: 40px; }
-    .partner-logo-uiuc { height: 30px; }
+    .partner-logo-jhu { height: 33px; }
+    .partner-logo-msr { height: 35px; }
+    .partner-logo-uiuc { height: 25px; }
+    .partner-logo-stf { height: 45px; }
+    .partner-logo-ncsu { height: 35px; }
+    .partner-logo-thu { height: 35px; }
 
     @media (max-width: 540px) {
       .nav-links { display: none; }
@@ -747,11 +757,11 @@
       <li><a href="#contribute">Contribute</a></li>
     </ul>
     <div style="display:flex;align-items:center;gap:0.6rem;">
-      <a href="https://github.com/open-eval/OpenEval" class="nav-cta" style="text-decoration:none;" target="_blank" rel="noopener">
-        <img src="github-logo.svg" width="35" height="35" alt="GitHub" style="display:block;">
-      </a>
       <a href="https://huggingface.co/datasets/human-centered-eval/OpenEval" class="nav-cta" style="text-decoration:none;" target="_blank" rel="noopener">
         <img src="hf-logo.svg" width="35" height="35" alt="HuggingFace" style="display:block;">
+      </a>
+      <a href="https://github.com/open-eval/OpenEval" class="nav-cta" style="text-decoration:none;" target="_blank" rel="noopener">
+        <img src="github-logo.svg" width="35" height="35" alt="GitHub" style="display:block;">
       </a>
     </div>
   </div>
@@ -783,10 +793,14 @@
 
 <!-- ── Affiliations ───────────────────────────────────────────── -->
 <div class="footer-partners" style="border-top:none;border-bottom:none;padding-bottom:1.25rem;justify-content:center;">
+  <div style="flex-basis: 100%; height: 1px; background: var(--border); margin: 0.5rem 0;"></div>
   <span class="footer-partners-label">Affiliated with</span>
   <a href="https://www.jhu.edu/" target="_blank" rel="noopener"><img src="jhu-logo.svg" class="partner-logo partner-logo-jhu" alt="Johns Hopkins University"></a>
   <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target="_blank" rel="noopener"><img src="msr-logo.svg" class="partner-logo partner-logo-msr" alt="Microsoft Research"></a>
   <a href="https://illinois.edu/" target="_blank" rel="noopener"><img src="uiuc-logo.svg" class="partner-logo partner-logo-uiuc" alt="University of Illinois at Urbana-Champaign"></a>
+  <a href="https://www.stanford.edu/" target="_blank" rel="noopener"><img src="stanford-logo.svg" class="partner-logo partner-logo-stf" alt="Stanford University"></a>
+  <a href="https://www.ncsu.edu/" target="_blank" rel="noopener"><img src="ncsu-logo.svg" class="partner-logo partner-logo-ncsu" alt="North Carolina State University"></a>
+  <a href="https://www.tsinghua.edu.cn/en/" target="_blank" rel="noopener"><img src="thu-logo.svg" class="partner-logo partner-logo-thu" alt="Tsinghua University"></a>
 </div>
 
 <!-- ── About ──────────────────────────────────────────────────── -->
@@ -799,8 +813,7 @@
       and we argue that item-level benchmark data is essential to the science of AI evaluation.
     </p>
     <div style="margin-top:-1.5rem;margin-bottom:2rem;text-align:center;">
-      <button onclick="var f=document.getElementById('paper-frame');var open=f.style.display==='block';f.style.display=open?'none':'block';this.textContent=open?'📣 Read our position paper':'Hide';" style="display:inline-flex;align-items:center;gap:0.45rem;font-family:var(--sans);font-size:0.875rem;font-weight:600;color:#273929;background:rgba(255,255,255,0.82);border:1.5px solid rgba(255,255,255,0.82);border-radius:100px;padding:0.6rem 1.4rem;cursor:pointer;transition:background 0.15s,border-color 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.65)';this.style.borderColor='rgba(255,255,255,0.65)'" onmouseout="this.style.background='rgba(255,255,255,0.82)';this.style.borderColor='rgba(255,255,255,0.82)'">📣 Read our position paper</button>
-      <iframe id="paper-frame" src="position_paper.pdf" style="display:none;width:100%;height:80vh;border:none;border-radius:var(--radius);margin-top:1rem;"></iframe>
+      <a href="https://arxiv.org/abs/2604.03244" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.45rem;font-family:var(--sans);font-size:0.875rem;font-weight:600;color:#273929;background:rgba(255,255,255,0.82);border:1.5px solid rgba(255,255,255,0.82);border-radius:100px;padding:0.6rem 1.4rem;text-decoration:none;transition:background 0.15s,border-color 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.65)';this.style.borderColor='rgba(255,255,255,0.65)'" onmouseout="this.style.background='rgba(255,255,255,0.82)';this.style.borderColor='rgba(255,255,255,0.82)'">📣 Read our position paper <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
     </div>
     <div class="about-grid">
       <div class="about-card">
@@ -1040,7 +1053,7 @@
       <div class="feature-card">
         <div class="feature-icon">🌐</div>
         <h3>Broad Coverage</h3>
-        <p>A growing repository with 225k+ items and 8M+ responses, covering diverse models, tasks, and constructs.</p>
+        <p>A growing repository with 155k+ items and 10M responses, covering diverse models, tasks, and constructs.</p>
       </div>
       <div class="feature-card">
         <div class="feature-icon">🗂️</div>
@@ -1072,70 +1085,58 @@
     <div class="section-eyebrow">Coverage</div>
     <h2 class="section-title">Benchmarks in OpenEval</h2>
     <p class="section-sub">
-      OpenEval currently indexes results from 64 benchmarks, spanning standard NLP tasks, emerging LLM capabilities, and interdisciplinary evaluations.
+      OpenEval currently indexes results from 24 benchmarks, spanning standard NLP tasks, emerging LLM capabilities, and interdisciplinary evaluations.
     </p>
     <div class="bench-pills">
       <span class="bench-pill"><span class="dot dot-social"></span>EmoBench</span>
       <span class="bench-pill"><span class="dot dot-general"></span>MMLU-Pro</span>
-      <span class="bench-pill"><span class="dot dot-reasoning"></span>BIG-Bench-Hard</span>
-      <span class="bench-pill"><span class="dot dot-domain"></span>LegalBench</span>
       <span class="bench-pill"><span class="dot dot-language"></span>IFEval</span>
       <span class="bench-pill"><span class="dot dot-safety"></span>SALAD-Bench</span>
-      <span class="bench-pill"><span class="dot dot-social"></span>OpenToM</span>
+      <span class="bench-pill"><span class="dot dot-reasoning"></span>OpenToM</span>
+      <span class="bench-pill"><span class="dot dot-safety"></span>XSTest</span>
+      <span class="bench-pill"><span class="dot dot-language"></span>XSum</span>
       <span class="bench-pill"><span class="dot dot-domain"></span>GPQA</span>
-      <span class="bench-pill"><span class="dot dot-language"></span>BLiMP</span>
+      <span class="bench-pill"><span class="dot dot-social"></span>MoralBench</span>
       <span class="bench-pill"><span class="dot dot-general"></span>WildBench</span>
-      <span class="bench-pill"><span class="dot dot-reasoning"></span>MATH</span>
-      <span class="bench-pill"><span class="dot dot-safety"></span>TruthfulQA</span>
-      <span class="bench-pill"><span class="dot dot-domain"></span>MedQA</span>
-      <span class="bench-pill"><span class="dot dot-safety"></span>SafetyBench</span>
-      <span class="bench-pill"><span class="dot dot-social"></span>Hi-ToM</span>
-      <span class="bench-pill"><span class="dot dot-language"></span>SQuAD</span>
-      <span class="bench-pill"><span class="dot dot-general"></span>MMLU</span>
-      <span class="bench-pill"><span class="dot dot-reasoning"></span>MuSR</span>
-      <span class="bench-pill"><span class="dot dot-social"></span>cultural-trends</span>
-      <span class="bench-pill"><span class="dot dot-language"></span>MS MARCO</span>
+      <span class="bench-pill"><span class="dot dot-domain"></span>TruthfulQA</span>
+      <span class="bench-pill"><span class="dot dot-reasoning"></span>Hi-ToM</span>
       <span class="bench-pill"><span class="dot dot-safety"></span>BBQ</span>
-      <span class="bench-pill"><span class="dot dot-social"></span>WorldValuesBench</span>
-      <span class="bench-pill"><span class="dot dot-safety"></span>RealToxicityPrompts</span>
+      <span class="bench-pill"><span class="dot dot-language"></span>CNNDM</span>
       <span class="bench-pill"><span class="dot dot-reasoning"></span>Omni-MATH</span>
       <span class="bench-pill"><span class="dot dot-social"></span>CulturalBench</span>
       <span class="bench-pill"><span class="dot dot-safety"></span>Do-Not-Answer</span>
-      <span class="bench-pill"><span class="dot dot-domain"></span>HumanEval</span>
     </div>
     <div class="bench-legend">
       <span><span class="dot dot-general"></span> General Capability</span>
       <span><span class="dot dot-reasoning"></span> Reasoning</span>
-      <span><span class="dot dot-domain"></span> Domain Expertise</span>
+      <span><span class="dot dot-domain"></span> Domain Knowledge</span>
       <span><span class="dot dot-language"></span> Language Ability</span>
       <span><span class="dot dot-safety"></span> Safety</span>
       <span><span class="dot dot-social"></span> Social Intelligence</span>
     </div>
 
     <h3 class="section-title" style="margin-top: 4rem;">Models in OpenEval</h3>
-    <p class="section-sub">OpenEval covers a growing range of open and proprietary models, with the number of models per benchmark ranging from dozens to thousands.</p>
+    <p class="section-sub">OpenEval covers a growing range of open and proprietary models, with approximately 70 models per benchmark on average.</p>
     <div class="bench-pills">
-      <span class="bench-pill"><span class="dot dot-meta"></span>Llama 2 70B</span>
-      <span class="bench-pill"><span class="dot dot-mistral"></span>Mistral 7B</span>
-      <span class="bench-pill"><span class="dot dot-mistral"></span>Mixtral 8x7B</span>
+      <span class="bench-pill"><span class="dot dot-openai"></span>GPT-5.4 pro</span>
+      <span class="bench-pill"><span class="dot dot-meta"></span>Llama 4 Maverick</span>
+      <span class="bench-pill"><span class="dot dot-mistral"></span>Mixtral 8x22B</span>
       <span class="bench-pill"><span class="dot dot-mistral"></span>Mistral Large</span>
-      <span class="bench-pill"><span class="dot dot-meta"></span>Llama 3.1 Instruct Turbo</span>
-      <span class="bench-pill"><span class="dot dot-anthropic"></span>Claude 3.5 Haiku</span>
+      <span class="bench-pill"><span class="dot dot-meta"></span>Llama 3.1 405B Instruct</span>
+      <span class="bench-pill"><span class="dot dot-anthropic"></span>Claude Sonnet 4.5</span>
+      <span class="bench-pill"><span class="dot dot-google"></span>Gemini 3 Pro</span>
       <span class="bench-pill"><span class="dot dot-other"></span>DeepSeek-V3</span>
-      <span class="bench-pill"><span class="dot dot-openai"></span>o3</span>
-      <span class="bench-pill"><span class="dot dot-anthropic"></span>Claude 3.7 Sonnet</span>
+      <span class="bench-pill"><span class="dot dot-openai"></span>GPT-5.4 nano</span>
       <span class="bench-pill"><span class="dot dot-google"></span>Gemma 3 27B</span>
       <span class="bench-pill"><span class="dot dot-meta"></span>Llama 4 Scout</span>
-      <span class="bench-pill"><span class="dot dot-openai"></span>o4-mini</span>
-      <span class="bench-pill"><span class="dot dot-google"></span>Gemini 2.5 Flash-Lite</span>
-      <span class="bench-pill"><span class="dot dot-other"></span>Qwen3-Next 80B A3B Thinking</span>
+      <span class="bench-pill"><span class="dot dot-openai"></span>GPT-5.3 Chat</span>
+      <span class="bench-pill"><span class="dot dot-google"></span>Gemini 2.5 Flash</span>
+      <span class="bench-pill"><span class="dot dot-anthropic"></span>Claude Haiku 4.5</span>
+      <span class="bench-pill"><span class="dot dot-mistral"></span>Mistral 7B</span>
+      <span class="bench-pill"><span class="dot dot-other"></span>Qwen3-Next-80B-A3B-Thinking</span>
       <span class="bench-pill"><span class="dot dot-openai"></span>gpt-oss-120b</span>
-      <span class="bench-pill"><span class="dot dot-openai"></span>GPT-5</span>
       <span class="bench-pill"><span class="dot dot-other"></span>Kimi K2 Instruct</span>
-      <span class="bench-pill"><span class="dot dot-other"></span>IBM Granite 4.0 Micro</span>
-      <span class="bench-pill"><span class="dot dot-anthropic"></span>Claude 4 Opus</span>
-      <span class="bench-pill"><span class="dot dot-anthropic"></span>Claude 4.5 Sonnet</span>
-      <span class="bench-pill"><span class="dot dot-google"></span>Gemini 3 Pro</span>
+      <span class="bench-pill"><span class="dot dot-anthropic"></span>Claude Opus 4</span>
       <span class="bench-pill"><span class="dot dot-other"></span>Grok 4</span>
     </div>
     <div class="bench-legend">

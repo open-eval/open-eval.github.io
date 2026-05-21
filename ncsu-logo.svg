@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="72"
+   height="22.746668"
+   viewBox="0 0 72 22.746668"
+   sodipodi:docname="ncstate-brick-2x1-red-rgb.eps"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:page
+       x="0"
+       y="0"
+       inkscape:label="1"
+       id="page1"
+       width="72"
+       height="22.746668"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <g
+     id="g1"
+     inkscape:groupmode="layer"
+     inkscape:label="1">
+    <g
+       id="group-R5">
+      <path
+         id="path2"
+         d="M 540,0 H 0 V 170.625 H 540 V 0"
+         style="fill:#cd1e25;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,22.746667)" />
+      <path
+         id="path3"
+         d="M 60.3516,46.5703 V 124.004 H 82.2188 L 102.813,70.3711 h 0.207 v 53.6329 h 15.132 V 46.5703 H 96.8047 L 75.6719,103.184 H 75.4688 V 46.5703 H 60.3516"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,22.746667)" />
+      <path
+         id="path4"
+         d="m 131.063,85.2734 c 0,20.4886 0,40.0116 26.703,40.0116 16.511,0 23.164,-9.125 22.515,-25.7459 h -15.879 c 0,10.2969 -1.804,14.1519 -6.636,14.1519 -9.121,0 -10.305,-8.562 -10.305,-28.4176 0,-19.8242 1.184,-28.4257 10.305,-28.4257 7.507,0 7.175,9.6445 7.398,15.7812 h 15.981 c 0,-20.6953 -8.262,-27.3555 -23.379,-27.3555 -26.703,0 -26.703,19.7461 -26.703,40"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,22.746667)" />
+      <path
+         id="path5"
+         d="m 236.27,45.2734 c -20.071,0 -23.797,11.7969 -22.957,25.2071 h 16.199 c 0,-7.4063 0.312,-13.6328 9.218,-13.6328 5.481,0 8.145,3.5429 8.145,8.8046 0,13.9454 -32.59,14.8086 -32.59,37.8637 0,12.109 5.793,21.769 25.528,21.769 15.761,0 23.578,-7.07 22.5,-23.262 h -15.758 c 0,5.778 -0.95,11.668 -7.5,11.668 -5.246,0 -8.371,-2.902 -8.371,-8.25 0,-14.6871 32.597,-13.4097 32.597,-37.7457 0,-20.0508 -14.676,-22.4219 -27.011,-22.4219"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,22.746667)" />
+      <path
+         id="path6"
+         d="M 321.008,124.004 V 111.121 H 302.98 V 46.5703 h -16.171 v 64.5507 h -18.032 v 12.883 h 52.231"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,22.746667)" />
+      <path
+         id="path7"
+         d="m 347.363,109.094 h -0.234 l -7.363,-33.469 h 15.429 z M 316.16,46.5703 337.617,124.004 h 21.309 l 21.015,-77.4337 h -17.05 l -4.258,17.1406 h -22.11 L 332.129,46.5703 H 316.16"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,22.746667)" />
+      <path
+         id="path8"
+         d="M 427.168,124.004 V 111.121 H 409.141 V 46.5703 h -16.172 v 64.5507 h -18.008 v 12.883 h 52.207"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,22.746667)" />
+      <path
+         id="path9"
+         d="m 434.707,46.5703 v 77.4337 h 42.227 V 112.109 H 450.891 V 92.9883 h 24.011 V 81.1016 H 450.891 V 58.4688 h 26.922 V 46.5703 h -43.106"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         transform="matrix(0.13333333,0,0,-0.13333333,0,22.746667)" />
+    </g>
+  </g>
+</svg>
