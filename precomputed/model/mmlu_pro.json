@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "mmlu_pro",
+  "computedAt": "2026-10-01T03:05:39.904093+00:00",
+  "summarySha256": "3a8f3bcdafd47f151243c2f0e5c3cb1d5eb2d4e9004927694d5daaa6b0824e39",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/mmlu_pro/0000.parquet",
+        "rows": 12032,
+        "bytes": 4143708,
+        "sha256": "72a1b6fff89db45bfe08964fb0affab331621fbfbd78d17a7ac1a7b0680af970"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/mmlu_pro/0000.parquet",
+        "rows": 34644,
+        "bytes": 319551823,
+        "sha256": "3ad934c3727af901d9a705e93d7af67a8d6db49cedecafe906cad90bc2368939"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/mmlu_pro/0001.parquet",
+        "rows": 34643,
+        "bytes": 84760371,
+        "sha256": "23c114afac402f291c1870579b5ca3e7c9d6c30841e2a95c7e7cc227cad1a854"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/mmlu_pro/0002.parquet",
+        "rows": 34643,
+        "bytes": 132462392,
+        "sha256": "3af26832a899b92289ce10a84cdadf1718c2a29d0bf7a4bd56b8a8b5180887ba"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/mmlu_pro/0003.parquet",
+        "rows": 34643,
+        "bytes": 294851400,
+        "sha256": "1d2011f5ecc4e1ec8f4fe3e712ff841b51d45b8d833bed691a7e34b8ad91d913"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/mmlu_pro/0004.parquet",
+        "rows": 34643,
+        "bytes": 192304021,
+        "sha256": "7356f7e6484b16c66cf4b6597e7a6ac415fc82b64deded52586e4f952b8f5711"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/mmlu_pro/0005.parquet",
+        "rows": 34643,
+        "bytes": 13537872,
+        "sha256": "19f052fa54d3d25dd72b94d23ad5171e94e56c235ec49841cbdf392b5b2757e2"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/mmlu_pro/0006.parquet",
+        "rows": 34643,
+        "bytes": 19461669,
+        "sha256": "3b2188f3df6e78069d5c2d9f598466cc105c19529af6a34a77053a865768e060"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "chain_of_thought_correctness": {
+      "available": true,
+      "itemCount": 11872,
+      "modelCount": 11,
+      "pairCount": 130592,
+      "iterations": 205,
+      "converged": true,
+      "models": [
+        {
+          "name": "gpt-5.4-pro-2026-03-05",
+          "theta": 3.185675,
+          "sd": 0.04651,
+          "n": 11872
+        },
+        {
+          "name": "gpt-5.2-pro-2025-12-11",
+          "theta": 3.094617,
+          "sd": 0.045927,
+          "n": 11872
+        },
+        {
+          "name": "gpt-5.3-chat-latest",
+          "theta": 2.700899,
+          "sd": 0.043672,
+          "n": 11872
+        },
+        {
+          "name": "claude-3-5-sonnet-20240620",
+          "theta": 1.627549,
+          "sd": 0.039436,
+          "n": 11872
+        },
+        {
+          "name": "gpt-4o-2024-08-06",
+          "theta": 1.445421,
+          "sd": 0.038956,
+          "n": 11872
+        },
+        {
+          "name": "gpt-5.4-2026-03-05",
+          "theta": 0.820849,
+          "sd": 0.037741,
+          "n": 11872
+        },
+        {
+          "name": "gpt-5.2-2025-12-11",
+          "theta": 0.538049,
+          "sd": 0.037383,
+          "n": 11872
+        },
+        {
+          "name": "gpt-5.4-mini-2026-03-17",
+          "theta": 0.076887,
+          "sd": 0.037021,
+          "n": 11872
+        },
+        {
+          "name": "gpt-5.4-nano-2026-03-17",
+          "theta": -1.064878,
+          "sd": 0.037256,
+          "n": 11872
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "theta": -4.831499,
+          "sd": 0.064636,
+          "n": 11872
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "theta": -5.61828,
+          "sd": 0.084305,
+          "n": 11872
+        }
+      ],
+      "reverseCoded": false
+    }
+  }
+}

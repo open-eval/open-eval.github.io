@@ -1,0 +1,38 @@
+{
+  "method": "rasch-1pl-map",
+  "benchmark": "do_not_answer",
+  "computedAt": "2026-10-01T18:13:42.091174+00:00",
+  "summarySha256": "7d869ba9f8de8a56fc489a2a92c1eca9efe79fd992aaa5aa292e0c5bcb91973e",
+  "metrics": {
+    "longformer-action-ro": {
+      "bins": [
+        2,
+        3,
+        3,
+        7,
+        11,
+        12,
+        25,
+        28,
+        39,
+        35,
+        58,
+        57,
+        98,
+        110,
+        114,
+        99,
+        69,
+        65,
+        0,
+        103
+      ],
+      "min": -5.875552894067686,
+      "max": 4.4171251671978515,
+      "median": 1.230471054446155,
+      "items": 938,
+      "archivedItems": 939,
+      "models": 172
+    }
+  }
+}

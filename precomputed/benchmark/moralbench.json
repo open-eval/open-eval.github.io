@@ -1,0 +1,246 @@
+{
+  "itemCount": 88,
+  "responseCount": 968,
+  "distinctModelCount": 11,
+  "distinctModelItemPairs": 968,
+  "duplicateResponsesRemoved": 0,
+  "conflictingDuplicateRows": 0,
+  "conflictingDuplicateExamples": [],
+  "measurements": [
+    {
+      "metrics": [
+        "human_weighted_score"
+      ],
+      "itemCount": 88,
+      "totalResponses": 968,
+      "loadedResponses": 968,
+      "minimumItems": 9,
+      "modelCount": 11,
+      "scoredResponses": 484,
+      "excludedModelCount": 0,
+      "avgScore": 2.3597727272727274,
+      "medianScore": 2.3511363636363636,
+      "standardError": 0.012477026221051688,
+      "discrimination": 0.039455821284166845,
+      "refCoverage": 1.0,
+      "bounded": false,
+      "binary": false,
+      "best": {
+        "name": "gpt-4o",
+        "n": 44,
+        "coverage": 0.5,
+        "mean": 2.4361363636363635
+      },
+      "worst": {
+        "name": "grok-4",
+        "n": 44,
+        "coverage": 0.5,
+        "mean": 2.294318181818182
+      },
+      "models": [
+        {
+          "name": "gpt-4o",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 2.4361363636363635
+        },
+        {
+          "name": "gpt-4o-mini",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 2.414318181818182
+        },
+        {
+          "name": "o1",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 2.3847727272727273
+        },
+        {
+          "name": "gpt-4.1",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 2.3747727272727275
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 2.3711363636363636
+        },
+        {
+          "name": "DeepSeek-R1",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 2.3511363636363636
+        },
+        {
+          "name": "kimi-k2",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 2.336590909090909
+        },
+        {
+          "name": "phi-4",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 2.335227272727273
+        },
+        {
+          "name": "o3-mini",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 2.3320454545454545
+        },
+        {
+          "name": "o4-mini",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 2.3270454545454546
+        },
+        {
+          "name": "grok-4",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 2.294318181818182
+        }
+      ],
+      "split": "moralbench"
+    },
+    {
+      "metrics": [
+        "prefix_exact_match"
+      ],
+      "itemCount": 88,
+      "totalResponses": 968,
+      "loadedResponses": 968,
+      "minimumItems": 9,
+      "modelCount": 11,
+      "scoredResponses": 484,
+      "excludedModelCount": 0,
+      "avgScore": 0.5495867768595042,
+      "medianScore": 0.5681818181818182,
+      "standardError": 0.01398258207908152,
+      "discrimination": 0.04421680694015022,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "o1",
+        "n": 44,
+        "coverage": 0.5,
+        "mean": 0.6136363636363636
+      },
+      "worst": {
+        "name": "grok-4",
+        "n": 44,
+        "coverage": 0.5,
+        "mean": 0.45454545454545453
+      },
+      "models": [
+        {
+          "name": "o1",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 0.6136363636363636
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 0.5909090909090909
+        },
+        {
+          "name": "gpt-4o",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 0.5909090909090909
+        },
+        {
+          "name": "gpt-4.1",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 0.5681818181818182
+        },
+        {
+          "name": "o3-mini",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 0.5681818181818182
+        },
+        {
+          "name": "phi-4",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 0.5681818181818182
+        },
+        {
+          "name": "o4-mini",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 0.5454545454545454
+        },
+        {
+          "name": "DeepSeek-R1",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 0.5227272727272727
+        },
+        {
+          "name": "gpt-4o-mini",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 0.5227272727272727
+        },
+        {
+          "name": "kimi-k2",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 0.5
+        },
+        {
+          "name": "grok-4",
+          "n": 44,
+          "coverage": 0.5,
+          "mean": 0.45454545454545453
+        }
+      ],
+      "split": "moralbench"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "moralbench",
+  "computedAt": "2026-09-30T22:33:22.213434+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "1b5006ed8eecb71aa87df80716b5c83841f282a4",
+    "observedMainRevision": "ceb4f916f09f041a68e4fc922f110013cf769e58",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/item/moralbench/0000.parquet",
+        "rows": 88,
+        "bytes": 10991,
+        "sha256": "8f887e149bc6a596761c14069bb9a5a6c754b3179cb9c7da73bbe8a353adde33"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/moralbench/0000.parquet",
+        "rows": 968,
+        "bytes": 52009,
+        "sha256": "171790eb0597033182742440948644390f1c877614e80281b29f02534d5263d5"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

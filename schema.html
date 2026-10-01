@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Eval Commons - Data Schema</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="green-page">
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" style="text-decoration:none;">
+      OpenEval
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schema.html" aria-current="page">Data Schema</a></li>
+      <li><a href="landscape.html">Evaluation Landscape</a></li>
+      <li><a href="benchmark.html">Benchmark Browser</a></li>
+      <li><a href="model.html">Model Performance</a></li>
+      <li>
+        <a href="contribution.html">Contribution
+          <span aria-hidden="true" class="notification-dot"></span>
+        </a>
+      </li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:0.6rem;">
+      <a href="https://huggingface.co/datasets/Open-Eval-Commons/OpenEval" class="nav-cta" style="text-decoration:none;" target="_blank" rel="noopener">
+        <img src="logos/hf-logo.svg" width="35" height="35" alt="HuggingFace" style="display:block;">
+      </a>
+      <a href="https://github.com/open-eval/OpenEval" class="nav-cta" style="text-decoration:none;" target="_blank" rel="noopener">
+        <img src="logos/github-logo.svg" width="35" height="35" alt="GitHub" style="display:block;">
+      </a>
+    </div>
+  </div>
+</nav>
+<main>
+<div class="site-section theme-green" id="schema">
+<section class="section" id="schema-details">
+  <div class="container">
+    <h1 class="section-title">The item-centered schema</h1>
+    <p class="section-sub">
+      OpenEval organizes results at the item level under a unified schema, making cross-benchmark analysis and community contribution straightforward.
+    </p>
+    <div class="schema-layout">
+      <div class="schema-prose">
+        <div class="prose-panel active" id="prose-item">
+          <p>Each entry in OpenEval is built around an <strong>item</strong> — the atomic unit of evaluation. </p>
+          <ul>
+            <li><span class="field-badge">item_id</span> Unique identifier for the item.</li>
+            <li><span class="field-badge">item_metadata</span> Ingestion timestamp, contributor info, and benchmark provenance.</li>
+            <li><span class="field-badge">item_content[]</span> <span>Original item content from the source benchmark, which is divided into <span class="sub-badge">input[]</span> and <span class="sub-badge">references[]</span>.</span></li>
+            <li><span class="field-badge">responses[]</span> Response(s) to the item (see the next tab).</li>
+          </ul>
+        </div>
+        <div class="prose-panel" id="prose-response">
+          <p>Given the item, each <strong>response</strong> records the test conditions and outcomes for a single request.</p>
+          <ul>
+            <li><span class="field-badge">response_id</span> <span>Unique identifier for the response, prefixed with the associated <span class="sub-badge">item_id</span>.</span></li>
+            <li><span class="field-badge">model</span> Respondent model (see the next tab).</li>
+            <li><span class="field-badge">item_adaptation</span> 
+              <span>How the item was adapted for the evaluation run, including the actual <span class="sub-badge">request_input[]</span>, 
+              few-shot demonstrations, and test environment resources.</span>
+            </li>
+            <li><span class="field-badge">response_content[]</span> The output returned by the model.</li>
+            <li><span class="field-badge">scores[]</span> Metric score(s) of the response (see the last tab).</li>
+            <li><span class="field-badge">response_contributor</span> Present when the model response and corresponding item come from different submissions/contributors.</li>
+          </ul>
+        </div>
+        <div class="prose-panel" id="prose-model">
+          <p>Each <strong>model</strong> records the respondent model's identity and associated test settings.</p>
+          <ul>
+            <li><span class="field-badge">name</span>Name of the respondent model.</li>
+            <li><span class="field-badge">size</span> Parameter count or size label.</li>
+            <li><span class="field-badge">model_adaptation</span> 
+              How the model was adapted for the evaluation run, including the system instruction,
+              generation config, and available tools.
+            </li>
+          </ul>
+        </div>
+        <div class="prose-panel" id="prose-metric">
+          <p>Each <strong>metric</strong> extracts capability evidence from a response and produces a score.</p>
+          <ul>
+            <li><span class="field-badge">name</span>Name of the evaluation metric.</li>
+            <li><span class="field-badge">models[]</span> Judge model(s) used, if the metric is model-based.</li>
+            <li><span class="field-badge">extra_artifacts[]</span> Additional artifact(s) used for scoring, e.g., evaluation rubrics.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="schema-tabs">
+        <div class="schema-tab-bar">
+          <button class="schema-tab-btn active" onclick="switchTab(this,'tab-item')">Item</button>
+          <button class="schema-tab-btn" onclick="switchTab(this,'tab-response')">Response</button>
+          <button class="schema-tab-btn" onclick="switchTab(this,'tab-model')">Model</button>
+          <button class="schema-tab-btn" onclick="switchTab(this,'tab-metric')">Metric</button>
+        </div>
+        <div class="schema-tab-panel active" id="tab-item"><span class="p1">{</span>
+    <span class="k">"item_id":</span> <span class="v">"wildbench_20260220T224823Z_0"</span><span class="k">,</span>  <span class="c"># AUTO</span>
+    <span class="k">"item_metadata":</span> <span class="p2">{</span>
+        <span class="k">"ingestion_time":</span> <span class="v">"20260220T224823Z"</span><span class="k">,</span>  <span class="c"># AUTO</span>
+        <span class="k">"contributor":</span> <span class="p3">{</span>
+            <span class="k">"name":</span> <span class="v">"Anonymous"</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
+            <span class="k">"email":</span> <span class="v">""</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
+            <span class="k">"affiliation":</span> <span class="v">"OpenEval Commons"</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
+        <span class="p3">}</span><span class="k">,</span>
+        <span class="k">"source":</span> <span class="p3">{</span>
+            <span class="k">"benchmark_name":</span> <span class="v">"WildBench"</span><span class="k">,</span>
+            <span class="k">"benchmark_version":</span> <span class="v">"v2"</span><span class="k">,</span>
+            <span class="k">"paper_url":</span> <span class="v">"https://iclr.cc/virtual/2025/poster/29940"</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
+            <span class="k">"dataset_url":</span> <span class="v">"https://huggingface.co/datasets/allenai/WildBench/viewer/v2"</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
+            <span class="k">"benchmark_tags":</span> <span class="p1">[</span>
+                <span class="v">"real-world"</span><span class="k">,</span>
+                <span class="v">"Instruction Following"</span><span class="k">,</span>
+                <span class="v">"multi-turn chat"</span>
+            <span class="p1">]</span>  <span class="c"># OPTIONAL</span>
+        <span class="p3">}</span>
+    <span class="p2">}</span><span class="k">,</span>
+    <span class="k">"item_content":</span> <span class="p2">{</span> 
+        <span class="k">"input":</span> <span class="p3">[</span>
+            <span class="p1">{</span>
+                <span class="k">"role":</span> <span class="v">"user"</span><span class="k">,</span>
+                <span class="k">"content":</span> <span class="v">"answer all of the questions you can (put the question and then the answer under it): ..."</span>
+            <span class="p1">}</span><span class="k">,</span>
+            <span class="p1">{</span>
+                <span class="k">"role":</span> <span class="v">"assistant"</span><span class="k">,</span>
+                <span class="k">"content":</span> <span class="v">"The function that models the data in the table is:\n\nF(x) = 200 * (1/2)^x"</span>
+            <span class="p1">}</span><span class="k">,</span>
+            <span class="p1">{</span>
+                <span class="k">"role":</span> <span class="v">"user"</span><span class="k">,</span>
+                <span class="k">"content":</span> <span class="v">"no answer all of the questions given"</span>
+            <span class="p1">}</span>
+        <span class="p3">]</span><span class="k">,</span>
+        <span class="k">"references":</span> <span class="p3">[]</span>
+    <span class="p2">}</span><span class="k">,</span>
+    <span class="k">"responses":</span> <span class="p2">[</span>
+        <span class="p3">{</span> <span class="c"># See the next tab for a response</span> <span class="p3">}</span><span class="k">,</span>
+        <span class="k">...</span>
+    <span class="p2">]</span><span class="k">,</span>
+    <span class="k">"schema_version":</span> <span class="v">"v0.2.0"</span>  <span class="c"># AUTO</span>
+<span class="p1">}</span></div>
+        <div class="schema-tab-panel" id="tab-response"><span class="p1">{</span>
+    <span class="k">"response_id":</span> <span class="v">"wildbench_20260220T224823Z_0_gemini-3-pro-preview_0"</span><span class="k">,</span>  <span class="c"># AUTO</span>     
+    <span class="k">"model":</span> <span class="p2">{</span> <span class="c"># See the next tab for a model</span> <span class="p2">}</span><span class="k">,</span>
+    <span class="k">"item_adaptation":</span> <span class="p2">{</span>
+        <span class="k">"request_input":</span> <span class="p3">[</span> 
+            <span class="p1">{</span>
+                <span class="k">"role":</span> <span class="v">"user"</span><span class="k">,</span>
+                <span class="k">"content":</span> <span class="v">"answer all of the questions you can (put the question and then the answer under it): ..."</span>
+            <span class="p1">}</span><span class="k">,</span>
+            <span class="p1">{</span>
+                <span class="k">"role":</span> <span class="v">"assistant"</span><span class="k">,</span>
+                <span class="k">"content":</span> <span class="v">"The function that models the data in the table is:\n\nF(x) = 200 * (1/2)^x"</span>
+            <span class="p1">}</span><span class="k">,</span>
+            <span class="p1">{</span>
+                <span class="k">"role":</span> <span class="v">"user"</span><span class="k">,</span>
+                <span class="k">"content":</span> <span class="v">"no answer all of the questions given"</span>
+            <span class="p1">}</span>
+        <span class="p3">]</span><span class="k">,</span>
+        <span class="k">"demonstrations":</span> <span class="p3">[]</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
+        <span class="k">"external_resources":</span> <span class="p3">[]</span> 
+    <span class="p2">}</span><span class="k">,</span>
+    <span class="k">"response_content":</span> <span class="p2">[</span>  
+        <span class="p3">{</span>
+            <span class="k">"text":</span> <span class="v">"Here are the answers to the questions provided..."</span><span class="k">,</span>
+            <span class="k">"logprob":</span> <span class="n">0.0</span><span class="k">,</span>
+            <span class="k">"tokens":</span> <span class="p1">[]</span><span class="k">,</span>
+            <span class="k">"finish_reason":</span> <span class="p1">{</span>
+                <span class="k">"reason":</span> <span class="v">"stop"</span>
+            <span class="p1">}</span><span class="k">,</span>
+            <span class="k">"thinking":</span> <span class="p1">{</span>
+                <span class="k">"text":</span> <span class="v">"**Evaluating the Problems**\n\nI've meticulously assessed the problems..."</span>
+            <span class="p1">}</span>
+        <span class="p3">}</span>
+    <span class="p2">]</span><span class="k">,</span>
+    <span class="k">"scores":</span> <span class="p2">[</span>
+        <span class="p3">{</span>
+            <span class="k">"metric":</span> <span class="p1">{</span> <span class="c"># See the last tab for a metric</span> <span class="p1">}</span><span class="k">,</span>
+            <span class="k">"value":</span> <span class="n">0.7777777777777778</span>
+        <span class="p3">}</span><span class="k">,</span>
+        <span class="k">...</span>
+    <span class="p2">]</span><span class="k">,</span>
+    <span class="k">"response_contributor":</span> <span class="p2">{</span> <span class="c"># Same format as item_metadata.contributor</span> <span class="p2">}</span>  <span class="c"># OPTIONAL</span>
+<span class="p1">}</span></div>
+        <div class="schema-tab-panel" id="tab-model"><span class="p1">{</span>
+    <span class="k">"name":</span> <span class="v">"Gemini 3 Pro Preview"</span><span class="k">,</span>               
+    <span class="k">"size":</span> <span class="v">""</span><span class="k">,</span>  <span class="c"># OPTIONAL</span>
+    <span class="k">"model_adaptation":</span> <span class="p2">{</span>
+        <span class="k">"system_instruction":</span> <span class="v">""</span><span class="k">,</span>   
+        <span class="k">"generation_parameters":</span> <span class="p3">{</span>
+            <span class="k">"temperature":</span> <span class="n">0.0</span><span class="k">,</span> 
+            <span class="k">"do_sample":</span> <span class="n">false</span><span class="k">,</span>
+            <span class="k">"top_k":</span> <span class="n">1</span><span class="k">,</span>
+            <span class="k">"top_p":</span> <span class="n">1.0</span><span class="k">,</span>
+            <span class="k">"max_tokens":</span> <span class="n">12000</span><span class="k">,</span>
+            <span class="k">...</span>
+        <span class="p3">}</span><span class="k">,</span>
+        <span class="k">"tools":</span> <span class="p3">[]</span>           
+    <span class="p2">}</span>
+<span class="p1">}</span></div>
+        <div class="schema-tab-panel" id="tab-metric"><span class="p1">{</span>
+    <span class="k">"name":</span> <span class="v">"wildbench_score_rescaled"</span><span class="k">,</span>           
+    <span class="k">"models":</span> <span class="p2">[</span>
+        <span class="v">"gpt-4o"</span>
+    <span class="p2">]</span><span class="k">,</span>
+    <span class="k">"extra_artifacts":</span> <span class="p2">[</span>
+        <span class="p3">{</span>
+            <span class="k">"type":</span> <span class="v">"checklist"</span><span class="k">,</span>
+            <span class="k">"content":</span> <span class="p1">[</span>
+                <span class="v">"Does the AI output provide answers to all the questions listed in the user's query?"</span><span class="k">,</span>
+                <span class="v">"Are the answers provided by the AI accurate and correctly calculated based on the information given in the questions?"</span><span class="k">,</span>
+                <span class="v">"Does the AI output maintain clarity and coherence in presenting the answers to each question?"</span><span class="k">,</span>
+                <span class="k">...</span>
+            <span class="p1">]</span>
+        <span class="p3">}</span>
+    <span class="p2">]</span>      
+<span class="p1">}</span></div>
+      </div>
+    </div>
+    <p class="section-sub schema-viewer-intro">For practical considerations related to Parquet storage, our schema is represented on Hugging Face through three tables: bench, item, and response. You can explore them directly below.</p>
+    <iframe
+      class="dataset-viewer"
+      src="https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/embed/viewer"
+      title="OpenEval Hugging Face dataset viewer"
+      loading="lazy"
+      width="100%"
+      height="500"
+    ></iframe>
+  </div>
+</section>
+</div>
+</main>
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
+      OpenEval
+      <span style="font-family:var(--mono);font-size:0.65rem;font-weight:600;background:#e8e5de;color:#273929;padding:2px 7px;border-radius:4px;letter-spacing:0.02em;vertical-align:bottom;">v0.2.0</span>
+    </a>
+    <span class="footer-copy">Maintained by the <a href="https://huggingface.co/Open-Eval-Commons" style="color:var(--muted);">Open Eval Commons</a> project. 
+      <a href="mailto:hjiang66@jh.edu,ziang.xiao@jhu.edu" style="color:var(--muted);">Contact us.</a>
+    </span>
+  </div>
+</footer>
+<script>
+function syncSchemaHeight() {
+    var prose = document.querySelector('.schema-prose');
+    var tabs  = document.querySelector('.schema-tabs');
+    if (!prose || !tabs || prose.closest('[hidden]')) return;
+    // Reset tabs height so prose can settle to its natural size
+    tabs.style.height = 'auto';
+    requestAnimationFrame(function() {
+      tabs.style.height = window.innerWidth > 640 ? prose.offsetHeight + 'px' : 'auto';
+    });
+  }
+  syncSchemaHeight();
+  window.addEventListener('resize', syncSchemaHeight);
+
+  function switchTab(btn, panelId) {
+    btn.closest('.schema-tabs').querySelectorAll('.schema-tab-btn').forEach(b => b.classList.remove('active'));
+    btn.closest('.schema-tabs').querySelectorAll('.schema-tab-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(panelId).classList.add('active');
+    const proseId = 'prose-' + panelId.replace('tab-', '');
+    document.querySelectorAll('.prose-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById(proseId).classList.add('active');
+    syncSchemaHeight();
+  }
+window.addEventListener('load', syncSchemaHeight);
+if (document.fonts) document.fonts.ready.then(syncSchemaHeight);
+</script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "dochop",
+  "computedAt": "2026-10-01T03:04:07.140089+00:00",
+  "summarySha256": "aa8af611eb648a7bfdb97356bc36fe52887193107477b3d5b3ec828ed9168a59",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/dochop/0000.parquet",
+        "rows": 2074,
+        "bytes": 241126,
+        "sha256": "f35835cc3990e1aa951c743599e98c894522c985de5ced7a4be1429d32dc42e5"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/dochop/0000.parquet",
+        "rows": 51850,
+        "bytes": 34856318,
+        "sha256": "1b94c0ab56029d34046e05bec6a4b02e16cd9eeb7d329e99b5122d31d370b34f"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "heuristic_accuracy": {
+      "available": true,
+      "itemCount": 2074,
+      "modelCount": 24,
+      "pairCount": 49776,
+      "iterations": 141,
+      "converged": true,
+      "models": [
+        {
+          "name": "GPT-5.6-terra",
+          "theta": 3.220441,
+          "sd": 0.110032,
+          "n": 2074
+        },
+        {
+          "name": "GPT-5.6-luna",
+          "theta": 2.824782,
+          "sd": 0.1023,
+          "n": 2074
+        },
+        {
+          "name": "Claude-Sonnet-5",
+          "theta": 1.270395,
+          "sd": 0.086493,
+          "n": 2074
+        },
+        {
+          "name": "Gemini-3.1-Pro",
+          "theta": -0.017368,
+          "sd": 0.083895,
+          "n": 2074
+        },
+        {
+          "name": "Gemini-2.5-Pro",
+          "theta": -0.480211,
+          "sd": 0.08459,
+          "n": 2074
+        },
+        {
+          "name": "GPT-5.2",
+          "theta": -0.494536,
+          "sd": 0.084625,
+          "n": 2074
+        },
+        {
+          "name": "Gemini-2.5-Flash",
+          "theta": -1.014036,
+          "sd": 0.086486,
+          "n": 2074
+        },
+        {
+          "name": "GPT-5-mini",
+          "theta": -1.269679,
+          "sd": 0.087849,
+          "n": 2074
+        },
+        {
+          "name": "Gemini-2.5-flash",
+          "theta": -1.516643,
+          "sd": 0.089476,
+          "n": 2074
+        },
+        {
+          "name": "Qwen-2.5-VL-72B",
+          "theta": -1.553603,
+          "sd": 0.089747,
+          "n": 2074
+        },
+        {
+          "name": "Qwen3-VL-8B",
+          "theta": -1.57226,
+          "sd": 0.089886,
+          "n": 2074
+        },
+        {
+          "name": "Qwen-2.5-VL-32B",
+          "theta": -1.76199,
+          "sd": 0.091416,
+          "n": 2074
+        },
+        {
+          "name": "Qwen-2.5-VL-7B",
+          "theta": -2.001378,
+          "sd": 0.093644,
+          "n": 2074
+        },
+        {
+          "name": "Claude-4.5-Sonnet",
+          "theta": -2.104953,
+          "sd": 0.094718,
+          "n": 2074
+        },
+        {
+          "name": "Molmo-7B-O-0924",
+          "theta": -2.22296,
+          "sd": 0.096025,
+          "n": 2074
+        },
+        {
+          "name": "Claude-4.5-Haiku",
+          "theta": -2.262041,
+          "sd": 0.096479,
+          "n": 2074
+        },
+        {
+          "name": "Molmo-7B-D-0924",
+          "theta": -2.2968,
+          "sd": 0.096891,
+          "n": 2074
+        },
+        {
+          "name": "InternVL-3.5-38B",
+          "theta": -2.342301,
+          "sd": 0.097444,
+          "n": 2074
+        },
+        {
+          "name": "InternVL-3.5-30B-A3B",
+          "theta": -2.430898,
+          "sd": 0.098562,
+          "n": 2074
+        },
+        {
+          "name": "InternVL-3.5-8B",
+          "theta": -2.579553,
+          "sd": 0.100568,
+          "n": 2074
+        },
+        {
+          "name": "LLaVA-Next-LLaMA3-8B",
+          "theta": -2.847188,
+          "sd": 0.104623,
+          "n": 2074
+        },
+        {
+          "name": "IDEFICS3-LLaMA3-8B",
+          "theta": -2.940411,
+          "sd": 0.106181,
+          "n": 2074
+        },
+        {
+          "name": "Ovis1.6-Gemma2-9B",
+          "theta": -2.954098,
+          "sd": 0.106416,
+          "n": 2074
+        },
+        {
+          "name": "IDEFICS2-8B",
+          "theta": -3.210956,
+          "sd": 0.111179,
+          "n": 2074
+        }
+      ],
+      "reverseCoded": false
+    }
+  }
+}

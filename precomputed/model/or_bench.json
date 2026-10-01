@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "or_bench",
+  "computedAt": "2026-10-01T03:07:02.418974+00:00",
+  "summarySha256": "bf793faab0df1cb5dd6fdad73a2e97d4adac125436b56830473d6dc79b71ff0e",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/or_bench/0000.parquet",
+        "rows": 1319,
+        "bytes": 102447,
+        "sha256": "9adb6dc0cea7bdc89166a33246f507b591777676a62b3a4a0728bdb72da17779"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/or_bench/0000.parquet",
+        "rows": 106798,
+        "bytes": 122134071,
+        "sha256": "53b3346585468ba764a478d0ef78a74f28c98ac032a2296c204fd274ab463069"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/or_bench/0001.parquet",
+        "rows": 106798,
+        "bytes": 117492495,
+        "sha256": "299a8cfda76d173eef3076f1e653e50a8b75bd251d1f2181c1eb0be0c608e34c"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "orbench-refusal": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "disinformation",
+  "computedAt": "2026-10-01T03:03:52.177146+00:00",
+  "summarySha256": "e4707fd00b09c883d6c52714378b1891ede4a434df1919b0a1f7a46ccec37706",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/disinformation/0000.parquet",
+        "rows": 79,
+        "bytes": 20976,
+        "sha256": "513f12c8a7949b28fbe578c6b0bdbec0ee7c1c5eedcc67133ba638e633a538c9"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/disinformation/0000.parquet",
+        "rows": 1602,
+        "bytes": 5411536,
+        "sha256": "e5b73131abc1b526f45e87c3e6ca62ee23a65573ab8a7e44ceefd77644604b6c"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "monte_carlo_entropy": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "self_bleu": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    }
+  }
+}

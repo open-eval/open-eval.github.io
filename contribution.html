@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Eval Commons - Contribution</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="green-page">
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" style="text-decoration:none;">
+      OpenEval
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schema.html">Data Schema</a></li>
+      <li><a href="landscape.html">Evaluation Landscape</a></li>
+      <li><a href="benchmark.html">Benchmark Browser</a></li>
+      <li><a href="model.html">Model Performance</a></li>
+      <li><a href="contribution.html" aria-current="page">Contribution</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:0.6rem;">
+      <a href="https://huggingface.co/datasets/Open-Eval-Commons/OpenEval" class="nav-cta" style="text-decoration:none;" target="_blank" rel="noopener">
+        <img src="logos/hf-logo.svg" width="35" height="35" alt="HuggingFace" style="display:block;">
+      </a>
+      <a href="https://github.com/open-eval/OpenEval" class="nav-cta" style="text-decoration:none;" target="_blank" rel="noopener">
+        <img src="logos/github-logo.svg" width="35" height="35" alt="GitHub" style="display:block;">
+      </a>
+    </div>
+  </div>
+</nav>
+<main>
+<div class="site-section theme-green" id="contribute">
+<section class="section" id="contribution-guide">
+  <div class="container">
+    <h1 class="section-title">We welcome all item-level data contributions</h1>
+    <p class="section-sub" style="margin-bottom:1.5rem;">
+      Sharing your evaluation data takes just a few steps.
+      We are actively developing a converter agent to further streamline the process, so stay tuned!
+    </p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Format your data</h3>
+          <p>
+            Convert your evaluation data into the OpenEval schema. 
+            You may refer to the schema, guidelines, and example converters in our
+            <a href="https://github.com/open-eval/OpenEval" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">GitHub repository</a>.
+          </p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Validate your submission</h3>
+          <p>Run the provided validator to confirm all required fields are present
+             and correctly formatted before submission.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Open a pull request</h3>
+          <p>Open a pull request in our GitHub repository under <code class="field-badge path-badge">submissions/</code>
+            with your JSON files.
+          </p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>See your data go live</h3>
+          <p>After a brief review, your data are shown in OpenEval and made immediately available
+             to the broader research community.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <div class="step-body">
+          <h3>We are here to help</h3>
+          <p>Still have questions or need guidance? Reach out to the team via GitHub issues or <a href="mailto:hjiang66@jh.edu,ziang.xiao@jhu.edu" style="color:inherit;text-decoration:underline;">email</a> — we are happy to assist you through the contribution process.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="contributors">
+  <div class="container">
+    <h2 class="section-title">Contributors</h2>
+    <p class="section-sub">OpenEval grows with our community. Thank you to everyone who has contributed and supported the project.</p>
+    <ul class="contributor-grid" id="contributor-list" aria-label="Contributors"></ul>
+  </div>
+</section>
+</div>
+</main>
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
+      OpenEval
+      <span style="font-family:var(--mono);font-size:0.65rem;font-weight:600;background:#e8e5de;color:#273929;padding:2px 7px;border-radius:4px;letter-spacing:0.02em;vertical-align:bottom;">v0.2.0</span>
+    </a>
+    <span class="footer-copy">Maintained by the <a href="https://huggingface.co/Open-Eval-Commons" style="color:var(--muted);">Open Eval Commons</a> project. 
+      <a href="mailto:hjiang66@jh.edu,ziang.xiao@jhu.edu" style="color:var(--muted);">Contact us.</a>
+    </span>
+  </div>
+</footer>
+<script>
+  // Add contributors here. Omit paper when there is no associated publication.
+  const contributors = [
+    {
+      name: 'Contributor name(s)',
+      affiliation: 'Institution or organization',
+      description: 'Contribution details will appear here.',
+      paper: {
+        title: 'Paper title to be added',
+        bibtex: `% Placeholder — replace with the paper's verified BibTeX.
+@article{citation_key,
+  author = {Author names},
+  title = {Paper title},
+  journal = {Publication venue},
+  year = {YYYY}
+}`
+      }
+    },
+    {
+      name: 'Contributor name(s)',
+      affiliation: 'Institution or organization',
+      description: 'Contribution details will appear here.',
+    }
+  ];
+
+  // Returns one card; textContent keeps names and citations literal and safe.
+  function createContributorCard({ name, affiliation, description, paper }) {
+    function element(tag, className, text) {
+      const node = document.createElement(tag);
+      if (className) node.className = className;
+      if (text !== undefined) node.textContent = text;
+      return node;
+    }
+
+    const card = element('li', 'contributor-card');
+    const info = element('div', 'contributor-info');
+    const header = element('div', 'contributor-header');
+    header.append(element('h3', '', name));
+    if (affiliation) header.append(element('p', 'contributor-affiliation', affiliation));
+    info.append(header);
+    if (description) info.append(element('p', 'contributor-description', description));
+    card.append(info);
+
+    if (paper) {
+      const publication = element('div', 'contributor-paper');
+      publication.append(element('p', '', 'Related paper: ' + paper.title));
+      if (paper.bibtex) {
+        const citation = element('details', 'contributor-citation');
+        citation.append(element('summary', '', 'BibTeX'));
+        const pre = element('pre');
+        pre.append(element('code', '', paper.bibtex));
+        const box = element('div', 'citation-box');
+        const copy = element('button', 'citation-copy');
+        copy.setAttribute('aria-label', 'Copy BibTeX');
+        copy.title = 'Copy BibTeX';
+        copy.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h4"/></svg>';
+        copy.type = 'button';
+        const status = element('span', 'citation-copy-status');
+        status.setAttribute('role', 'status');
+        let copiedTimeout;
+        copy.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(paper.bibtex);
+            clearTimeout(copiedTimeout);
+            status.textContent = 'Copied!';
+            copiedTimeout = setTimeout(() => { status.textContent = ''; }, 2000);
+          } catch (error) {
+            clearTimeout(copiedTimeout);
+            // Keep the citation selectable when clipboard access is unavailable.
+            const selection = window.getSelection();
+            const range = document.createRange();
+            range.selectNodeContents(pre);
+            selection.removeAllRanges();
+            selection.addRange(range);
+            status.textContent = 'Press Ctrl+C or ⌘C to copy the selected citation.';
+          }
+        });
+        box.append(pre, status, copy);
+        citation.append(box);
+        publication.append(citation);
+      }
+      card.append(publication);
+    }
+    return card;
+  }
+
+  document.getElementById('contributor-list').replaceChildren(
+    ...contributors.map(createContributorCard)
+  );
+</script>
+</body>
+</html>

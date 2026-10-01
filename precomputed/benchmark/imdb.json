@@ -1,0 +1,708 @@
+{
+  "itemCount": 356,
+  "responseCount": 7832,
+  "distinctModelCount": 22,
+  "distinctModelItemPairs": 7748,
+  "duplicateResponsesRemoved": 84,
+  "measurements": [
+    {
+      "metrics": [
+        "exact_match"
+      ],
+      "itemCount": 356,
+      "totalResponses": 7832,
+      "loadedResponses": 7832,
+      "minimumItems": 36,
+      "modelCount": 22,
+      "scoredResponses": 7748,
+      "excludedModelCount": 0,
+      "avgScore": 0.8041296197418516,
+      "medianScore": 0.9318181818181818,
+      "standardError": 0.06914252000550716,
+      "discrimination": 0.31685083166523503,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "mpt-30b",
+        "n": 352,
+        "coverage": 0.9887640449438202,
+        "mean": 0.9573863636363636
+      },
+      "worst": {
+        "name": "vicuna-7b-v1.3",
+        "n": 352,
+        "coverage": 0.9887640449438202,
+        "mean": 0.0
+      },
+      "models": [
+        {
+          "name": "mpt-30b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9573863636363636
+        },
+        {
+          "name": "llama-65b",
+          "n": 356,
+          "coverage": 1.0,
+          "mean": 0.9550561797752809
+        },
+        {
+          "name": "falcon-40b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9545454545454546
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9517045454545454
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9488636363636364
+        },
+        {
+          "name": "mpt-instruct-30b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9488636363636364
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9460227272727273
+        },
+        {
+          "name": "llama-30b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9460227272727273
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9403409090909091
+        },
+        {
+          "name": "llama-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9346590909090909
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9318181818181818
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9318181818181818
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9318181818181818
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9289772727272727
+        },
+        {
+          "name": "llama-13b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9176136363636364
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9147727272727273
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9147727272727273
+        },
+        {
+          "name": "falcon-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.8920454545454546
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.8125
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.03125
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.0
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.0
+        }
+      ],
+      "split": "imdb"
+    },
+    {
+      "metrics": [
+        "prefix_exact_match"
+      ],
+      "itemCount": 356,
+      "totalResponses": 7832,
+      "loadedResponses": 7832,
+      "minimumItems": 36,
+      "modelCount": 22,
+      "scoredResponses": 7748,
+      "excludedModelCount": 0,
+      "avgScore": 0.8041296197418516,
+      "medianScore": 0.9318181818181818,
+      "standardError": 0.06914252000550716,
+      "discrimination": 0.31685083166523503,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "mpt-30b",
+        "n": 352,
+        "coverage": 0.9887640449438202,
+        "mean": 0.9573863636363636
+      },
+      "worst": {
+        "name": "vicuna-7b-v1.3",
+        "n": 352,
+        "coverage": 0.9887640449438202,
+        "mean": 0.0
+      },
+      "models": [
+        {
+          "name": "mpt-30b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9573863636363636
+        },
+        {
+          "name": "llama-65b",
+          "n": 356,
+          "coverage": 1.0,
+          "mean": 0.9550561797752809
+        },
+        {
+          "name": "falcon-40b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9545454545454546
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9517045454545454
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9488636363636364
+        },
+        {
+          "name": "mpt-instruct-30b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9488636363636364
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9460227272727273
+        },
+        {
+          "name": "llama-30b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9460227272727273
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9403409090909091
+        },
+        {
+          "name": "llama-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9346590909090909
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9318181818181818
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9318181818181818
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9318181818181818
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9289772727272727
+        },
+        {
+          "name": "llama-13b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9176136363636364
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9147727272727273
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9147727272727273
+        },
+        {
+          "name": "falcon-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.8920454545454546
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.8125
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.03125
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.0
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.0
+        }
+      ],
+      "split": "imdb"
+    },
+    {
+      "metrics": [
+        "quasi_exact_match"
+      ],
+      "itemCount": 356,
+      "totalResponses": 7832,
+      "loadedResponses": 7832,
+      "minimumItems": 36,
+      "modelCount": 22,
+      "scoredResponses": 7748,
+      "excludedModelCount": 0,
+      "avgScore": 0.8041296197418516,
+      "medianScore": 0.9318181818181818,
+      "standardError": 0.06914252000550716,
+      "discrimination": 0.31685083166523503,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "mpt-30b",
+        "n": 352,
+        "coverage": 0.9887640449438202,
+        "mean": 0.9573863636363636
+      },
+      "worst": {
+        "name": "vicuna-7b-v1.3",
+        "n": 352,
+        "coverage": 0.9887640449438202,
+        "mean": 0.0
+      },
+      "models": [
+        {
+          "name": "mpt-30b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9573863636363636
+        },
+        {
+          "name": "llama-65b",
+          "n": 356,
+          "coverage": 1.0,
+          "mean": 0.9550561797752809
+        },
+        {
+          "name": "falcon-40b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9545454545454546
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9517045454545454
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9488636363636364
+        },
+        {
+          "name": "mpt-instruct-30b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9488636363636364
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9460227272727273
+        },
+        {
+          "name": "llama-30b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9460227272727273
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9403409090909091
+        },
+        {
+          "name": "llama-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9346590909090909
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9318181818181818
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9318181818181818
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9318181818181818
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9289772727272727
+        },
+        {
+          "name": "llama-13b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9176136363636364
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9147727272727273
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9147727272727273
+        },
+        {
+          "name": "falcon-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.8920454545454546
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.8125
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.03125
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.0
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.0
+        }
+      ],
+      "split": "imdb"
+    },
+    {
+      "metrics": [
+        "quasi_prefix_exact_match"
+      ],
+      "itemCount": 356,
+      "totalResponses": 7832,
+      "loadedResponses": 7832,
+      "minimumItems": 36,
+      "modelCount": 22,
+      "scoredResponses": 7748,
+      "excludedModelCount": 0,
+      "avgScore": 0.8041296197418516,
+      "medianScore": 0.9318181818181818,
+      "standardError": 0.06914252000550716,
+      "discrimination": 0.31685083166523503,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "mpt-30b",
+        "n": 352,
+        "coverage": 0.9887640449438202,
+        "mean": 0.9573863636363636
+      },
+      "worst": {
+        "name": "vicuna-7b-v1.3",
+        "n": 352,
+        "coverage": 0.9887640449438202,
+        "mean": 0.0
+      },
+      "models": [
+        {
+          "name": "mpt-30b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9573863636363636
+        },
+        {
+          "name": "llama-65b",
+          "n": 356,
+          "coverage": 1.0,
+          "mean": 0.9550561797752809
+        },
+        {
+          "name": "falcon-40b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9545454545454546
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9517045454545454
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9488636363636364
+        },
+        {
+          "name": "mpt-instruct-30b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9488636363636364
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9460227272727273
+        },
+        {
+          "name": "llama-30b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9460227272727273
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9403409090909091
+        },
+        {
+          "name": "llama-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9346590909090909
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9318181818181818
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9318181818181818
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9318181818181818
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9289772727272727
+        },
+        {
+          "name": "llama-13b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9176136363636364
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9147727272727273
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.9147727272727273
+        },
+        {
+          "name": "falcon-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.8920454545454546
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.8125
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.03125
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.0
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 352,
+          "coverage": 0.9887640449438202,
+          "mean": 0.0
+        }
+      ],
+      "split": "imdb"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "imdb",
+  "computedAt": "2026-09-30T01:15:32.310084+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/imdb/0000.parquet",
+        "rows": 356,
+        "bytes": 205862,
+        "sha256": "8f81d1eb6b2357779f430dc7b432beb5a483b2cfeb3529de774f80e811025503"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/imdb/0000.parquet",
+        "rows": 7832,
+        "bytes": 6119873,
+        "sha256": "50b55c2e6abb0473885508a2948e9b12a3a54a656238b08a2ed19de322b9d278"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

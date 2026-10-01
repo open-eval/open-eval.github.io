@@ -1,0 +1,38 @@
+{
+  "method": "rasch-1pl-map",
+  "benchmark": "culturalbench",
+  "computedAt": "2026-10-01T18:13:38.432698+00:00",
+  "summarySha256": "39d8156a00d97ae80f08bf1a82eab042c41a689e3ca291bf9dad9e6eb7f4d9f2",
+  "metrics": {
+    "quasi_prefix_exact_match": {
+      "bins": [
+        5,
+        55,
+        234,
+        546,
+        1162,
+        733,
+        1137,
+        611,
+        606,
+        349,
+        330,
+        148,
+        113,
+        57,
+        28,
+        14,
+        2,
+        4,
+        0,
+        1
+      ],
+      "min": -2.7451286783151465,
+      "max": 5.630006762151745,
+      "median": -0.08865777165150643,
+      "items": 6135,
+      "archivedItems": 6135,
+      "models": 62
+    }
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Eval Commons - Model Performance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tools.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" style="text-decoration:none;">
+      OpenEval
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schema.html">Data Schema</a></li>
+      <li><a href="landscape.html">Evaluation Landscape</a></li>
+      <li><a href="benchmark.html">Benchmark Browser</a></li>
+      <li><a href="model.html" aria-current="page">Model Performance</a></li>
+      <li>
+        <a href="contribution.html">Contribution
+          <span aria-hidden="true" class="notification-dot"></span>
+        </a>
+      </li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:0.6rem;">
+      <a href="https://huggingface.co/datasets/Open-Eval-Commons/OpenEval" class="nav-cta" style="text-decoration:none;" target="_blank" rel="noopener">
+        <img src="logos/hf-logo.svg" width="35" height="35" alt="HuggingFace" style="display:block;">
+      </a>
+      <a href="https://github.com/open-eval/OpenEval" class="nav-cta" style="text-decoration:none;" target="_blank" rel="noopener">
+        <img src="logos/github-logo.svg" width="35" height="35" alt="GitHub" style="display:block;">
+      </a>
+    </div>
+  </div>
+</nav>
+<main>
+<div class="site-section" id="performance">
+<section class="section">
+  <div class="container">
+    <h1 class="section-title">Model Performance</h1>
+    <p class="section-sub">OpenEval now includes over <span id="summary-model-total">—</span> distinct models with a median of <span id="summary-model-median">—</span> models per benchmark.</p>
+    <div id="model-tool" class="oe-tool"><p role="status">Loading model scores…</p></div>
+    <noscript>Enable JavaScript to explore model scores.</noscript>
+  </div>
+</section>
+</div>
+</main>
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
+      OpenEval
+      <span style="font-family:var(--mono);font-size:0.65rem;font-weight:600;background:#e8e5de;color:#273929;padding:2px 7px;border-radius:4px;letter-spacing:0.02em;vertical-align:bottom;">v0.2.0</span>
+    </a>
+    <span class="footer-copy">Maintained by the <a href="https://huggingface.co/Open-Eval-Commons" style="color:var(--muted);">Open Eval Commons</a> project. 
+      <a href="mailto:hjiang66@jh.edu,ziang.xiao@jhu.edu" style="color:var(--muted);">Contact us.</a>
+    </span>
+  </div>
+</footer>
+
+<script src="model.js" defer></script>
+</body>
+</html>

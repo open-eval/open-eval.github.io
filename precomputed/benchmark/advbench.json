@@ -1,0 +1,1152 @@
+{
+  "itemCount": 520,
+  "responseCount": 91073,
+  "distinctModelCount": 187,
+  "distinctModelItemPairs": 91073,
+  "duplicateResponsesRemoved": 0,
+  "measurements": [
+    {
+      "metrics": [
+        "refusal-strings"
+      ],
+      "itemCount": 520,
+      "totalResponses": 91073,
+      "loadedResponses": 91073,
+      "minimumItems": 52,
+      "modelCount": 179,
+      "scoredResponses": 91040,
+      "excludedModelCount": 8,
+      "avgScore": 0.12115253612112965,
+      "medianScore": 0.03653846153846154,
+      "standardError": 0.01569013644602059,
+      "discrimination": 0.20933252958311177,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "deepseek-r1-distill-qwen-32b",
+        "n": 444,
+        "coverage": 0.8538461538461538,
+        "mean": 1.0
+      },
+      "worst": {
+        "name": "qwen3.5-35b-a3b",
+        "n": 436,
+        "coverage": 0.8384615384615385,
+        "mean": 0.0
+      },
+      "models": [
+        {
+          "name": "deepseek-r1-distill-qwen-32b",
+          "n": 444,
+          "coverage": 0.8538461538461538,
+          "mean": 1.0
+        },
+        {
+          "name": "llama-guard-4-12b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 1.0
+        },
+        {
+          "name": "hermes-3-llama-3.1-70b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.9769230769230769
+        },
+        {
+          "name": "minimax-01",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.9442307692307692
+        },
+        {
+          "name": "mythomax-l2-13b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.9326923076923077
+        },
+        {
+          "name": "hermes-2-pro-llama-3-8b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.8115384615384615
+        },
+        {
+          "name": "hermes-4-70b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.7730769230769231
+        },
+        {
+          "name": "deepseek-r1-distill-llama-70b",
+          "n": 476,
+          "coverage": 0.9153846153846154,
+          "mean": 0.7289915966386554
+        },
+        {
+          "name": "seed-2.0-lite",
+          "n": 517,
+          "coverage": 0.9942307692307693,
+          "mean": 0.6441005802707931
+        },
+        {
+          "name": "reka-flash-3",
+          "n": 238,
+          "coverage": 0.4576923076923077,
+          "mean": 0.6134453781512605
+        },
+        {
+          "name": "seed-1.6",
+          "n": 517,
+          "coverage": 0.9942307692307693,
+          "mean": 0.6073500967117988
+        },
+        {
+          "name": "ministral-3b-2512",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.5923076923076923
+        },
+        {
+          "name": "reka-edge",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.4461538461538462
+        },
+        {
+          "name": "ministral-8b-2512",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.4346153846153846
+        },
+        {
+          "name": "llama-3.3-70b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.40192307692307694
+        },
+        {
+          "name": "minimax-m2-her",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.39615384615384613
+        },
+        {
+          "name": "glm-4.6",
+          "n": 511,
+          "coverage": 0.9826923076923076,
+          "mean": 0.37181996086105673
+        },
+        {
+          "name": "devstral-small",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.3576923076923077
+        },
+        {
+          "name": "hermes-4-405b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.35384615384615387
+        },
+        {
+          "name": "nova-lite-v1",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.3346153846153846
+        },
+        {
+          "name": "codestral-2508",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.31346153846153846
+        },
+        {
+          "name": "gemma-3n-e4b-it",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.3096153846153846
+        },
+        {
+          "name": "seed-1.6-flash",
+          "n": 516,
+          "coverage": 0.9923076923076923,
+          "mean": 0.3062015503875969
+        },
+        {
+          "name": "voxtral-small-24b-2507",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.29615384615384616
+        },
+        {
+          "name": "intellect-3",
+          "n": 464,
+          "coverage": 0.8923076923076924,
+          "mean": 0.22413793103448276
+        },
+        {
+          "name": "mistral-7b-instruct-v0.1",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.2230769230769231
+        },
+        {
+          "name": "mistral-small-3.1-24b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.21923076923076923
+        },
+        {
+          "name": "mistral-nemo",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.2076923076923077
+        },
+        {
+          "name": "step-3.7-flash",
+          "n": 443,
+          "coverage": 0.8519230769230769,
+          "mean": 0.1963882618510158
+        },
+        {
+          "name": "llama-4-scout",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.18269230769230768
+        },
+        {
+          "name": "gpt-3.5-turbo",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.17884615384615385
+        },
+        {
+          "name": "qwen3-14b",
+          "n": 518,
+          "coverage": 0.9961538461538462,
+          "mean": 0.1718146718146718
+        },
+        {
+          "name": "deepseek-chat-v3-0324",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.16346153846153846
+        },
+        {
+          "name": "mistral-medium-3.1",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.16346153846153846
+        },
+        {
+          "name": "rocinante-12b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.16346153846153846
+        },
+        {
+          "name": "qwen3-32b",
+          "n": 515,
+          "coverage": 0.9903846153846154,
+          "mean": 0.16310679611650486
+        },
+        {
+          "name": "deepseek-chat-v3",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.15576923076923077
+        },
+        {
+          "name": "ministral-14b-2512",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.14615384615384616
+        },
+        {
+          "name": "llama-3.3-nemotron-super-49b-v1.5",
+          "n": 482,
+          "coverage": 0.926923076923077,
+          "mean": 0.14522821576763487
+        },
+        {
+          "name": "llama-3.1-70b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.14423076923076922
+        },
+        {
+          "name": "glm-4.5-air",
+          "n": 502,
+          "coverage": 0.9653846153846154,
+          "mean": 0.14143426294820718
+        },
+        {
+          "name": "mistral-medium-3",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.14038461538461539
+        },
+        {
+          "name": "qwen3-8b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.13653846153846153
+        },
+        {
+          "name": "gemma-3-27b-it",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.1346153846153846
+        },
+        {
+          "name": "mistral-large-2512",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.1346153846153846
+        },
+        {
+          "name": "step-3.5-flash",
+          "n": 468,
+          "coverage": 0.9,
+          "mean": 0.13034188034188035
+        },
+        {
+          "name": "qwen-2.5-72b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.11923076923076924
+        },
+        {
+          "name": "gpt-3.5-turbo-16k",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.11730769230769231
+        },
+        {
+          "name": "ling-2.6-1t",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.11730769230769231
+        },
+        {
+          "name": "l3-lunaris-8b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.11346153846153846
+        },
+        {
+          "name": "nova-micro-v1",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.11346153846153846
+        },
+        {
+          "name": "grok-build-0.1",
+          "n": 487,
+          "coverage": 0.9365384615384615,
+          "mean": 0.10677618069815195
+        },
+        {
+          "name": "mistral-small-3.2-24b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.09807692307692308
+        },
+        {
+          "name": "qwen3-235b-a22b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.09423076923076923
+        },
+        {
+          "name": "trinity-mini",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.09423076923076923
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.09230769230769231
+        },
+        {
+          "name": "glm-4.5v",
+          "n": 507,
+          "coverage": 0.975,
+          "mean": 0.07692307692307693
+        },
+        {
+          "name": "qwen3-coder-plus",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.07692307692307693
+        },
+        {
+          "name": "mimo-v2.5-pro",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.07307692307692308
+        },
+        {
+          "name": "mimo-v2.5",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.06923076923076923
+        },
+        {
+          "name": "devstral-2512",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0673076923076923
+        },
+        {
+          "name": "deepseek-v3.2",
+          "n": 518,
+          "coverage": 0.9961538461538462,
+          "mean": 0.06563706563706563
+        },
+        {
+          "name": "gpt-4o-mini",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.06346153846153846
+        },
+        {
+          "name": "mistral-saba",
+          "n": 519,
+          "coverage": 0.9980769230769231,
+          "mean": 0.06165703275529865
+        },
+        {
+          "name": "gpt-4o-mini-2024-07-18",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.06153846153846154
+        },
+        {
+          "name": "glm-4.5",
+          "n": 490,
+          "coverage": 0.9423076923076923,
+          "mean": 0.05918367346938776
+        },
+        {
+          "name": "grok-4.3",
+          "n": 509,
+          "coverage": 0.9788461538461538,
+          "mean": 0.05893909626719057
+        },
+        {
+          "name": "gemini-3-flash-preview",
+          "n": 516,
+          "coverage": 0.9923076923076923,
+          "mean": 0.05813953488372093
+        },
+        {
+          "name": "gemini-3.1-flash-lite-preview",
+          "n": 516,
+          "coverage": 0.9923076923076923,
+          "mean": 0.05813953488372093
+        },
+        {
+          "name": "deepseek-v3.2-exp",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.057692307692307696
+        },
+        {
+          "name": "gemini-3.1-flash-lite",
+          "n": 516,
+          "coverage": 0.9923076923076923,
+          "mean": 0.0562015503875969
+        },
+        {
+          "name": "llama-4-maverick",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.05576923076923077
+        },
+        {
+          "name": "deepseek-chat-v3.1",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.05384615384615385
+        },
+        {
+          "name": "gpt-3.5-turbo-0613",
+          "n": 434,
+          "coverage": 0.8346153846153846,
+          "mean": 0.05069124423963134
+        },
+        {
+          "name": "gemini-2.5-flash-lite-preview-09-2025",
+          "n": 515,
+          "coverage": 0.9903846153846154,
+          "mean": 0.04854368932038835
+        },
+        {
+          "name": "deepseek-chat",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.04807692307692308
+        },
+        {
+          "name": "deepseek-v3.1-terminus",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.04807692307692308
+        },
+        {
+          "name": "mixtral-8x22b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.04807692307692308
+        },
+        {
+          "name": "gemini-2.5-pro",
+          "n": 509,
+          "coverage": 0.9788461538461538,
+          "mean": 0.047151277013752456
+        },
+        {
+          "name": "minimax-m2.7",
+          "n": 512,
+          "coverage": 0.9846153846153847,
+          "mean": 0.046875
+        },
+        {
+          "name": "gpt-4o",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.046153846153846156
+        },
+        {
+          "name": "granite-4.1-8b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.046153846153846156
+        },
+        {
+          "name": "ling-2.6-flash",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.04423076923076923
+        },
+        {
+          "name": "nemotron-nano-9b-v2",
+          "n": 516,
+          "coverage": 0.9923076923076923,
+          "mean": 0.040697674418604654
+        },
+        {
+          "name": "gemma-3-12b-it",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.04038461538461539
+        },
+        {
+          "name": "hunyuan-a13b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.04038461538461539
+        },
+        {
+          "name": "mistral-small-2603",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.04038461538461539
+        },
+        {
+          "name": "lfm-2-24b-a2b-20260224",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.038461538461538464
+        },
+        {
+          "name": "lfm-2-24b-a2b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.03653846153846154
+        },
+        {
+          "name": "rnj-1-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.03653846153846154
+        },
+        {
+          "name": "kimi-k2",
+          "n": 519,
+          "coverage": 0.9980769230769231,
+          "mean": 0.03468208092485549
+        },
+        {
+          "name": "deepseek-v4-pro",
+          "n": 519,
+          "coverage": 0.9980769230769231,
+          "mean": 0.03275529865125241
+        },
+        {
+          "name": "gpt-4.1-nano",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.032692307692307694
+        },
+        {
+          "name": "kimi-k2-0905",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.032692307692307694
+        },
+        {
+          "name": "nemotron-3-nano-30b-a3b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.032692307692307694
+        },
+        {
+          "name": "minimax-m2",
+          "n": 515,
+          "coverage": 0.9903846153846154,
+          "mean": 0.031067961165048542
+        },
+        {
+          "name": "minimax-m2.5",
+          "n": 516,
+          "coverage": 0.9923076923076923,
+          "mean": 0.029069767441860465
+        },
+        {
+          "name": "qwen-plus-2025-07-28",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.028846153846153848
+        },
+        {
+          "name": "glm-5",
+          "n": 441,
+          "coverage": 0.8480769230769231,
+          "mean": 0.027210884353741496
+        },
+        {
+          "name": "qwen3-coder",
+          "n": 481,
+          "coverage": 0.925,
+          "mean": 0.02702702702702703
+        },
+        {
+          "name": "gemma-3-4b-it",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.026923076923076925
+        },
+        {
+          "name": "llama-3-70b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.026923076923076925
+        },
+        {
+          "name": "llama-3.2-3b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.026923076923076925
+        },
+        {
+          "name": "qwen3-30b-a3b-thinking-2507",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.026923076923076925
+        },
+        {
+          "name": "hy3-preview",
+          "n": 514,
+          "coverage": 0.9884615384615385,
+          "mean": 0.02529182879377432
+        },
+        {
+          "name": "command-r7b-12-2024",
+          "n": 411,
+          "coverage": 0.7903846153846154,
+          "mean": 0.024330900243309004
+        },
+        {
+          "name": "command-r-08-2024",
+          "n": 412,
+          "coverage": 0.7923076923076923,
+          "mean": 0.024271844660194174
+        },
+        {
+          "name": "gemini-2.0-flash-001",
+          "n": 515,
+          "coverage": 0.9903846153846154,
+          "mean": 0.02330097087378641
+        },
+        {
+          "name": "minimax-m2.1",
+          "n": 519,
+          "coverage": 0.9980769230769231,
+          "mean": 0.023121387283236993
+        },
+        {
+          "name": "claude-haiku-4.5",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.023076923076923078
+        },
+        {
+          "name": "llama-3.2-11b-vision-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.023076923076923078
+        },
+        {
+          "name": "qwen-2.5-7b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.023076923076923078
+        },
+        {
+          "name": "qwen3-235b-a22b-2507",
+          "n": 518,
+          "coverage": 0.9961538461538462,
+          "mean": 0.021235521235521235
+        },
+        {
+          "name": "deepseek-v4-flash",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.021153846153846155
+        },
+        {
+          "name": "qwen-2.5-coder-32b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.021153846153846155
+        },
+        {
+          "name": "grok-4.20",
+          "n": 509,
+          "coverage": 0.9788461538461538,
+          "mean": 0.019646365422396856
+        },
+        {
+          "name": "kimi-k2.5",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.019230769230769232
+        },
+        {
+          "name": "ui-tars-1.5-7b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.019230769230769232
+        },
+        {
+          "name": "claude-sonnet-4.5",
+          "n": 500,
+          "coverage": 0.9615384615384616,
+          "mean": 0.018
+        },
+        {
+          "name": "glm-5.1",
+          "n": 507,
+          "coverage": 0.975,
+          "mean": 0.01775147928994083
+        },
+        {
+          "name": "mistral-small-24b-instruct-2501",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.01730769230769231
+        },
+        {
+          "name": "claude-3.5-haiku",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.015384615384615385
+        },
+        {
+          "name": "kat-coder-pro-v2",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.015384615384615385
+        },
+        {
+          "name": "phi-4",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.015384615384615385
+        },
+        {
+          "name": "gemini-2.5-flash-lite",
+          "n": 515,
+          "coverage": 0.9903846153846154,
+          "mean": 0.013592233009708738
+        },
+        {
+          "name": "qwen3-next-80b-a3b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.013461538461538462
+        },
+        {
+          "name": "qwen3-vl-235b-a22b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.013461538461538462
+        },
+        {
+          "name": "solar-pro-3",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.013461538461538462
+        },
+        {
+          "name": "kimi-k2.6",
+          "n": 519,
+          "coverage": 0.9980769230769231,
+          "mean": 0.011560693641618497
+        },
+        {
+          "name": "gpt-4-turbo",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.011538461538461539
+        },
+        {
+          "name": "llama-3-8b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.011538461538461539
+        },
+        {
+          "name": "llama-3.1-8b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.011538461538461539
+        },
+        {
+          "name": "qwen3-coder-next",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.011538461538461539
+        },
+        {
+          "name": "glm-4-32b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.009615384615384616
+        },
+        {
+          "name": "llama-3.2-1b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.009615384615384616
+        },
+        {
+          "name": "qwen3-coder-30b-a3b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.009615384615384616
+        },
+        {
+          "name": "qwen3-coder-flash",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.009615384615384616
+        },
+        {
+          "name": "qwen3.5-plus-20260420",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.009615384615384616
+        },
+        {
+          "name": "qwen3.6-flash",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.009615384615384616
+        },
+        {
+          "name": "qwen3.5-397b-a17b",
+          "n": 468,
+          "coverage": 0.9,
+          "mean": 0.008547008547008548
+        },
+        {
+          "name": "qwen3.5-flash-02-23",
+          "n": 499,
+          "coverage": 0.9596153846153846,
+          "mean": 0.008016032064128256
+        },
+        {
+          "name": "gemini-2.0-flash-lite-001",
+          "n": 515,
+          "coverage": 0.9903846153846154,
+          "mean": 0.007766990291262136
+        },
+        {
+          "name": "gemini-2.5-flash",
+          "n": 515,
+          "coverage": 0.9903846153846154,
+          "mean": 0.007766990291262136
+        },
+        {
+          "name": "gpt-oss-120b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.007692307692307693
+        },
+        {
+          "name": "granite-4.0-h-micro",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.007692307692307693
+        },
+        {
+          "name": "hermes-3-llama-3.1-405b",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.007692307692307693
+        },
+        {
+          "name": "qwen3-vl-8b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.007692307692307693
+        },
+        {
+          "name": "sonar",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.007692307692307693
+        },
+        {
+          "name": "glm-4.7-flash",
+          "n": 439,
+          "coverage": 0.8442307692307692,
+          "mean": 0.00683371298405467
+        },
+        {
+          "name": "glm-5v-turbo",
+          "n": 474,
+          "coverage": 0.9115384615384615,
+          "mean": 0.006329113924050633
+        },
+        {
+          "name": "qwen3.5-122b-a10b",
+          "n": 486,
+          "coverage": 0.9346153846153846,
+          "mean": 0.006172839506172839
+        },
+        {
+          "name": "glm-5-turbo",
+          "n": 495,
+          "coverage": 0.9519230769230769,
+          "mean": 0.006060606060606061
+        },
+        {
+          "name": "qwen3.6-27b",
+          "n": 518,
+          "coverage": 0.9961538461538462,
+          "mean": 0.005791505791505791
+        },
+        {
+          "name": "wizardlm-2-8x22b",
+          "n": 518,
+          "coverage": 0.9961538461538462,
+          "mean": 0.005791505791505791
+        },
+        {
+          "name": "o4-mini",
+          "n": 519,
+          "coverage": 0.9980769230769231,
+          "mean": 0.005780346820809248
+        },
+        {
+          "name": "qwen3.5-plus-02-15",
+          "n": 519,
+          "coverage": 0.9980769230769231,
+          "mean": 0.005780346820809248
+        },
+        {
+          "name": "gemma-2-27b-it",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0057692307692307696
+        },
+        {
+          "name": "perceptron-mk1",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0057692307692307696
+        },
+        {
+          "name": "qwen3.6-plus",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0057692307692307696
+        },
+        {
+          "name": "glm-4.7",
+          "n": 428,
+          "coverage": 0.823076923076923,
+          "mean": 0.004672897196261682
+        },
+        {
+          "name": "gpt-5-mini",
+          "n": 481,
+          "coverage": 0.925,
+          "mean": 0.004158004158004158
+        },
+        {
+          "name": "qwen3.5-27b",
+          "n": 495,
+          "coverage": 0.9519230769230769,
+          "mean": 0.00404040404040404
+        },
+        {
+          "name": "deepseek-v3.1-nex-n1",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0038461538461538464
+        },
+        {
+          "name": "gemma-4-26b-a4b-it",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0038461538461538464
+        },
+        {
+          "name": "gpt-5.4-nano",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0038461538461538464
+        },
+        {
+          "name": "nova-2-lite-v1",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0038461538461538464
+        },
+        {
+          "name": "phi-4-mini-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0038461538461538464
+        },
+        {
+          "name": "qwen3-30b-a3b-instruct-2507",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0038461538461538464
+        },
+        {
+          "name": "qwen3-vl-32b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0038461538461538464
+        },
+        {
+          "name": "glm-4.6v",
+          "n": 318,
+          "coverage": 0.6115384615384616,
+          "mean": 0.0031446540880503146
+        },
+        {
+          "name": "qwen3.6-35b-a3b",
+          "n": 512,
+          "coverage": 0.9846153846153847,
+          "mean": 0.001953125
+        },
+        {
+          "name": "o3-mini",
+          "n": 515,
+          "coverage": 0.9903846153846154,
+          "mean": 0.001941747572815534
+        },
+        {
+          "name": "qwen-plus",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0019230769230769232
+        },
+        {
+          "name": "qwen2.5-vl-72b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0019230769230769232
+        },
+        {
+          "name": "qwen3-vl-30b-a3b-instruct",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0019230769230769232
+        },
+        {
+          "name": "claude-3-haiku",
+          "n": 516,
+          "coverage": 0.9923076923076923,
+          "mean": 0.0
+        },
+        {
+          "name": "gpt-oss-20b",
+          "n": 509,
+          "coverage": 0.9788461538461538,
+          "mean": 0.0
+        },
+        {
+          "name": "mimo-v2-flash",
+          "n": 520,
+          "coverage": 1.0,
+          "mean": 0.0
+        },
+        {
+          "name": "qwen3.5-35b-a3b",
+          "n": 436,
+          "coverage": 0.8384615384615385,
+          "mean": 0.0
+        }
+      ],
+      "split": "advbench"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "advbench",
+  "computedAt": "2026-09-29T22:19:49.023021+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/advbench/0000.parquet",
+        "rows": 520,
+        "bytes": 43041,
+        "sha256": "717a2f1729fe247156433897efd37aba0dd3ab20f43aab355553cb6555f6c75c"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/advbench/0000.parquet",
+        "rows": 91073,
+        "bytes": 39727718,
+        "sha256": "e92d2088d8eb422a1ff8428c32e0bf52e642970072f70ac8499cb678f52933e3"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

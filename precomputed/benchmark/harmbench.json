@@ -1,0 +1,3081 @@
+{
+  "itemCount": 400,
+  "responseCount": 87762,
+  "distinctModelCount": 252,
+  "distinctModelItemPairs": 80222,
+  "duplicateResponsesRemoved": 7540,
+  "conflictingDuplicateRows": 0,
+  "conflictingDuplicateExamples": [],
+  "measurements": [
+    {
+      "metrics": [
+        "haiku-llm-judge"
+      ],
+      "itemCount": 400,
+      "totalResponses": 87762,
+      "loadedResponses": 87762,
+      "minimumItems": 40,
+      "modelCount": 155,
+      "scoredResponses": 43423,
+      "excludedModelCount": 97,
+      "avgScore": 0.15515995600982976,
+      "medianScore": 0.11333333333333333,
+      "standardError": 0.012228216947818553,
+      "discrimination": 0.15174818159480263,
+      "refCoverage": 0.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "hermes-2-pro-llama-3-8b",
+        "n": 300,
+        "coverage": 0.75,
+        "mean": 0.69
+      },
+      "worst": {
+        "name": "step-3.7-flash",
+        "n": 188,
+        "coverage": 0.47,
+        "mean": 0.0
+      },
+      "models": [
+        {
+          "name": "hermes-2-pro-llama-3-8b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.69
+        },
+        {
+          "name": "mythomax-l2-13b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.6533333333333333
+        },
+        {
+          "name": "hermes-4-70b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.58
+        },
+        {
+          "name": "rocinante-12b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.5633333333333334
+        },
+        {
+          "name": "codestral-2508",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.5433333333333333
+        },
+        {
+          "name": "hermes-4-405b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.5133333333333333
+        },
+        {
+          "name": "mistral-nemo",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.4533333333333333
+        },
+        {
+          "name": "voxtral-small-24b-2507",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.43333333333333335
+        },
+        {
+          "name": "ministral-3b-2512",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.4266666666666667
+        },
+        {
+          "name": "mistral-small-3.2-24b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.42333333333333334
+        },
+        {
+          "name": "l3-lunaris-8b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.41333333333333333
+        },
+        {
+          "name": "reka-edge",
+          "n": 298,
+          "coverage": 0.745,
+          "mean": 0.40268456375838924
+        },
+        {
+          "name": "gpt-3.5-turbo",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.39666666666666667
+        },
+        {
+          "name": "mistral-large-2512",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.39666666666666667
+        },
+        {
+          "name": "devstral-small",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.3933333333333333
+        },
+        {
+          "name": "mistral-saba",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.3933333333333333
+        },
+        {
+          "name": "ministral-8b-2512",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.39
+        },
+        {
+          "name": "mistral-small-2603",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.38333333333333336
+        },
+        {
+          "name": "mistral-large",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.37666666666666665
+        },
+        {
+          "name": "mistral-medium-3",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.37333333333333335
+        },
+        {
+          "name": "ministral-14b-2512",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.3566666666666667
+        },
+        {
+          "name": "qwen3-235b-a22b",
+          "n": 297,
+          "coverage": 0.7425,
+          "mean": 0.3501683501683502
+        },
+        {
+          "name": "devstral-2512",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.35
+        },
+        {
+          "name": "deepseek-chat-v3-0324",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.34
+        },
+        {
+          "name": "mistral-medium-3.1",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.33
+        },
+        {
+          "name": "hermes-3-llama-3.1-70b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.32666666666666666
+        },
+        {
+          "name": "rnj-1-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.31666666666666665
+        },
+        {
+          "name": "qwen3-8b",
+          "n": 299,
+          "coverage": 0.7475,
+          "mean": 0.28762541806020064
+        },
+        {
+          "name": "gpt-3.5-turbo-16k",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.2833333333333333
+        },
+        {
+          "name": "command-r7b-12-2024",
+          "n": 242,
+          "coverage": 0.605,
+          "mean": 0.2809917355371901
+        },
+        {
+          "name": "gemma-3-4b-it",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.2633333333333333
+        },
+        {
+          "name": "deepseek-r1-distill-llama-70b",
+          "n": 267,
+          "coverage": 0.6675,
+          "mean": 0.26217228464419473
+        },
+        {
+          "name": "deepseek-chat-v3.1",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.25666666666666665
+        },
+        {
+          "name": "gemma-3-12b-it",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.25666666666666665
+        },
+        {
+          "name": "qwen3-32b",
+          "n": 270,
+          "coverage": 0.675,
+          "mean": 0.25555555555555554
+        },
+        {
+          "name": "glm-4.5-air",
+          "n": 275,
+          "coverage": 0.6875,
+          "mean": 0.2545454545454545
+        },
+        {
+          "name": "lfm-2-24b-a2b-20260224",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.24
+        },
+        {
+          "name": "command-r-08-2024",
+          "n": 242,
+          "coverage": 0.605,
+          "mean": 0.2396694214876033
+        },
+        {
+          "name": "lfm-2-24b-a2b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.23666666666666666
+        },
+        {
+          "name": "deepseek-r1-distill-qwen-32b",
+          "n": 222,
+          "coverage": 0.555,
+          "mean": 0.22972972972972974
+        },
+        {
+          "name": "deepseek-v3.1-terminus",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.22333333333333333
+        },
+        {
+          "name": "deepseek-v3.2-exp",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.21666666666666667
+        },
+        {
+          "name": "minimax-01",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.21666666666666667
+        },
+        {
+          "name": "gemma-3-27b-it",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.21333333333333335
+        },
+        {
+          "name": "qwen-2.5-7b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.21
+        },
+        {
+          "name": "perceptron-mk1",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.2
+        },
+        {
+          "name": "qwen-2.5-72b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.19666666666666666
+        },
+        {
+          "name": "seed-1.6-flash",
+          "n": 282,
+          "coverage": 0.705,
+          "mean": 0.1950354609929078
+        },
+        {
+          "name": "solar-pro-3",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.18666666666666668
+        },
+        {
+          "name": "qwen3-14b",
+          "n": 272,
+          "coverage": 0.68,
+          "mean": 0.18382352941176472
+        },
+        {
+          "name": "trinity-mini",
+          "n": 290,
+          "coverage": 0.725,
+          "mean": 0.18275862068965518
+        },
+        {
+          "name": "granite-4.1-8b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.18
+        },
+        {
+          "name": "minimax-m2-her",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.18
+        },
+        {
+          "name": "gemini-2.5-flash-lite-preview-09-2025",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.17
+        },
+        {
+          "name": "deepseek-v4-pro",
+          "n": 281,
+          "coverage": 0.7025,
+          "mean": 0.16725978647686832
+        },
+        {
+          "name": "gemini-3.1-flash-lite",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.16
+        },
+        {
+          "name": "mistral-small-24b-instruct-2501",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.15666666666666668
+        },
+        {
+          "name": "ui-tars-1.5-7b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.15666666666666668
+        },
+        {
+          "name": "qwen3-30b-a3b",
+          "n": 256,
+          "coverage": 0.64,
+          "mean": 0.15625
+        },
+        {
+          "name": "gemini-3.1-flash-lite-preview",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.15333333333333332
+        },
+        {
+          "name": "gemini-2.0-flash-001",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.15
+        },
+        {
+          "name": "nova-micro-v1",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.15
+        },
+        {
+          "name": "grok-4.20",
+          "n": 285,
+          "coverage": 0.7125,
+          "mean": 0.14736842105263157
+        },
+        {
+          "name": "grok-build-0.1",
+          "n": 283,
+          "coverage": 0.7075,
+          "mean": 0.14487632508833923
+        },
+        {
+          "name": "llama-4-maverick-17b-128e-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.14
+        },
+        {
+          "name": "nemotron-nano-9b-v2",
+          "n": 248,
+          "coverage": 0.62,
+          "mean": 0.13709677419354838
+        },
+        {
+          "name": "gemini-2.5-flash",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.13666666666666666
+        },
+        {
+          "name": "gemini-3-flash-preview",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.13666666666666666
+        },
+        {
+          "name": "nova-lite-v1",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.13333333333333333
+        },
+        {
+          "name": "glm-4.5v",
+          "n": 239,
+          "coverage": 0.5975,
+          "mean": 0.1297071129707113
+        },
+        {
+          "name": "llama-3.3-70b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.12666666666666668
+        },
+        {
+          "name": "glm-4.5",
+          "n": 254,
+          "coverage": 0.635,
+          "mean": 0.1220472440944882
+        },
+        {
+          "name": "hunyuan-a13b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.12
+        },
+        {
+          "name": "ling-2.6-flash",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.12
+        },
+        {
+          "name": "llama-3.3-nemotron-super-49b-v1.5",
+          "n": 193,
+          "coverage": 0.4825,
+          "mean": 0.11917098445595854
+        },
+        {
+          "name": "gemma-3n-e4b-it",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.11666666666666667
+        },
+        {
+          "name": "qwen3-vl-32b-instruct",
+          "n": 296,
+          "coverage": 0.74,
+          "mean": 0.11486486486486487
+        },
+        {
+          "name": "gemini-2.0-flash-lite-001",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.11333333333333333
+        },
+        {
+          "name": "qwen-2.5-coder-32b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.11333333333333333
+        },
+        {
+          "name": "qwen3-vl-30b-a3b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.11333333333333333
+        },
+        {
+          "name": "intellect-3",
+          "n": 253,
+          "coverage": 0.6325,
+          "mean": 0.1067193675889328
+        },
+        {
+          "name": "hermes-3-llama-3.1-405b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.10666666666666667
+        },
+        {
+          "name": "llama-3.2-3b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.1
+        },
+        {
+          "name": "glm-4.6",
+          "n": 294,
+          "coverage": 0.735,
+          "mean": 0.09863945578231292
+        },
+        {
+          "name": "phi-4-mini-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.09666666666666666
+        },
+        {
+          "name": "qwen3-30b-a3b-instruct-2507",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.09666666666666666
+        },
+        {
+          "name": "qwen3-coder-flash",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.09666666666666666
+        },
+        {
+          "name": "grok-4.3",
+          "n": 285,
+          "coverage": 0.7125,
+          "mean": 0.09473684210526316
+        },
+        {
+          "name": "qwen3-vl-235b-a22b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.09333333333333334
+        },
+        {
+          "name": "qwen3-30b-a3b-thinking-2507",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.08666666666666667
+        },
+        {
+          "name": "qwen3-coder-30b-a3b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.08666666666666667
+        },
+        {
+          "name": "kimi-k2-0905",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.08333333333333333
+        },
+        {
+          "name": "mimo-v2-flash",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.08333333333333333
+        },
+        {
+          "name": "qwen3-vl-8b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.08333333333333333
+        },
+        {
+          "name": "wizardlm-2-8x22b",
+          "n": 299,
+          "coverage": 0.7475,
+          "mean": 0.0802675585284281
+        },
+        {
+          "name": "kimi-k2.5",
+          "n": 289,
+          "coverage": 0.7225,
+          "mean": 0.06228373702422145
+        },
+        {
+          "name": "gemma-4-26b-a4b-it",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.06
+        },
+        {
+          "name": "kat-coder-pro-v2",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.06
+        },
+        {
+          "name": "mistral-small-3.1-24b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.06
+        },
+        {
+          "name": "qwen2.5-vl-72b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.06
+        },
+        {
+          "name": "mimo-v2.5",
+          "n": 299,
+          "coverage": 0.7475,
+          "mean": 0.056856187290969896
+        },
+        {
+          "name": "deepseek-v3.1-nex-n1",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.05333333333333334
+        },
+        {
+          "name": "seed-1.6",
+          "n": 284,
+          "coverage": 0.71,
+          "mean": 0.0528169014084507
+        },
+        {
+          "name": "qwen-plus-2025-07-28",
+          "n": 298,
+          "coverage": 0.745,
+          "mean": 0.050335570469798654
+        },
+        {
+          "name": "ling-2.6-1t",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.04666666666666667
+        },
+        {
+          "name": "llama-3.2-11b-vision-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.04666666666666667
+        },
+        {
+          "name": "inflection-3-pi",
+          "n": 43,
+          "coverage": 0.1075,
+          "mean": 0.046511627906976744
+        },
+        {
+          "name": "qwen-plus",
+          "n": 298,
+          "coverage": 0.745,
+          "mean": 0.0436241610738255
+        },
+        {
+          "name": "gemma-2-27b-it",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.043333333333333335
+        },
+        {
+          "name": "phi-4",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.043333333333333335
+        },
+        {
+          "name": "glm-4.7",
+          "n": 165,
+          "coverage": 0.4125,
+          "mean": 0.04242424242424243
+        },
+        {
+          "name": "qwen3.5-plus-20260420",
+          "n": 296,
+          "coverage": 0.74,
+          "mean": 0.037162162162162164
+        },
+        {
+          "name": "llama-3.2-1b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.03666666666666667
+        },
+        {
+          "name": "qwen3.6-flash",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.03666666666666667
+        },
+        {
+          "name": "seed-2.0-lite",
+          "n": 283,
+          "coverage": 0.7075,
+          "mean": 0.0353356890459364
+        },
+        {
+          "name": "qwen3-coder",
+          "n": 284,
+          "coverage": 0.71,
+          "mean": 0.035211267605633804
+        },
+        {
+          "name": "reka-flash-3",
+          "n": 58,
+          "coverage": 0.145,
+          "mean": 0.034482758620689655
+        },
+        {
+          "name": "claude-3.5-haiku",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.03333333333333333
+        },
+        {
+          "name": "qwen3-next-80b-a3b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.03333333333333333
+        },
+        {
+          "name": "nemotron-3-nano-30b-a3b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.03
+        },
+        {
+          "name": "qwen3-coder-next",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.02666666666666667
+        },
+        {
+          "name": "qwen3-coder-plus",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.02666666666666667
+        },
+        {
+          "name": "inflection-3-productivity",
+          "n": 41,
+          "coverage": 0.1025,
+          "mean": 0.024390243902439025
+        },
+        {
+          "name": "qwen3.6-plus",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.023333333333333334
+        },
+        {
+          "name": "step-3.5-flash",
+          "n": 218,
+          "coverage": 0.545,
+          "mean": 0.022935779816513763
+        },
+        {
+          "name": "kimi-k2.6",
+          "n": 268,
+          "coverage": 0.67,
+          "mean": 0.018656716417910446
+        },
+        {
+          "name": "mimo-v2.5-pro",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.016666666666666666
+        },
+        {
+          "name": "qwen3.5-flash-02-23",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.016666666666666666
+        },
+        {
+          "name": "qwen3.5-35b-a3b",
+          "n": 158,
+          "coverage": 0.395,
+          "mean": 0.012658227848101266
+        },
+        {
+          "name": "glm-5",
+          "n": 165,
+          "coverage": 0.4125,
+          "mean": 0.012121212121212121
+        },
+        {
+          "name": "minimax-m2.7",
+          "n": 281,
+          "coverage": 0.7025,
+          "mean": 0.010676156583629894
+        },
+        {
+          "name": "minimax-m2.1",
+          "n": 298,
+          "coverage": 0.745,
+          "mean": 0.010067114093959731
+        },
+        {
+          "name": "qwen3.5-plus-02-15",
+          "n": 299,
+          "coverage": 0.7475,
+          "mean": 0.010033444816053512
+        },
+        {
+          "name": "glm-4-32b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.01
+        },
+        {
+          "name": "nova-2-lite-v1",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.01
+        },
+        {
+          "name": "qwen3.5-122b-a10b",
+          "n": 239,
+          "coverage": 0.5975,
+          "mean": 0.008368200836820083
+        },
+        {
+          "name": "minimax-m2",
+          "n": 290,
+          "coverage": 0.725,
+          "mean": 0.006896551724137931
+        },
+        {
+          "name": "glm-4.6v",
+          "n": 160,
+          "coverage": 0.4,
+          "mean": 0.00625
+        },
+        {
+          "name": "glm-5v-turbo",
+          "n": 198,
+          "coverage": 0.495,
+          "mean": 0.005050505050505051
+        },
+        {
+          "name": "qwen3.5-397b-a17b",
+          "n": 221,
+          "coverage": 0.5525,
+          "mean": 0.004524886877828055
+        },
+        {
+          "name": "qwen3.5-27b",
+          "n": 240,
+          "coverage": 0.6,
+          "mean": 0.004166666666666667
+        },
+        {
+          "name": "hy3-preview",
+          "n": 244,
+          "coverage": 0.61,
+          "mean": 0.004098360655737705
+        },
+        {
+          "name": "glm-5.1",
+          "n": 249,
+          "coverage": 0.6225,
+          "mean": 0.004016064257028112
+        },
+        {
+          "name": "qwen3.6-35b-a3b",
+          "n": 269,
+          "coverage": 0.6725,
+          "mean": 0.0037174721189591076
+        },
+        {
+          "name": "qwen3.6-27b",
+          "n": 277,
+          "coverage": 0.6925,
+          "mean": 0.0036101083032490976
+        },
+        {
+          "name": "minimax-m2.5",
+          "n": 293,
+          "coverage": 0.7325,
+          "mean": 0.0034129692832764505
+        },
+        {
+          "name": "sonar",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.0033333333333333335
+        },
+        {
+          "name": "deepseek-v3.2",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.0
+        },
+        {
+          "name": "deepseek-v4-flash",
+          "n": 298,
+          "coverage": 0.745,
+          "mean": 0.0
+        },
+        {
+          "name": "gemini-2.5-pro",
+          "n": 295,
+          "coverage": 0.7375,
+          "mean": 0.0
+        },
+        {
+          "name": "glm-4.7-flash",
+          "n": 159,
+          "coverage": 0.3975,
+          "mean": 0.0
+        },
+        {
+          "name": "glm-5-turbo",
+          "n": 256,
+          "coverage": 0.64,
+          "mean": 0.0
+        },
+        {
+          "name": "llama-guard-4-12b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.0
+        },
+        {
+          "name": "qwen3-235b-a22b-instruct-2507",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.0
+        },
+        {
+          "name": "step-3.7-flash",
+          "n": 188,
+          "coverage": 0.47,
+          "mean": 0.0
+        }
+      ],
+      "split": "harmbench"
+    },
+    {
+      "metrics": [
+        "refusal-strings"
+      ],
+      "itemCount": 400,
+      "totalResponses": 87762,
+      "loadedResponses": 87762,
+      "minimumItems": 40,
+      "modelCount": 148,
+      "scoredResponses": 41938,
+      "excludedModelCount": 104,
+      "avgScore": 0.2800145176499794,
+      "medianScore": 0.20705673758865248,
+      "standardError": 0.019785926409834485,
+      "discrimination": 0.23989160871656534,
+      "refCoverage": 0.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "deepseek-r1-distill-qwen-32b",
+        "n": 222,
+        "coverage": 0.555,
+        "mean": 1.0
+      },
+      "worst": {
+        "name": "sonar",
+        "n": 300,
+        "coverage": 0.75,
+        "mean": 0.0033333333333333335
+      },
+      "models": [
+        {
+          "name": "deepseek-r1-distill-qwen-32b",
+          "n": 222,
+          "coverage": 0.555,
+          "mean": 1.0
+        },
+        {
+          "name": "llama-guard-4-12b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 1.0
+        },
+        {
+          "name": "hermes-3-llama-3.1-70b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.9366666666666666
+        },
+        {
+          "name": "mythomax-l2-13b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.8966666666666666
+        },
+        {
+          "name": "hermes-2-pro-llama-3-8b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.8666666666666667
+        },
+        {
+          "name": "minimax-01",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.8166666666666667
+        },
+        {
+          "name": "reka-flash-3",
+          "n": 246,
+          "coverage": 0.615,
+          "mean": 0.8048780487804879
+        },
+        {
+          "name": "ministral-3b-2512",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.76
+        },
+        {
+          "name": "deepseek-r1-distill-llama-70b",
+          "n": 267,
+          "coverage": 0.6675,
+          "mean": 0.7265917602996255
+        },
+        {
+          "name": "codestral-2508",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.69
+        },
+        {
+          "name": "voxtral-small-24b-2507",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.6866666666666666
+        },
+        {
+          "name": "ministral-8b-2512",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.6666666666666666
+        },
+        {
+          "name": "hermes-4-70b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.6533333333333333
+        },
+        {
+          "name": "devstral-small",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.6333333333333333
+        },
+        {
+          "name": "ministral-14b-2512",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.6333333333333333
+        },
+        {
+          "name": "rocinante-12b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.61
+        },
+        {
+          "name": "gpt-3.5-turbo",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.5833333333333334
+        },
+        {
+          "name": "mistral-nemo",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.5733333333333334
+        },
+        {
+          "name": "reka-edge",
+          "n": 298,
+          "coverage": 0.745,
+          "mean": 0.5704697986577181
+        },
+        {
+          "name": "mistral-medium-3.1",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.5666666666666667
+        },
+        {
+          "name": "seed-2.0-lite",
+          "n": 283,
+          "coverage": 0.7075,
+          "mean": 0.5653710247349824
+        },
+        {
+          "name": "seed-1.6-flash",
+          "n": 282,
+          "coverage": 0.705,
+          "mean": 0.5567375886524822
+        },
+        {
+          "name": "minimax-m2-her",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.5466666666666666
+        },
+        {
+          "name": "mistral-large-2512",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.53
+        },
+        {
+          "name": "hermes-4-405b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.52
+        },
+        {
+          "name": "mistral-medium-3",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.52
+        },
+        {
+          "name": "mistral-small-3.2-24b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.52
+        },
+        {
+          "name": "seed-1.6",
+          "n": 284,
+          "coverage": 0.71,
+          "mean": 0.5140845070422535
+        },
+        {
+          "name": "qwen3-8b",
+          "n": 299,
+          "coverage": 0.7475,
+          "mean": 0.5016722408026756
+        },
+        {
+          "name": "qwen3-32b",
+          "n": 270,
+          "coverage": 0.675,
+          "mean": 0.4740740740740741
+        },
+        {
+          "name": "deepseek-chat-v3-0324",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.47333333333333333
+        },
+        {
+          "name": "mistral-saba",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.47
+        },
+        {
+          "name": "gpt-3.5-turbo-16k",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.4666666666666667
+        },
+        {
+          "name": "lfm-2-24b-a2b-20260224",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.4666666666666667
+        },
+        {
+          "name": "l3-lunaris-8b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.45
+        },
+        {
+          "name": "mistral-small-2603",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.44
+        },
+        {
+          "name": "nova-micro-v1",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.44
+        },
+        {
+          "name": "qwen-2.5-72b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.44
+        },
+        {
+          "name": "rnj-1-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.43666666666666665
+        },
+        {
+          "name": "qwen3-14b",
+          "n": 272,
+          "coverage": 0.68,
+          "mean": 0.4338235294117647
+        },
+        {
+          "name": "devstral-2512",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.43333333333333335
+        },
+        {
+          "name": "lfm-2-24b-a2b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.43
+        },
+        {
+          "name": "nova-lite-v1",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.42
+        },
+        {
+          "name": "qwen3-235b-a22b",
+          "n": 297,
+          "coverage": 0.7425,
+          "mean": 0.4175084175084175
+        },
+        {
+          "name": "llama-3.3-70b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.39666666666666667
+        },
+        {
+          "name": "gemma-3-27b-it",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.3933333333333333
+        },
+        {
+          "name": "glm-4.6",
+          "n": 294,
+          "coverage": 0.735,
+          "mean": 0.36394557823129253
+        },
+        {
+          "name": "qwen-2.5-7b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.3466666666666667
+        },
+        {
+          "name": "qwen-2.5-coder-32b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.33666666666666667
+        },
+        {
+          "name": "deepseek-chat-v3.1",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.3333333333333333
+        },
+        {
+          "name": "deepseek-v3.2-exp",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.3233333333333333
+        },
+        {
+          "name": "llama-3.3-nemotron-super-49b-v1.5",
+          "n": 193,
+          "coverage": 0.4825,
+          "mean": 0.32124352331606215
+        },
+        {
+          "name": "gemini-2.5-pro",
+          "n": 295,
+          "coverage": 0.7375,
+          "mean": 0.30847457627118646
+        },
+        {
+          "name": "nemotron-nano-9b-v2",
+          "n": 248,
+          "coverage": 0.62,
+          "mean": 0.3064516129032258
+        },
+        {
+          "name": "trinity-mini",
+          "n": 290,
+          "coverage": 0.725,
+          "mean": 0.30344827586206896
+        },
+        {
+          "name": "granite-4.1-8b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.3
+        },
+        {
+          "name": "step-3.5-flash",
+          "n": 218,
+          "coverage": 0.545,
+          "mean": 0.2981651376146789
+        },
+        {
+          "name": "deepseek-v3.1-terminus",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.2966666666666667
+        },
+        {
+          "name": "gemma-3-12b-it",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.29333333333333333
+        },
+        {
+          "name": "glm-4.5-air",
+          "n": 275,
+          "coverage": 0.6875,
+          "mean": 0.2872727272727273
+        },
+        {
+          "name": "ui-tars-1.5-7b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.2866666666666667
+        },
+        {
+          "name": "deepseek-v3.2",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.27
+        },
+        {
+          "name": "gemma-3n-e4b-it",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.26666666666666666
+        },
+        {
+          "name": "deepseek-v4-flash",
+          "n": 298,
+          "coverage": 0.745,
+          "mean": 0.26174496644295303
+        },
+        {
+          "name": "gemma-3-4b-it",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.26
+        },
+        {
+          "name": "mimo-v2.5-pro",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.26
+        },
+        {
+          "name": "glm-4.5v",
+          "n": 239,
+          "coverage": 0.5975,
+          "mean": 0.2510460251046025
+        },
+        {
+          "name": "mistral-small-24b-instruct-2501",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.24666666666666667
+        },
+        {
+          "name": "llama-3.2-3b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.23333333333333334
+        },
+        {
+          "name": "deepseek-v4-pro",
+          "n": 281,
+          "coverage": 0.7025,
+          "mean": 0.22419928825622776
+        },
+        {
+          "name": "gemini-3.1-flash-lite",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.22
+        },
+        {
+          "name": "hunyuan-a13b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.21333333333333335
+        },
+        {
+          "name": "qwen3-vl-8b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.21
+        },
+        {
+          "name": "step-3.7-flash",
+          "n": 188,
+          "coverage": 0.47,
+          "mean": 0.2074468085106383
+        },
+        {
+          "name": "gemini-2.5-flash-lite-preview-09-2025",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.20666666666666667
+        },
+        {
+          "name": "llama-4-maverick-17b-128e-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.20333333333333334
+        },
+        {
+          "name": "perceptron-mk1",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.20333333333333334
+        },
+        {
+          "name": "gemini-3-flash-preview",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.2
+        },
+        {
+          "name": "gemini-3.1-flash-lite-preview",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.2
+        },
+        {
+          "name": "qwen3-vl-235b-a22b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.19666666666666666
+        },
+        {
+          "name": "qwen3-30b-a3b-thinking-2507",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.18333333333333332
+        },
+        {
+          "name": "intellect-3",
+          "n": 253,
+          "coverage": 0.6325,
+          "mean": 0.17786561264822134
+        },
+        {
+          "name": "grok-build-0.1",
+          "n": 283,
+          "coverage": 0.7075,
+          "mean": 0.17667844522968199
+        },
+        {
+          "name": "ling-2.6-flash",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.17666666666666667
+        },
+        {
+          "name": "mimo-v2.5",
+          "n": 299,
+          "coverage": 0.7475,
+          "mean": 0.17391304347826086
+        },
+        {
+          "name": "glm-4.5",
+          "n": 254,
+          "coverage": 0.635,
+          "mean": 0.16535433070866143
+        },
+        {
+          "name": "gemini-2.0-flash-001",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.16
+        },
+        {
+          "name": "grok-4.20",
+          "n": 285,
+          "coverage": 0.7125,
+          "mean": 0.1543859649122807
+        },
+        {
+          "name": "phi-4-mini-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.15
+        },
+        {
+          "name": "qwen3-vl-32b-instruct",
+          "n": 296,
+          "coverage": 0.74,
+          "mean": 0.14864864864864866
+        },
+        {
+          "name": "wizardlm-2-8x22b",
+          "n": 299,
+          "coverage": 0.7475,
+          "mean": 0.14715719063545152
+        },
+        {
+          "name": "qwen3-vl-30b-a3b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.14666666666666667
+        },
+        {
+          "name": "qwen3-coder-plus",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.14333333333333334
+        },
+        {
+          "name": "qwen3-30b-a3b-instruct-2507",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.13666666666666666
+        },
+        {
+          "name": "qwen-plus",
+          "n": 298,
+          "coverage": 0.745,
+          "mean": 0.1342281879194631
+        },
+        {
+          "name": "gemini-2.5-flash",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.13
+        },
+        {
+          "name": "grok-4.3",
+          "n": 285,
+          "coverage": 0.7125,
+          "mean": 0.12631578947368421
+        },
+        {
+          "name": "gemini-2.0-flash-lite-001",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.12333333333333334
+        },
+        {
+          "name": "glm-4-32b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.12
+        },
+        {
+          "name": "qwen-plus-2025-07-28",
+          "n": 298,
+          "coverage": 0.745,
+          "mean": 0.11409395973154363
+        },
+        {
+          "name": "phi-4",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.11333333333333333
+        },
+        {
+          "name": "hermes-3-llama-3.1-405b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.11
+        },
+        {
+          "name": "qwen3-235b-a22b-instruct-2507",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.10333333333333333
+        },
+        {
+          "name": "kat-coder-pro-v2",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.1
+        },
+        {
+          "name": "kimi-k2-0905",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.1
+        },
+        {
+          "name": "gemma-4-31b-it",
+          "n": 51,
+          "coverage": 0.1275,
+          "mean": 0.09803921568627451
+        },
+        {
+          "name": "qwen2.5-vl-72b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.09666666666666666
+        },
+        {
+          "name": "qwen3-coder-flash",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.09666666666666666
+        },
+        {
+          "name": "qwen3-next-80b-a3b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.09
+        },
+        {
+          "name": "qwen3-coder",
+          "n": 284,
+          "coverage": 0.71,
+          "mean": 0.0880281690140845
+        },
+        {
+          "name": "kimi-k2.5",
+          "n": 289,
+          "coverage": 0.7225,
+          "mean": 0.08304498269896193
+        },
+        {
+          "name": "qwen3-coder-30b-a3b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.08
+        },
+        {
+          "name": "qwen3-coder-next",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.08
+        },
+        {
+          "name": "ling-2.6-1t",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.07666666666666666
+        },
+        {
+          "name": "llama-3.2-11b-vision-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.07666666666666666
+        },
+        {
+          "name": "mimo-v2-flash",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.07666666666666666
+        },
+        {
+          "name": "gemma-2-27b-it",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.06666666666666667
+        },
+        {
+          "name": "llama-3.2-1b-instruct",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.06666666666666667
+        },
+        {
+          "name": "nemotron-3-nano-30b-a3b",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.06666666666666667
+        },
+        {
+          "name": "deepseek-v3.1-nex-n1",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.06333333333333334
+        },
+        {
+          "name": "glm-4.7",
+          "n": 165,
+          "coverage": 0.4125,
+          "mean": 0.05454545454545454
+        },
+        {
+          "name": "claude-3.5-haiku",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.05
+        },
+        {
+          "name": "hy3-preview",
+          "n": 244,
+          "coverage": 0.61,
+          "mean": 0.04918032786885246
+        },
+        {
+          "name": "qwen3.6-flash",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.04666666666666667
+        },
+        {
+          "name": "qwen3.5-plus-20260420",
+          "n": 296,
+          "coverage": 0.74,
+          "mean": 0.04391891891891892
+        },
+        {
+          "name": "gemma-4-26b-a4b-it",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.043333333333333335
+        },
+        {
+          "name": "minimax-m2",
+          "n": 290,
+          "coverage": 0.725,
+          "mean": 0.03793103448275862
+        },
+        {
+          "name": "kimi-k2.6",
+          "n": 268,
+          "coverage": 0.67,
+          "mean": 0.03731343283582089
+        },
+        {
+          "name": "minimax-m2.1",
+          "n": 298,
+          "coverage": 0.745,
+          "mean": 0.03691275167785235
+        },
+        {
+          "name": "glm-5.1",
+          "n": 249,
+          "coverage": 0.6225,
+          "mean": 0.0321285140562249
+        },
+        {
+          "name": "glm-4.7-flash",
+          "n": 159,
+          "coverage": 0.3975,
+          "mean": 0.031446540880503145
+        },
+        {
+          "name": "qwen3.6-plus",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.03
+        },
+        {
+          "name": "minimax-m2.7",
+          "n": 281,
+          "coverage": 0.7025,
+          "mean": 0.02491103202846975
+        },
+        {
+          "name": "glm-5",
+          "n": 165,
+          "coverage": 0.4125,
+          "mean": 0.024242424242424242
+        },
+        {
+          "name": "minimax-m2.5",
+          "n": 293,
+          "coverage": 0.7325,
+          "mean": 0.023890784982935155
+        },
+        {
+          "name": "glm-5-turbo",
+          "n": 256,
+          "coverage": 0.64,
+          "mean": 0.0234375
+        },
+        {
+          "name": "qwen3.5-flash-02-23",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.023333333333333334
+        },
+        {
+          "name": "glm-5v-turbo",
+          "n": 198,
+          "coverage": 0.495,
+          "mean": 0.020202020202020204
+        },
+        {
+          "name": "qwen3.6-27b",
+          "n": 277,
+          "coverage": 0.6925,
+          "mean": 0.018050541516245487
+        },
+        {
+          "name": "qwen3.5-122b-a10b",
+          "n": 239,
+          "coverage": 0.5975,
+          "mean": 0.016736401673640166
+        },
+        {
+          "name": "qwen3.5-plus-02-15",
+          "n": 299,
+          "coverage": 0.7475,
+          "mean": 0.016722408026755852
+        },
+        {
+          "name": "nova-2-lite-v1",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.016666666666666666
+        },
+        {
+          "name": "qwen3.5-35b-a3b",
+          "n": 158,
+          "coverage": 0.395,
+          "mean": 0.012658227848101266
+        },
+        {
+          "name": "qwen3.5-27b",
+          "n": 240,
+          "coverage": 0.6,
+          "mean": 0.0125
+        },
+        {
+          "name": "qwen3.5-397b-a17b",
+          "n": 221,
+          "coverage": 0.5525,
+          "mean": 0.00904977375565611
+        },
+        {
+          "name": "glm-4.6v",
+          "n": 160,
+          "coverage": 0.4,
+          "mean": 0.00625
+        },
+        {
+          "name": "qwen3.6-35b-a3b",
+          "n": 269,
+          "coverage": 0.6725,
+          "mean": 0.0037174721189591076
+        },
+        {
+          "name": "sonar",
+          "n": 300,
+          "coverage": 0.75,
+          "mean": 0.0033333333333333335
+        }
+      ],
+      "split": "harmbench"
+    },
+    {
+      "metrics": [
+        "safety_gpt_score"
+      ],
+      "itemCount": 400,
+      "totalResponses": 87762,
+      "loadedResponses": 87762,
+      "minimumItems": 40,
+      "modelCount": 93,
+      "scoredResponses": 36550,
+      "excludedModelCount": 159,
+      "avgScore": 0.7681720430107527,
+      "medianScore": 0.82125,
+      "standardError": 0.02086442186432601,
+      "discrimination": 0.20012450418525962,
+      "refCoverage": 0.0,
+      "bounded": true,
+      "binary": false,
+      "best": {
+        "name": "gpt-oss-120b",
+        "n": 400,
+        "coverage": 1.0,
+        "mean": 1.0
+      },
+      "worst": {
+        "name": "dbrx-instruct",
+        "n": 400,
+        "coverage": 1.0,
+        "mean": 0.22875
+      },
+      "models": [
+        {
+          "name": "gpt-oss-120b",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 1.0
+        },
+        {
+          "name": "gpt-5.2-pro-2025-12-11",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.995
+        },
+        {
+          "name": "claude-3-opus-20240229",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.99375
+        },
+        {
+          "name": "gpt-5.2-2025-12-11",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.99375
+        },
+        {
+          "name": "gpt-5.3-chat-latest",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.99375
+        },
+        {
+          "name": "claude-3-5-sonnet-20240620",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.9925
+        },
+        {
+          "name": "gpt-5.4-mini-2026-03-17",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.9925
+        },
+        {
+          "name": "gpt-5.4-2026-03-05",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.99
+        },
+        {
+          "name": "claude-3-sonnet-20240229",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.9875
+        },
+        {
+          "name": "gpt-5.4-nano-2026-03-17",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.98625
+        },
+        {
+          "name": "gpt-5-nano-2025-08-07",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.985
+        },
+        {
+          "name": "gpt-oss-20b",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.985
+        },
+        {
+          "name": "claude-sonnet-4-20250514-thinking-10k",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.98375
+        },
+        {
+          "name": "gpt-5.4-pro-2026-03-05",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.98375
+        },
+        {
+          "name": "o3-2025-04-16",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.9825
+        },
+        {
+          "name": "gpt-5.1-2025-11-13",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.98
+        },
+        {
+          "name": "gpt-5-2025-08-07",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.97875
+        },
+        {
+          "name": "claude-haiku-4-5-20251001",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.97625
+        },
+        {
+          "name": "gpt-5-mini-2025-08-07",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.9725
+        },
+        {
+          "name": "kimi-k2-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.9725
+        },
+        {
+          "name": "o4-mini-2025-04-16",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.97
+        },
+        {
+          "name": "claude-sonnet-4-20250514",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.96375
+        },
+        {
+          "name": "o1-2024-12-17",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.96125
+        },
+        {
+          "name": "claude-3-haiku-20240307",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.96
+        },
+        {
+          "name": "nova-premier-v1:0",
+          "n": 50,
+          "coverage": 0.125,
+          "mean": 0.96
+        },
+        {
+          "name": "gpt-4.5-preview-2025-02-27",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.9575
+        },
+        {
+          "name": "claude-opus-4-20250514-thinking-10k",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.95
+        },
+        {
+          "name": "o3-mini-2025-01-31",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.95
+        },
+        {
+          "name": "claude-sonnet-4-5-20250929",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.9275
+        },
+        {
+          "name": "claude-opus-4-20250514",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.92625
+        },
+        {
+          "name": "granite-3.3-8b-instruct-with-guardian",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.925
+        },
+        {
+          "name": "o1-mini-2024-09-12",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.9225
+        },
+        {
+          "name": "claude-3-7-sonnet-20250219",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.92125
+        },
+        {
+          "name": "gpt-4.1-2025-04-14",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.91125
+        },
+        {
+          "name": "gpt-4-turbo-2024-04-09",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.90625
+        },
+        {
+          "name": "palmyra-x5-v1-bedrock",
+          "n": 100,
+          "coverage": 0.25,
+          "mean": 0.895
+        },
+        {
+          "name": "granite-4.0-h-small-with-guardian",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.89
+        },
+        {
+          "name": "granite-4.0-micro-with-guardian",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.88125
+        },
+        {
+          "name": "palmyra-fin",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.87125
+        },
+        {
+          "name": "qwen3-next-80b-a3b-thinking",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.86625
+        },
+        {
+          "name": "gpt-4.1-nano-2025-04-14",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.86
+        },
+        {
+          "name": "gpt-4.1-mini-2025-04-14",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.8525
+        },
+        {
+          "name": "gpt-4o-mini-2024-07-18",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.8425
+        },
+        {
+          "name": "qwen3-235b-a22b-instruct-2507-fp8",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.84
+        },
+        {
+          "name": "olmo-2-0325-32b-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.835
+        },
+        {
+          "name": "gemini-1.5-flash-001",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.8275
+        },
+        {
+          "name": "gpt-4o-2024-05-13",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.82125
+        },
+        {
+          "name": "granite-3.3-8b-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.80625
+        },
+        {
+          "name": "gemini-1.5-pro-001",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.79375
+        },
+        {
+          "name": "qwen2-72b-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.77875
+        },
+        {
+          "name": "palmyra-x-004",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.76625
+        },
+        {
+          "name": "gemini-3-pro-preview",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.7525
+        },
+        {
+          "name": "marin-8b-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.75125
+        },
+        {
+          "name": "palmyra-x5",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.73625
+        },
+        {
+          "name": "granite-4.0-h-small",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.72625
+        },
+        {
+          "name": "llama-3-8b-chat",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.72375
+        },
+        {
+          "name": "granite-4.0-micro",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.71625
+        },
+        {
+          "name": "gpt-3.5-turbo-0613",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.69125
+        },
+        {
+          "name": "gpt-3.5-turbo-1106",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.67875
+        },
+        {
+          "name": "qwen1.5-72b-chat",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.67875
+        },
+        {
+          "name": "granite-3.3-8b-instruct-thinking-with-guardian",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.6775
+        },
+        {
+          "name": "gemini-2.5-flash-lite",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.675
+        },
+        {
+          "name": "gemini-2.5-pro-preview-03-25",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.66125
+        },
+        {
+          "name": "deepseek-llm-67b-chat",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.655
+        },
+        {
+          "name": "olmoe-1b-7b-0125-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.65125
+        },
+        {
+          "name": "llama-4-maverick-17b-128e-instruct-fp8",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.6475
+        },
+        {
+          "name": "llama-3.1-405b-instruct-turbo",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.63125
+        },
+        {
+          "name": "llama-3-70b-chat",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.6275
+        },
+        {
+          "name": "gemini-2.5-flash-preview-04-17",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.62125
+        },
+        {
+          "name": "gpt-3.5-turbo-0125",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.62
+        },
+        {
+          "name": "llama-3.1-8b-instruct-turbo",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.61625
+        },
+        {
+          "name": "grok-3-mini-beta",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.59875
+        },
+        {
+          "name": "qwen3-235b-a22b-fp8-tput",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.5925
+        },
+        {
+          "name": "llama-4-scout-17b-16e-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.59125
+        },
+        {
+          "name": "olmo-2-1124-7b-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.58875
+        },
+        {
+          "name": "granite-3.3-8b-instruct-thinking",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.55
+        },
+        {
+          "name": "palmyra-med",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.54625
+        },
+        {
+          "name": "glm-4.5-air-fp8",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.54
+        },
+        {
+          "name": "deepseek-r1-0528",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.53875
+        },
+        {
+          "name": "mixtral-8x22b-instruct-v0.1",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.53875
+        },
+        {
+          "name": "olmo-2-1124-13b-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.52875
+        },
+        {
+          "name": "deepseek-r1",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.51
+        },
+        {
+          "name": "deepseek-r1-hide-reasoning",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.50875
+        },
+        {
+          "name": "deepseek-v3",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.5025
+        },
+        {
+          "name": "command-r",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.49875
+        },
+        {
+          "name": "command-r-plus",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.4675
+        },
+        {
+          "name": "grok-3-beta",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.46
+        },
+        {
+          "name": "mixtral-8x7b-instruct-v0.1",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.44375
+        },
+        {
+          "name": "llama-3.1-70b-instruct-turbo",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.43
+        },
+        {
+          "name": "grok-4-0709",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.39875
+        },
+        {
+          "name": "mistral-7b-instruct-v0.3",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.33
+        },
+        {
+          "name": "mistral-7b-instruct-v0.1",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.24375
+        },
+        {
+          "name": "dbrx-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.22875
+        }
+      ],
+      "split": "harmbench"
+    },
+    {
+      "metrics": [
+        "safety_llama_score"
+      ],
+      "itemCount": 400,
+      "totalResponses": 87762,
+      "loadedResponses": 87762,
+      "minimumItems": 40,
+      "modelCount": 86,
+      "scoredResponses": 33735,
+      "excludedModelCount": 166,
+      "avgScore": 0.7327004935123405,
+      "medianScore": 0.75125,
+      "standardError": 0.02056625690310115,
+      "discrimination": 0.1896115198382478,
+      "refCoverage": 0.0,
+      "bounded": true,
+      "binary": false,
+      "best": {
+        "name": "gpt-oss-120b",
+        "n": 400,
+        "coverage": 1.0,
+        "mean": 1.0
+      },
+      "worst": {
+        "name": "mistral-7b-instruct-v0.1",
+        "n": 396,
+        "coverage": 0.99,
+        "mean": 0.2222222222222222
+      },
+      "models": [
+        {
+          "name": "gpt-oss-120b",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 1.0
+        },
+        {
+          "name": "gpt-oss-20b",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.98875
+        },
+        {
+          "name": "o3-2025-04-16",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.985
+        },
+        {
+          "name": "gpt-5-nano-2025-08-07",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.98375
+        },
+        {
+          "name": "claude-sonnet-4-20250514-thinking-10k",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.97625
+        },
+        {
+          "name": "kimi-k2-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.975
+        },
+        {
+          "name": "gpt-5-2025-08-07",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.97375
+        },
+        {
+          "name": "gpt-5.1-2025-11-13",
+          "n": 399,
+          "coverage": 0.9975,
+          "mean": 0.9711779448621554
+        },
+        {
+          "name": "o4-mini-2025-04-16",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.97
+        },
+        {
+          "name": "claude-3-5-sonnet-20240620",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.96875
+        },
+        {
+          "name": "gpt-5-mini-2025-08-07",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.96875
+        },
+        {
+          "name": "o1-2024-12-17",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.965
+        },
+        {
+          "name": "gpt-4.5-preview-2025-02-27",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.95875
+        },
+        {
+          "name": "claude-3-opus-20240229",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.955
+        },
+        {
+          "name": "o3-mini-2025-01-31",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.95375
+        },
+        {
+          "name": "claude-haiku-4-5-20251001",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.94125
+        },
+        {
+          "name": "nova-premier-v1:0",
+          "n": 50,
+          "coverage": 0.125,
+          "mean": 0.94
+        },
+        {
+          "name": "claude-3-sonnet-20240229",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.9275
+        },
+        {
+          "name": "gpt-4.1-2025-04-14",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.9225
+        },
+        {
+          "name": "claude-sonnet-4-20250514",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.91875
+        },
+        {
+          "name": "granite-3.3-8b-instruct-with-guardian",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.91375
+        },
+        {
+          "name": "claude-sonnet-4-5-20250929",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.9125
+        },
+        {
+          "name": "gpt-4-turbo-2024-04-09",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.89
+        },
+        {
+          "name": "claude-opus-4-20250514-thinking-10k",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.88375
+        },
+        {
+          "name": "gpt-4.1-nano-2025-04-14",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.875
+        },
+        {
+          "name": "claude-3-haiku-20240307",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.865
+        },
+        {
+          "name": "gpt-4.1-mini-2025-04-14",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.86
+        },
+        {
+          "name": "claude-opus-4-20250514",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.85625
+        },
+        {
+          "name": "gpt-4o-mini-2024-07-18",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.85625
+        },
+        {
+          "name": "o1-mini-2024-09-12",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.8475
+        },
+        {
+          "name": "olmo-2-0325-32b-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.84625
+        },
+        {
+          "name": "granite-4.0-micro-with-guardian",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "palmyra-x5-v1-bedrock",
+          "n": 100,
+          "coverage": 0.25,
+          "mean": 0.84
+        },
+        {
+          "name": "gpt-4o-2024-05-13",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.8375
+        },
+        {
+          "name": "granite-4.0-h-small-with-guardian",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.8375
+        },
+        {
+          "name": "qwen3-next-80b-a3b-thinking",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.825
+        },
+        {
+          "name": "granite-3.3-8b-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.8175
+        },
+        {
+          "name": "palmyra-fin",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.81
+        },
+        {
+          "name": "gemini-1.5-pro-001",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.80375
+        },
+        {
+          "name": "gemini-1.5-flash-001",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.7725
+        },
+        {
+          "name": "claude-3-7-sonnet-20250219",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.76375
+        },
+        {
+          "name": "qwen2-72b-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.75625
+        },
+        {
+          "name": "qwen3-235b-a22b-instruct-2507-fp8",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.7525
+        },
+        {
+          "name": "marin-8b-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "palmyra-x5",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.74
+        },
+        {
+          "name": "llama-3-8b-chat",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.73
+        },
+        {
+          "name": "palmyra-x-004",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.71
+        },
+        {
+          "name": "gemini-3-pro-preview",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.6975
+        },
+        {
+          "name": "granite-4.0-h-small",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.69625
+        },
+        {
+          "name": "gpt-3.5-turbo-1106",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.6925
+        },
+        {
+          "name": "granite-4.0-micro",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.67375
+        },
+        {
+          "name": "llama-4-maverick-17b-128e-instruct-fp8",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.67375
+        },
+        {
+          "name": "gpt-3.5-turbo-0613",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.66875
+        },
+        {
+          "name": "gemini-2.5-flash-lite",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.665
+        },
+        {
+          "name": "llama-3-70b-chat",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.6525
+        },
+        {
+          "name": "gemini-2.5-pro-preview-03-25",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.6475
+        },
+        {
+          "name": "gpt-3.5-turbo-0125",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.645
+        },
+        {
+          "name": "deepseek-llm-67b-chat",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.64375
+        },
+        {
+          "name": "gemini-2.5-flash-preview-04-17",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.63125
+        },
+        {
+          "name": "llama-3.1-405b-instruct-turbo",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.6225
+        },
+        {
+          "name": "qwen1.5-72b-chat",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.6175
+        },
+        {
+          "name": "llama-3.1-8b-instruct-turbo",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.61625
+        },
+        {
+          "name": "llama-4-scout-17b-16e-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.60875
+        },
+        {
+          "name": "olmoe-1b-7b-0125-instruct",
+          "n": 398,
+          "coverage": 0.995,
+          "mean": 0.6067839195979899
+        },
+        {
+          "name": "glm-4.5-air-fp8",
+          "n": 397,
+          "coverage": 0.9925,
+          "mean": 0.5831234256926953
+        },
+        {
+          "name": "olmo-2-1124-7b-instruct",
+          "n": 398,
+          "coverage": 0.995,
+          "mean": 0.5665829145728644
+        },
+        {
+          "name": "palmyra-med",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.56625
+        },
+        {
+          "name": "granite-3.3-8b-instruct-thinking-with-guardian",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.5575
+        },
+        {
+          "name": "deepseek-r1-0528",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.55375
+        },
+        {
+          "name": "qwen3-235b-a22b-fp8-tput",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.54625
+        },
+        {
+          "name": "grok-3-mini-beta",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.545
+        },
+        {
+          "name": "command-r",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.51
+        },
+        {
+          "name": "olmo-2-1124-13b-instruct",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.50875
+        },
+        {
+          "name": "llama-3.1-70b-instruct-turbo",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.5075
+        },
+        {
+          "name": "command-r-plus",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.5025
+        },
+        {
+          "name": "mixtral-8x22b-instruct-v0.1",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.5025
+        },
+        {
+          "name": "granite-3.3-8b-instruct-thinking",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.4975
+        },
+        {
+          "name": "deepseek-v3",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.49125
+        },
+        {
+          "name": "mixtral-8x7b-instruct-v0.1",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.45875
+        },
+        {
+          "name": "deepseek-r1-hide-reasoning",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.44875
+        },
+        {
+          "name": "grok-3-beta",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.44625
+        },
+        {
+          "name": "deepseek-r1",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.4325
+        },
+        {
+          "name": "grok-4-0709",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.395
+        },
+        {
+          "name": "mistral-7b-instruct-v0.3",
+          "n": 400,
+          "coverage": 1.0,
+          "mean": 0.3575
+        },
+        {
+          "name": "dbrx-instruct",
+          "n": 397,
+          "coverage": 0.9925,
+          "mean": 0.3136020151133501
+        },
+        {
+          "name": "mistral-7b-instruct-v0.1",
+          "n": 396,
+          "coverage": 0.99,
+          "mean": 0.2222222222222222
+        }
+      ],
+      "split": "harmbench"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "harmbench",
+  "computedAt": "2026-09-30T04:03:11.557126+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/harmbench/0000.parquet",
+        "rows": 400,
+        "bytes": 110984,
+        "sha256": "39608082126d77adbe468513ed4b45273dab94a6a410e17e02613015e7bc7c93"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/harmbench/0000.parquet",
+        "rows": 43881,
+        "bytes": 27099097,
+        "sha256": "9db67b1c45b3ba7412f01a368a4f7bbeb9dbf779c46a5be6e45d99658b635cd4"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/harmbench/0001.parquet",
+        "rows": 43881,
+        "bytes": 121309784,
+        "sha256": "ccc19777ee6bffcf5850acdeab65dc1cb2b08bd936d5d9bb5eb9e25729273eb0"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

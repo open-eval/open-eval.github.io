@@ -1,0 +1,398 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "bbq",
+  "computedAt": "2026-10-01T03:03:40.646780+00:00",
+  "summarySha256": "e179712dba68ddaf20028ab82620f308536a7b7c74b2ca795f0527aebe709d2d",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "f4718dd4fde9b35487b1a26bd87f6463b302c17d",
+    "observedMainRevision": "d53590ee001b44bf1b89ef03829d308ef91a3ac0",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/f4718dd4fde9b35487b1a26bd87f6463b302c17d/item/bbq/0000.parquet",
+        "rows": 58492,
+        "bytes": 5317201,
+        "sha256": "3793a92086afc40d911761105a2fc990db9ebd7e9aaa3bf600fd0dae676e1b9e"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/f4718dd4fde9b35487b1a26bd87f6463b302c17d/response/bbq/0000.parquet",
+        "rows": 500646,
+        "bytes": 20822006,
+        "sha256": "b62f74d92348fc0ec1c0107320297b44ab25c045307697003077c7dc9a603469"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/f4718dd4fde9b35487b1a26bd87f6463b302c17d/response/bbq/0001.parquet",
+        "rows": 500646,
+        "bytes": 20527734,
+        "sha256": "76de5124939a0576276ffed21595c1d52ab035bc0f9aa6ce5449165947691f9f"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/f4718dd4fde9b35487b1a26bd87f6463b302c17d/response/bbq/0002.parquet",
+        "rows": 500646,
+        "bytes": 20962020,
+        "sha256": "12561efa4ac85fd868417813458b3e920e36be19214dc4c0acc52f6cfec35609"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/f4718dd4fde9b35487b1a26bd87f6463b302c17d/response/bbq/0003.parquet",
+        "rows": 500645,
+        "bytes": 36281096,
+        "sha256": "1971c2a7d5caae50de1547bb8dce4c51d2be06187670c062a15c6914dac4f48b"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/f4718dd4fde9b35487b1a26bd87f6463b302c17d/response/bbq/0004.parquet",
+        "rows": 500645,
+        "bytes": 20788468,
+        "sha256": "f8b0d3c8356335731b782c5f3d22a8442e43a39337bb3123e6a733e5929066e6"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/f4718dd4fde9b35487b1a26bd87f6463b302c17d/response/bbq/0005.parquet",
+        "rows": 500645,
+        "bytes": 21283495,
+        "sha256": "a0ece89e7083005debf79f8db8e2fb395b2c33293802d76090f3e9b25cbb6dce"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/f4718dd4fde9b35487b1a26bd87f6463b302c17d/response/bbq/0006.parquet",
+        "rows": 500645,
+        "bytes": 20619504,
+        "sha256": "e3c8d9bf4684a36792473b0080c4f9cf2e15c72fdc316fc015035489e36ddddc"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/f4718dd4fde9b35487b1a26bd87f6463b302c17d/response/bbq/0007.parquet",
+        "rows": 500645,
+        "bytes": 21014253,
+        "sha256": "1c00b8fd258a6c3dae424ae579eb55ba5367c4302d42a985b5ca0c8f13c99b42"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/f4718dd4fde9b35487b1a26bd87f6463b302c17d/response/bbq/0008.parquet",
+        "rows": 500645,
+        "bytes": 21047728,
+        "sha256": "1b604c20173a232f4014f59728377bd12e1690e2b88ab4ffa55883fb49ff0e9a"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/f4718dd4fde9b35487b1a26bd87f6463b302c17d/response/bbq/0009.parquet",
+        "rows": 500645,
+        "bytes": 20663571,
+        "sha256": "11d9c8988cd456f18f38c978604864b150e891733f60fb19ab6291346d00e514"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/f4718dd4fde9b35487b1a26bd87f6463b302c17d/response/bbq/0010.parquet",
+        "rows": 500645,
+        "bytes": 20934484,
+        "sha256": "154a23617c184b5ff68f989a895ca74293a68c614391b8b5c40ce4d65cd96145"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/f4718dd4fde9b35487b1a26bd87f6463b302c17d/response/bbq/0011.parquet",
+        "rows": 500645,
+        "bytes": 21733230,
+        "sha256": "f2ae7ac5db5d6d96700a2a9c4dec5ad46712a730ff7f3cdfa281f9a700704121"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/f4718dd4fde9b35487b1a26bd87f6463b302c17d/response/bbq/0012.parquet",
+        "rows": 500645,
+        "bytes": 21068501,
+        "sha256": "90dfdeca775a796b690704b8ad4fd06a7ca958ec040ff0f7517fe4ecda214274"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "accuracy": {
+      "available": true,
+      "itemCount": 58492,
+      "modelCount": 45,
+      "pairCount": 2567115,
+      "iterations": 359,
+      "converged": true,
+      "models": [
+        {
+          "name": "kimi-k2",
+          "theta": 3.164327,
+          "sd": 0.021794,
+          "n": 58492
+        },
+        {
+          "name": "o4-mini",
+          "theta": 2.883945,
+          "sd": 0.020349,
+          "n": 58492
+        },
+        {
+          "name": "o3-mini",
+          "theta": 2.022154,
+          "sd": 0.017407,
+          "n": 58492
+        },
+        {
+          "name": "gpt-4.1",
+          "theta": 1.767735,
+          "sd": 0.016863,
+          "n": 58492
+        },
+        {
+          "name": "o1-mini",
+          "theta": 1.653559,
+          "sd": 0.016656,
+          "n": 58492
+        },
+        {
+          "name": "gpt-4o",
+          "theta": 1.651099,
+          "sd": 0.016652,
+          "n": 58492
+        },
+        {
+          "name": "o1",
+          "theta": 1.245846,
+          "sd": 0.016077,
+          "n": 58492
+        },
+        {
+          "name": "gpt-4o-mini",
+          "theta": 1.17673,
+          "sd": 0.016,
+          "n": 58492
+        },
+        {
+          "name": "phi-4",
+          "theta": 0.964965,
+          "sd": 0.015801,
+          "n": 58492
+        },
+        {
+          "name": "Qwen2.5-14B-Instruct",
+          "theta": 0.6556,
+          "sd": 0.015594,
+          "n": 58492
+        },
+        {
+          "name": "grok-4",
+          "theta": 0.400755,
+          "sd": 0.01549,
+          "n": 58492
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "theta": 0.283983,
+          "sd": 0.01546,
+          "n": 58492
+        },
+        {
+          "name": "Qwen2.5-7B-Instruct",
+          "theta": 0.253237,
+          "sd": 0.015454,
+          "n": 58492
+        },
+        {
+          "name": "Qwen3-4B-Instruct-2507",
+          "theta": 0.135025,
+          "sd": 0.015439,
+          "n": 58492
+        },
+        {
+          "name": "Qwen2.5-3B-Instruct",
+          "theta": 0.061488,
+          "sd": 0.015435,
+          "n": 58492
+        },
+        {
+          "name": "Qwen1.5-14B-Chat",
+          "theta": -0.055009,
+          "sd": 0.015437,
+          "n": 58492
+        },
+        {
+          "name": "Qwen2-7B-Instruct",
+          "theta": -0.1083,
+          "sd": 0.015441,
+          "n": 58492
+        },
+        {
+          "name": "gemma-2-27b-it",
+          "theta": -0.302952,
+          "sd": 0.015475,
+          "n": 58492
+        },
+        {
+          "name": "gemma-2-9b-it",
+          "theta": -0.464647,
+          "sd": 0.015526,
+          "n": 58492
+        },
+        {
+          "name": "Qwen1.5-7B-Chat",
+          "theta": -0.555442,
+          "sd": 0.015563,
+          "n": 58492
+        },
+        {
+          "name": "gemma-7b-it",
+          "theta": -0.706483,
+          "sd": 0.015641,
+          "n": 58492
+        },
+        {
+          "name": "Qwen2.5-1.5B-Instruct",
+          "theta": -0.709661,
+          "sd": 0.015643,
+          "n": 58492
+        },
+        {
+          "name": "gemma-2-2b-it",
+          "theta": -0.720937,
+          "sd": 0.01565,
+          "n": 58492
+        },
+        {
+          "name": "Qwen-7B-Chat",
+          "theta": -0.849287,
+          "sd": 0.015733,
+          "n": 58492
+        },
+        {
+          "name": "Qwen-14B-Chat",
+          "theta": -0.850785,
+          "sd": 0.015734,
+          "n": 58492
+        },
+        {
+          "name": "RedPajama-INCITE-Chat-3B-v1",
+          "theta": -0.850785,
+          "sd": 0.015734,
+          "n": 58492
+        },
+        {
+          "name": "RedPajama-INCITE-Chat-7B-v1",
+          "theta": -0.850785,
+          "sd": 0.015734,
+          "n": 58492
+        },
+        {
+          "name": "RedPajama-INCITE-Instruct-3B-v1",
+          "theta": -0.850785,
+          "sd": 0.015734,
+          "n": 58492
+        },
+        {
+          "name": "RedPajama-INCITE-Instruct-7B-v1",
+          "theta": -0.850785,
+          "sd": 0.015734,
+          "n": 58492
+        },
+        {
+          "name": "mpt-7b-instruct",
+          "theta": -0.850785,
+          "sd": 0.015734,
+          "n": 58492
+        },
+        {
+          "name": "Qwen-1.8B-Chat",
+          "theta": -0.852845,
+          "sd": 0.015735,
+          "n": 58492
+        },
+        {
+          "name": "mpt-7b-chat",
+          "theta": -0.853541,
+          "sd": 0.015798,
+          "n": 57285
+        },
+        {
+          "name": "Qwen1.5-4B-Chat",
+          "theta": -0.853782,
+          "sd": 0.015736,
+          "n": 58492
+        },
+        {
+          "name": "pythia-2.8b-v0",
+          "theta": -0.855,
+          "sd": 0.015737,
+          "n": 58492
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "theta": -0.907466,
+          "sd": 0.01688,
+          "n": 42170
+        },
+        {
+          "name": "gemma-3-1b-it",
+          "theta": -0.907816,
+          "sd": 0.015776,
+          "n": 58492
+        },
+        {
+          "name": "stablelm-base-alpha-3b",
+          "theta": -0.928195,
+          "sd": 0.025927,
+          "n": 10996
+        },
+        {
+          "name": "Qwen1.5-0.5B-Chat",
+          "theta": -0.930377,
+          "sd": 0.015793,
+          "n": 58492
+        },
+        {
+          "name": "Qwen2-1.5B-Instruct",
+          "theta": -0.944435,
+          "sd": 0.015804,
+          "n": 58492
+        },
+        {
+          "name": "gemma-1.1-2b-it",
+          "theta": -0.947981,
+          "sd": 0.015807,
+          "n": 58492
+        },
+        {
+          "name": "gemma-2b-it",
+          "theta": -1.035097,
+          "sd": 0.01588,
+          "n": 58492
+        },
+        {
+          "name": "gemma-1.1-7b-it",
+          "theta": -1.038338,
+          "sd": 0.015883,
+          "n": 58492
+        },
+        {
+          "name": "Qwen2.5-0.5B-Instruct",
+          "theta": -1.114443,
+          "sd": 0.015954,
+          "n": 58492
+        },
+        {
+          "name": "Qwen1.5-1.8B-Chat",
+          "theta": -1.150611,
+          "sd": 0.015989,
+          "n": 58492
+        },
+        {
+          "name": "dolly-v2-3b",
+          "theta": -1.156916,
+          "sd": 0.015996,
+          "n": 58492
+        }
+      ],
+      "reverseCoded": false
+    }
+  }
+}

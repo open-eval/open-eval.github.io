@@ -1,0 +1,20 @@
+@import "tailwindcss/theme.css";
+@import "tailwindcss/utilities.css" source("./components");
+@theme {
+  --color-bg: #ffffff;
+  --color-surface: #ffffff;
+  --color-ink: #1a261a;
+  --color-muted: #68725f;
+  --color-soft: #3c4839;
+  --color-accent: #2b4a2c;
+  --color-accent-soft: #e8eee5;
+  --color-spirit: #68ace5;
+  --color-border: #e0dcd2;
+  --color-subtle: #f4f2ec;
+  --radius-input: 999px;
+  --radius-inner: 10px;
+  --radius-card: 10px;
+  --shadow-soft: none;
+  --font-sans: "DM Sans", "Segoe UI", system-ui, sans-serif;
+  --font-display: Georgia, serif;
+}

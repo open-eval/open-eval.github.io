@@ -1,0 +1,38 @@
+{
+  "method": "rasch-1pl-map",
+  "benchmark": "dochop",
+  "computedAt": "2026-10-01T18:13:42.891302+00:00",
+  "summarySha256": "aa8af611eb648a7bfdb97356bc36fe52887193107477b3d5b3ec828ed9168a59",
+  "metrics": {
+    "heuristic_accuracy": {
+      "bins": [
+        2,
+        3,
+        13,
+        27,
+        56,
+        53,
+        43,
+        65,
+        114,
+        220,
+        326,
+        200,
+        434,
+        0,
+        237,
+        192,
+        0,
+        64,
+        0,
+        25
+      ],
+      "min": -5.666552786844373,
+      "max": 4.43277623118741,
+      "median": 0.015652469566132574,
+      "items": 2074,
+      "archivedItems": 2074,
+      "models": 24
+    }
+  }
+}

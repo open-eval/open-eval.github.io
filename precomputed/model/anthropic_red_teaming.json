@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "anthropic_red_teaming",
+  "computedAt": "2026-10-01T02:58:35.769871+00:00",
+  "summarySha256": "443ff6c66de84719aec081f93aee22fa184854ce55b49f1905c2b978c659c3d4",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/anthropic_red_teaming/0000.parquet",
+        "rows": 38961,
+        "bytes": 25879166,
+        "sha256": "49013a3c9bcbc1c5cd77eabef12cc8174d0c30e8efe11a4eb8ec306a2d13b06a"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/anthropic_red_teaming/0000.parquet",
+        "rows": 45417,
+        "bytes": 147499351,
+        "sha256": "0faead9a6547040091415d60a9843ffd85afdf6b5c5f3809363e922c26d90246"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/anthropic_red_teaming/0001.parquet",
+        "rows": 45417,
+        "bytes": 82615957,
+        "sha256": "add980b218a075c098c03e7434cff03319272fbe8d5c2198833beb87702b5383"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/anthropic_red_teaming/0002.parquet",
+        "rows": 45417,
+        "bytes": 77774645,
+        "sha256": "b64fbca0f6f153f35f5b0a812eb6f32cf247a1717ad62f30e75f0e4c26801165"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/anthropic_red_teaming/0003.parquet",
+        "rows": 45417,
+        "bytes": 71865447,
+        "sha256": "04885ed228fa61aa6853caf5d50f965628ef928e2e5f7da52095c560a52b6768"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/anthropic_red_teaming/0004.parquet",
+        "rows": 45416,
+        "bytes": 71582095,
+        "sha256": "fbfed2860af05b38677dfb483ea592e3b138883eadee7f12b5f3c76a3859c0ef"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/anthropic_red_teaming/0005.parquet",
+        "rows": 45416,
+        "bytes": 67576981,
+        "sha256": "c53004e1e1e6bedaf371bb110c7b011021094d54f17ce9e156495df0a59e3fc4"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/anthropic_red_teaming/0006.parquet",
+        "rows": 45416,
+        "bytes": 67674136,
+        "sha256": "d0d4e166d335b4b35f17d8f4cc4013efcc4b93379e6ee975cc2ad9f389ba9ea5"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "safety_gpt_score": {
+      "available": false,
+      "reason": "Scores are not strictly binary; no thresholding is applied."
+    }
+  }
+}

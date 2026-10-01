@@ -1,0 +1,200 @@
+{
+  "itemCount": 1000,
+  "responseCount": 20000,
+  "distinctModelCount": 20,
+  "distinctModelItemPairs": 19886,
+  "duplicateResponsesRemoved": 114,
+  "conflictingDuplicateRows": 0,
+  "conflictingDuplicateExamples": [],
+  "measurements": [
+    {
+      "metrics": [
+        "logprob"
+      ],
+      "itemCount": 1000,
+      "totalResponses": 20000,
+      "loadedResponses": 20000,
+      "minimumItems": 100,
+      "modelCount": 20,
+      "scoredResponses": 19886,
+      "excludedModelCount": 0,
+      "avgScore": -29.88667813096172,
+      "medianScore": -28.59243780828899,
+      "standardError": 2.838390082740668,
+      "discrimination": 12.372255533014624,
+      "refCoverage": 0.0,
+      "bounded": false,
+      "binary": false,
+      "best": {
+        "name": "vicuna-13b-v1.3",
+        "n": 994,
+        "coverage": 0.994,
+        "mean": -14.034227043449897
+      },
+      "worst": {
+        "name": "alpaca-7b",
+        "n": 994,
+        "coverage": 0.994,
+        "mean": -78.24048953540849
+      },
+      "models": [
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -14.034227043449897
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -17.243577361695582
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -21.465971341492182
+        },
+        {
+          "name": "llama-65b",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -21.520349036689986
+        },
+        {
+          "name": "llama-30b",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -22.462255672966027
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -24.53886211495657
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -26.01644680952224
+        },
+        {
+          "name": "falcon-7b",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -27.738496281620034
+        },
+        {
+          "name": "llama-13b",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -27.91699758469794
+        },
+        {
+          "name": "llama-7b",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -28.40452242539417
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -28.780353191183817
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -30.542620487718317
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -31.004686103209462
+        },
+        {
+          "name": "falcon-40b",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -32.202266288359596
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -32.51579856466543
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -32.823786852909805
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -33.0515271042873
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -33.23069712849287
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -33.9996316905147
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 994,
+          "coverage": 0.994,
+          "mean": -78.24048953540849
+        }
+      ],
+      "split": "bold"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "bold",
+  "computedAt": "2026-09-30T02:08:27.188781+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/bold/0000.parquet",
+        "rows": 1000,
+        "bytes": 42876,
+        "sha256": "95cd94c47ad41130f779aca0b236a24f51f5c71e8ef685fdd562897d508ab388"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/bold/0000.parquet",
+        "rows": 20000,
+        "bytes": 11186318,
+        "sha256": "25930bfe7827dbec7cd2f8f45c6941fadb03daf8d75dea31b821d2f57e9c3d72"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

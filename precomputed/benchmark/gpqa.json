@@ -1,0 +1,789 @@
+{
+  "itemCount": 448,
+  "responseCount": 50548,
+  "distinctModelCount": 115,
+  "distinctModelItemPairs": 50548,
+  "duplicateResponsesRemoved": 0,
+  "measurements": [
+    {
+      "metrics": [
+        "chain_of_thought_correctness"
+      ],
+      "itemCount": 448,
+      "totalResponses": 50548,
+      "loadedResponses": 50548,
+      "minimumItems": 45,
+      "modelCount": 115,
+      "scoredResponses": 50548,
+      "excludedModelCount": 0,
+      "avgScore": 0.4180986547085202,
+      "medianScore": 0.3968609865470852,
+      "standardError": 0.020355886963882252,
+      "discrimination": 0.21734139800287489,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "gpt-5.2-pro-2025-12-11",
+        "n": 446,
+        "coverage": 0.9955357142857143,
+        "mean": 0.8251121076233184
+      },
+      "worst": {
+        "name": "redpajama-incite-3b-instruct",
+        "n": 446,
+        "coverage": 0.9955357142857143,
+        "mean": 0.011210762331838564
+      },
+      "models": [
+        {
+          "name": "gpt-5.2-pro-2025-12-11",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.8251121076233184
+        },
+        {
+          "name": "gemini-3-pro-preview",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.8026905829596412
+        },
+        {
+          "name": "gpt-5-2025-08-07",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.7914798206278026
+        },
+        {
+          "name": "gpt-5.4-pro-2026-03-05",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.7869955156950673
+        },
+        {
+          "name": "gpt-5-mini-2025-08-07",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.7556053811659192
+        },
+        {
+          "name": "o3-2025-04-16",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.7533632286995515
+        },
+        {
+          "name": "gemini-2.5-pro-preview-03-25",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.7488789237668162
+        },
+        {
+          "name": "o4-mini-2025-04-16",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.7354260089686099
+        },
+        {
+          "name": "grok-4-0709",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.726457399103139
+        },
+        {
+          "name": "qwen3-235b-a22b-instruct-2507-fp8",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.726457399103139
+        },
+        {
+          "name": "claude-opus-4-20250514-thinking-10k",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.7085201793721974
+        },
+        {
+          "name": "gpt-5.3-chat-latest",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.7085201793721974
+        },
+        {
+          "name": "claude-sonnet-4-20250514-thinking-10k",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.7062780269058296
+        },
+        {
+          "name": "claude-sonnet-4-5-20250929",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6860986547085202
+        },
+        {
+          "name": "gpt-oss-120b",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6838565022421524
+        },
+        {
+          "name": "gpt-5-nano-2025-08-07",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.679372197309417
+        },
+        {
+          "name": "grok-3-mini-beta",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6748878923766816
+        },
+        {
+          "name": "claude-opus-4-20250514",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6659192825112108
+        },
+        {
+          "name": "deepseek-r1-0528",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6659192825112108
+        },
+        {
+          "name": "palmyra-x5",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6614349775784754
+        },
+        {
+          "name": "claude-3-7-sonnet-20250219-thinking-10k",
+          "n": 50,
+          "coverage": 0.11160714285714286,
+          "mean": 0.66
+        },
+        {
+          "name": "gpt-4.1-2025-04-14",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6591928251121076
+        },
+        {
+          "name": "kimi-k2-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6524663677130045
+        },
+        {
+          "name": "grok-3-beta",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6502242152466368
+        },
+        {
+          "name": "llama-4-maverick-17b-128e-instruct-fp8",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6502242152466368
+        },
+        {
+          "name": "claude-sonnet-4-20250514",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6434977578475336
+        },
+        {
+          "name": "qwen3-next-80b-a3b-thinking",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6300448430493274
+        },
+        {
+          "name": "qwen3-235b-a22b-fp8-tput",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6233183856502242
+        },
+        {
+          "name": "gpt-4.1-mini-2025-04-14",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6143497757847534
+        },
+        {
+          "name": "claude-3-7-sonnet-20250219",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6076233183856502
+        },
+        {
+          "name": "claude-haiku-4-5-20251001",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.6053811659192825
+        },
+        {
+          "name": "glm-4.5-air-fp8",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.594170403587444
+        },
+        {
+          "name": "gpt-oss-20b",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.594170403587444
+        },
+        {
+          "name": "claude-3-5-sonnet-20241022",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.5650224215246636
+        },
+        {
+          "name": "qwen-3-80b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.5650224215246636
+        },
+        {
+          "name": "gpt-5.4-2026-03-05",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.5627802690582959
+        },
+        {
+          "name": "gemini-2.0-flash-001",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.5560538116591929
+        },
+        {
+          "name": "deepseek-v3",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.5381165919282511
+        },
+        {
+          "name": "gemini-1.5-pro-002",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.5336322869955157
+        },
+        {
+          "name": "llama-3.1-405b-instruct-turbo",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.5224215246636771
+        },
+        {
+          "name": "palmyra-x5-v1-bedrock",
+          "n": 100,
+          "coverage": 0.22321428571428573,
+          "mean": 0.52
+        },
+        {
+          "name": "nova-premier-v1:0",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.5179372197309418
+        },
+        {
+          "name": "gpt-4.1-nano-2025-04-14",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.5067264573991032
+        },
+        {
+          "name": "llama-4-scout-17b-16e-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.5067264573991032
+        },
+        {
+          "name": "gpt-5.2-2025-12-11",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.5022421524663677
+        },
+        {
+          "name": "gemini-2.0-flash-lite-preview-02-05",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.5
+        },
+        {
+          "name": "qwen-3-30b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.4618834080717489
+        },
+        {
+          "name": "qwen-2.5-72b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.45067264573991034
+        },
+        {
+          "name": "nova-pro-v1:0",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.4461883408071749
+        },
+        {
+          "name": "gpt-5.1-2025-11-13",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.44170403587443946
+        },
+        {
+          "name": "gemini-1.5-flash-002",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.437219730941704
+        },
+        {
+          "name": "gpt-5.4-mini-2026-03-17",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.437219730941704
+        },
+        {
+          "name": "mistral-large-2411",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.4349775784753363
+        },
+        {
+          "name": "llama-3.1-70b-instruct-turbo",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.4260089686098655
+        },
+        {
+          "name": "palmyra-fin",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.42152466367713004
+        },
+        {
+          "name": "gemma-3-27b-it",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.40358744394618834
+        },
+        {
+          "name": "nova-lite-v1:0",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3968609865470852
+        },
+        {
+          "name": "qwen-3-4b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3968609865470852
+        },
+        {
+          "name": "mistral-small-2503",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3923766816143498
+        },
+        {
+          "name": "gemini-2.5-flash-preview-04-17",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3901345291479821
+        },
+        {
+          "name": "qwen-2.5-32b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.38789237668161436
+        },
+        {
+          "name": "granite-4.0-h-small",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3834080717488789
+        },
+        {
+          "name": "nova-micro-v1:0",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3834080717488789
+        },
+        {
+          "name": "qwen-2-72b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3789237668161435
+        },
+        {
+          "name": "gpt-5.4-nano-2026-03-17",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3721973094170404
+        },
+        {
+          "name": "palmyra-med",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.36771300448430494
+        },
+        {
+          "name": "gemma-3-12b-it",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3654708520179372
+        },
+        {
+          "name": "claude-3-5-haiku-20241022",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3632286995515695
+        },
+        {
+          "name": "granite-4.0-h-small-with-guardian",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3609865470852018
+        },
+        {
+          "name": "qwen-2.5-14b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3609865470852018
+        },
+        {
+          "name": "qwen2.5-7b-instruct-turbo",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.34080717488789236
+        },
+        {
+          "name": "mixtral-8x22b-instruct-v0.1",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.33408071748878926
+        },
+        {
+          "name": "qwen-2.5-3b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3273542600896861
+        },
+        {
+          "name": "granite-3.3-8b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3251121076233184
+        },
+        {
+          "name": "olmo-2-1124-13b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.31614349775784756
+        },
+        {
+          "name": "qwen-1.5-32b-chat",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.31390134529147984
+        },
+        {
+          "name": "gemini-2.5-flash-lite",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3094170403587444
+        },
+        {
+          "name": "gemma-2-27b-it",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3071748878923767
+        },
+        {
+          "name": "granite-4.0-micro",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3071748878923767
+        },
+        {
+          "name": "qwen-1.5-14b-chat",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.3071748878923767
+        },
+        {
+          "name": "granite-4.0-micro-with-guardian",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.30493273542600896
+        },
+        {
+          "name": "olmo-2-1124-7b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.29596412556053814
+        },
+        {
+          "name": "gemma-1.1-7b-it",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.28699551569506726
+        },
+        {
+          "name": "olmo-2-0325-32b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.28699551569506726
+        },
+        {
+          "name": "qwen-2.5-7b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.28475336322869954
+        },
+        {
+          "name": "qwen-2-7b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.27802690582959644
+        },
+        {
+          "name": "gemma-7b-it",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.2757847533632287
+        },
+        {
+          "name": "qwen-2.5-1.5b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.26681614349775784
+        },
+        {
+          "name": "qwen-1.5-7b-chat",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.24439461883408073
+        },
+        {
+          "name": "gemma-2-9b-it",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.23766816143497757
+        },
+        {
+          "name": "gemma-2b-it",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.23766816143497757
+        },
+        {
+          "name": "qwen-14b-chat",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.2219730941704036
+        },
+        {
+          "name": "olmoe-1b-7b-0125-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.21973094170403587
+        },
+        {
+          "name": "qwen-1.5-4b-chat",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.2085201793721973
+        },
+        {
+          "name": "qwen-1.5-1.8b-chat",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.17937219730941703
+        },
+        {
+          "name": "qwen-2-1.5b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.17040358744394618
+        },
+        {
+          "name": "qwen-2.5-0.5b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.17040358744394618
+        },
+        {
+          "name": "gemma-2-2b-it",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.1681614349775785
+        },
+        {
+          "name": "gemma-3-1b-it",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.1681614349775785
+        },
+        {
+          "name": "marin-8b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.1681614349775785
+        },
+        {
+          "name": "gemma-3-4b-it",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.16367713004484305
+        },
+        {
+          "name": "redpajama-incite-3b-chat",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.10986547085201794
+        },
+        {
+          "name": "gemma-1.1-2b-it",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.09192825112107623
+        },
+        {
+          "name": "qwen-8b-chat",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.08520179372197309
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.08295964125560538
+        },
+        {
+          "name": "llama-2-13b-hf",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.08295964125560538
+        },
+        {
+          "name": "qwen-1.5-0.5b-chat",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.08295964125560538
+        },
+        {
+          "name": "llama-2-70b-hf",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.07174887892376682
+        },
+        {
+          "name": "mistral-7b-v0.1",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.0515695067264574
+        },
+        {
+          "name": "redpajama-incite-7b-chat",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.0515695067264574
+        },
+        {
+          "name": "llama-2-7b-hf",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.04035874439461883
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.02466367713004484
+        },
+        {
+          "name": "redpajama-incite-7b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.017937219730941704
+        },
+        {
+          "name": "qwen-7b-chat",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.013452914798206279
+        },
+        {
+          "name": "redpajama-incite-3b-instruct",
+          "n": 446,
+          "coverage": 0.9955357142857143,
+          "mean": 0.011210762331838564
+        }
+      ],
+      "split": "gpqa"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "gpqa",
+  "computedAt": "2026-09-30T01:15:02.323998+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/gpqa/0000.parquet",
+        "rows": 448,
+        "bytes": 1653774,
+        "sha256": "a67dd42133fa2ebbfdb65853b08cc7990f09beccb211af1c4d85e1f6f3509065"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/gpqa/0000.parquet",
+        "rows": 12637,
+        "bytes": 171170541,
+        "sha256": "3bc733c5abeab36ecd3e264b8f582f700360b435a9ffe815fb8bedb089404c01"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/gpqa/0001.parquet",
+        "rows": 12637,
+        "bytes": 160657292,
+        "sha256": "2c792996e8aa3ba7d587f29af401c53c5a6d703c153e3d655a483fd2cd2f494f"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/gpqa/0002.parquet",
+        "rows": 12637,
+        "bytes": 215222716,
+        "sha256": "38c0289cbf2eb69f82d13cfefe9fd9fafd7b006048c1af78a95d17534c9225b1"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/gpqa/0003.parquet",
+        "rows": 12637,
+        "bytes": 59490675,
+        "sha256": "ffadf4f7b5e7e5b67a69ac339ea32165f4fb9ab456ab0d06ee264b17f3c28ada"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

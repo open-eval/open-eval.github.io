@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Eval Commons - Evaluation Landscape</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tools.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" style="text-decoration:none;">
+      OpenEval
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="schema.html">Data Schema</a></li>
+      <li><a href="landscape.html" aria-current="page">Evaluation Landscape</a></li>
+      <li><a href="benchmark.html">Benchmark Browser</a></li>
+      <li><a href="model.html">Model Performance</a></li>
+      <li>
+        <a href="contribution.html">Contribution
+          <span aria-hidden="true" class="notification-dot"></span>
+        </a>
+      </li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:0.6rem;">
+      <a href="https://huggingface.co/datasets/Open-Eval-Commons/OpenEval" class="nav-cta" style="text-decoration:none;" target="_blank" rel="noopener">
+        <img src="logos/hf-logo.svg" width="35" height="35" alt="HuggingFace" style="display:block;">
+      </a>
+      <a href="https://github.com/open-eval/OpenEval" class="nav-cta" style="text-decoration:none;" target="_blank" rel="noopener">
+        <img src="logos/github-logo.svg" width="35" height="35" alt="GitHub" style="display:block;">
+      </a>
+    </div>
+  </div>
+</nav>
+<main>
+<div class="site-section" id="landscape">
+<section class="section">
+  <div class="container">
+    <h1 class="section-title">Evaluation Landscape</h1>
+    <p class="section-sub">
+      Explore how benchmarks relate across different lenses - how their results correlate, which domains they intend to cover, and how difficult their items are.
+    </p>
+<div id="landscape-tool" class="oe-tool"><p role="status">Loading evaluation landscape…</p></div>
+<section id="landscape-domains" class="landscape-domains" aria-label="Benchmark domains">
+  <article class="domain-card">
+    <div class="domain-heading"><h2>Safety &amp; Alignment</h2><span>15 benchmarks</span></div>
+    <div class="domain-bar" aria-hidden="true"><span style="width: 100.00%"></span></div>
+    <ul class="domain-benchmarks">
+      <li><a href="benchmark.html#benchmark=bbq&amp;version=">BBQ</a></li>
+      <li><a href="benchmark.html#benchmark=bold&amp;version=">BOLD</a></li>
+      <li><a href="benchmark.html#benchmark=moralbench&amp;version=">MoralBench</a></li>
+      <li><a href="benchmark.html#benchmark=truthfulqa&amp;version=">TruthfulQA</a></li>
+      <li><a href="benchmark.html#benchmark=disinformation&amp;version=">Disinformation</a></li>
+      <li><a href="benchmark.html#benchmark=do-not-answer&amp;version=">Do-Not-Answer</a></li>
+      <li><a href="benchmark.html#benchmark=salad-bench&amp;version=">SALAD-Bench</a></li>
+      <li><a href="benchmark.html#benchmark=harmbench&amp;version=">HarmBench</a></li>
+      <li><a href="benchmark.html#benchmark=xstest&amp;version=">XSTest</a></li>
+      <li><a href="benchmark.html#benchmark=simplesafetytests&amp;version=">SimpleSafetyTests</a></li>
+      <li><a href="benchmark.html#benchmark=advbench&amp;version=">AdvBench</a></li>
+      <li><a href="benchmark.html#benchmark=health-orsc-bench&amp;version=">Health-ORSC-Bench</a></li>
+      <li><a href="benchmark.html#benchmark=or-bench&amp;version=">OR-Bench</a></li>
+      <li><a href="benchmark.html#benchmark=sorry-bench&amp;version=">Sorry-Bench</a></li>
+      <li><a href="benchmark.html#benchmark=anthropic-red-teaming&amp;version=">Anthropic Red Teaming</a></li>
+    </ul>
+  </article>
+  <article class="domain-card">
+    <div class="domain-heading"><h2>Interactive &amp; Real-World Behavior</h2><span>13 benchmarks</span></div>
+    <div class="domain-bar" aria-hidden="true"><span style="width: 86.67%"></span></div>
+    <ul class="domain-benchmarks">
+      <li><a href="benchmark.html#benchmark=ifeval&amp;version=">IFEval</a></li>
+      <li><a href="benchmark.html#benchmark=wildbench&amp;version=">WildBench</a></li>
+      <li><a href="benchmark.html#benchmark=disinformation&amp;version=">Disinformation</a></li>
+      <li><a href="benchmark.html#benchmark=do-not-answer&amp;version=">Do-Not-Answer</a></li>
+      <li><a href="benchmark.html#benchmark=salad-bench&amp;version=">SALAD-Bench</a></li>
+      <li><a href="benchmark.html#benchmark=harmbench&amp;version=">HarmBench</a></li>
+      <li><a href="benchmark.html#benchmark=xstest&amp;version=">XSTest</a></li>
+      <li><a href="benchmark.html#benchmark=simplesafetytests&amp;version=">SimpleSafetyTests</a></li>
+      <li><a href="benchmark.html#benchmark=advbench&amp;version=">AdvBench</a></li>
+      <li><a href="benchmark.html#benchmark=health-orsc-bench&amp;version=">Health-ORSC-Bench</a></li>
+      <li><a href="benchmark.html#benchmark=or-bench&amp;version=">OR-Bench</a></li>
+      <li><a href="benchmark.html#benchmark=sorry-bench&amp;version=">Sorry-Bench</a></li>
+      <li><a href="benchmark.html#benchmark=anthropic-red-teaming&amp;version=">Anthropic Red Teaming</a></li>
+    </ul>
+  </article>
+  <article class="domain-card">
+    <div class="domain-heading"><h2>Knowledge &amp; Reasoning</h2><span>8 benchmarks</span></div>
+    <div class="domain-bar" aria-hidden="true"><span style="width: 53.33%"></span></div>
+    <ul class="domain-benchmarks">
+      <li><a href="benchmark.html#benchmark=mmlu-pro&amp;version=">MMLU-Pro</a></li>
+      <li><a href="benchmark.html#benchmark=gpqa&amp;version=">GPQA</a></li>
+      <li><a href="benchmark.html#benchmark=boolq&amp;version=">BoolQ</a></li>
+      <li><a href="benchmark.html#benchmark=omni-math&amp;version=">Omni-MATH</a></li>
+      <li><a href="benchmark.html#benchmark=dochop&amp;version=">DocHop</a></li>
+      <li><a href="benchmark.html#benchmark=hi-tom&amp;version=">Hi-ToM</a></li>
+      <li><a href="benchmark.html#benchmark=opentom&amp;version=">OpenToM</a></li>
+      <li><a href="benchmark.html#benchmark=culturalbench&amp;version=">CulturalBench</a></li>
+    </ul>
+  </article>
+  <article class="domain-card">
+    <div class="domain-heading"><h2>Social &amp; Human-Centered Reasoning</h2><span>7 benchmarks</span></div>
+    <div class="domain-bar" aria-hidden="true"><span style="width: 46.67%"></span></div>
+    <ul class="domain-benchmarks">
+      <li><a href="benchmark.html#benchmark=culturalbench&amp;version=">CulturalBench</a></li>
+      <li><a href="benchmark.html#benchmark=emobench&amp;version=">EmoBench</a></li>
+      <li><a href="benchmark.html#benchmark=hi-tom&amp;version=">Hi-ToM</a></li>
+      <li><a href="benchmark.html#benchmark=opentom&amp;version=">OpenToM</a></li>
+      <li><a href="benchmark.html#benchmark=moralbench&amp;version=">MoralBench</a></li>
+      <li><a href="benchmark.html#benchmark=bbq&amp;version=">BBQ</a></li>
+      <li><a href="benchmark.html#benchmark=bold&amp;version=">BOLD</a></li>
+    </ul>
+  </article>
+  <article class="domain-card">
+    <div class="domain-heading"><h2>Language &amp; Instruction Following</h2><span>5 benchmarks</span></div>
+    <div class="domain-bar" aria-hidden="true"><span style="width: 33.33%"></span></div>
+    <ul class="domain-benchmarks">
+      <li><a href="benchmark.html#benchmark=cnndm&amp;version=">CNN/DailyMail</a></li>
+      <li><a href="benchmark.html#benchmark=xsum&amp;version=">XSum</a></li>
+      <li><a href="benchmark.html#benchmark=imdb&amp;version=">IMDb</a></li>
+      <li><a href="benchmark.html#benchmark=ifeval&amp;version=">IFEval</a></li>
+      <li><a href="benchmark.html#benchmark=wildbench&amp;version=">WildBench</a></li>
+    </ul>
+  </article>
+  <article class="domain-card">
+    <div class="domain-heading"><h2>Truthfulness &amp; Information Integrity</h2><span>2 benchmarks</span></div>
+    <div class="domain-bar" aria-hidden="true"><span style="width: 13.33%"></span></div>
+    <ul class="domain-benchmarks">
+      <li><a href="benchmark.html#benchmark=truthfulqa&amp;version=">TruthfulQA</a></li>
+      <li><a href="benchmark.html#benchmark=disinformation&amp;version=">Disinformation</a></li>
+    </ul>
+  </article>
+  <p class="domain-note">*Curated benchmark domains. A benchmark may appear in more than one category.</p>
+</section>
+    <noscript>Enable JavaScript to explore the evaluation landscape.</noscript>
+  </div>
+</section>
+</div>
+</main>
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
+      OpenEval
+      <span style="font-family:var(--mono);font-size:0.65rem;font-weight:600;background:#e8e5de;color:#273929;padding:2px 7px;border-radius:4px;letter-spacing:0.02em;vertical-align:bottom;">v0.2.0</span>
+    </a>
+    <span class="footer-copy">Maintained by the <a href="https://huggingface.co/Open-Eval-Commons" style="color:var(--muted);">Open Eval Commons</a> project. 
+      <a href="mailto:hjiang66@jh.edu,ziang.xiao@jhu.edu" style="color:var(--muted);">Contact us.</a>
+    </span>
+  </div>
+</footer>
+<script src="landscape.js" defer></script>
+</body>
+</html>

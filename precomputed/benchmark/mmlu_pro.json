@@ -1,0 +1,186 @@
+{
+  "itemCount": 12032,
+  "responseCount": 242502,
+  "distinctModelCount": 123,
+  "distinctModelItemPairs": 240521,
+  "duplicateResponsesRemoved": 1981,
+  "measurements": [
+    {
+      "metrics": [
+        "chain_of_thought_correctness"
+      ],
+      "itemCount": 12032,
+      "totalResponses": 242502,
+      "loadedResponses": 242502,
+      "minimumItems": 1204,
+      "modelCount": 11,
+      "scoredResponses": 130592,
+      "excludedModelCount": 112,
+      "avgScore": 0.5622626194560157,
+      "medianScore": 0.6318227762803235,
+      "standardError": 0.0926952369762799,
+      "discrimination": 0.2931280770941038,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "gpt-5.4-pro-2026-03-05",
+        "n": 11872,
+        "coverage": 0.9867021276595744,
+        "mean": 0.8734838274932615
+      },
+      "worst": {
+        "name": "falcon-7b-instruct",
+        "n": 11872,
+        "coverage": 0.9867021276595744,
+        "mean": 0.01558288409703504
+      },
+      "models": [
+        {
+          "name": "gpt-5.4-pro-2026-03-05",
+          "n": 11872,
+          "coverage": 0.9867021276595744,
+          "mean": 0.8734838274932615
+        },
+        {
+          "name": "gpt-5.2-pro-2025-12-11",
+          "n": 11872,
+          "coverage": 0.9867021276595744,
+          "mean": 0.8673349056603774
+        },
+        {
+          "name": "gpt-5.3-chat-latest",
+          "n": 11872,
+          "coverage": 0.9867021276595744,
+          "mean": 0.8380222371967655
+        },
+        {
+          "name": "claude-3-5-sonnet-20240620",
+          "n": 11872,
+          "coverage": 0.9867021276595744,
+          "mean": 0.733322102425876
+        },
+        {
+          "name": "gpt-4o-2024-08-06",
+          "n": 11872,
+          "coverage": 0.9867021276595744,
+          "mean": 0.7119272237196765
+        },
+        {
+          "name": "gpt-5.4-2026-03-05",
+          "n": 11872,
+          "coverage": 0.9867021276595744,
+          "mean": 0.6318227762803235
+        },
+        {
+          "name": "gpt-5.2-2025-12-11",
+          "n": 11872,
+          "coverage": 0.9867021276595744,
+          "mean": 0.5928234501347709
+        },
+        {
+          "name": "gpt-5.4-mini-2026-03-17",
+          "n": 11872,
+          "coverage": 0.9867021276595744,
+          "mean": 0.5269541778975741
+        },
+        {
+          "name": "gpt-5.4-nano-2026-03-17",
+          "n": 11872,
+          "coverage": 0.9867021276595744,
+          "mean": 0.36194407008086255
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "n": 11872,
+          "coverage": 0.9867021276595744,
+          "mean": 0.03167115902964959
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 11872,
+          "coverage": 0.9867021276595744,
+          "mean": 0.01558288409703504
+        }
+      ],
+      "split": "mmlu_pro"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "mmlu_pro",
+  "computedAt": "2026-09-30T01:16:29.260027+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/mmlu_pro/0000.parquet",
+        "rows": 12032,
+        "bytes": 4143708,
+        "sha256": "72a1b6fff89db45bfe08964fb0affab331621fbfbd78d17a7ac1a7b0680af970"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/mmlu_pro/0000.parquet",
+        "rows": 34644,
+        "bytes": 319551823,
+        "sha256": "3ad934c3727af901d9a705e93d7af67a8d6db49cedecafe906cad90bc2368939"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/mmlu_pro/0001.parquet",
+        "rows": 34643,
+        "bytes": 84760371,
+        "sha256": "23c114afac402f291c1870579b5ca3e7c9d6c30841e2a95c7e7cc227cad1a854"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/mmlu_pro/0002.parquet",
+        "rows": 34643,
+        "bytes": 132462392,
+        "sha256": "3af26832a899b92289ce10a84cdadf1718c2a29d0bf7a4bd56b8a8b5180887ba"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/mmlu_pro/0003.parquet",
+        "rows": 34643,
+        "bytes": 294851400,
+        "sha256": "1d2011f5ecc4e1ec8f4fe3e712ff841b51d45b8d833bed691a7e34b8ad91d913"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/mmlu_pro/0004.parquet",
+        "rows": 34643,
+        "bytes": 192304021,
+        "sha256": "7356f7e6484b16c66cf4b6597e7a6ac415fc82b64deded52586e4f952b8f5711"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/mmlu_pro/0005.parquet",
+        "rows": 34643,
+        "bytes": 13537872,
+        "sha256": "19f052fa54d3d25dd72b94d23ad5171e94e56c235ec49841cbdf392b5b2757e2"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/mmlu_pro/0006.parquet",
+        "rows": 34643,
+        "bytes": 19461669,
+        "sha256": "3b2188f3df6e78069d5c2d9f598466cc105c19529af6a34a77053a865768e060"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

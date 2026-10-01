@@ -1,0 +1,378 @@
+{
+  "itemCount": 79,
+  "responseCount": 1602,
+  "distinctModelCount": 22,
+  "distinctModelItemPairs": 1602,
+  "duplicateResponsesRemoved": 0,
+  "conflictingDuplicateRows": 0,
+  "conflictingDuplicateExamples": [],
+  "measurements": [
+    {
+      "metrics": [
+        "monte_carlo_entropy"
+      ],
+      "itemCount": 79,
+      "totalResponses": 1602,
+      "loadedResponses": 1602,
+      "minimumItems": 8,
+      "modelCount": 22,
+      "scoredResponses": 1529,
+      "excludedModelCount": 0,
+      "avgScore": 47.040140285886075,
+      "medianScore": 28.826994330384274,
+      "standardError": 16.316158529618306,
+      "discrimination": 74.77003151287528,
+      "refCoverage": 0.8607594936708861,
+      "bounded": false,
+      "binary": false,
+      "best": {
+        "name": "alpaca-7b",
+        "n": 79,
+        "coverage": 1.0,
+        "mean": 385.75513487163977
+      },
+      "worst": {
+        "name": "vicuna-7b-v1.3",
+        "n": 54,
+        "coverage": 0.6835443037974683,
+        "mean": 20.523007901520806
+      },
+      "models": [
+        {
+          "name": "alpaca-7b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 385.75513487163977
+        },
+        {
+          "name": "mpt-30b",
+          "n": 11,
+          "coverage": 0.13924050632911392,
+          "mean": 79.58870016610005
+        },
+        {
+          "name": "mpt-instruct-30b",
+          "n": 11,
+          "coverage": 0.13924050632911392,
+          "mean": 40.69019315756607
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 31,
+          "coverage": 0.3924050632911392,
+          "mean": 32.669948488554574
+        },
+        {
+          "name": "llama-7b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 31.48006424478021
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 30.709856684774355
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 29.988871133280078
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 29.927130467109336
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 29.686799008847792
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 29.593122246608626
+        },
+        {
+          "name": "falcon-7b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 28.870367927450804
+        },
+        {
+          "name": "llama-13b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 28.78362073331774
+        },
+        {
+          "name": "falcon-40b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 28.522857758915663
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 27.75868101319579
+        },
+        {
+          "name": "llama-30b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 27.39318940750608
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 26.825470821430585
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 26.540706934475107
+        },
+        {
+          "name": "llama-65b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 26.17081767659868
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 24.729196269432848
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 24.432823428069664
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 24.242525948319038
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 54,
+          "coverage": 0.6835443037974683,
+          "mean": 20.523007901520806
+        }
+      ],
+      "split": "disinformation"
+    },
+    {
+      "metrics": [
+        "self_bleu"
+      ],
+      "itemCount": 79,
+      "totalResponses": 1602,
+      "loadedResponses": 1602,
+      "minimumItems": 8,
+      "modelCount": 22,
+      "scoredResponses": 1602,
+      "excludedModelCount": 0,
+      "avgScore": 9.709525112890892,
+      "medianScore": 10.137985459100612,
+      "standardError": 0.6110618287174024,
+      "discrimination": 2.800237084395637,
+      "refCoverage": 0.8607594936708861,
+      "bounded": false,
+      "binary": false,
+      "best": {
+        "name": "mpt-30b",
+        "n": 11,
+        "coverage": 0.13924050632911392,
+        "mean": 15.38271375153449
+      },
+      "worst": {
+        "name": "vicuna-13b-v1.3",
+        "n": 79,
+        "coverage": 1.0,
+        "mean": 2.753189092684147
+      },
+      "models": [
+        {
+          "name": "mpt-30b",
+          "n": 11,
+          "coverage": 0.13924050632911392,
+          "mean": 15.38271375153449
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 12.91532140081932
+        },
+        {
+          "name": "mpt-instruct-30b",
+          "n": 11,
+          "coverage": 0.13924050632911392,
+          "mean": 12.736961106337942
+        },
+        {
+          "name": "llama-65b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 12.016600765545686
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 11.247091126745254
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 11.209559960895497
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 10.784184662037159
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 10.495743560425414
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 10.48102071653135
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 10.435214302568617
+        },
+        {
+          "name": "falcon-7b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 10.217777217223416
+        },
+        {
+          "name": "falcon-40b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 10.058193700977807
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 9.978647806582861
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 9.974445026047572
+        },
+        {
+          "name": "llama-30b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 9.485259960200336
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 9.432853499558634
+        },
+        {
+          "name": "llama-13b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 8.505516540587056
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 8.408782410157043
+        },
+        {
+          "name": "llama-7b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 7.9336933636388585
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 4.748389906113751
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 4.408392606387436
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 79,
+          "coverage": 1.0,
+          "mean": 2.753189092684147
+        }
+      ],
+      "split": "disinformation"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "disinformation",
+  "computedAt": "2026-09-30T02:08:28.851670+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/disinformation/0000.parquet",
+        "rows": 79,
+        "bytes": 20976,
+        "sha256": "513f12c8a7949b28fbe578c6b0bdbec0ee7c1c5eedcc67133ba638e633a538c9"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/disinformation/0000.parquet",
+        "rows": 1602,
+        "bytes": 5411536,
+        "sha256": "e5b73131abc1b526f45e87c3e6ca62ee23a65573ab8a7e44ceefd77644604b6c"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

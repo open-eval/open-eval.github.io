@@ -1,0 +1,38 @@
+{
+  "method": "rasch-1pl-map",
+  "benchmark": "advbench",
+  "computedAt": "2026-10-01T18:11:43.476343+00:00",
+  "summarySha256": "c78424c34f9794e2ace23697ec0bc2273ab1ea6f2d8af606b3db3b68fe0af569",
+  "metrics": {
+    "refusal-strings": {
+      "bins": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        4,
+        2,
+        3,
+        6,
+        6,
+        19,
+        33,
+        67,
+        127,
+        127,
+        72,
+        41,
+        8,
+        2,
+        1
+      ],
+      "min": -4.729438430497055,
+      "max": 4.314731535631291,
+      "median": 1.5859060957815836,
+      "items": 520,
+      "archivedItems": 520,
+      "models": 179
+    }
+  }
+}

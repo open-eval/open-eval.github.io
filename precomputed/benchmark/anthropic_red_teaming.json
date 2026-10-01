@@ -1,0 +1,156 @@
+{
+  "itemCount": 38961,
+  "responseCount": 317916,
+  "distinctModelCount": 92,
+  "distinctModelItemPairs": 307518,
+  "duplicateResponsesRemoved": 10398,
+  "measurements": [
+    {
+      "metrics": [
+        "safety_gpt_score"
+      ],
+      "itemCount": 38961,
+      "totalResponses": 317916,
+      "loadedResponses": 317916,
+      "minimumItems": 3897,
+      "modelCount": 6,
+      "scoredResponses": 223788,
+      "excludedModelCount": 86,
+      "avgScore": 0.9822063738895741,
+      "medianScore": 0.9844361627969328,
+      "standardError": 0.003018571576340524,
+      "discrimination": 0.006749731239646107,
+      "refCoverage": 0.0,
+      "bounded": true,
+      "binary": false,
+      "best": {
+        "name": "gpt-5.2-pro-2025-12-11",
+        "n": 37298,
+        "coverage": 0.957316290649624,
+        "mean": 0.989872111105153
+      },
+      "worst": {
+        "name": "gpt-5.4-2026-03-05",
+        "n": 37298,
+        "coverage": 0.957316290649624,
+        "mean": 0.96993136361199
+      },
+      "models": [
+        {
+          "name": "gpt-5.2-pro-2025-12-11",
+          "n": 37298,
+          "coverage": 0.957316290649624,
+          "mean": 0.989872111105153
+        },
+        {
+          "name": "gpt-5.2-2025-12-11",
+          "n": 37298,
+          "coverage": 0.957316290649624,
+          "mean": 0.9872178132875757
+        },
+        {
+          "name": "gpt-5.4-nano-2026-03-17",
+          "n": 37298,
+          "coverage": 0.957316290649624,
+          "mean": 0.9860515309131856
+        },
+        {
+          "name": "gpt-5.4-mini-2026-03-17",
+          "n": 37298,
+          "coverage": 0.957316290649624,
+          "mean": 0.98282079468068
+        },
+        {
+          "name": "gpt-5.3-chat-latest",
+          "n": 37298,
+          "coverage": 0.957316290649624,
+          "mean": 0.9773446297388599
+        },
+        {
+          "name": "gpt-5.4-2026-03-05",
+          "n": 37298,
+          "coverage": 0.957316290649624,
+          "mean": 0.96993136361199
+        }
+      ],
+      "split": "anthropic_red_teaming"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "anthropic_red_teaming",
+  "computedAt": "2026-09-30T01:16:11.498505+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/anthropic_red_teaming/0000.parquet",
+        "rows": 38961,
+        "bytes": 25879166,
+        "sha256": "49013a3c9bcbc1c5cd77eabef12cc8174d0c30e8efe11a4eb8ec306a2d13b06a"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/anthropic_red_teaming/0000.parquet",
+        "rows": 45417,
+        "bytes": 147499351,
+        "sha256": "0faead9a6547040091415d60a9843ffd85afdf6b5c5f3809363e922c26d90246"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/anthropic_red_teaming/0001.parquet",
+        "rows": 45417,
+        "bytes": 82615957,
+        "sha256": "add980b218a075c098c03e7434cff03319272fbe8d5c2198833beb87702b5383"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/anthropic_red_teaming/0002.parquet",
+        "rows": 45417,
+        "bytes": 77774645,
+        "sha256": "b64fbca0f6f153f35f5b0a812eb6f32cf247a1717ad62f30e75f0e4c26801165"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/anthropic_red_teaming/0003.parquet",
+        "rows": 45417,
+        "bytes": 71865447,
+        "sha256": "04885ed228fa61aa6853caf5d50f965628ef928e2e5f7da52095c560a52b6768"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/anthropic_red_teaming/0004.parquet",
+        "rows": 45416,
+        "bytes": 71582095,
+        "sha256": "fbfed2860af05b38677dfb483ea592e3b138883eadee7f12b5f3c76a3859c0ef"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/anthropic_red_teaming/0005.parquet",
+        "rows": 45416,
+        "bytes": 67576981,
+        "sha256": "c53004e1e1e6bedaf371bb110c7b011021094d54f17ce9e156495df0a59e3fc4"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/anthropic_red_teaming/0006.parquet",
+        "rows": 45416,
+        "bytes": 67674136,
+        "sha256": "d0d4e166d335b4b35f17d8f4cc4013efcc4b93379e6ee975cc2ad9f389ba9ea5"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

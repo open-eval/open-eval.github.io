@@ -1,0 +1,38 @@
+{
+  "method": "rasch-1pl-map",
+  "benchmark": "health_orsc_bench",
+  "computedAt": "2026-10-01T18:13:47.017078+00:00",
+  "summarySha256": "1ed789c86413b1cc396df625e3d29c037f1bd8a897392a2565d33769c95d0365",
+  "metrics": {
+    "refusal-strings": {
+      "bins": [
+        2,
+        0,
+        4,
+        8,
+        5,
+        10,
+        14,
+        27,
+        25,
+        25,
+        20,
+        11,
+        18,
+        9,
+        8,
+        6,
+        6,
+        1,
+        0,
+        1
+      ],
+      "min": -3.153820581339202,
+      "max": 4.606362428032222,
+      "median": 0.4168789244210037,
+      "items": 200,
+      "archivedItems": 200,
+      "models": 170
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "method": "rasch-1pl-map",
+  "benchmark": "moralbench",
+  "computedAt": "2026-10-01T18:13:52.769696+00:00",
+  "summarySha256": "93c784b075a5bffc12e9d24cca219bb33df4f8a2a6f3239f01cbb8f9e83c3ad5",
+  "metrics": {
+    "prefix_exact_match": {
+      "bins": [
+        5,
+        0,
+        0,
+        4,
+        0,
+        3,
+        0,
+        4,
+        4,
+        5,
+        5,
+        3,
+        4,
+        0,
+        2,
+        0,
+        1,
+        0,
+        0,
+        4
+      ],
+      "min": -3.2395772439896686,
+      "max": 3.5121386310997593,
+      "median": -0.004709256536883156,
+      "items": 44,
+      "archivedItems": 88,
+      "models": 11
+    }
+  }
+}

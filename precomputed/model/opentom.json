@@ -1,0 +1,467 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "opentom",
+  "computedAt": "2026-10-01T03:07:02.389304+00:00",
+  "summarySha256": "bcae069220dddc326e6d9c7bdfe07e7e9f1300c7e1271dad9049624c87f819fb",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/opentom/0000.parquet",
+        "rows": 16008,
+        "bytes": 8732558,
+        "sha256": "560ddd40cb0fee98274eb705a21680b1298b5aeddb34f2f4879063dd653080b9"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/opentom/0000.parquet",
+        "rows": 114361,
+        "bytes": 68492439,
+        "sha256": "11ebf53abe3daa05e7939ce6c33c5277f3cd9cb8a97b263aca5788b22760c759"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/opentom/0001.parquet",
+        "rows": 114361,
+        "bytes": 64747562,
+        "sha256": "0a7963881a73de5d905dfc8b6d62971c3ab2d5bee4c8a06822bd5f0bac86d4ad"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/opentom/0002.parquet",
+        "rows": 114361,
+        "bytes": 59982260,
+        "sha256": "d506d77753a81d9523b5ab307d99caee9bf2bd74dd602626e5711dd21e928190"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/opentom/0003.parquet",
+        "rows": 114360,
+        "bytes": 73135735,
+        "sha256": "68462eba2063777ee695f5370bc6ce6c60d5502dd33456999741aa5066b015bb"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "quasi_postfix_exact_match": {
+      "available": true,
+      "itemCount": 7026,
+      "modelCount": 67,
+      "pairCount": 331534,
+      "iterations": 306,
+      "converged": true,
+      "models": [
+        {
+          "name": "grok-4",
+          "theta": 2.265747,
+          "sd": 0.060965,
+          "n": 4287
+        },
+        {
+          "name": "gpt-4.1",
+          "theta": 2.186149,
+          "sd": 0.058351,
+          "n": 4792
+        },
+        {
+          "name": "o4-mini",
+          "theta": 2.059747,
+          "sd": 0.058223,
+          "n": 4663
+        },
+        {
+          "name": "gpt-4o",
+          "theta": 2.05606,
+          "sd": 0.057748,
+          "n": 4792
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "theta": 1.882469,
+          "sd": 0.057038,
+          "n": 4792
+        },
+        {
+          "name": "phi-4",
+          "theta": 1.574012,
+          "sd": 0.056019,
+          "n": 4792
+        },
+        {
+          "name": "o3-mini",
+          "theta": 1.384995,
+          "sd": 0.055529,
+          "n": 4792
+        },
+        {
+          "name": "gpt-4o-mini",
+          "theta": 1.35828,
+          "sd": 0.055467,
+          "n": 4792
+        },
+        {
+          "name": "gemma-2-9b-it",
+          "theta": 1.104128,
+          "sd": 0.054864,
+          "n": 4789
+        },
+        {
+          "name": "DeepSeek-R1",
+          "theta": 1.061116,
+          "sd": 0.054895,
+          "n": 4792
+        },
+        {
+          "name": "internlm3-8b-instruct",
+          "theta": 0.96351,
+          "sd": 0.054648,
+          "n": 4789
+        },
+        {
+          "name": "o1",
+          "theta": 0.844609,
+          "sd": 0.054569,
+          "n": 4789
+        },
+        {
+          "name": "Qwen2.5-7B-Instruct",
+          "theta": 0.650921,
+          "sd": 0.054315,
+          "n": 4789
+        },
+        {
+          "name": "Phi-3-mini-128k-instruct",
+          "theta": 0.638666,
+          "sd": 0.054306,
+          "n": 4789
+        },
+        {
+          "name": "DeepSeek-R1-Distill-Llama-8B",
+          "theta": 0.549017,
+          "sd": 0.054248,
+          "n": 4789
+        },
+        {
+          "name": "Llama-3.2-3B-Instruct",
+          "theta": 0.386765,
+          "sd": 0.054183,
+          "n": 4789
+        },
+        {
+          "name": "Qwen2.5-3B-Instruct",
+          "theta": 0.261347,
+          "sd": 0.054166,
+          "n": 4789
+        },
+        {
+          "name": "kimi-k2",
+          "theta": 0.203613,
+          "sd": 0.054259,
+          "n": 4793
+        },
+        {
+          "name": "DeepSeek-R1-Distill-Qwen-7B",
+          "theta": 0.134555,
+          "sd": 0.054181,
+          "n": 4789
+        },
+        {
+          "name": "Qwen2-7B-Instruct",
+          "theta": 0.098086,
+          "sd": 0.054191,
+          "n": 4789
+        },
+        {
+          "name": "Qwen2.5-1.5B-Instruct",
+          "theta": 0.084571,
+          "sd": 0.054195,
+          "n": 4789
+        },
+        {
+          "name": "Qwen1.5-7B-Chat",
+          "theta": -0.216105,
+          "sd": 0.054386,
+          "n": 4789
+        },
+        {
+          "name": "Qwen1.5-4B-Chat",
+          "theta": -0.276635,
+          "sd": 0.054448,
+          "n": 4789
+        },
+        {
+          "name": "Baichuan2-7B-Chat",
+          "theta": -0.316706,
+          "sd": 0.054493,
+          "n": 4789
+        },
+        {
+          "name": "Qwen2.5-0.5B-Instruct",
+          "theta": -0.477135,
+          "sd": 0.054709,
+          "n": 4789
+        },
+        {
+          "name": "Qwen2-1.5B-Instruct",
+          "theta": -0.604788,
+          "sd": 0.054924,
+          "n": 4789
+        },
+        {
+          "name": "gemma-2-2b-it",
+          "theta": -0.629148,
+          "sd": 0.05497,
+          "n": 4789
+        },
+        {
+          "name": "Qwen1.5-1.8B-Chat",
+          "theta": -1.161525,
+          "sd": 0.054709,
+          "n": 5244
+        },
+        {
+          "name": "Qwen1.5-0.5B-Chat",
+          "theta": -1.178159,
+          "sd": 0.056397,
+          "n": 4789
+        },
+        {
+          "name": "gemma-1.1-7b-it",
+          "theta": -1.243876,
+          "sd": 0.056622,
+          "n": 4789
+        },
+        {
+          "name": "gemma-2b-it",
+          "theta": -1.500825,
+          "sd": 0.05762,
+          "n": 4789
+        },
+        {
+          "name": "gemma-1.1-2b-it",
+          "theta": -1.716188,
+          "sd": 0.058604,
+          "n": 4789
+        },
+        {
+          "name": "gemma-7b-it",
+          "theta": -1.917011,
+          "sd": 0.059646,
+          "n": 4789
+        },
+        {
+          "name": "Qwen-7B-Chat",
+          "theta": -2.361204,
+          "sd": 0.062407,
+          "n": 4789
+        },
+        {
+          "name": "RedPajama-INCITE-Base-3B-v1",
+          "theta": -2.361204,
+          "sd": 0.062407,
+          "n": 4789
+        },
+        {
+          "name": "dolly-v2-3b",
+          "theta": -2.361204,
+          "sd": 0.062407,
+          "n": 4789
+        },
+        {
+          "name": "falcon-7b",
+          "theta": -2.361204,
+          "sd": 0.062407,
+          "n": 4789
+        },
+        {
+          "name": "mpt-7b",
+          "theta": -2.361204,
+          "sd": 0.062407,
+          "n": 4789
+        },
+        {
+          "name": "mpt-7b-instruct",
+          "theta": -2.361204,
+          "sd": 0.062407,
+          "n": 4789
+        },
+        {
+          "name": "pythia-1b-v0",
+          "theta": -2.361204,
+          "sd": 0.062407,
+          "n": 4789
+        },
+        {
+          "name": "pythia-2.8b-v0",
+          "theta": -2.361204,
+          "sd": 0.062407,
+          "n": 4789
+        },
+        {
+          "name": "stablelm-base-alpha-3b",
+          "theta": -2.361204,
+          "sd": 0.062407,
+          "n": 4789
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "theta": -3.224381,
+          "sd": 0.07365,
+          "n": 5489
+        },
+        {
+          "name": "gemma-3-1b-it",
+          "theta": -4.673628,
+          "sd": 0.111842,
+          "n": 5489
+        },
+        {
+          "name": "RedPajama-INCITE-7B-Instruct",
+          "theta": -5.316642,
+          "sd": 0.131714,
+          "n": 5289
+        },
+        {
+          "name": "RedPajama-INCITE-Chat-3B-v1",
+          "theta": -5.884619,
+          "sd": 0.176021,
+          "n": 5489
+        },
+        {
+          "name": "RedPajama-INCITE-Instruct-3B-v1",
+          "theta": -6.099713,
+          "sd": 0.192545,
+          "n": 5489
+        },
+        {
+          "name": "Mistral-7B-v0.1",
+          "theta": -8.778163,
+          "sd": 0.643111,
+          "n": 5489
+        },
+        {
+          "name": "gemma-3-12b-it",
+          "theta": -8.778163,
+          "sd": 0.643111,
+          "n": 5489
+        },
+        {
+          "name": "mpt-30b-chat",
+          "theta": -8.778163,
+          "sd": 0.643111,
+          "n": 5489
+        },
+        {
+          "name": "mpt-30b-instruct",
+          "theta": -8.778163,
+          "sd": 0.643111,
+          "n": 5489
+        },
+        {
+          "name": "mpt-7b-chat",
+          "theta": -8.778163,
+          "sd": 0.643111,
+          "n": 5489
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "theta": -8.784932,
+          "sd": 0.642853,
+          "n": 5564
+        },
+        {
+          "name": "Qwen-1.8B-Chat",
+          "theta": -9.032491,
+          "sd": 0.633483,
+          "n": 4789
+        },
+        {
+          "name": "gemma-3-4b-it",
+          "theta": -9.032491,
+          "sd": 0.633483,
+          "n": 4789
+        },
+        {
+          "name": "Llama-2-7b-chat-hf",
+          "theta": -9.036746,
+          "sd": 0.633342,
+          "n": 4796
+        },
+        {
+          "name": "Qwen3-235B-A22B-Instruct-2507",
+          "theta": -9.036746,
+          "sd": 0.633342,
+          "n": 4796
+        },
+        {
+          "name": "Qwen3-30B-A3B-Instruct-2507",
+          "theta": -9.036746,
+          "sd": 0.633342,
+          "n": 4796
+        },
+        {
+          "name": "Qwen3-Next-80B-A3B-Instruct",
+          "theta": -9.036746,
+          "sd": 0.633342,
+          "n": 4796
+        },
+        {
+          "name": "Qwen3-4B-Instruct-2507",
+          "theta": -9.038,
+          "sd": 0.6333,
+          "n": 4855
+        },
+        {
+          "name": "Qwen-14B-Chat",
+          "theta": -9.065444,
+          "sd": 0.632391,
+          "n": 5244
+        },
+        {
+          "name": "Qwen1.5-14B-Chat",
+          "theta": -9.067945,
+          "sd": 0.632321,
+          "n": 5239
+        },
+        {
+          "name": "Qwen1.5-32B-Chat",
+          "theta": -9.067945,
+          "sd": 0.632321,
+          "n": 5239
+        },
+        {
+          "name": "Qwen2.5-14B-Instruct",
+          "theta": -9.067945,
+          "sd": 0.632321,
+          "n": 5239
+        },
+        {
+          "name": "Qwen2.5-32B-Instruct",
+          "theta": -9.067945,
+          "sd": 0.632321,
+          "n": 5239
+        },
+        {
+          "name": "Qwen2.5-72B-Instruct",
+          "theta": -9.067945,
+          "sd": 0.632321,
+          "n": 5239
+        },
+        {
+          "name": "Qwen2-72B-Instruct",
+          "theta": -9.068709,
+          "sd": 0.632296,
+          "n": 5234
+        }
+      ],
+      "reverseCoded": false
+    }
+  }
+}

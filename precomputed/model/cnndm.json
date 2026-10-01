@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "cnndm",
+  "computedAt": "2026-10-01T03:03:42.265131+00:00",
+  "summarySha256": "e194f4cfd36fd9e7589a003b95fca5ff4829f1f100e939fd7f2a81b3fe223c02",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "1b5006ed8eecb71aa87df80716b5c83841f282a4",
+    "observedMainRevision": "ceb4f916f09f041a68e4fc922f110013cf769e58",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/item/cnndm/0000.parquet",
+        "rows": 1000,
+        "bytes": 1865217,
+        "sha256": "65cb18c50b034f1b87088e35cf786f48d3309dcf3df2b7a974ee40d2897150f1"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0000.parquet",
+        "rows": 25680,
+        "bytes": 65665619,
+        "sha256": "5cc9d4e7eb68581837ebcf013fb4be12f7ffdf48f533e9f1223a3c05024bc7eb"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0001.parquet",
+        "rows": 25680,
+        "bytes": 81249337,
+        "sha256": "91432784d64edef331a4d95fa4af8abacc3a5f4b37a754ccc89a75460bd82099"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0002.parquet",
+        "rows": 25680,
+        "bytes": 45534834,
+        "sha256": "ea27b62d626884245df4ad8d29427b533a7954668642bf1d594c7af00fad11d8"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0003.parquet",
+        "rows": 25680,
+        "bytes": 57572490,
+        "sha256": "182bd0c751deff0bece89f41c07d544a91f1bd5748641ec9337b8eec00f9d344"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0004.parquet",
+        "rows": 25680,
+        "bytes": 58936634,
+        "sha256": "cc1a164c5230cf3a4195f16e27d2d881a9921d2aae310aacc6856fe9a8281bd2"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0005.parquet",
+        "rows": 25680,
+        "bytes": 73931544,
+        "sha256": "5d4105f601dfde2a15faacb9bb9c5d1e608db41ccefa4724a3887b70a4db5e40"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0006.parquet",
+        "rows": 25680,
+        "bytes": 71096553,
+        "sha256": "4f50c77173765ff7d0222e2984f70cd31cf568a362dd7b8693548b594e5364fc"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0007.parquet",
+        "rows": 25680,
+        "bytes": 66682268,
+        "sha256": "8a48fa4e5a96822bc347c933197ef8e92fdf923e8007ccbf93e03ea5d2b69184"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0008.parquet",
+        "rows": 25680,
+        "bytes": 53225417,
+        "sha256": "1865a368a0b653b7356510564f7da9f5cff3aadc29576b210b6751ed103511f7"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0009.parquet",
+        "rows": 25680,
+        "bytes": 60864082,
+        "sha256": "b964fce84c3187ece18207a76a25581588bd4956799c5944ec85dc4874047b49"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0010.parquet",
+        "rows": 25680,
+        "bytes": 43894335,
+        "sha256": "a4efdbc8575703967328450553a2b3fb7ca31405d71e55b59a66061d399128ab"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0011.parquet",
+        "rows": 25680,
+        "bytes": 65035122,
+        "sha256": "ba8186d9f97f80cfd9401ca002a2df997e5c2ed85286e29453812276e61950a1"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0012.parquet",
+        "rows": 25680,
+        "bytes": 69733179,
+        "sha256": "2c5093db80697d89c1f3cf37f25855828ff4ba301a18cdd8af1350aeddf6c692"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0013.parquet",
+        "rows": 25680,
+        "bytes": 70510212,
+        "sha256": "0fa4e8485f23fd4b03127d73b5aac906a515f01fc73c62cf2c0e20154e9ebaea"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0014.parquet",
+        "rows": 25680,
+        "bytes": 62780830,
+        "sha256": "874d071be62340e84bc20512e80f38581c6af55b2062713b3671e45a93754406"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0015.parquet",
+        "rows": 25680,
+        "bytes": 92252007,
+        "sha256": "e321526e733736144ad4b36f3c46e7de371c06c91db49a16d4e04f6f6260698c"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0016.parquet",
+        "rows": 25680,
+        "bytes": 73140204,
+        "sha256": "b8a2619d48a72d8bad439684aa25d4783ecbdb6ec9025461709060a359ab8737"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0017.parquet",
+        "rows": 25680,
+        "bytes": 52581630,
+        "sha256": "803dcde884e984fddc8261234f84a812ec113686384a1f502e1097c7589d19f6"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0018.parquet",
+        "rows": 25680,
+        "bytes": 19026491,
+        "sha256": "ed26f78a2070d39c70decf343beffcd676fed67f875b13de71266beb709acb1c"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0019.parquet",
+        "rows": 25680,
+        "bytes": 33150035,
+        "sha256": "37ba033cba5cbb434dd4ca9a049baefea5012ea8d687c2db6b8d106fedd0f0bd"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0020.parquet",
+        "rows": 25680,
+        "bytes": 50855418,
+        "sha256": "c89e0eba070f1fdbc9fdcd2daae17458aa5b87327d97b815b7890dbf3bfe6e1c"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0021.parquet",
+        "rows": 25680,
+        "bytes": 28406879,
+        "sha256": "9db8b5616163b814a2e4e16e0ac5ebf8289c43f0d42ac63702d3e7774c10e40c"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0022.parquet",
+        "rows": 25680,
+        "bytes": 22326103,
+        "sha256": "cb32cb7341a304d38782f8b2aaa646f058cb36145b47466e435f2063ae709f9a"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0023.parquet",
+        "rows": 25680,
+        "bytes": 61985611,
+        "sha256": "2037e0faf1eef3659423b76239e0e35010530833dd6e287930974c958d638d8e"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0024.parquet",
+        "rows": 25680,
+        "bytes": 79143918,
+        "sha256": "e0ad5f2a611a6388cbae8ee1e46425a5a474dbd698cdfeb745bb96d457bb618e"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "BERTScore-F": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "BERTScore-P": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "BERTScore-R": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "rouge_1": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "rouge_2": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "rouge_l": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "summac": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    }
+  }
+}

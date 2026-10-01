@@ -1,0 +1,2396 @@
+{
+  "itemCount": 1000,
+  "responseCount": 642000,
+  "distinctModelCount": 60,
+  "distinctModelItemPairs": 60000,
+  "duplicateResponsesRemoved": 582000,
+  "conflictingDuplicateRows": 0,
+  "conflictingDuplicateExamples": [],
+  "measurements": [
+    {
+      "metrics": [
+        "BERTScore-F"
+      ],
+      "itemCount": 1000,
+      "totalResponses": 642000,
+      "loadedResponses": 642000,
+      "minimumItems": 100,
+      "modelCount": 36,
+      "scoredResponses": 36000,
+      "excludedModelCount": 24,
+      "avgScore": 0.19321777319417147,
+      "medianScore": 0.2605910586614336,
+      "standardError": 0.03599391232514201,
+      "discrimination": 0.21294285702143276,
+      "refCoverage": 1.0,
+      "bounded": false,
+      "binary": false,
+      "best": {
+        "name": "text-davinci-003",
+        "n": 1000,
+        "coverage": 1.0,
+        "mean": 0.3358436952722259
+      },
+      "worst": {
+        "name": "vicuna-7b-v1.3",
+        "n": 1000,
+        "coverage": 1.0,
+        "mean": -0.8028361938633025
+      },
+      "models": [
+        {
+          "name": "text-davinci-003",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3358436952722259
+        },
+        {
+          "name": "command-xlarge-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3152187029303168
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3114440041114576
+        },
+        {
+          "name": "TNLGv2_530B",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.29755018950102385
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.29370435448223725
+        },
+        {
+          "name": "command-medium-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2894206664814847
+        },
+        {
+          "name": "xlarge-20221108",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.28409407816751625
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2836864963603439
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2835092933595879
+        },
+        {
+          "name": "j2-grande",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2802659318699152
+        },
+        {
+          "name": "text-babbage-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2777785231950693
+        },
+        {
+          "name": "llama-30b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2767803999604657
+        },
+        {
+          "name": "TNLGv2_7B",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.27593269996193703
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.26778759887372144
+        },
+        {
+          "name": "llama-13b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2659215352392057
+        },
+        {
+          "name": "glm",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.26525321503030136
+        },
+        {
+          "name": "j1-jumbo",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.26517509426403557
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2630674201508518
+        },
+        {
+          "name": "llama-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.25811469717201546
+        },
+        {
+          "name": "xlarge-20220609",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.25488167320284993
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.25005208565690556
+        },
+        {
+          "name": "falcon-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.24759220130721224
+        },
+        {
+          "name": "text-ada-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.24477978382405127
+        },
+        {
+          "name": "j2-large",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2410049854713725
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.23557810225326103
+        },
+        {
+          "name": "large-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.23120677882773452
+        },
+        {
+          "name": "medium-20221108",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2156090031194035
+        },
+        {
+          "name": "curie",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.21162335303751753
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.20580413788702573
+        },
+        {
+          "name": "llama-65b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.19769633743166923
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.1537861895188689
+        },
+        {
+          "name": "t0pp",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.1525262341309608
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.019269316246267407
+        },
+        {
+          "name": "small-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.05996541621365759
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.3947787007391453
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.8028361938633025
+        }
+      ],
+      "split": "cnndm"
+    },
+    {
+      "metrics": [
+        "BERTScore-P"
+      ],
+      "itemCount": 1000,
+      "totalResponses": 642000,
+      "loadedResponses": 642000,
+      "minimumItems": 100,
+      "modelCount": 36,
+      "scoredResponses": 36000,
+      "excludedModelCount": 24,
+      "avgScore": 0.1983490389729368,
+      "medianScore": 0.2666611756039492,
+      "standardError": 0.037515653866241186,
+      "discrimination": 0.22194560138783245,
+      "refCoverage": 1.0,
+      "bounded": false,
+      "binary": false,
+      "best": {
+        "name": "redpajama-incite-instruct-3b-v1",
+        "n": 1000,
+        "coverage": 1.0,
+        "mean": 0.3560042090613861
+      },
+      "worst": {
+        "name": "vicuna-7b-v1.3",
+        "n": 1000,
+        "coverage": 1.0,
+        "mean": -0.8088229896165431
+      },
+      "models": [
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3560042090613861
+        },
+        {
+          "name": "text-davinci-003",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.35166566786592013
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3255642373637529
+        },
+        {
+          "name": "TNLGv2_530B",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3238283063697745
+        },
+        {
+          "name": "command-xlarge-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.32213827606156703
+        },
+        {
+          "name": "j2-grande",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3217185155129991
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.32080635993462053
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3048183670572471
+        },
+        {
+          "name": "command-medium-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.30079827004903925
+        },
+        {
+          "name": "TNLGv2_7B",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2999410468805581
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.29094558614306154
+        },
+        {
+          "name": "j2-large",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2842497286041034
+        },
+        {
+          "name": "llama-13b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2797125528800534
+        },
+        {
+          "name": "glm",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.27614999412052565
+        },
+        {
+          "name": "llama-30b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.26933776062430115
+        },
+        {
+          "name": "large-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.26897319258470087
+        },
+        {
+          "name": "xlarge-20221108",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.26802679311553945
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.267551167713711
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.26577118349418744
+        },
+        {
+          "name": "j1-jumbo",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2594725699587143
+        },
+        {
+          "name": "medium-20221108",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2552687378880801
+        },
+        {
+          "name": "llama-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.25410958180448506
+        },
+        {
+          "name": "xlarge-20220609",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.24729370383406057
+        },
+        {
+          "name": "curie",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.23990768985659816
+        },
+        {
+          "name": "falcon-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.23635087161168486
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2353403562140884
+        },
+        {
+          "name": "text-babbage-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2280007796466234
+        },
+        {
+          "name": "llama-65b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.19836777786153834
+        },
+        {
+          "name": "text-ada-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.19492201982582263
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.1790481216443004
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.16650680526556244
+        },
+        {
+          "name": "t0pp",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.05992511863954132
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.014634472034638748
+        },
+        {
+          "name": "small-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.053809781536008815
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.4346827032752335
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.8088229896165431
+        }
+      ],
+      "split": "cnndm"
+    },
+    {
+      "metrics": [
+        "BERTScore-R"
+      ],
+      "itemCount": 1000,
+      "totalResponses": 642000,
+      "loadedResponses": 642000,
+      "minimumItems": 100,
+      "modelCount": 36,
+      "scoredResponses": 36000,
+      "excludedModelCount": 24,
+      "avgScore": 0.1933822057936553,
+      "medianScore": 0.2586031292965927,
+      "standardError": 0.03578342407614925,
+      "discrimination": 0.2116975917469866,
+      "refCoverage": 1.0,
+      "bounded": false,
+      "binary": false,
+      "best": {
+        "name": "text-babbage-001",
+        "n": 1000,
+        "coverage": 1.0,
+        "mean": 0.33345525985443963
+      },
+      "worst": {
+        "name": "vicuna-7b-v1.3",
+        "n": 1000,
+        "coverage": 1.0,
+        "mean": -0.8090914701372385
+      },
+      "models": [
+        {
+          "name": "text-babbage-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.33345525985443963
+        },
+        {
+          "name": "text-davinci-003",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3207862866614014
+        },
+        {
+          "name": "command-xlarge-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3106738228723407
+        },
+        {
+          "name": "xlarge-20221108",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.30519438660843295
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3027160199582577
+        },
+        {
+          "name": "text-ada-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.30004290733498057
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.29992978284321725
+        },
+        {
+          "name": "llama-30b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2866802349521313
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2855983672006987
+        },
+        {
+          "name": "command-medium-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2817406555715716
+        },
+        {
+          "name": "j1-jumbo",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2792750959477853
+        },
+        {
+          "name": "TNLGv2_530B",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2757817797987955
+        },
+        {
+          "name": "t0pp",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2737962851250777
+        },
+        {
+          "name": "xlarge-20220609",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2710054119918495
+        },
+        {
+          "name": "llama-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.26630258810118174
+        },
+        {
+          "name": "falcon-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2623262717106845
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.26052938538664605
+        },
+        {
+          "name": "TNLGv2_7B",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.25925572744943204
+        },
+        {
+          "name": "glm",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2579505311437533
+        },
+        {
+          "name": "llama-13b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.25434221978043203
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.25235493199143094
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.24812356435356195
+        },
+        {
+          "name": "j2-grande",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.24389831793899067
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2417746306162153
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2400270570171997
+        },
+        {
+          "name": "j2-large",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.20493386579025535
+        },
+        {
+          "name": "large-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.20214310512764497
+        },
+        {
+          "name": "llama-65b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.1979717952415813
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.1911055121544923
+        },
+        {
+          "name": "curie",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.18911343999707605
+        },
+        {
+          "name": "medium-20221108",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.18207284632863593
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.13875936233447284
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.027056670408230274
+        },
+        {
+          "name": "small-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.0680646614746247
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.3536892385929823
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.8090914701372385
+        }
+      ],
+      "split": "cnndm"
+    },
+    {
+      "metrics": [
+        "rouge_1"
+      ],
+      "itemCount": 1000,
+      "totalResponses": 642000,
+      "loadedResponses": 642000,
+      "minimumItems": 100,
+      "modelCount": 60,
+      "scoredResponses": 60000,
+      "excludedModelCount": 0,
+      "avgScore": 0.30314280637437885,
+      "medianScore": 0.34282866811736135,
+      "standardError": 0.013330777583998836,
+      "discrimination": 0.10239564555511482,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": false,
+      "best": {
+        "name": "text-davinci-003",
+        "n": 1000,
+        "coverage": 1.0,
+        "mean": 0.38800494180035516
+      },
+      "worst": {
+        "name": "palmyra-x",
+        "n": 1000,
+        "coverage": 1.0,
+        "mean": 0.0005789473684210527
+      },
+      "models": [
+        {
+          "name": "text-davinci-003",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.38800494180035516
+        },
+        {
+          "name": "command-xlarge-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.38717417636741003
+        },
+        {
+          "name": "stanford-online-all-v4-s3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.38476472584118665
+        },
+        {
+          "name": "text-davinci-002",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.38448013353790583
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3808727243747971
+        },
+        {
+          "name": "luminous-supreme",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3796635666959678
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.37809622183241964
+        },
+        {
+          "name": "llama-30b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3777494769249641
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3760183534996394
+        },
+        {
+          "name": "text-curie-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3740888818702018
+        },
+        {
+          "name": "command-medium-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3717926634184405
+        },
+        {
+          "name": "xlarge-20221108",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.369598962088762
+        },
+        {
+          "name": "TNLGv2_530B",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.36779447625127676
+        },
+        {
+          "name": "opt-175b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3672747677812372
+        },
+        {
+          "name": "text-babbage-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3669726875332607
+        },
+        {
+          "name": "luminous-extended",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3646353526943791
+        },
+        {
+          "name": "llama-13b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.36261486759188916
+        },
+        {
+          "name": "palmyra-instruct-30",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.36048476859357154
+        },
+        {
+          "name": "glm",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3588313308880594
+        },
+        {
+          "name": "llama-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.35844819351212126
+        },
+        {
+          "name": "llama-65b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3539544534007507
+        },
+        {
+          "name": "text-ada-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3509691835234793
+        },
+        {
+          "name": "j2-jumbo",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3502837103760435
+        },
+        {
+          "name": "falcon-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3501420993723251
+        },
+        {
+          "name": "TNLGv2_7B",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.34975717194968226
+        },
+        {
+          "name": "xlarge-20220609",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.34974847972972933
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3464834609045895
+        },
+        {
+          "name": "luminous-base",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3444145857649359
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3441913919573339
+        },
+        {
+          "name": "davinci",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.34360634028100484
+        },
+        {
+          "name": "j1-jumbo",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3420509959537178
+        },
+        {
+          "name": "j1-grande-v2-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.34055833906676103
+        },
+        {
+          "name": "j2-grande",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3392851508246264
+        },
+        {
+          "name": "gpt-neox-20b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.33836693358786435
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3381114841729589
+        },
+        {
+          "name": "gpt-j-6b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3366301353972024
+        },
+        {
+          "name": "j1-grande",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3332429851058692
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3301895127758427
+        },
+        {
+          "name": "t0pp",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.32898344976343186
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.32635429130758425
+        },
+        {
+          "name": "j1-large",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.32284522058811005
+        },
+        {
+          "name": "j2-large",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3126807601713657
+        },
+        {
+          "name": "medium-20221108",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.31200999488502135
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3119640463233973
+        },
+        {
+          "name": "curie",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.31180632411616444
+        },
+        {
+          "name": "large-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3089777470634699
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2924942787462788
+        },
+        {
+          "name": "opt-66b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.28966270474840733
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.27045261213276334
+        },
+        {
+          "name": "medium-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.25774265853833384
+        },
+        {
+          "name": "bloom",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.17831553108181866
+        },
+        {
+          "name": "ul2",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.16460268880110018
+        },
+        {
+          "name": "t5-11b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.13195219716481474
+        },
+        {
+          "name": "yalm",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.12211093509101782
+        },
+        {
+          "name": "ada",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.12008565779991037
+        },
+        {
+          "name": "small-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.10923978035836207
+        },
+        {
+          "name": "babbage",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.06588014827064646
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.006355862468121111
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.0021248584316291516
+        },
+        {
+          "name": "palmyra-x",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.0005789473684210527
+        }
+      ],
+      "split": "cnndm"
+    },
+    {
+      "metrics": [
+        "rouge_2"
+      ],
+      "itemCount": 1000,
+      "totalResponses": 642000,
+      "loadedResponses": 642000,
+      "minimumItems": 100,
+      "modelCount": 60,
+      "scoredResponses": 60000,
+      "excludedModelCount": 0,
+      "avgScore": 0.11884589510111654,
+      "medianScore": 0.1363753884060086,
+      "standardError": 0.005982662970897211,
+      "discrimination": 0.045953706239838084,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": false,
+      "best": {
+        "name": "llama-2-7b",
+        "n": 1000,
+        "coverage": 1.0,
+        "mean": 0.16233888091021223
+      },
+      "worst": {
+        "name": "alpaca-7b",
+        "n": 1000,
+        "coverage": 1.0,
+        "mean": 0.0
+      },
+      "models": [
+        {
+          "name": "llama-2-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.16233888091021223
+        },
+        {
+          "name": "luminous-supreme",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.16130388977775562
+        },
+        {
+          "name": "llama-30b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.16117449499273878
+        },
+        {
+          "name": "command-xlarge-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.15992485279841304
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.15916634986177405
+        },
+        {
+          "name": "stanford-online-all-v4-s3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.15660598666540504
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.15657447375765313
+        },
+        {
+          "name": "text-davinci-002",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.15606438745926962
+        },
+        {
+          "name": "text-davinci-003",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.1551745221716696
+        },
+        {
+          "name": "xlarge-20221108",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.15404774871792107
+        },
+        {
+          "name": "command-medium-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.15332362302240674
+        },
+        {
+          "name": "TNLGv2_530B",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.15243345989060225
+        },
+        {
+          "name": "llama-65b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.15141547044280743
+        },
+        {
+          "name": "text-babbage-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.15120775553199473
+        },
+        {
+          "name": "luminous-extended",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.1508859204830993
+        },
+        {
+          "name": "opt-175b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.14876395105374765
+        },
+        {
+          "name": "text-curie-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.1479021244225697
+        },
+        {
+          "name": "llama-13b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.14762347952479393
+        },
+        {
+          "name": "glm",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.14707274752762353
+        },
+        {
+          "name": "llama-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.14622707643110633
+        },
+        {
+          "name": "xlarge-20220609",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.14594308078818535
+        },
+        {
+          "name": "palmyra-instruct-30",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.14348490254078813
+        },
+        {
+          "name": "j1-jumbo",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.14246750210635445
+        },
+        {
+          "name": "TNLGv2_7B",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.14116282774612887
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.1405147390412038
+        },
+        {
+          "name": "j2-jumbo",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.13911984565320498
+        },
+        {
+          "name": "j1-grande-v2-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.13834457024672084
+        },
+        {
+          "name": "falcon-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.13829372397689374
+        },
+        {
+          "name": "text-ada-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.1370115120060189
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.136846896953718
+        },
+        {
+          "name": "luminous-base",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.1359038798582992
+        },
+        {
+          "name": "davinci",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.13476980481299655
+        },
+        {
+          "name": "j2-grande",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.1314185880129937
+        },
+        {
+          "name": "gpt-j-6b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.13078119242594116
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.13038199624431987
+        },
+        {
+          "name": "gpt-neox-20b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.12941681902053137
+        },
+        {
+          "name": "j1-grande",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.12927296291256293
+        },
+        {
+          "name": "j1-large",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.128290514181276
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.12259358859290016
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.12232926844655444
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.12139463583802078
+        },
+        {
+          "name": "j2-large",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.12004083561102696
+        },
+        {
+          "name": "t0pp",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.11928798642823289
+        },
+        {
+          "name": "medium-20221108",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.1188949375471476
+        },
+        {
+          "name": "large-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.11792205466824383
+        },
+        {
+          "name": "curie",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.1154620102393672
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.11468864313554282
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.10434997666164718
+        },
+        {
+          "name": "opt-66b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.09831172801094064
+        },
+        {
+          "name": "medium-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.08905984810674276
+        },
+        {
+          "name": "ada",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.0440454103334345
+        },
+        {
+          "name": "bloom",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.04363799365000652
+        },
+        {
+          "name": "t5-11b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.04215147758753453
+        },
+        {
+          "name": "small-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.030735166522086004
+        },
+        {
+          "name": "ul2",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.03049974049102781
+        },
+        {
+          "name": "yalm",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.020781015049764963
+        },
+        {
+          "name": "babbage",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.01929634280564029
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.0022037780837146632
+        },
+        {
+          "name": "palmyra-x",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.00041071428571428574
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.0
+        }
+      ],
+      "split": "cnndm"
+    },
+    {
+      "metrics": [
+        "rouge_l"
+      ],
+      "itemCount": 1000,
+      "totalResponses": 642000,
+      "loadedResponses": 642000,
+      "minimumItems": 100,
+      "modelCount": 60,
+      "scoredResponses": 60000,
+      "excludedModelCount": 0,
+      "avgScore": 0.2036198775179652,
+      "medianScore": 0.23110451931152085,
+      "standardError": 0.008813794916762674,
+      "discrimination": 0.06770004334747756,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": false,
+      "best": {
+        "name": "text-davinci-003",
+        "n": 1000,
+        "coverage": 1.0,
+        "mean": 0.26313901159286385
+      },
+      "worst": {
+        "name": "palmyra-x",
+        "n": 1000,
+        "coverage": 1.0,
+        "mean": 0.0004210526315789474
+      },
+      "models": [
+        {
+          "name": "text-davinci-003",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.26313901159286385
+        },
+        {
+          "name": "text-davinci-002",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.25887136289881996
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.25620056412178577
+        },
+        {
+          "name": "luminous-supreme",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2553193768190384
+        },
+        {
+          "name": "command-xlarge-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2552916763126387
+        },
+        {
+          "name": "stanford-online-all-v4-s3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2549761676757823
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.25275317187625945
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.25261540550820205
+        },
+        {
+          "name": "command-medium-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.25129611188802026
+        },
+        {
+          "name": "TNLGv2_530B",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.24953467241434213
+        },
+        {
+          "name": "llama-30b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.24857179846102823
+        },
+        {
+          "name": "xlarge-20221108",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2470306000889733
+        },
+        {
+          "name": "opt-175b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.24359080564296948
+        },
+        {
+          "name": "luminous-extended",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.24355633792276518
+        },
+        {
+          "name": "glm",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2426578651582814
+        },
+        {
+          "name": "palmyra-instruct-30",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.24235073327705636
+        },
+        {
+          "name": "llama-13b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.24195620657924743
+        },
+        {
+          "name": "text-curie-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.24007602383571364
+        },
+        {
+          "name": "j2-jumbo",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.23879431681372204
+        },
+        {
+          "name": "j1-grande-v2-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2359923759691341
+        },
+        {
+          "name": "llama-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.23522787107822227
+        },
+        {
+          "name": "davinci",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2351227926203568
+        },
+        {
+          "name": "TNLGv2_7B",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.23496182951012012
+        },
+        {
+          "name": "xlarge-20220609",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.23469609811945769
+        },
+        {
+          "name": "text-babbage-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.23433140246347786
+        },
+        {
+          "name": "j2-grande",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2337514620165961
+        },
+        {
+          "name": "luminous-base",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.23321619407401353
+        },
+        {
+          "name": "j1-jumbo",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.23311826534928487
+        },
+        {
+          "name": "llama-65b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2318253559896338
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.23111113375287845
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.23109790487016324
+        },
+        {
+          "name": "falcon-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.23089336931828955
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.22966756585741926
+        },
+        {
+          "name": "j1-grande",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.22691046001805712
+        },
+        {
+          "name": "gpt-neox-20b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.22586954693751027
+        },
+        {
+          "name": "gpt-j-6b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.22524015944846784
+        },
+        {
+          "name": "text-ada-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.22200866892815524
+        },
+        {
+          "name": "j2-large",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2207684016036513
+        },
+        {
+          "name": "j1-large",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.2186927412934262
+        },
+        {
+          "name": "medium-20221108",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.21767287669518462
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.21735679636366725
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.21594417388913575
+        },
+        {
+          "name": "curie",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.21495362953565364
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.21426635736297747
+        },
+        {
+          "name": "large-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.21212300951715266
+        },
+        {
+          "name": "t0pp",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.21131850368706878
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.19880114760640036
+        },
+        {
+          "name": "medium-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.18474142816071523
+        },
+        {
+          "name": "opt-66b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.18148809501717836
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.17594535591450636
+        },
+        {
+          "name": "bloom",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.12389293833706831
+        },
+        {
+          "name": "ul2",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.10210634843759264
+        },
+        {
+          "name": "yalm",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.09591883023825462
+        },
+        {
+          "name": "t5-11b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.09067054811043639
+        },
+        {
+          "name": "ada",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.0857217844268608
+        },
+        {
+          "name": "small-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.07870384644340735
+        },
+        {
+          "name": "babbage",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.04538026893631973
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.004619856086649367
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.0020599955742788075
+        },
+        {
+          "name": "palmyra-x",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.0004210526315789474
+        }
+      ],
+      "split": "cnndm"
+    },
+    {
+      "metrics": [
+        "summac"
+      ],
+      "itemCount": 1000,
+      "totalResponses": 642000,
+      "loadedResponses": 642000,
+      "minimumItems": 100,
+      "modelCount": 36,
+      "scoredResponses": 36000,
+      "excludedModelCount": 24,
+      "avgScore": 0.37121994579355455,
+      "medianScore": 0.46191608467748296,
+      "standardError": 0.038563571411089834,
+      "discrimination": 0.2281451651892669,
+      "refCoverage": 1.0,
+      "bounded": false,
+      "binary": false,
+      "best": {
+        "name": "TNLGv2_530B",
+        "n": 1000,
+        "coverage": 1.0,
+        "mean": 0.594189135057964
+      },
+      "worst": {
+        "name": "alpaca-7b",
+        "n": 1000,
+        "coverage": 1.0,
+        "mean": -0.39016124280293785
+      },
+      "models": [
+        {
+          "name": "TNLGv2_530B",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.594189135057964
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.5894132407657684
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.5838776740119571
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.5761933706041367
+        },
+        {
+          "name": "llama-13b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.5606550314676194
+        },
+        {
+          "name": "llama-30b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.5559364774310399
+        },
+        {
+          "name": "xlarge-20221108",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.5475137046904791
+        },
+        {
+          "name": "llama-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.5203514412213885
+        },
+        {
+          "name": "glm",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.517368350419544
+        },
+        {
+          "name": "j1-jumbo",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.5133923418812938
+        },
+        {
+          "name": "llama-65b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.5116998477511936
+        },
+        {
+          "name": "large-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.5100380945615782
+        },
+        {
+          "name": "xlarge-20220609",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.4976127465485303
+        },
+        {
+          "name": "TNLGv2_7B",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.494872810571484
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.48107940831342644
+        },
+        {
+          "name": "j2-grande",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.4765877910492912
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.470057199327323
+        },
+        {
+          "name": "curie",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.46991762785512614
+        },
+        {
+          "name": "j2-large",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.4539145414998398
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.4446092975785828
+        },
+        {
+          "name": "falcon-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.4360746850289652
+        },
+        {
+          "name": "command-xlarge-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.4344522646404448
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.4068422685488835
+        },
+        {
+          "name": "medium-20221108",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.40238541392173816
+        },
+        {
+          "name": "text-davinci-003",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3966742409660703
+        },
+        {
+          "name": "text-babbage-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.37688565772979976
+        },
+        {
+          "name": "command-medium-beta",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.3416671609870283
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.22278227606081172
+        },
+        {
+          "name": "text-ada-001",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.20711599458512805
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.17204015317493015
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.10286621241796584
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": 0.017297046460802594
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.0026521609913219106
+        },
+        {
+          "name": "t0pp",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.03718748604305207
+        },
+        {
+          "name": "small-20220720",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.09244456872485933
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 1000,
+          "coverage": 1.0,
+          "mean": -0.39016124280293785
+        }
+      ],
+      "split": "cnndm"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "cnndm",
+  "computedAt": "2026-09-30T22:33:08.024583+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "1b5006ed8eecb71aa87df80716b5c83841f282a4",
+    "observedMainRevision": "ceb4f916f09f041a68e4fc922f110013cf769e58",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/item/cnndm/0000.parquet",
+        "rows": 1000,
+        "bytes": 1865217,
+        "sha256": "65cb18c50b034f1b87088e35cf786f48d3309dcf3df2b7a974ee40d2897150f1"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0000.parquet",
+        "rows": 25680,
+        "bytes": 65665619,
+        "sha256": "5cc9d4e7eb68581837ebcf013fb4be12f7ffdf48f533e9f1223a3c05024bc7eb"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0001.parquet",
+        "rows": 25680,
+        "bytes": 81249337,
+        "sha256": "91432784d64edef331a4d95fa4af8abacc3a5f4b37a754ccc89a75460bd82099"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0002.parquet",
+        "rows": 25680,
+        "bytes": 45534834,
+        "sha256": "ea27b62d626884245df4ad8d29427b533a7954668642bf1d594c7af00fad11d8"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0003.parquet",
+        "rows": 25680,
+        "bytes": 57572490,
+        "sha256": "182bd0c751deff0bece89f41c07d544a91f1bd5748641ec9337b8eec00f9d344"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0004.parquet",
+        "rows": 25680,
+        "bytes": 58936634,
+        "sha256": "cc1a164c5230cf3a4195f16e27d2d881a9921d2aae310aacc6856fe9a8281bd2"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0005.parquet",
+        "rows": 25680,
+        "bytes": 73931544,
+        "sha256": "5d4105f601dfde2a15faacb9bb9c5d1e608db41ccefa4724a3887b70a4db5e40"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0006.parquet",
+        "rows": 25680,
+        "bytes": 71096553,
+        "sha256": "4f50c77173765ff7d0222e2984f70cd31cf568a362dd7b8693548b594e5364fc"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0007.parquet",
+        "rows": 25680,
+        "bytes": 66682268,
+        "sha256": "8a48fa4e5a96822bc347c933197ef8e92fdf923e8007ccbf93e03ea5d2b69184"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0008.parquet",
+        "rows": 25680,
+        "bytes": 53225417,
+        "sha256": "1865a368a0b653b7356510564f7da9f5cff3aadc29576b210b6751ed103511f7"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0009.parquet",
+        "rows": 25680,
+        "bytes": 60864082,
+        "sha256": "b964fce84c3187ece18207a76a25581588bd4956799c5944ec85dc4874047b49"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0010.parquet",
+        "rows": 25680,
+        "bytes": 43894335,
+        "sha256": "a4efdbc8575703967328450553a2b3fb7ca31405d71e55b59a66061d399128ab"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0011.parquet",
+        "rows": 25680,
+        "bytes": 65035122,
+        "sha256": "ba8186d9f97f80cfd9401ca002a2df997e5c2ed85286e29453812276e61950a1"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0012.parquet",
+        "rows": 25680,
+        "bytes": 69733179,
+        "sha256": "2c5093db80697d89c1f3cf37f25855828ff4ba301a18cdd8af1350aeddf6c692"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0013.parquet",
+        "rows": 25680,
+        "bytes": 70510212,
+        "sha256": "0fa4e8485f23fd4b03127d73b5aac906a515f01fc73c62cf2c0e20154e9ebaea"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0014.parquet",
+        "rows": 25680,
+        "bytes": 62780830,
+        "sha256": "874d071be62340e84bc20512e80f38581c6af55b2062713b3671e45a93754406"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0015.parquet",
+        "rows": 25680,
+        "bytes": 92252007,
+        "sha256": "e321526e733736144ad4b36f3c46e7de371c06c91db49a16d4e04f6f6260698c"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0016.parquet",
+        "rows": 25680,
+        "bytes": 73140204,
+        "sha256": "b8a2619d48a72d8bad439684aa25d4783ecbdb6ec9025461709060a359ab8737"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0017.parquet",
+        "rows": 25680,
+        "bytes": 52581630,
+        "sha256": "803dcde884e984fddc8261234f84a812ec113686384a1f502e1097c7589d19f6"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0018.parquet",
+        "rows": 25680,
+        "bytes": 19026491,
+        "sha256": "ed26f78a2070d39c70decf343beffcd676fed67f875b13de71266beb709acb1c"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0019.parquet",
+        "rows": 25680,
+        "bytes": 33150035,
+        "sha256": "37ba033cba5cbb434dd4ca9a049baefea5012ea8d687c2db6b8d106fedd0f0bd"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0020.parquet",
+        "rows": 25680,
+        "bytes": 50855418,
+        "sha256": "c89e0eba070f1fdbc9fdcd2daae17458aa5b87327d97b815b7890dbf3bfe6e1c"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0021.parquet",
+        "rows": 25680,
+        "bytes": 28406879,
+        "sha256": "9db8b5616163b814a2e4e16e0ac5ebf8289c43f0d42ac63702d3e7774c10e40c"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0022.parquet",
+        "rows": 25680,
+        "bytes": 22326103,
+        "sha256": "cb32cb7341a304d38782f8b2aaa646f058cb36145b47466e435f2063ae709f9a"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0023.parquet",
+        "rows": 25680,
+        "bytes": 61985611,
+        "sha256": "2037e0faf1eef3659423b76239e0e35010530833dd6e287930974c958d638d8e"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/cnndm/0024.parquet",
+        "rows": 25680,
+        "bytes": 79143918,
+        "sha256": "e0ad5f2a611a6388cbae8ee1e46425a5a474dbd698cdfeb745bb96d457bb618e"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

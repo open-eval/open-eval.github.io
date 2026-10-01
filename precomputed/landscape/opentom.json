@@ -1,0 +1,38 @@
+{
+  "method": "rasch-1pl-map",
+  "benchmark": "opentom",
+  "computedAt": "2026-10-01T18:14:08.170756+00:00",
+  "summarySha256": "bcae069220dddc326e6d9c7bdfe07e7e9f1300c7e1271dad9049624c87f819fb",
+  "metrics": {
+    "quasi_postfix_exact_match": {
+      "bins": [
+        1,
+        4,
+        14,
+        59,
+        219,
+        666,
+        179,
+        160,
+        520,
+        740,
+        380,
+        1685,
+        882,
+        571,
+        332,
+        234,
+        127,
+        102,
+        75,
+        76
+      ],
+      "min": -5.696069959525743,
+      "max": 4.982056656898407,
+      "median": 0.3667886296849077,
+      "items": 7026,
+      "archivedItems": 16008,
+      "models": 67
+    }
+  }
+}

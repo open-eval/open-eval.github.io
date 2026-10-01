@@ -1,0 +1,1126 @@
+{
+  "itemCount": 800,
+  "responseCount": 40835,
+  "distinctModelCount": 60,
+  "distinctModelItemPairs": 40835,
+  "duplicateResponsesRemoved": 0,
+  "conflictingDuplicateRows": 0,
+  "conflictingDuplicateExamples": [],
+  "measurements": [
+    {
+      "metrics": [
+        "cause_quasi_exact_match"
+      ],
+      "itemCount": 800,
+      "totalResponses": 40835,
+      "loadedResponses": 40835,
+      "minimumItems": 80,
+      "modelCount": 53,
+      "scoredResponses": 19627,
+      "excludedModelCount": 7,
+      "avgScore": 0.43404655686811444,
+      "medianScore": 0.45698924731182794,
+      "standardError": 0.036180858079508736,
+      "discrimination": 0.2609038779919086,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "DeepSeek-R1",
+        "n": 400,
+        "coverage": 0.5,
+        "mean": 0.8125
+      },
+      "worst": {
+        "name": "Qwen-7B-Chat",
+        "n": 218,
+        "coverage": 0.2725,
+        "mean": 0.0
+      },
+      "models": [
+        {
+          "name": "DeepSeek-R1",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.8125
+        },
+        {
+          "name": "gpt-4.1",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.81
+        },
+        {
+          "name": "gpt-4o",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.8025
+        },
+        {
+          "name": "o1",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.7975
+        },
+        {
+          "name": "grok-4",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.775
+        },
+        {
+          "name": "kimi-k2",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.775
+        },
+        {
+          "name": "o4-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.775
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.7575
+        },
+        {
+          "name": "o3-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.7575
+        },
+        {
+          "name": "gpt-4o-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.725
+        },
+        {
+          "name": "o1-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.72
+        },
+        {
+          "name": "Qwen2.5-14B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.71
+        },
+        {
+          "name": "Qwen2-7B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.6725
+        },
+        {
+          "name": "Qwen2.5-7B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.665
+        },
+        {
+          "name": "Qwen3-4B-Instruct-2507",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.6575
+        },
+        {
+          "name": "phi-4",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.62
+        },
+        {
+          "name": "Qwen1.5-7B-Chat",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.61
+        },
+        {
+          "name": "Qwen2.5-3B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.5775
+        },
+        {
+          "name": "Qwen2.5-1.5B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.5725
+        },
+        {
+          "name": "Qwen1.5-4B-Chat",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.5575
+        },
+        {
+          "name": "DeepSeek-R1-Distill-Llama-8B",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.5525
+        },
+        {
+          "name": "Qwen2-1.5B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.5325
+        },
+        {
+          "name": "Llama-3.2-3B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.5075
+        },
+        {
+          "name": "DeepSeek-R1-Distill-Qwen-7B",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.5025
+        },
+        {
+          "name": "Phi-3-mini-128k-instruct",
+          "n": 211,
+          "coverage": 0.26375,
+          "mean": 0.47393364928909953
+        },
+        {
+          "name": "gemma-2-2b-it",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.4625
+        },
+        {
+          "name": "dolly-v2-3b",
+          "n": 372,
+          "coverage": 0.465,
+          "mean": 0.45698924731182794
+        },
+        {
+          "name": "internlm3-8b-instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.455
+        },
+        {
+          "name": "Qwen2.5-0.5B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.4175
+        },
+        {
+          "name": "RedPajama-INCITE-Base-3B-v1",
+          "n": 399,
+          "coverage": 0.49875,
+          "mean": 0.40601503759398494
+        },
+        {
+          "name": "Baichuan2-7B-Chat",
+          "n": 253,
+          "coverage": 0.31625,
+          "mean": 0.4031620553359684
+        },
+        {
+          "name": "RedPajama-INCITE-7B-Base",
+          "n": 327,
+          "coverage": 0.40875,
+          "mean": 0.39755351681957185
+        },
+        {
+          "name": "RedPajama-INCITE-7B-Instruct",
+          "n": 384,
+          "coverage": 0.48,
+          "mean": 0.3802083333333333
+        },
+        {
+          "name": "RedPajama-INCITE-Instruct-3B-v1",
+          "n": 396,
+          "coverage": 0.495,
+          "mean": 0.36363636363636365
+        },
+        {
+          "name": "RedPajama-INCITE-Chat-3B-v1",
+          "n": 388,
+          "coverage": 0.485,
+          "mean": 0.33762886597938147
+        },
+        {
+          "name": "Qwen1.5-1.8B-Chat",
+          "n": 393,
+          "coverage": 0.49125,
+          "mean": 0.30279898218829515
+        },
+        {
+          "name": "Llama-2-7b-chat-hf",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.2825
+        },
+        {
+          "name": "gemma-2b-it",
+          "n": 328,
+          "coverage": 0.41,
+          "mean": 0.25609756097560976
+        },
+        {
+          "name": "gemma-3-1b-it",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.2275
+        },
+        {
+          "name": "mpt-7b-chat",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.225
+        },
+        {
+          "name": "phi-4-reasoning",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.1875
+        },
+        {
+          "name": "Qwen1.5-0.5B-Chat",
+          "n": 352,
+          "coverage": 0.44,
+          "mean": 0.12215909090909091
+        },
+        {
+          "name": "RedPajama-INCITE-7B-Chat",
+          "n": 359,
+          "coverage": 0.44875,
+          "mean": 0.116991643454039
+        },
+        {
+          "name": "stablelm-base-alpha-3b",
+          "n": 399,
+          "coverage": 0.49875,
+          "mean": 0.09523809523809523
+        },
+        {
+          "name": "pythia-1b-v0",
+          "n": 386,
+          "coverage": 0.4825,
+          "mean": 0.09326424870466321
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 333,
+          "coverage": 0.41625,
+          "mean": 0.08708708708708708
+        },
+        {
+          "name": "pythia-2.8b-v0",
+          "n": 390,
+          "coverage": 0.4875,
+          "mean": 0.07179487179487179
+        },
+        {
+          "name": "mpt-7b-instruct",
+          "n": 291,
+          "coverage": 0.36375,
+          "mean": 0.058419243986254296
+        },
+        {
+          "name": "gemma-1.1-7b-it",
+          "n": 242,
+          "coverage": 0.3025,
+          "mean": 0.04132231404958678
+        },
+        {
+          "name": "gemma-1.1-2b-it",
+          "n": 389,
+          "coverage": 0.48625,
+          "mean": 0.028277634961439587
+        },
+        {
+          "name": "gemma-7b-it",
+          "n": 213,
+          "coverage": 0.26625,
+          "mean": 0.009389671361502348
+        },
+        {
+          "name": "Qwen-14B-Chat",
+          "n": 204,
+          "coverage": 0.255,
+          "mean": 0.0
+        },
+        {
+          "name": "Qwen-7B-Chat",
+          "n": 218,
+          "coverage": 0.2725,
+          "mean": 0.0
+        }
+      ],
+      "split": "emobench"
+    },
+    {
+      "metrics": [
+        "emotion_quasi_exact_match"
+      ],
+      "itemCount": 800,
+      "totalResponses": 40835,
+      "loadedResponses": 40835,
+      "minimumItems": 80,
+      "modelCount": 53,
+      "scoredResponses": 19627,
+      "excludedModelCount": 7,
+      "avgScore": 0.293242677567077,
+      "medianScore": 0.2475,
+      "standardError": 0.02591595679199945,
+      "discrimination": 0.18688262213252652,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "o1",
+        "n": 400,
+        "coverage": 0.5,
+        "mean": 0.6675
+      },
+      "worst": {
+        "name": "Qwen-7B-Chat",
+        "n": 218,
+        "coverage": 0.2725,
+        "mean": 0.0
+      },
+      "models": [
+        {
+          "name": "o1",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.6675
+        },
+        {
+          "name": "o4-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.645
+        },
+        {
+          "name": "DeepSeek-R1",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.6425
+        },
+        {
+          "name": "gpt-4o",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.6125
+        },
+        {
+          "name": "kimi-k2",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.605
+        },
+        {
+          "name": "grok-4",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.6
+        },
+        {
+          "name": "gpt-4.1",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.585
+        },
+        {
+          "name": "o3-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.545
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.53
+        },
+        {
+          "name": "gpt-4o-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.5
+        },
+        {
+          "name": "o1-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.4975
+        },
+        {
+          "name": "Qwen2.5-14B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.49
+        },
+        {
+          "name": "phi-4",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.465
+        },
+        {
+          "name": "phi-4-reasoning",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.3925
+        },
+        {
+          "name": "Qwen2.5-7B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.39
+        },
+        {
+          "name": "Qwen3-4B-Instruct-2507",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.3775
+        },
+        {
+          "name": "Qwen2-7B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.3675
+        },
+        {
+          "name": "DeepSeek-R1-Distill-Llama-8B",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.36
+        },
+        {
+          "name": "dolly-v2-3b",
+          "n": 372,
+          "coverage": 0.465,
+          "mean": 0.33602150537634407
+        },
+        {
+          "name": "Qwen2.5-3B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.3225
+        },
+        {
+          "name": "Qwen1.5-7B-Chat",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.315
+        },
+        {
+          "name": "DeepSeek-R1-Distill-Qwen-7B",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.305
+        },
+        {
+          "name": "Qwen2.5-1.5B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.2725
+        },
+        {
+          "name": "RedPajama-INCITE-7B-Instruct",
+          "n": 384,
+          "coverage": 0.48,
+          "mean": 0.2630208333333333
+        },
+        {
+          "name": "RedPajama-INCITE-Base-3B-v1",
+          "n": 399,
+          "coverage": 0.49875,
+          "mean": 0.2606516290726817
+        },
+        {
+          "name": "RedPajama-INCITE-7B-Base",
+          "n": 327,
+          "coverage": 0.40875,
+          "mean": 0.2599388379204893
+        },
+        {
+          "name": "internlm3-8b-instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.2475
+        },
+        {
+          "name": "Qwen1.5-4B-Chat",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.2425
+        },
+        {
+          "name": "Phi-3-mini-128k-instruct",
+          "n": 211,
+          "coverage": 0.26375,
+          "mean": 0.23696682464454977
+        },
+        {
+          "name": "Qwen2.5-0.5B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.23
+        },
+        {
+          "name": "gemma-2-2b-it",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.23
+        },
+        {
+          "name": "RedPajama-INCITE-Chat-3B-v1",
+          "n": 388,
+          "coverage": 0.485,
+          "mean": 0.22938144329896906
+        },
+        {
+          "name": "gemma-2b-it",
+          "n": 328,
+          "coverage": 0.41,
+          "mean": 0.22865853658536586
+        },
+        {
+          "name": "Llama-3.2-3B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.2225
+        },
+        {
+          "name": "RedPajama-INCITE-Instruct-3B-v1",
+          "n": 396,
+          "coverage": 0.495,
+          "mean": 0.21717171717171718
+        },
+        {
+          "name": "Qwen2-1.5B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.2075
+        },
+        {
+          "name": "gemma-3-1b-it",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.185
+        },
+        {
+          "name": "mpt-7b-chat",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.185
+        },
+        {
+          "name": "Qwen1.5-1.8B-Chat",
+          "n": 393,
+          "coverage": 0.49125,
+          "mean": 0.17557251908396945
+        },
+        {
+          "name": "Baichuan2-7B-Chat",
+          "n": 253,
+          "coverage": 0.31625,
+          "mean": 0.16205533596837945
+        },
+        {
+          "name": "stablelm-base-alpha-3b",
+          "n": 399,
+          "coverage": 0.49875,
+          "mean": 0.15538847117794485
+        },
+        {
+          "name": "pythia-1b-v0",
+          "n": 386,
+          "coverage": 0.4825,
+          "mean": 0.14248704663212436
+        },
+        {
+          "name": "Qwen1.5-0.5B-Chat",
+          "n": 352,
+          "coverage": 0.44,
+          "mean": 0.11647727272727272
+        },
+        {
+          "name": "pythia-2.8b-v0",
+          "n": 390,
+          "coverage": 0.4875,
+          "mean": 0.11538461538461539
+        },
+        {
+          "name": "Llama-2-7b-chat-hf",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.1025
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 333,
+          "coverage": 0.41625,
+          "mean": 0.09009009009009009
+        },
+        {
+          "name": "RedPajama-INCITE-7B-Chat",
+          "n": 359,
+          "coverage": 0.44875,
+          "mean": 0.08635097493036212
+        },
+        {
+          "name": "mpt-7b-instruct",
+          "n": 291,
+          "coverage": 0.36375,
+          "mean": 0.0859106529209622
+        },
+        {
+          "name": "gemma-1.1-7b-it",
+          "n": 242,
+          "coverage": 0.3025,
+          "mean": 0.02066115702479339
+        },
+        {
+          "name": "gemma-1.1-2b-it",
+          "n": 389,
+          "coverage": 0.48625,
+          "mean": 0.010282776349614395
+        },
+        {
+          "name": "gemma-7b-it",
+          "n": 213,
+          "coverage": 0.26625,
+          "mean": 0.009389671361502348
+        },
+        {
+          "name": "Qwen-14B-Chat",
+          "n": 204,
+          "coverage": 0.255,
+          "mean": 0.0
+        },
+        {
+          "name": "Qwen-7B-Chat",
+          "n": 218,
+          "coverage": 0.2725,
+          "mean": 0.0
+        }
+      ],
+      "split": "emobench"
+    },
+    {
+      "metrics": [
+        "quasi_exact_match"
+      ],
+      "itemCount": 800,
+      "totalResponses": 40835,
+      "loadedResponses": 40835,
+      "minimumItems": 80,
+      "modelCount": 57,
+      "scoredResponses": 21124,
+      "excludedModelCount": 3,
+      "avgScore": 0.42350160469780357,
+      "medianScore": 0.495,
+      "standardError": 0.03532940952270241,
+      "discrimination": 0.2643810922219622,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "gpt-4o",
+        "n": 400,
+        "coverage": 0.5,
+        "mean": 0.7725
+      },
+      "worst": {
+        "name": "Qwen-7B-Chat",
+        "n": 215,
+        "coverage": 0.26875,
+        "mean": 0.0
+      },
+      "models": [
+        {
+          "name": "gpt-4o",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.7725
+        },
+        {
+          "name": "gpt-4.1",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.7575
+        },
+        {
+          "name": "DeepSeek-R1",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.75
+        },
+        {
+          "name": "o3-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.74
+        },
+        {
+          "name": "o1",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.7375
+        },
+        {
+          "name": "o4-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.73
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.7275
+        },
+        {
+          "name": "grok-4",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.7275
+        },
+        {
+          "name": "kimi-k2",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.725
+        },
+        {
+          "name": "gemma-3-27b-it",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.705
+        },
+        {
+          "name": "gpt-4o-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.705
+        },
+        {
+          "name": "o1-mini",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.705
+        },
+        {
+          "name": "phi-4",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.695
+        },
+        {
+          "name": "Qwen2.5-14B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.6875
+        },
+        {
+          "name": "gemma-3-12b-it",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.6875
+        },
+        {
+          "name": "Qwen2.5-7B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.685
+        },
+        {
+          "name": "internlm3-8b-instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.6725
+        },
+        {
+          "name": "Qwen2-7B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.66
+        },
+        {
+          "name": "Qwen3-4B-Instruct-2507",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.635
+        },
+        {
+          "name": "Qwen2.5-3B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.58
+        },
+        {
+          "name": "DeepSeek-R1-Distill-Llama-8B",
+          "n": 399,
+          "coverage": 0.49875,
+          "mean": 0.5789473684210527
+        },
+        {
+          "name": "gemma-3-4b-it",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.57
+        },
+        {
+          "name": "Llama-3.2-3B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.5675
+        },
+        {
+          "name": "gemma-1.1-7b-it",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.56
+        },
+        {
+          "name": "DeepSeek-R1-Distill-Qwen-7B",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.5475
+        },
+        {
+          "name": "gemma-7b-it",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.5325
+        },
+        {
+          "name": "Qwen2-1.5B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.5225
+        },
+        {
+          "name": "gemma-2-2b-it",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.4975
+        },
+        {
+          "name": "Qwen2.5-1.5B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.495
+        },
+        {
+          "name": "phi-4-reasoning",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.4675
+        },
+        {
+          "name": "Qwen1.5-1.8B-Chat",
+          "n": 398,
+          "coverage": 0.4975,
+          "mean": 0.45226130653266333
+        },
+        {
+          "name": "Qwen1.5-0.5B-Chat",
+          "n": 231,
+          "coverage": 0.28875,
+          "mean": 0.4199134199134199
+        },
+        {
+          "name": "gemma-1.1-2b-it",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.3925
+        },
+        {
+          "name": "Qwen2.5-0.5B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.3875
+        },
+        {
+          "name": "gemma-2b-it",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.38
+        },
+        {
+          "name": "Qwen1.5-7B-Chat",
+          "n": 278,
+          "coverage": 0.3475,
+          "mean": 0.3597122302158273
+        },
+        {
+          "name": "gemma-3-1b-it",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.3475
+        },
+        {
+          "name": "gemma-2-9b-it",
+          "n": 274,
+          "coverage": 0.3425,
+          "mean": 0.2664233576642336
+        },
+        {
+          "name": "mpt-7b-chat",
+          "n": 399,
+          "coverage": 0.49875,
+          "mean": 0.2556390977443609
+        },
+        {
+          "name": "pythia-2.8b-v0",
+          "n": 382,
+          "coverage": 0.4775,
+          "mean": 0.1649214659685864
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 358,
+          "coverage": 0.4475,
+          "mean": 0.15363128491620112
+        },
+        {
+          "name": "RedPajama-INCITE-7B-Base",
+          "n": 332,
+          "coverage": 0.415,
+          "mean": 0.14457831325301204
+        },
+        {
+          "name": "dolly-v2-3b",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.135
+        },
+        {
+          "name": "Llama-2-7b-chat-hf",
+          "n": 390,
+          "coverage": 0.4875,
+          "mean": 0.13333333333333333
+        },
+        {
+          "name": "mpt-7b-instruct",
+          "n": 314,
+          "coverage": 0.3925,
+          "mean": 0.12738853503184713
+        },
+        {
+          "name": "RedPajama-INCITE-Chat-3B-v1",
+          "n": 387,
+          "coverage": 0.48375,
+          "mean": 0.12403100775193798
+        },
+        {
+          "name": "stablelm-base-alpha-3b",
+          "n": 397,
+          "coverage": 0.49625,
+          "mean": 0.0906801007556675
+        },
+        {
+          "name": "RedPajama-INCITE-7B-Chat",
+          "n": 387,
+          "coverage": 0.48375,
+          "mean": 0.07751937984496124
+        },
+        {
+          "name": "RedPajama-INCITE-Base-3B-v1",
+          "n": 391,
+          "coverage": 0.48875,
+          "mean": 0.07161125319693094
+        },
+        {
+          "name": "pythia-1b-v0",
+          "n": 382,
+          "coverage": 0.4775,
+          "mean": 0.06544502617801047
+        },
+        {
+          "name": "RedPajama-INCITE-7B-Instruct",
+          "n": 400,
+          "coverage": 0.5,
+          "mean": 0.055
+        },
+        {
+          "name": "Baichuan2-7B-Chat",
+          "n": 205,
+          "coverage": 0.25625,
+          "mean": 0.05365853658536585
+        },
+        {
+          "name": "RedPajama-INCITE-Instruct-3B-v1",
+          "n": 399,
+          "coverage": 0.49875,
+          "mean": 0.03759398496240601
+        },
+        {
+          "name": "gemma-2-27b-it",
+          "n": 201,
+          "coverage": 0.25125,
+          "mean": 0.009950248756218905
+        },
+        {
+          "name": "Qwen1.5-4B-Chat",
+          "n": 203,
+          "coverage": 0.25375,
+          "mean": 0.009852216748768473
+        },
+        {
+          "name": "Qwen-14B-Chat",
+          "n": 202,
+          "coverage": 0.2525,
+          "mean": 0.0
+        },
+        {
+          "name": "Qwen-7B-Chat",
+          "n": 215,
+          "coverage": 0.26875,
+          "mean": 0.0
+        }
+      ],
+      "split": "emobench"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "emobench",
+  "computedAt": "2026-09-30T22:33:18.181204+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "1b5006ed8eecb71aa87df80716b5c83841f282a4",
+    "observedMainRevision": "ceb4f916f09f041a68e4fc922f110013cf769e58",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/item/emobench/0000.parquet",
+        "rows": 800,
+        "bytes": 325724,
+        "sha256": "9bc479955c5be05a894ab651a985efa5eacbd59c1873987173dfcfe977715dc1"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/emobench/0000.parquet",
+        "rows": 40835,
+        "bytes": 2622368,
+        "sha256": "8bf08ede05fecf2d987ac42eb17cc4dc350e6b6084298990003b5ec46dfa2593"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

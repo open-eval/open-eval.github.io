@@ -1,0 +1,7 @@
+{
+  "method": "rasch-1pl-map",
+  "benchmark": "anthropic_red_teaming",
+  "computedAt": "2026-10-01T18:11:43.476812+00:00",
+  "summarySha256": "443ff6c66de84719aec081f93aee22fa184854ce55b49f1905c2b978c659c3d4",
+  "metrics": {}
+}

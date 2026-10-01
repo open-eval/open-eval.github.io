@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "wildbench",
+  "computedAt": "2026-10-01T03:07:43.273225+00:00",
+  "summarySha256": "0fd1f2e2564eb2325d716457700bd77a34761a3be4060f5b6d3ca5b2165bb63b",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/wildbench/0000.parquet",
+        "rows": 1024,
+        "bytes": 3661838,
+        "sha256": "41d2cb99821267fec9be8772cbe6ef99e1cc100c698eca3a4bd23585f627c414"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/wildbench/0000.parquet",
+        "rows": 8372,
+        "bytes": 208649529,
+        "sha256": "a33d97ebe4afd6ede062b8d4839dc18efcc4f70f35d86ead76d6988c8bc376c1"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/wildbench/0001.parquet",
+        "rows": 8372,
+        "bytes": 84529390,
+        "sha256": "f7c29fe090c7e3acc610dc6e53f6b2209276578bbe827789ffddfb759918d06e"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/wildbench/0002.parquet",
+        "rows": 8372,
+        "bytes": 282987756,
+        "sha256": "afa50addf3b0fb61471f5344ebd07c0c50b56a2951e434c57d7d49863b397136"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/wildbench/0003.parquet",
+        "rows": 8371,
+        "bytes": 71478593,
+        "sha256": "b8120e6784c2367431d00ee84353950017c0c0d86ba561f2548b3db811d00b5f"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/wildbench/0004.parquet",
+        "rows": 8371,
+        "bytes": 73543457,
+        "sha256": "5609275d8f3995a2c118dea762e9cf0bad90d50db3196d80cf8b3a5cae21827b"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/wildbench/0005.parquet",
+        "rows": 8371,
+        "bytes": 70774811,
+        "sha256": "a8723546266d938b76fb37094e5540cabab9bcf521ddf96bff7e675fc8896bb1"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/wildbench/0006.parquet",
+        "rows": 8371,
+        "bytes": 85703229,
+        "sha256": "1912ea361c1bdf031ea4473c4c342eebfffbdbe4a3b894e6a258462597142342"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/wildbench/0007.parquet",
+        "rows": 8371,
+        "bytes": 72216582,
+        "sha256": "a211c4af9e8a23b2d720f43a3788ce8c1b2dcc116caa635bae38c2a32495770d"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/wildbench/0008.parquet",
+        "rows": 8371,
+        "bytes": 68618347,
+        "sha256": "e43fd29bac230e9c2145805a356b84ed969a4c56088593b440b6c5eed69d2aa9"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "claude_score": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "gpt_score": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "llama_score": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "wildbench_score_rescaled": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    }
+  }
+}

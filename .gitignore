@@ -1,0 +1,5 @@
+node_modules/
+.test-artifacts/
+__pycache__/
+tests/
+.DS_Store*

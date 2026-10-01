@@ -1,0 +1,1362 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "truthfulqa",
+  "computedAt": "2026-10-01T03:07:43.259133+00:00",
+  "summarySha256": "5ce0749eb763ee3bf184b6893c83ddafa6ba09fae880c1ff5ccd5d4d6e4b2ddf",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/truthfulqa/0000.parquet",
+        "rows": 820,
+        "bytes": 218114,
+        "sha256": "d201bc977a04ee88fdbf879e19f284f32873fae653f1ea56d52af0e53d9e8ad6"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/truthfulqa/0000.parquet",
+        "rows": 167059,
+        "bytes": 102915237,
+        "sha256": "f1f2b3d11d775af0f718e301b17697b3f1736a376f270515fedf433b3261e6b0"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "BLEURT_diff": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "BLEURT_max": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "bleu_diff": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "bleu_max": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "bleurt-20": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "rouge1_diff": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "rouge1_max": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "rouge2_diff": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "rouge2_max": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "rougeL_diff": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "rougeL_max": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "BLEURT_acc": {
+      "available": true,
+      "itemCount": 790,
+      "modelCount": 41,
+      "pairCount": 32390,
+      "iterations": 98,
+      "converged": true,
+      "models": [
+        {
+          "name": "falcon-7b-instruct",
+          "theta": 1.536196,
+          "sd": 0.138505,
+          "n": 790
+        },
+        {
+          "name": "gemma-1.1-2b-it",
+          "theta": 1.296683,
+          "sd": 0.135732,
+          "n": 790
+        },
+        {
+          "name": "o3-mini",
+          "theta": 1.113694,
+          "sd": 0.134004,
+          "n": 790
+        },
+        {
+          "name": "o1-mini",
+          "theta": 1.075232,
+          "sd": 0.13368,
+          "n": 790
+        },
+        {
+          "name": "gemma-2b-it",
+          "theta": 1.059965,
+          "sd": 0.133555,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-14B-Instruct",
+          "theta": 0.999532,
+          "sd": 0.133081,
+          "n": 790
+        },
+        {
+          "name": "gemma-1.1-7b-it",
+          "theta": 0.962254,
+          "sd": 0.132805,
+          "n": 790
+        },
+        {
+          "name": "gpt-4.1",
+          "theta": 0.962254,
+          "sd": 0.132805,
+          "n": 790
+        },
+        {
+          "name": "gpt-4o",
+          "theta": 0.954841,
+          "sd": 0.132751,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-3B-Instruct",
+          "theta": 0.866945,
+          "sd": 0.132151,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-7B-Instruct",
+          "theta": 0.866945,
+          "sd": 0.132151,
+          "n": 790
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "theta": 0.859703,
+          "sd": 0.132105,
+          "n": 790
+        },
+        {
+          "name": "gemma-2-9b-it",
+          "theta": 0.745399,
+          "sd": 0.131425,
+          "n": 790
+        },
+        {
+          "name": "grok-4",
+          "theta": 0.717248,
+          "sd": 0.131274,
+          "n": 790
+        },
+        {
+          "name": "phi-4",
+          "theta": 0.682267,
+          "sd": 0.131094,
+          "n": 790
+        },
+        {
+          "name": "Phi-3-mini-128k-instruct",
+          "theta": 0.599201,
+          "sd": 0.130704,
+          "n": 790
+        },
+        {
+          "name": "Llama-3.2-3B-Instruct",
+          "theta": 0.592332,
+          "sd": 0.130674,
+          "n": 790
+        },
+        {
+          "name": "Llama-2-13b-hf",
+          "theta": 0.537659,
+          "sd": 0.130449,
+          "n": 790
+        },
+        {
+          "name": "gpt-4o-mini",
+          "theta": 0.524062,
+          "sd": 0.130396,
+          "n": 790
+        },
+        {
+          "name": "Qwen2-7B-Instruct",
+          "theta": 0.51049,
+          "sd": 0.130345,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-7B-Chat",
+          "theta": 0.483424,
+          "sd": 0.130246,
+          "n": 790
+        },
+        {
+          "name": "gemma-2-2b-it",
+          "theta": 0.483424,
+          "sd": 0.130246,
+          "n": 790
+        },
+        {
+          "name": "DeepSeek-R1",
+          "theta": 0.463188,
+          "sd": 0.130176,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-1.5B-Instruct",
+          "theta": 0.376077,
+          "sd": 0.129908,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-0.5B-Instruct",
+          "theta": 0.356096,
+          "sd": 0.129854,
+          "n": 790
+        },
+        {
+          "name": "Llama-2-7b-chat-hf",
+          "theta": 0.336156,
+          "sd": 0.129803,
+          "n": 790
+        },
+        {
+          "name": "gemma-7b-it",
+          "theta": 0.322884,
+          "sd": 0.129771,
+          "n": 790
+        },
+        {
+          "name": "falcon-7b",
+          "theta": 0.236976,
+          "sd": 0.129591,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-1.8B-Chat",
+          "theta": 0.190937,
+          "sd": 0.129515,
+          "n": 790
+        },
+        {
+          "name": "stablelm-base-alpha-3b",
+          "theta": 0.145022,
+          "sd": 0.129454,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-0.5B-Chat",
+          "theta": -0.083643,
+          "sd": 0.129362,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-4B-Chat",
+          "theta": -0.083643,
+          "sd": 0.129362,
+          "n": 790
+        },
+        {
+          "name": "Qwen2-1.5B-Instruct",
+          "theta": -0.1817,
+          "sd": 0.129431,
+          "n": 790
+        },
+        {
+          "name": "gemma-3-1b-it",
+          "theta": -0.1817,
+          "sd": 0.129431,
+          "n": 790
+        },
+        {
+          "name": "pythia-1b-v0",
+          "theta": -0.194799,
+          "sd": 0.129445,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Base-3B-v1",
+          "theta": -0.207906,
+          "sd": 0.12946,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Chat-3B-v1",
+          "theta": -0.214462,
+          "sd": 0.129468,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Instruct-3B-v1",
+          "theta": -0.286744,
+          "sd": 0.129577,
+          "n": 790
+        },
+        {
+          "name": "Llama-2-7b-hf",
+          "theta": -0.385916,
+          "sd": 0.129784,
+          "n": 790
+        },
+        {
+          "name": "dolly-v2-3b",
+          "theta": -0.512932,
+          "sd": 0.13015,
+          "n": 790
+        },
+        {
+          "name": "pythia-2.8b-v0",
+          "theta": -0.952917,
+          "sd": 0.132343,
+          "n": 790
+        }
+      ],
+      "reverseCoded": false
+    },
+    "bleu_acc": {
+      "available": true,
+      "itemCount": 790,
+      "modelCount": 41,
+      "pairCount": 32390,
+      "iterations": 104,
+      "converged": true,
+      "models": [
+        {
+          "name": "o1-mini",
+          "theta": 1.787162,
+          "sd": 0.141188,
+          "n": 790
+        },
+        {
+          "name": "o3-mini",
+          "theta": 1.787162,
+          "sd": 0.141188,
+          "n": 790
+        },
+        {
+          "name": "Llama-2-13b-hf",
+          "theta": 0.925217,
+          "sd": 0.132965,
+          "n": 790
+        },
+        {
+          "name": "gpt-4o",
+          "theta": 0.438129,
+          "sd": 0.130907,
+          "n": 790
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "theta": 0.431198,
+          "sd": 0.13089,
+          "n": 790
+        },
+        {
+          "name": "gpt-4.1",
+          "theta": 0.362128,
+          "sd": 0.130727,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-14B-Instruct",
+          "theta": 0.334612,
+          "sd": 0.130671,
+          "n": 790
+        },
+        {
+          "name": "gpt-4o-mini",
+          "theta": 0.211412,
+          "sd": 0.130476,
+          "n": 790
+        },
+        {
+          "name": "grok-4",
+          "theta": 0.184137,
+          "sd": 0.130446,
+          "n": 790
+        },
+        {
+          "name": "gemma-2-9b-it",
+          "theta": 0.177323,
+          "sd": 0.130439,
+          "n": 790
+        },
+        {
+          "name": "phi-4",
+          "theta": 0.136484,
+          "sd": 0.130404,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-7B-Instruct",
+          "theta": 0.129684,
+          "sd": 0.130399,
+          "n": 790
+        },
+        {
+          "name": "gemma-1.1-2b-it",
+          "theta": 0.102499,
+          "sd": 0.130383,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-3B-Instruct",
+          "theta": 0.007405,
+          "sd": 0.130361,
+          "n": 790
+        },
+        {
+          "name": "Phi-3-mini-128k-instruct",
+          "theta": -0.094519,
+          "sd": 0.130399,
+          "n": 790
+        },
+        {
+          "name": "Qwen2-7B-Instruct",
+          "theta": -0.094519,
+          "sd": 0.130399,
+          "n": 790
+        },
+        {
+          "name": "gemma-2b-it",
+          "theta": -0.148956,
+          "sd": 0.130446,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-7B-Chat",
+          "theta": -0.169401,
+          "sd": 0.130468,
+          "n": 790
+        },
+        {
+          "name": "stablelm-base-alpha-3b",
+          "theta": -0.203518,
+          "sd": 0.130511,
+          "n": 790
+        },
+        {
+          "name": "Llama-3.2-3B-Instruct",
+          "theta": -0.21718,
+          "sd": 0.130531,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-1.5B-Instruct",
+          "theta": -0.224015,
+          "sd": 0.130541,
+          "n": 790
+        },
+        {
+          "name": "DeepSeek-R1",
+          "theta": -0.271934,
+          "sd": 0.13062,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-1.8B-Chat",
+          "theta": -0.299384,
+          "sd": 0.130672,
+          "n": 790
+        },
+        {
+          "name": "falcon-7b",
+          "theta": -0.333777,
+          "sd": 0.130744,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-0.5B-Instruct",
+          "theta": -0.340667,
+          "sd": 0.130759,
+          "n": 790
+        },
+        {
+          "name": "gemma-2-2b-it",
+          "theta": -0.354459,
+          "sd": 0.130791,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-4B-Chat",
+          "theta": -0.375178,
+          "sd": 0.13084,
+          "n": 790
+        },
+        {
+          "name": "gemma-1.1-7b-it",
+          "theta": -0.444538,
+          "sd": 0.131027,
+          "n": 790
+        },
+        {
+          "name": "Llama-2-7b-chat-hf",
+          "theta": -0.479409,
+          "sd": 0.131133,
+          "n": 790
+        },
+        {
+          "name": "Qwen2-1.5B-Instruct",
+          "theta": -0.556639,
+          "sd": 0.131396,
+          "n": 790
+        },
+        {
+          "name": "gemma-7b-it",
+          "theta": -0.556639,
+          "sd": 0.131396,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-0.5B-Chat",
+          "theta": -0.584916,
+          "sd": 0.131503,
+          "n": 790
+        },
+        {
+          "name": "Llama-2-7b-hf",
+          "theta": -0.706452,
+          "sd": 0.132024,
+          "n": 790
+        },
+        {
+          "name": "gemma-3-1b-it",
+          "theta": -0.720909,
+          "sd": 0.132093,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Chat-3B-v1",
+          "theta": -0.830538,
+          "sd": 0.132665,
+          "n": 790
+        },
+        {
+          "name": "pythia-1b-v0",
+          "theta": -0.919989,
+          "sd": 0.133198,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Base-3B-v1",
+          "theta": -0.950192,
+          "sd": 0.133392,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Instruct-3B-v1",
+          "theta": -0.950192,
+          "sd": 0.133392,
+          "n": 790
+        },
+        {
+          "name": "dolly-v2-3b",
+          "theta": -1.081025,
+          "sd": 0.134318,
+          "n": 790
+        },
+        {
+          "name": "pythia-2.8b-v0",
+          "theta": -1.469487,
+          "sd": 0.137948,
+          "n": 790
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "theta": -6.939906,
+          "sd": 0.72075,
+          "n": 790
+        }
+      ],
+      "reverseCoded": false
+    },
+    "rouge1_acc": {
+      "available": true,
+      "itemCount": 790,
+      "modelCount": 41,
+      "pairCount": 32390,
+      "iterations": 99,
+      "converged": true,
+      "models": [
+        {
+          "name": "o1-mini",
+          "theta": 4.844412,
+          "sd": 0.278536,
+          "n": 790
+        },
+        {
+          "name": "o3-mini",
+          "theta": 4.844412,
+          "sd": 0.278536,
+          "n": 790
+        },
+        {
+          "name": "Llama-2-13b-hf",
+          "theta": 1.068823,
+          "sd": 0.135144,
+          "n": 790
+        },
+        {
+          "name": "gemma-1.1-2b-it",
+          "theta": 0.56406,
+          "sd": 0.132569,
+          "n": 790
+        },
+        {
+          "name": "gpt-4o",
+          "theta": 0.56406,
+          "sd": 0.132569,
+          "n": 790
+        },
+        {
+          "name": "gpt-4.1",
+          "theta": 0.411001,
+          "sd": 0.132117,
+          "n": 790
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "theta": 0.411001,
+          "sd": 0.132117,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-14B-Instruct",
+          "theta": 0.34609,
+          "sd": 0.131969,
+          "n": 790
+        },
+        {
+          "name": "gpt-4o-mini",
+          "theta": 0.31017,
+          "sd": 0.131897,
+          "n": 790
+        },
+        {
+          "name": "gemma-2-9b-it",
+          "theta": 0.28866,
+          "sd": 0.131859,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-7B-Instruct",
+          "theta": 0.252876,
+          "sd": 0.1318,
+          "n": 790
+        },
+        {
+          "name": "phi-4",
+          "theta": 0.231441,
+          "sd": 0.131769,
+          "n": 790
+        },
+        {
+          "name": "Phi-3-mini-128k-instruct",
+          "theta": 0.16727,
+          "sd": 0.131691,
+          "n": 790
+        },
+        {
+          "name": "Qwen2-7B-Instruct",
+          "theta": 0.160151,
+          "sd": 0.131684,
+          "n": 790
+        },
+        {
+          "name": "grok-4",
+          "theta": 0.160151,
+          "sd": 0.131684,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-0.5B-Instruct",
+          "theta": 0.153033,
+          "sd": 0.131677,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-3B-Instruct",
+          "theta": 0.103256,
+          "sd": 0.131637,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-1.5B-Instruct",
+          "theta": -0.024533,
+          "sd": 0.131602,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-7B-Chat",
+          "theta": -0.038727,
+          "sd": 0.131604,
+          "n": 790
+        },
+        {
+          "name": "falcon-7b",
+          "theta": -0.06002,
+          "sd": 0.131609,
+          "n": 790
+        },
+        {
+          "name": "gemma-2b-it",
+          "theta": -0.067118,
+          "sd": 0.131612,
+          "n": 790
+        },
+        {
+          "name": "stablelm-base-alpha-3b",
+          "theta": -0.131042,
+          "sd": 0.131646,
+          "n": 790
+        },
+        {
+          "name": "Llama-3.2-3B-Instruct",
+          "theta": -0.14526,
+          "sd": 0.131657,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-1.8B-Chat",
+          "theta": -0.21645,
+          "sd": 0.131729,
+          "n": 790
+        },
+        {
+          "name": "Llama-2-7b-chat-hf",
+          "theta": -0.230712,
+          "sd": 0.131747,
+          "n": 790
+        },
+        {
+          "name": "gemma-1.1-7b-it",
+          "theta": -0.230712,
+          "sd": 0.131747,
+          "n": 790
+        },
+        {
+          "name": "DeepSeek-R1",
+          "theta": -0.244984,
+          "sd": 0.131767,
+          "n": 790
+        },
+        {
+          "name": "gemma-2-2b-it",
+          "theta": -0.244984,
+          "sd": 0.131767,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-4B-Chat",
+          "theta": -0.345213,
+          "sd": 0.131936,
+          "n": 790
+        },
+        {
+          "name": "gemma-7b-it",
+          "theta": -0.511557,
+          "sd": 0.132351,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-0.5B-Chat",
+          "theta": -0.540764,
+          "sd": 0.132441,
+          "n": 790
+        },
+        {
+          "name": "Qwen2-1.5B-Instruct",
+          "theta": -0.62899,
+          "sd": 0.132747,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Chat-3B-v1",
+          "theta": -0.643791,
+          "sd": 0.132803,
+          "n": 790
+        },
+        {
+          "name": "Llama-2-7b-hf",
+          "theta": -0.718257,
+          "sd": 0.133106,
+          "n": 790
+        },
+        {
+          "name": "gemma-3-1b-it",
+          "theta": -0.7558,
+          "sd": 0.133273,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Instruct-3B-v1",
+          "theta": -0.763335,
+          "sd": 0.133308,
+          "n": 790
+        },
+        {
+          "name": "pythia-1b-v0",
+          "theta": -0.80874,
+          "sd": 0.133524,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Base-3B-v1",
+          "theta": -0.916108,
+          "sd": 0.134092,
+          "n": 790
+        },
+        {
+          "name": "dolly-v2-3b",
+          "theta": -0.978467,
+          "sd": 0.134458,
+          "n": 790
+        },
+        {
+          "name": "pythia-2.8b-v0",
+          "theta": -1.245104,
+          "sd": 0.136352,
+          "n": 790
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "theta": -7.149263,
+          "sd": 0.714867,
+          "n": 790
+        }
+      ],
+      "reverseCoded": false
+    },
+    "rouge2_acc": {
+      "available": true,
+      "itemCount": 790,
+      "modelCount": 41,
+      "pairCount": 32390,
+      "iterations": 100,
+      "converged": true,
+      "models": [
+        {
+          "name": "Llama-2-13b-hf",
+          "theta": 0.424802,
+          "sd": 0.131757,
+          "n": 790
+        },
+        {
+          "name": "gpt-4o",
+          "theta": 0.163529,
+          "sd": 0.131404,
+          "n": 790
+        },
+        {
+          "name": "gpt-4.1",
+          "theta": 0.030327,
+          "sd": 0.131376,
+          "n": 790
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "theta": -0.011751,
+          "sd": 0.131388,
+          "n": 790
+        },
+        {
+          "name": "grok-4",
+          "theta": -0.053851,
+          "sd": 0.131411,
+          "n": 790
+        },
+        {
+          "name": "gpt-4o-mini",
+          "theta": -0.103008,
+          "sd": 0.13145,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-14B-Instruct",
+          "theta": -0.173368,
+          "sd": 0.131531,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-7B-Instruct",
+          "theta": -0.236888,
+          "sd": 0.13163,
+          "n": 790
+        },
+        {
+          "name": "phi-4",
+          "theta": -0.300645,
+          "sd": 0.131753,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-7B-Chat",
+          "theta": -0.336192,
+          "sd": 0.131832,
+          "n": 790
+        },
+        {
+          "name": "Qwen2-7B-Instruct",
+          "theta": -0.41477,
+          "sd": 0.132035,
+          "n": 790
+        },
+        {
+          "name": "gemma-2-9b-it",
+          "theta": -0.457905,
+          "sd": 0.132163,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-3B-Instruct",
+          "theta": -0.465118,
+          "sd": 0.132186,
+          "n": 790
+        },
+        {
+          "name": "Phi-3-mini-128k-instruct",
+          "theta": -0.632646,
+          "sd": 0.132803,
+          "n": 790
+        },
+        {
+          "name": "DeepSeek-R1",
+          "theta": -0.774169,
+          "sd": 0.133473,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-1.8B-Chat",
+          "theta": -0.850079,
+          "sd": 0.13389,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-4B-Chat",
+          "theta": -0.865403,
+          "sd": 0.13398,
+          "n": 790
+        },
+        {
+          "name": "Llama-2-7b-hf",
+          "theta": -0.888482,
+          "sd": 0.134118,
+          "n": 790
+        },
+        {
+          "name": "stablelm-base-alpha-3b",
+          "theta": -0.934965,
+          "sd": 0.134408,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-1.5B-Instruct",
+          "theta": -0.942755,
+          "sd": 0.134458,
+          "n": 790
+        },
+        {
+          "name": "Llama-3.2-3B-Instruct",
+          "theta": -1.085376,
+          "sd": 0.135463,
+          "n": 790
+        },
+        {
+          "name": "gemma-2b-it",
+          "theta": -1.109634,
+          "sd": 0.13565,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-0.5B-Chat",
+          "theta": -1.166842,
+          "sd": 0.136112,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Chat-3B-v1",
+          "theta": -1.199923,
+          "sd": 0.136392,
+          "n": 790
+        },
+        {
+          "name": "gemma-1.1-2b-it",
+          "theta": -1.216577,
+          "sd": 0.136537,
+          "n": 790
+        },
+        {
+          "name": "gemma-1.1-7b-it",
+          "theta": -1.250133,
+          "sd": 0.136836,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Instruct-3B-v1",
+          "theta": -1.284033,
+          "sd": 0.137148,
+          "n": 790
+        },
+        {
+          "name": "gemma-3-1b-it",
+          "theta": -1.284033,
+          "sd": 0.137148,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-0.5B-Instruct",
+          "theta": -1.352841,
+          "sd": 0.137816,
+          "n": 790
+        },
+        {
+          "name": "gemma-7b-it",
+          "theta": -1.38778,
+          "sd": 0.138172,
+          "n": 790
+        },
+        {
+          "name": "dolly-v2-3b",
+          "theta": -1.449925,
+          "sd": 0.138836,
+          "n": 790
+        },
+        {
+          "name": "pythia-1b-v0",
+          "theta": -1.467924,
+          "sd": 0.139035,
+          "n": 790
+        },
+        {
+          "name": "Qwen2-1.5B-Instruct",
+          "theta": -1.486032,
+          "sd": 0.139239,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Base-3B-v1",
+          "theta": -1.486032,
+          "sd": 0.139239,
+          "n": 790
+        },
+        {
+          "name": "falcon-7b",
+          "theta": -1.495127,
+          "sd": 0.139343,
+          "n": 790
+        },
+        {
+          "name": "Llama-2-7b-chat-hf",
+          "theta": -1.664124,
+          "sd": 0.141436,
+          "n": 790
+        },
+        {
+          "name": "pythia-2.8b-v0",
+          "theta": -1.783138,
+          "sd": 0.143108,
+          "n": 790
+        },
+        {
+          "name": "gemma-2-2b-it",
+          "theta": -2.542922,
+          "sd": 0.158623,
+          "n": 790
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "theta": -6.857368,
+          "sd": 0.722317,
+          "n": 790
+        },
+        {
+          "name": "o1-mini",
+          "theta": -6.857368,
+          "sd": 0.722317,
+          "n": 790
+        },
+        {
+          "name": "o3-mini",
+          "theta": -6.857368,
+          "sd": 0.722317,
+          "n": 790
+        }
+      ],
+      "reverseCoded": false
+    },
+    "rougeL_acc": {
+      "available": true,
+      "itemCount": 790,
+      "modelCount": 41,
+      "pairCount": 32390,
+      "iterations": 101,
+      "converged": true,
+      "models": [
+        {
+          "name": "o1-mini",
+          "theta": 4.748637,
+          "sd": 0.278135,
+          "n": 790
+        },
+        {
+          "name": "o3-mini",
+          "theta": 4.748637,
+          "sd": 0.278135,
+          "n": 790
+        },
+        {
+          "name": "Llama-2-13b-hf",
+          "theta": 1.072707,
+          "sd": 0.13441,
+          "n": 790
+        },
+        {
+          "name": "gemma-1.1-2b-it",
+          "theta": 0.48286,
+          "sd": 0.131295,
+          "n": 790
+        },
+        {
+          "name": "gpt-4.1",
+          "theta": 0.357264,
+          "sd": 0.130942,
+          "n": 790
+        },
+        {
+          "name": "gpt-4o",
+          "theta": 0.343404,
+          "sd": 0.13091,
+          "n": 790
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "theta": 0.295025,
+          "sd": 0.130806,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-14B-Instruct",
+          "theta": 0.198769,
+          "sd": 0.130643,
+          "n": 790
+        },
+        {
+          "name": "grok-4",
+          "theta": 0.185063,
+          "sd": 0.130625,
+          "n": 790
+        },
+        {
+          "name": "Phi-3-mini-128k-instruct",
+          "theta": 0.137162,
+          "sd": 0.13057,
+          "n": 790
+        },
+        {
+          "name": "gemma-2-9b-it",
+          "theta": 0.137162,
+          "sd": 0.13057,
+          "n": 790
+        },
+        {
+          "name": "gpt-4o-mini",
+          "theta": 0.116661,
+          "sd": 0.130551,
+          "n": 790
+        },
+        {
+          "name": "phi-4",
+          "theta": 0.082524,
+          "sd": 0.130526,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-7B-Instruct",
+          "theta": 0.027962,
+          "sd": 0.1305,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-3B-Instruct",
+          "theta": 0.007514,
+          "sd": 0.130495,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-0.5B-Instruct",
+          "theta": -0.040192,
+          "sd": 0.130494,
+          "n": 790
+        },
+        {
+          "name": "Qwen2.5-1.5B-Instruct",
+          "theta": -0.067455,
+          "sd": 0.1305,
+          "n": 790
+        },
+        {
+          "name": "Qwen2-7B-Instruct",
+          "theta": -0.074271,
+          "sd": 0.130502,
+          "n": 790
+        },
+        {
+          "name": "falcon-7b",
+          "theta": -0.101545,
+          "sd": 0.130514,
+          "n": 790
+        },
+        {
+          "name": "gemma-2-2b-it",
+          "theta": -0.101545,
+          "sd": 0.130514,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-7B-Chat",
+          "theta": -0.156138,
+          "sd": 0.130552,
+          "n": 790
+        },
+        {
+          "name": "gemma-2b-it",
+          "theta": -0.1698,
+          "sd": 0.130564,
+          "n": 790
+        },
+        {
+          "name": "Llama-3.2-3B-Instruct",
+          "theta": -0.210827,
+          "sd": 0.130609,
+          "n": 790
+        },
+        {
+          "name": "Llama-2-7b-chat-hf",
+          "theta": -0.224519,
+          "sd": 0.130626,
+          "n": 790
+        },
+        {
+          "name": "stablelm-base-alpha-3b",
+          "theta": -0.286252,
+          "sd": 0.130718,
+          "n": 790
+        },
+        {
+          "name": "DeepSeek-R1",
+          "theta": -0.327538,
+          "sd": 0.130794,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-1.8B-Chat",
+          "theta": -0.417442,
+          "sd": 0.130997,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-4B-Chat",
+          "theta": -0.466158,
+          "sd": 0.131129,
+          "n": 790
+        },
+        {
+          "name": "gemma-1.1-7b-it",
+          "theta": -0.466158,
+          "sd": 0.131129,
+          "n": 790
+        },
+        {
+          "name": "gemma-7b-it",
+          "theta": -0.529168,
+          "sd": 0.131324,
+          "n": 790
+        },
+        {
+          "name": "Qwen2-1.5B-Instruct",
+          "theta": -0.656719,
+          "sd": 0.1318,
+          "n": 790
+        },
+        {
+          "name": "Qwen1.5-0.5B-Chat",
+          "theta": -0.663874,
+          "sd": 0.13183,
+          "n": 790
+        },
+        {
+          "name": "gemma-3-1b-it",
+          "theta": -0.7214,
+          "sd": 0.132085,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Chat-3B-v1",
+          "theta": -0.743114,
+          "sd": 0.132188,
+          "n": 790
+        },
+        {
+          "name": "Llama-2-7b-hf",
+          "theta": -0.772191,
+          "sd": 0.13233,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Instruct-3B-v1",
+          "theta": -0.808754,
+          "sd": 0.132518,
+          "n": 790
+        },
+        {
+          "name": "RedPajama-INCITE-Base-3B-v1",
+          "theta": -0.882653,
+          "sd": 0.132928,
+          "n": 790
+        },
+        {
+          "name": "pythia-1b-v0",
+          "theta": -0.912523,
+          "sd": 0.133106,
+          "n": 790
+        },
+        {
+          "name": "dolly-v2-3b",
+          "theta": -0.95769,
+          "sd": 0.133387,
+          "n": 790
+        },
+        {
+          "name": "pythia-2.8b-v0",
+          "theta": -1.458032,
+          "sd": 0.137654,
+          "n": 790
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "theta": -7.005529,
+          "sd": 0.719567,
+          "n": 790
+        }
+      ],
+      "reverseCoded": false
+    }
+  }
+}

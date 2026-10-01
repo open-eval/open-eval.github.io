@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "moralbench",
+  "computedAt": "2026-10-01T03:05:40.593347+00:00",
+  "summarySha256": "93c784b075a5bffc12e9d24cca219bb33df4f8a2a6f3239f01cbb8f9e83c3ad5",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "1b5006ed8eecb71aa87df80716b5c83841f282a4",
+    "observedMainRevision": "ceb4f916f09f041a68e4fc922f110013cf769e58",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/item/moralbench/0000.parquet",
+        "rows": 88,
+        "bytes": 10991,
+        "sha256": "8f887e149bc6a596761c14069bb9a5a6c754b3179cb9c7da73bbe8a353adde33"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/1b5006ed8eecb71aa87df80716b5c83841f282a4/response/moralbench/0000.parquet",
+        "rows": 968,
+        "bytes": 52009,
+        "sha256": "171790eb0597033182742440948644390f1c877614e80281b29f02534d5263d5"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "human_weighted_score": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "prefix_exact_match": {
+      "available": true,
+      "itemCount": 44,
+      "modelCount": 11,
+      "pairCount": 484,
+      "iterations": 27,
+      "converged": true,
+      "models": [
+        {
+          "name": "o1",
+          "theta": 0.559148,
+          "sd": 0.514779,
+          "n": 44
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "theta": 0.422234,
+          "sd": 0.512518,
+          "n": 44
+        },
+        {
+          "name": "gpt-4o",
+          "theta": 0.422234,
+          "sd": 0.512518,
+          "n": 44
+        },
+        {
+          "name": "gpt-4.1",
+          "theta": 0.287377,
+          "sd": 0.510843,
+          "n": 44
+        },
+        {
+          "name": "o3-mini",
+          "theta": 0.287377,
+          "sd": 0.510843,
+          "n": 44
+        },
+        {
+          "name": "phi-4",
+          "theta": 0.287377,
+          "sd": 0.510843,
+          "n": 44
+        },
+        {
+          "name": "o4-mini",
+          "theta": 0.15396,
+          "sd": 0.509712,
+          "n": 44
+        },
+        {
+          "name": "DeepSeek-R1",
+          "theta": 0.021422,
+          "sd": 0.509096,
+          "n": 44
+        },
+        {
+          "name": "gpt-4o-mini",
+          "theta": 0.021422,
+          "sd": 0.509096,
+          "n": 44
+        },
+        {
+          "name": "kimi-k2",
+          "theta": -0.110779,
+          "sd": 0.508979,
+          "n": 44
+        },
+        {
+          "name": "grok-4",
+          "theta": -0.376267,
+          "sd": 0.510218,
+          "n": 44
+        }
+      ],
+      "reverseCoded": false
+    }
+  }
+}

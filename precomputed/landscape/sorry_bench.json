@@ -1,0 +1,38 @@
+{
+  "method": "rasch-1pl-map",
+  "benchmark": "sorry_bench",
+  "computedAt": "2026-10-01T18:14:18.829731+00:00",
+  "summarySha256": "d576787bc51e1945241dc407fed25f625700fccb0aaf9945ec1d7420238e7302",
+  "metrics": {
+    "ft-mistral-7b-sorrybench": {
+      "bins": [
+        2,
+        6,
+        4,
+        33,
+        45,
+        38,
+        38,
+        35,
+        26,
+        33,
+        25,
+        26,
+        29,
+        35,
+        18,
+        12,
+        8,
+        11,
+        10,
+        6
+      ],
+      "min": -6.278538696056098,
+      "max": 5.427798861275094,
+      "median": -1.1622221680321487,
+      "items": 440,
+      "archivedItems": 440,
+      "models": 177
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "ifeval",
+  "computedAt": "2026-10-01T03:04:55.826544+00:00",
+  "summarySha256": "b7a4f136090932bcc40427d561c39ef868e131725af3e35528652d39bc7c408c",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/ifeval/0000.parquet",
+        "rows": 541,
+        "bytes": 130952,
+        "sha256": "5a703b124144f5bc6a83bb10797a9c2b4d0cfa57dd0dc722de759afc6ff99232"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/ifeval/0000.parquet",
+        "rows": 16538,
+        "bytes": 56895763,
+        "sha256": "22a8912e740c6de32947673724ba2e7f112795a49b590761de2c5e2bee01ec2f"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/ifeval/0001.parquet",
+        "rows": 16538,
+        "bytes": 91969774,
+        "sha256": "d3bbd6defc0ff1a164a405b4928532938ad6c833c2ea2a90e02dabbb5bd536af"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/ifeval/0002.parquet",
+        "rows": 16538,
+        "bytes": 83882254,
+        "sha256": "02807e40f8ad34293df1903b76d0e5e38f3ac15f635f6f0b9465ac949ccefe77"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/ifeval/0003.parquet",
+        "rows": 16538,
+        "bytes": 47652427,
+        "sha256": "61ba10e3519c558d20e745bd5bf57c17c6e8c32476cc7499a9d3e621c8e62b41"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "ifeval_strict_accuracy": {
+      "available": false,
+      "reason": "Scores are not strictly binary; no thresholding is applied."
+    }
+  }
+}

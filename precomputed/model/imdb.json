@@ -1,0 +1,605 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "imdb",
+  "computedAt": "2026-10-01T03:04:57.356034+00:00",
+  "summarySha256": "3864fd12b719ff18f46f0b569fa16c1be5499db56b96089e7c60c372342b2936",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/imdb/0000.parquet",
+        "rows": 356,
+        "bytes": 205862,
+        "sha256": "8f81d1eb6b2357779f430dc7b432beb5a483b2cfeb3529de774f80e811025503"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/imdb/0000.parquet",
+        "rows": 7832,
+        "bytes": 6119873,
+        "sha256": "50b55c2e6abb0473885508a2948e9b12a3a54a656238b08a2ed19de322b9d278"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "exact_match": {
+      "available": true,
+      "itemCount": 352,
+      "modelCount": 22,
+      "pairCount": 7744,
+      "iterations": 58,
+      "converged": true,
+      "models": [
+        {
+          "name": "mpt-30b",
+          "theta": 4.524847,
+          "sd": 0.379145,
+          "n": 352
+        },
+        {
+          "name": "falcon-40b",
+          "theta": 4.413891,
+          "sd": 0.371391,
+          "n": 352
+        },
+        {
+          "name": "llama-65b",
+          "theta": 4.413891,
+          "sd": 0.371391,
+          "n": 352
+        },
+        {
+          "name": "llama-2-13b",
+          "theta": 4.308177,
+          "sd": 0.364227,
+          "n": 352
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "theta": 4.207225,
+          "sd": 0.35758,
+          "n": 352
+        },
+        {
+          "name": "mpt-instruct-30b",
+          "theta": 4.207225,
+          "sd": 0.35758,
+          "n": 352
+        },
+        {
+          "name": "llama-2-70b",
+          "theta": 4.110618,
+          "sd": 0.351388,
+          "n": 352
+        },
+        {
+          "name": "llama-30b",
+          "theta": 4.110618,
+          "sd": 0.351388,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "theta": 3.929037,
+          "sd": 0.340175,
+          "n": 352
+        },
+        {
+          "name": "llama-7b",
+          "theta": 3.761031,
+          "sd": 0.330265,
+          "n": 352
+        },
+        {
+          "name": "llama-2-7b",
+          "theta": 3.681529,
+          "sd": 0.325722,
+          "n": 352
+        },
+        {
+          "name": "pythia-12b-v0",
+          "theta": 3.681529,
+          "sd": 0.325722,
+          "n": 352
+        },
+        {
+          "name": "pythia-6.9b",
+          "theta": 3.681529,
+          "sd": 0.325722,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "theta": 3.604733,
+          "sd": 0.321421,
+          "n": 352
+        },
+        {
+          "name": "llama-13b",
+          "theta": 3.321399,
+          "sd": 0.306248,
+          "n": 352
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "theta": 3.255858,
+          "sd": 0.302889,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "theta": 3.255858,
+          "sd": 0.302889,
+          "n": 352
+        },
+        {
+          "name": "falcon-7b",
+          "theta": 2.790875,
+          "sd": 0.280586,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "theta": 1.661162,
+          "sd": 0.236912,
+          "n": 352
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "theta": -4.579723,
+          "sd": 0.358789,
+          "n": 352
+        },
+        {
+          "name": "alpaca-7b",
+          "theta": -6.738823,
+          "sd": 0.760409,
+          "n": 352
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "theta": -6.738823,
+          "sd": 0.760409,
+          "n": 352
+        }
+      ],
+      "reverseCoded": false
+    },
+    "prefix_exact_match": {
+      "available": true,
+      "itemCount": 352,
+      "modelCount": 22,
+      "pairCount": 7744,
+      "iterations": 58,
+      "converged": true,
+      "models": [
+        {
+          "name": "mpt-30b",
+          "theta": 4.524847,
+          "sd": 0.379145,
+          "n": 352
+        },
+        {
+          "name": "falcon-40b",
+          "theta": 4.413891,
+          "sd": 0.371391,
+          "n": 352
+        },
+        {
+          "name": "llama-65b",
+          "theta": 4.413891,
+          "sd": 0.371391,
+          "n": 352
+        },
+        {
+          "name": "llama-2-13b",
+          "theta": 4.308177,
+          "sd": 0.364227,
+          "n": 352
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "theta": 4.207225,
+          "sd": 0.35758,
+          "n": 352
+        },
+        {
+          "name": "mpt-instruct-30b",
+          "theta": 4.207225,
+          "sd": 0.35758,
+          "n": 352
+        },
+        {
+          "name": "llama-2-70b",
+          "theta": 4.110618,
+          "sd": 0.351388,
+          "n": 352
+        },
+        {
+          "name": "llama-30b",
+          "theta": 4.110618,
+          "sd": 0.351388,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "theta": 3.929037,
+          "sd": 0.340175,
+          "n": 352
+        },
+        {
+          "name": "llama-7b",
+          "theta": 3.761031,
+          "sd": 0.330265,
+          "n": 352
+        },
+        {
+          "name": "llama-2-7b",
+          "theta": 3.681529,
+          "sd": 0.325722,
+          "n": 352
+        },
+        {
+          "name": "pythia-12b-v0",
+          "theta": 3.681529,
+          "sd": 0.325722,
+          "n": 352
+        },
+        {
+          "name": "pythia-6.9b",
+          "theta": 3.681529,
+          "sd": 0.325722,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "theta": 3.604733,
+          "sd": 0.321421,
+          "n": 352
+        },
+        {
+          "name": "llama-13b",
+          "theta": 3.321399,
+          "sd": 0.306248,
+          "n": 352
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "theta": 3.255858,
+          "sd": 0.302889,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "theta": 3.255858,
+          "sd": 0.302889,
+          "n": 352
+        },
+        {
+          "name": "falcon-7b",
+          "theta": 2.790875,
+          "sd": 0.280586,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "theta": 1.661162,
+          "sd": 0.236912,
+          "n": 352
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "theta": -4.579723,
+          "sd": 0.358789,
+          "n": 352
+        },
+        {
+          "name": "alpaca-7b",
+          "theta": -6.738823,
+          "sd": 0.760409,
+          "n": 352
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "theta": -6.738823,
+          "sd": 0.760409,
+          "n": 352
+        }
+      ],
+      "reverseCoded": false
+    },
+    "quasi_exact_match": {
+      "available": true,
+      "itemCount": 352,
+      "modelCount": 22,
+      "pairCount": 7744,
+      "iterations": 58,
+      "converged": true,
+      "models": [
+        {
+          "name": "mpt-30b",
+          "theta": 4.524847,
+          "sd": 0.379145,
+          "n": 352
+        },
+        {
+          "name": "falcon-40b",
+          "theta": 4.413891,
+          "sd": 0.371391,
+          "n": 352
+        },
+        {
+          "name": "llama-65b",
+          "theta": 4.413891,
+          "sd": 0.371391,
+          "n": 352
+        },
+        {
+          "name": "llama-2-13b",
+          "theta": 4.308177,
+          "sd": 0.364227,
+          "n": 352
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "theta": 4.207225,
+          "sd": 0.35758,
+          "n": 352
+        },
+        {
+          "name": "mpt-instruct-30b",
+          "theta": 4.207225,
+          "sd": 0.35758,
+          "n": 352
+        },
+        {
+          "name": "llama-2-70b",
+          "theta": 4.110618,
+          "sd": 0.351388,
+          "n": 352
+        },
+        {
+          "name": "llama-30b",
+          "theta": 4.110618,
+          "sd": 0.351388,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "theta": 3.929037,
+          "sd": 0.340175,
+          "n": 352
+        },
+        {
+          "name": "llama-7b",
+          "theta": 3.761031,
+          "sd": 0.330265,
+          "n": 352
+        },
+        {
+          "name": "llama-2-7b",
+          "theta": 3.681529,
+          "sd": 0.325722,
+          "n": 352
+        },
+        {
+          "name": "pythia-12b-v0",
+          "theta": 3.681529,
+          "sd": 0.325722,
+          "n": 352
+        },
+        {
+          "name": "pythia-6.9b",
+          "theta": 3.681529,
+          "sd": 0.325722,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "theta": 3.604733,
+          "sd": 0.321421,
+          "n": 352
+        },
+        {
+          "name": "llama-13b",
+          "theta": 3.321399,
+          "sd": 0.306248,
+          "n": 352
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "theta": 3.255858,
+          "sd": 0.302889,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "theta": 3.255858,
+          "sd": 0.302889,
+          "n": 352
+        },
+        {
+          "name": "falcon-7b",
+          "theta": 2.790875,
+          "sd": 0.280586,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "theta": 1.661162,
+          "sd": 0.236912,
+          "n": 352
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "theta": -4.579723,
+          "sd": 0.358789,
+          "n": 352
+        },
+        {
+          "name": "alpaca-7b",
+          "theta": -6.738823,
+          "sd": 0.760409,
+          "n": 352
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "theta": -6.738823,
+          "sd": 0.760409,
+          "n": 352
+        }
+      ],
+      "reverseCoded": false
+    },
+    "quasi_prefix_exact_match": {
+      "available": true,
+      "itemCount": 352,
+      "modelCount": 22,
+      "pairCount": 7744,
+      "iterations": 58,
+      "converged": true,
+      "models": [
+        {
+          "name": "mpt-30b",
+          "theta": 4.524847,
+          "sd": 0.379145,
+          "n": 352
+        },
+        {
+          "name": "falcon-40b",
+          "theta": 4.413891,
+          "sd": 0.371391,
+          "n": 352
+        },
+        {
+          "name": "llama-65b",
+          "theta": 4.413891,
+          "sd": 0.371391,
+          "n": 352
+        },
+        {
+          "name": "llama-2-13b",
+          "theta": 4.308177,
+          "sd": 0.364227,
+          "n": 352
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "theta": 4.207225,
+          "sd": 0.35758,
+          "n": 352
+        },
+        {
+          "name": "mpt-instruct-30b",
+          "theta": 4.207225,
+          "sd": 0.35758,
+          "n": 352
+        },
+        {
+          "name": "llama-2-70b",
+          "theta": 4.110618,
+          "sd": 0.351388,
+          "n": 352
+        },
+        {
+          "name": "llama-30b",
+          "theta": 4.110618,
+          "sd": 0.351388,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "theta": 3.929037,
+          "sd": 0.340175,
+          "n": 352
+        },
+        {
+          "name": "llama-7b",
+          "theta": 3.761031,
+          "sd": 0.330265,
+          "n": 352
+        },
+        {
+          "name": "llama-2-7b",
+          "theta": 3.681529,
+          "sd": 0.325722,
+          "n": 352
+        },
+        {
+          "name": "pythia-12b-v0",
+          "theta": 3.681529,
+          "sd": 0.325722,
+          "n": 352
+        },
+        {
+          "name": "pythia-6.9b",
+          "theta": 3.681529,
+          "sd": 0.325722,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "theta": 3.604733,
+          "sd": 0.321421,
+          "n": 352
+        },
+        {
+          "name": "llama-13b",
+          "theta": 3.321399,
+          "sd": 0.306248,
+          "n": 352
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "theta": 3.255858,
+          "sd": 0.302889,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "theta": 3.255858,
+          "sd": 0.302889,
+          "n": 352
+        },
+        {
+          "name": "falcon-7b",
+          "theta": 2.790875,
+          "sd": 0.280586,
+          "n": 352
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "theta": 1.661162,
+          "sd": 0.236912,
+          "n": 352
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "theta": -4.579723,
+          "sd": 0.358789,
+          "n": 352
+        },
+        {
+          "name": "alpaca-7b",
+          "theta": -6.738823,
+          "sd": 0.760409,
+          "n": 352
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "theta": -6.738823,
+          "sd": 0.760409,
+          "n": 352
+        }
+      ],
+      "reverseCoded": false
+    }
+  }
+}

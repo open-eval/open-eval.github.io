@@ -1,0 +1,38 @@
+{
+  "method": "rasch-1pl-map",
+  "benchmark": "mmlu_pro",
+  "computedAt": "2026-10-01T18:13:52.705688+00:00",
+  "summarySha256": "3a8f3bcdafd47f151243c2f0e5c3cb1d5eb2d4e9004927694d5daaa6b0824e39",
+  "metrics": {
+    "chain_of_thought_correctness": {
+      "bins": [
+        4,
+        0,
+        0,
+        189,
+        0,
+        0,
+        2606,
+        0,
+        2078,
+        0,
+        1390,
+        1349,
+        1447,
+        0,
+        849,
+        625,
+        347,
+        391,
+        0,
+        597
+      ],
+      "min": -5.980387354100247,
+      "max": 4.823222955026187,
+      "median": -0.2800082542078183,
+      "items": 11872,
+      "archivedItems": 12032,
+      "models": 11
+    }
+  }
+}

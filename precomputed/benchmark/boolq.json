@@ -1,0 +1,710 @@
+{
+  "itemCount": 64,
+  "responseCount": 1408,
+  "distinctModelCount": 22,
+  "distinctModelItemPairs": 1408,
+  "duplicateResponsesRemoved": 0,
+  "conflictingDuplicateRows": 0,
+  "conflictingDuplicateExamples": [],
+  "measurements": [
+    {
+      "metrics": [
+        "exact_match"
+      ],
+      "itemCount": 64,
+      "totalResponses": 1408,
+      "loadedResponses": 1408,
+      "minimumItems": 7,
+      "modelCount": 22,
+      "scoredResponses": 1408,
+      "excludedModelCount": 0,
+      "avgScore": 0.6953125,
+      "medianScore": 0.75,
+      "standardError": 0.0532282506634953,
+      "discrimination": 0.24392248777555062,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "falcon-40b",
+        "n": 64,
+        "coverage": 1.0,
+        "mean": 0.875
+      },
+      "worst": {
+        "name": "alpaca-7b",
+        "n": 64,
+        "coverage": 1.0,
+        "mean": 0.0
+      },
+      "models": [
+        {
+          "name": "falcon-40b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.875
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.875
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-13b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-65b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-30b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.828125
+        },
+        {
+          "name": "mpt-instruct-30b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.828125
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.8125
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.796875
+        },
+        {
+          "name": "llama-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "mpt-30b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "falcon-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.734375
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.703125
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.6875
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.6875
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.328125
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.015625
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.0
+        }
+      ],
+      "split": "boolq"
+    },
+    {
+      "metrics": [
+        "prefix_exact_match"
+      ],
+      "itemCount": 64,
+      "totalResponses": 1408,
+      "loadedResponses": 1408,
+      "minimumItems": 7,
+      "modelCount": 22,
+      "scoredResponses": 1408,
+      "excludedModelCount": 0,
+      "avgScore": 0.6974431818181818,
+      "medianScore": 0.75,
+      "standardError": 0.0525668719177697,
+      "discrimination": 0.24089166961022812,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "falcon-40b",
+        "n": 64,
+        "coverage": 1.0,
+        "mean": 0.875
+      },
+      "worst": {
+        "name": "alpaca-7b",
+        "n": 64,
+        "coverage": 1.0,
+        "mean": 0.0
+      },
+      "models": [
+        {
+          "name": "falcon-40b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.875
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.875
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-13b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-65b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-30b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.828125
+        },
+        {
+          "name": "mpt-instruct-30b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.828125
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.8125
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.796875
+        },
+        {
+          "name": "llama-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "mpt-30b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "falcon-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.734375
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.703125
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.6875
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.6875
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.375
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.015625
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.0
+        }
+      ],
+      "split": "boolq"
+    },
+    {
+      "metrics": [
+        "quasi_exact_match"
+      ],
+      "itemCount": 64,
+      "totalResponses": 1408,
+      "loadedResponses": 1408,
+      "minimumItems": 7,
+      "modelCount": 22,
+      "scoredResponses": 1408,
+      "excludedModelCount": 0,
+      "avgScore": 0.6953125,
+      "medianScore": 0.75,
+      "standardError": 0.0532282506634953,
+      "discrimination": 0.24392248777555062,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "falcon-40b",
+        "n": 64,
+        "coverage": 1.0,
+        "mean": 0.875
+      },
+      "worst": {
+        "name": "alpaca-7b",
+        "n": 64,
+        "coverage": 1.0,
+        "mean": 0.0
+      },
+      "models": [
+        {
+          "name": "falcon-40b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.875
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.875
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-13b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-65b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-30b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.828125
+        },
+        {
+          "name": "mpt-instruct-30b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.828125
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.8125
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.796875
+        },
+        {
+          "name": "llama-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "mpt-30b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "falcon-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.734375
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.703125
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.6875
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.6875
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.328125
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.015625
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.0
+        }
+      ],
+      "split": "boolq"
+    },
+    {
+      "metrics": [
+        "quasi_prefix_exact_match"
+      ],
+      "itemCount": 64,
+      "totalResponses": 1408,
+      "loadedResponses": 1408,
+      "minimumItems": 7,
+      "modelCount": 22,
+      "scoredResponses": 1408,
+      "excludedModelCount": 0,
+      "avgScore": 0.6974431818181818,
+      "medianScore": 0.75,
+      "standardError": 0.0525668719177697,
+      "discrimination": 0.24089166961022812,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "falcon-40b",
+        "n": 64,
+        "coverage": 1.0,
+        "mean": 0.875
+      },
+      "worst": {
+        "name": "alpaca-7b",
+        "n": 64,
+        "coverage": 1.0,
+        "mean": 0.0
+      },
+      "models": [
+        {
+          "name": "falcon-40b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.875
+        },
+        {
+          "name": "llama-2-70b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.875
+        },
+        {
+          "name": "falcon-40b-instruct",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-13b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-2-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-65b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.84375
+        },
+        {
+          "name": "llama-30b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.828125
+        },
+        {
+          "name": "mpt-instruct-30b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.828125
+        },
+        {
+          "name": "llama-2-13b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.8125
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.796875
+        },
+        {
+          "name": "llama-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "mpt-30b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "pythia-12b-v0",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "redpajama-incite-base-3b-v1",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "redpajama-incite-base-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.75
+        },
+        {
+          "name": "falcon-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.734375
+        },
+        {
+          "name": "pythia-6.9b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.703125
+        },
+        {
+          "name": "redpajama-incite-instruct-3b-v1",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.6875
+        },
+        {
+          "name": "redpajama-incite-instruct-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.6875
+        },
+        {
+          "name": "vicuna-13b-v1.3",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.375
+        },
+        {
+          "name": "vicuna-7b-v1.3",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.015625
+        },
+        {
+          "name": "alpaca-7b",
+          "n": 64,
+          "coverage": 1.0,
+          "mean": 0.0
+        }
+      ],
+      "split": "boolq"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "boolq",
+  "computedAt": "2026-09-30T01:18:05.959512+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee",
+    "observedMainRevision": "dfafad76347c052b71aef643deb31293f3ec8e85",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/item/boolq/0000.parquet",
+        "rows": 64,
+        "bytes": 33387,
+        "sha256": "ad546d4b09a426346fd46fa8fafa542350d8eeaaa849e27e1f8ef8ab90a86872"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/6a0bec6c7d73130f7d6c09be45cd9e4ef91441ee/response/boolq/0000.parquet",
+        "rows": 1408,
+        "bytes": 163877,
+        "sha256": "8c7c2eeaffde9887d466f93a991ba385f8241a4c7774943e1ffa958a80428b2c"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}
