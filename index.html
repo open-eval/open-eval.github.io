@@ -43,9 +43,9 @@
   <div class="container">
     <h1>Item by item, toward<br>the open science of AI evaluation.</h1>
     <p class="hero-sub">
-      <span style="font-family: 'Lobster'; font-size: 1.5em; background: linear-gradient(90deg, #273929,#68725f,#273929);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">OpenEval  </span> is an open-source, item-level repository that builds the foundation 
-      for <span style="color:#273929;font-weight:500;">AI evaluation science</span>, advancing open science toward more 
-      <span style="color:#273929;font-weight:500;">accessible</span>, <span style="color:#273929;font-weight:500;">transparent</span>, and <span style="color:#273929;font-weight:500;">rigorous</span> model assessment.
+      <span style="font-family: 'Lobster'; font-size: 1.5em; background: linear-gradient(90deg, #273929,#68725f,#273929);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">OpenEval  </span> is an open-source, item-level repository built on a standardized schema, spanning <span id="hero-benchmark-count">…</span> benchmarks, <span id="hero-item-count">…</span> items, and <span id="hero-response-count">…</span> model responses.
+      It aims to advance open science toward more 
+      <span style="color:#273929;font-weight:500;">accessible</span>, <span style="color:#273929;font-weight:500;">transparent</span>, and <span style="color:#273929;font-weight:500;">rigorous</span> AI evaluation.
     </p>
     <div class="hero-actions">
       <div class="btn-row">
@@ -187,19 +187,33 @@
       if (data.partial || data.pending?.length || data.failed?.length) {
         throw new Error('Dataset counts are incomplete');
       }
-      // The 'all' split already contains every benchmark. Config totals also
-      // include per-benchmark splits, so using them would double-count rows.
-      const splits = data.size?.splits;
-      const items = splits?.find(row => row.config === 'item' && row.split === 'all')?.num_rows;
-      const responses = splits?.find(row => row.config === 'response' && row.split === 'all')?.num_rows;
-      if (![items, responses].every(count => Number.isSafeInteger(count) && count >= 0)) {
+      // Hugging Face supplies the total row count for each subset/config.
+      const configs = data.size?.configs;
+      const benchmarks = configs?.find(row => row.config === 'bench')?.num_rows;
+      const items = configs?.find(row => row.config === 'item')?.num_rows;
+      const responses = configs?.find(row => row.config === 'response')?.num_rows;
+      if (![benchmarks, items, responses].every(count => Number.isSafeInteger(count) && count >= 0)) {
         throw new Error('Dataset counts are unavailable');
       }
-      const format = new Intl.NumberFormat('en-US');
+      const format = {
+        format(count) {
+          if (count >= 1000000) return (Math.floor(count / 100000) / 10).toFixed(1) + 'M+';
+          if (count >= 1000) return Math.floor(count / 1000).toFixed(1) + 'K+';
+          return String(count);
+        }
+      };
+      document.getElementById('hero-benchmark-count').textContent = format.format(benchmarks);
+      document.getElementById('hero-item-count').textContent = format.format(items);
+      document.getElementById('hero-response-count').textContent = format.format(responses);
       description.textContent = 'A growing repository with ' + format.format(items) +
         ' items and ' + format.format(responses) +
         ' responses, covering diverse models, tasks, and constructs.';
     } catch (error) {
+      for (const id of ['hero-benchmark-count', 'hero-item-count', 'hero-response-count']) {
+        const count = document.getElementById(id);
+        count.textContent = '—';
+        count.title = 'Live count temporarily unavailable';
+      }
       // Keep the general description rather than show stale or partial counts.
       console.warn('OpenEval dataset counts could not be loaded:', error);
     } finally {

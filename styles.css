@@ -124,7 +124,7 @@ nav {
 }
 
 .hero-sub {
-  max-width: 900px;
+  max-width: 1000px;
   font-size: 1rem;
   color: var(--muted);
   margin: 0 auto 2.5rem;
