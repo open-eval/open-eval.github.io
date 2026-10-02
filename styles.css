@@ -201,7 +201,7 @@ nav {
   font-size: 0.95rem;
   color: var(--muted);
   line-height: 1.65;
-  margin-bottom: 2.75rem;
+  margin-bottom: 2rem;
 }
 
 /* ── About cards ──────────────────────────────────────────── */
@@ -988,28 +988,35 @@ body.green-page { background: #273929; }
   align-items: start;
 }
 .contributor-card {
+  --bg: #f4f2ec;
+  --surface: #ffffff;
+  --border: #e0dcd2;
+  --ink: #1a261a;
+  --muted: #68725f;
+  --faint: #9ea898;
+  --accent: #2b4a2c;
+  color: var(--ink);
   display: block;
   min-width: 0;
-  padding: 1rem 1.8em;
-  background: var(--surface);
+  padding: 0.7rem 1.5rem;
+  background: #fff;
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: 1rem;
 }
-.contributor-card h3 { font-size: 1rem; color: var(--ink); }
-.contributor-header { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem 1.5rem; }
+.contributor-card h3 { font-family: var(--serif); font-size: 1rem; font-weight: 700; color: var(--ink); }
+.contributor-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem 1.5rem; }
 .contributor-header h3 { overflow-wrap: anywhere; }
-.contributor-affiliation { color: var(--muted); font-size: 0.85rem; text-align: right; overflow-wrap: anywhere; }
-.contributor-description { color: var(--muted); font-size: 0.85rem; margin-top: 0.35rem; }
+.contributor-affiliation { color: var(--accent); font-size: 0.7rem; text-align: right; overflow-wrap: anywhere; }
+.contributor-description { color: var(--muted); font-size: 0.65rem; font-style: italic; line-height: 1.4; margin-top: 0.3rem; margin-bottom: 0.5rem; }
 .contributor-info { min-width: 0; }
-.contributor-paper { min-width: 0; margin-top: 0.6rem; }
+.contributor-paper { min-width: 0; margin-top: 0.3rem; }
 .contributor-paper::before {
   content: "";
   display: block;
   width: 40%;
   border-top: 1px solid var(--border);
-  margin-bottom: 0.6rem;
 }
-.contributor-paper p { color: var(--muted); display: inline; font-size: 0.85rem; overflow-wrap: anywhere; }
+.contributor-paper p { color: var(--muted); display: inline; font-size: 0.7rem; overflow-wrap: anywhere; }
 .contributor-citation { display: inline; margin-left: 0.65rem; }
 .contributor-citation summary { display: inline; cursor: pointer; white-space: nowrap; font-size: 0.8rem; font-weight: 600; color: var(--accent); list-style: none; }
 .contributor-citation summary::-webkit-details-marker { display: none; }

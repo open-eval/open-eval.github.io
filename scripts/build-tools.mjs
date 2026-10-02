@@ -70,3 +70,11 @@ css.walkRules(rule => {
 });
 await writeFile('tools.css', css.toString());
 await unlink('tools.tmp.css');
+
+// Embed contributor data so the contribution page also works when opened locally.
+const contributors = JSON.parse(await readFile('precomputed/contributors.json', 'utf8'));
+const contributionPage = await readFile('contribution.html', 'utf8');
+await writeFile('contribution.html', contributionPage.replace(
+  /(<script id="contributors-data" type="application\/json">)[\s\S]*?(<\/script>)/,
+  (_, open, close) => open + JSON.stringify(contributors).replace(/</g, '\\u003c') + close
+));
