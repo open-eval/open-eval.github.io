@@ -71,12 +71,16 @@ css.walkRules(rule => {
 await writeFile('tools.css', css.toString());
 await unlink('tools.tmp.css');
 
-// Embed contributor data so the contribution page also works when opened locally.
-const contributors = JSON.parse(await readFile('precomputed/contributors.json', 'utf8'));
+// Embed the single people source for local-file use as well as static hosting.
+const people = JSON.parse(await readFile('precomputed/contributors.json', 'utf8'));
+if (!Array.isArray(people)) throw new Error('contributors.json must contain an array');
+for (const person of people) {
+  if (!['data', 'team', 'ack'].includes(person.section)) {
+    throw new Error(`Unknown contributor section for ${person.name}: ${person.section}`);
+  }
+}
 const contributionPage = await readFile('contribution.html', 'utf8');
 await writeFile('contribution.html', contributionPage.replace(
   /(<script id="contributors-data" type="application\/json">)[\s\S]*?(<\/script>)/,
-  (_, open, close) => open + JSON.stringify(contributors).replace(/</g, '\\u003c') + close
+  (_, open, close) => open + JSON.stringify(people).replace(/</g, '\\u003c') + close
 ));
-
-

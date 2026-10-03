@@ -1,5 +1,6 @@
 [
     {
+        "section": "data",
         "name": "Zhuoran Yu",
         "date": "Sep 2026",
         "affiliation": "University of Wisconsin-Madison",
@@ -9,6 +10,7 @@
         "bibtex": "@inproceedings{yu2026dochop,\n\ttitle={DocHop: Benchmarking Out-of-domain Multi-hop Reasoning in Information-Dense Documents},\n\tauthor={Zhuoran Yu and Le Thien Phuc Nguyen and Jaden Park and Xinyi Gu and Zexue He and Soochahn Lee and Rogerio Feris and Yong Jae Lee},\n\tbooktitle={Forty-third International Conference on Machine Learning},\n\tyear={2026},\n\turl={https://openreview.net/forum?id=PQFkScoGqz}\n}"
     },
     {
+        "section": "data",
         "name": "Joshua Fonseca Rivera",
         "affiliation": "Independent",
         "date": "Aug 2026",
@@ -18,9 +20,65 @@
         "bibtex": "@misc{rivera2026itemresponsetheoryai,\n\ttitle={Item Response Theory for AI Safety},\n\tauthor={Joshua Fonseca Rivera and Neil Shah and David Demitri Africa and Konstantinos Voudouris},\n\tyear={2026},\n\teprint={2608.05086},\n\tarchivePrefix={arXiv},\n\tprimaryClass={cs.AI},\n\turl={https://arxiv.org/abs/2608.05086},\n}"
     },
     {
+        "section": "ack",
         "name": "Ian Arawjo",
-        "date": "Apr 2026",
-        "affiliation": "Université de Montréal",
-        "description": "Thanks to Ian for testing OpenEval in practice and providing valuable feedback on our data schema, storage, and coverage!"
+        "affiliation": "Université de Montréal"
+    },
+    {
+        "section": "team",
+        "name": "Han Jiang",
+        "email": "hjiang66@jh.edu",
+        "affiliation": "Johns Hopkins University"
+    },
+    {
+        "section": "team",
+        "name": "Gabriel Pernell",
+        "affiliation": "Johns Hopkins University"
+    },
+    {
+        "section": "team",
+        "name": "Susu Zhang",
+        "affiliation": "University of Illinois Urbana-Champaign"
+    },
+    {
+        "section": "team",
+        "name": "Dongyao Zhu",
+        "affiliation": "North Carolina State University"
+    },
+    {
+        "section": "team",
+        "name": "Yuzhuo Bai",
+        "affiliation": "Tsinghua University"
+    },
+    {
+        "section": "team",
+        "name": "Sang T. Truong",
+        "affiliation": "Stanford University"
+    },
+    {
+        "section": "team",
+        "name": "Xiaoyuan Yi",
+        "affiliation": "Microsoft Research Asia"
+    },
+    {
+        "section": "team",
+        "name": "Sanmi Koyejo",
+        "affiliation": "Stanford University"
+    },
+    {
+        "section": "team",
+        "name": "Ziang Xiao",
+        "email": "ziang.xiao@jhu.edu",
+        "affiliation": "Johns Hopkins University"
+    },
+    {
+        "section": "ack",
+        "name": "Yifan Mai",
+        "affiliation": "Stanford University"
+    },
+    {
+        "section": "ack",
+        "name": "Xing Xie",
+        "affiliation": "Microsoft Research Asia"
     }
 ]
