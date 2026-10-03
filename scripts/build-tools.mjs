@@ -48,7 +48,7 @@ await writeFile('tools-src/data/landscape.ts', [
 ].join('\n'));
 
 await build({
-  entryPoints: ['tools-src/landscape.tsx', 'tools-src/benchmark.tsx', 'tools-src/model.tsx'],
+  entryPoints: ['tools-src/landscape.tsx', 'tools-src/benchmark.tsx', 'tools-src/model.tsx', 'tools-src/schema.tsx'],
   bundle: true, outdir: '.', format: 'iife', jsx: 'automatic', target: ['es2020'],
   minify: false, legalComments: 'linked', define: { 'process.env.NODE_ENV': '"production"' },
   logOverride: { 'ignored-bare-import': 'silent' }
@@ -78,3 +78,5 @@ await writeFile('contribution.html', contributionPage.replace(
   /(<script id="contributors-data" type="application\/json">)[\s\S]*?(<\/script>)/,
   (_, open, close) => open + JSON.stringify(contributors).replace(/</g, '\\u003c') + close
 ));
+
+

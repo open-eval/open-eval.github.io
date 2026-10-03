@@ -17,7 +17,7 @@
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="schema.html">Data Schema</a></li>
+      <li><a href="schema.html">Data</a></li>
       <li><a href="landscape.html">Evaluation Landscape</a></li>
       <li><a href="benchmark.html">Benchmark Browser</a></li>
       <li><a href="model.html">Model Performance</a></li>
@@ -109,12 +109,12 @@
     </span>
   </div>
 </footer>
-<script id="contributors-data" type="application/json">[{"name":"Joshua Fonseca Rivera","affiliation":"Independent","description":"Thanks to Joshua for contributing 755K+ responses across 170+ models and seven datasets, with excellent work converting them into the OpenEval schema!","paper":"Item Response Theory for AI Safety","paper_url":"https://arxiv.org/abs/2608.05086","bibtex":"@misc{rivera2026itemresponsetheoryai,\n\ttitle={Item Response Theory for AI Safety},\n\tauthor={Joshua Fonseca Rivera and Neil Shah and David Demitri Africa and Konstantinos Voudouris},\n\tyear={2026},\n\teprint={2608.05086},\n\tarchivePrefix={arXiv},\n\tprimaryClass={cs.AI},\n\turl={https://arxiv.org/abs/2608.05086},\n}"},{"name":"Zhuoran Yu","affiliation":"University of Wisconsin-Madison","description":"Thanks to Zhuoran for sharing his dataset, DocHop, along with the model responses!","paper":"DocHop: Benchmarking Out-of-domain Multi-hop Reasoning in Information-Dense Documents","paper_url":"https://icml.cc/virtual/2026/poster/64260","bibtex":"@inproceedings{yu2026dochop,\n\ttitle={DocHop: Benchmarking Out-of-domain Multi-hop Reasoning in Information-Dense Documents},\n\tauthor={Zhuoran Yu and Le Thien Phuc Nguyen and Jaden Park and Xinyi Gu and Zexue He and Soochahn Lee and Rogerio Feris and Yong Jae Lee},\n\tbooktitle={Forty-third International Conference on Machine Learning},\n\tyear={2026},\n\turl={https://openreview.net/forum?id=PQFkScoGqz}\n}"}]</script>
+<script id="contributors-data" type="application/json">[{"name":"Zhuoran Yu","date":"Sep 2026","affiliation":"University of Wisconsin-Madison","description":"Thanks to Zhuoran for sharing his dataset, DocHop, along with the model responses!","paper":"DocHop: Benchmarking Out-of-domain Multi-hop Reasoning in Information-Dense Documents","paper_url":"https://icml.cc/virtual/2026/poster/64260","bibtex":"@inproceedings{yu2026dochop,\n\ttitle={DocHop: Benchmarking Out-of-domain Multi-hop Reasoning in Information-Dense Documents},\n\tauthor={Zhuoran Yu and Le Thien Phuc Nguyen and Jaden Park and Xinyi Gu and Zexue He and Soochahn Lee and Rogerio Feris and Yong Jae Lee},\n\tbooktitle={Forty-third International Conference on Machine Learning},\n\tyear={2026},\n\turl={https://openreview.net/forum?id=PQFkScoGqz}\n}"},{"name":"Joshua Fonseca Rivera","affiliation":"Independent","date":"Aug 2026","description":"Thanks to Joshua for contributing 755K+ responses across 170+ models and seven datasets, with excellent work converting them into the OpenEval schema!","paper":"Item Response Theory for AI Safety","paper_url":"https://arxiv.org/abs/2608.05086","bibtex":"@misc{rivera2026itemresponsetheoryai,\n\ttitle={Item Response Theory for AI Safety},\n\tauthor={Joshua Fonseca Rivera and Neil Shah and David Demitri Africa and Konstantinos Voudouris},\n\tyear={2026},\n\teprint={2608.05086},\n\tarchivePrefix={arXiv},\n\tprimaryClass={cs.AI},\n\turl={https://arxiv.org/abs/2608.05086},\n}"},{"name":"Ian Arawjo","date":"Apr 2026","affiliation":"Université de Montréal","description":"Thanks to Ian for testing OpenEval in practice and providing valuable feedback on our data schema, storage, and coverage!"}]</script>
 <script>
   const contributors = JSON.parse(document.getElementById('contributors-data').textContent);
 
   // Returns one card; textContent keeps names and citations literal and safe.
-  function createContributorCard({ name, affiliation, description, paper: title, paper_url, bibtex }) {
+  function createContributorCard({ name, affiliation, date, description, paper: title, paper_url, bibtex }) {
     const paper = title ? { title, bibtex } : null;
     function element(tag, className, text) {
       const node = document.createElement(tag);
@@ -127,7 +127,11 @@
     const info = element('div', 'contributor-info');
     const header = element('div', 'contributor-header');
     header.append(element('h3', '', name));
-    if (affiliation) header.append(element('p', 'contributor-affiliation', affiliation));
+    if (affiliation || date) {
+      const meta = element('p', 'contributor-affiliation', affiliation || '');
+      if (date) meta.append(element('span', 'contributor-date', (affiliation ? ' · ' : '') + date));
+      header.append(meta);
+    }
     info.append(header);
     if (description) info.append(element('p', 'contributor-description', description));
     card.append(info);

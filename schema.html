@@ -17,7 +17,7 @@
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="schema.html" aria-current="page">Data Schema</a></li>
+      <li><a href="schema.html" aria-current="page">Data</a></li>
       <li><a href="landscape.html">Evaluation Landscape</a></li>
       <li><a href="benchmark.html">Benchmark Browser</a></li>
       <li><a href="model.html">Model Performance</a></li>
@@ -219,7 +219,11 @@
 <span class="p1">}</span></div>
       </div>
     </div>
-    <p class="section-sub schema-viewer-intro">For practical considerations related to Parquet storage, our schema is represented on Hugging Face through three tables: bench, item, and response. You can explore them directly below.</p>
+
+<div id="schema-coverage"><p role="status">Loading dataset coverage…</p></div>
+    <section class="schema-live-viewer" aria-labelledby="live-viewer-title">
+    <h2 id="live-viewer-title" class="section-title">Live data viewer</h2>
+    <p class="section-sub schema-viewer-intro">For practical considerations related to Parquet storage, our schema is represented on Hugging Face through three tables: bench, item, and response.</p>
     <iframe
       class="dataset-viewer"
       src="https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/embed/viewer"
@@ -228,6 +232,7 @@
       width="100%"
       height="500"
     ></iframe>
+    </section>
   </div>
 </section>
 </div>
@@ -270,5 +275,6 @@ function syncSchemaHeight() {
 window.addEventListener('load', syncSchemaHeight);
 if (document.fonts) document.fonts.ready.then(syncSchemaHeight);
 </script>
+<script src="schema.js" defer></script>
 </body>
 </html>

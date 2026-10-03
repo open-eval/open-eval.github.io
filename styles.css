@@ -940,6 +940,8 @@ nav { position: sticky; }
   border-top: none;
 }
 #contributors { position: relative; }
+#about, #contribution-guide { padding-bottom: 4rem; }
+#features, #contributors { padding-top: 4rem; }
 #features::before,
 #contributors::before {
   content: "";
@@ -975,7 +977,8 @@ main { flex: 1; }
 body.green-page { background: #273929; }
 .green-page footer { background: #f4f2ec; }
 
-.schema-viewer-intro { margin-top: 2.5rem; }
+.schema-live-viewer { margin-top: 4rem; padding-top: 4rem; border-top: 1px solid var(--border); }
+.schema-live-viewer .schema-viewer-intro { margin-top: 0; margin-bottom: 1.5rem; }
 
 .path-badge { background: #e8e5de; color: inherit; font-size: 0.84em; }
 
@@ -1325,3 +1328,19 @@ body.green-page { background: #273929; }
   border-radius: 50%;
   background: #a23b2b;
 }
+.schema-coverage { margin-top: 4rem; padding-top: 4rem; border-top: 1px solid var(--border); }
+.coverage-snapshot-note { font-size: 0.65rem; color: var(--muted); margin-bottom: 1rem; }
+.coverage-table-scroll { overflow-x: auto; max-height: 28rem; }
+.coverage-snapshot-table { width: 100%; border-collapse: collapse; font-size: 0.75rem; font-variant-numeric: tabular-nums; }
+.coverage-snapshot-table th, .coverage-snapshot-table td { padding: 0.45rem 0.7rem; border-bottom: 2px dotted var(--border); text-align: right; white-space: nowrap; }
+.coverage-snapshot-table th:first-child { text-align: left; }
+.coverage-snapshot-table tbody th { font-weight: 400; }
+.coverage-snapshot-table thead th { position: sticky; top: 0; background: var(--surface); }
+.coverage-models { margin-top: 0.75rem; padding: 0.5rem 0.75rem; border: 1px solid var(--border); border-radius: var(--radius); }
+.coverage-models summary { cursor: pointer; font-size: 0.75rem; color: var(--muted); }
+.coverage-models[open] > summary { margin-bottom: 0.75rem; }
+
+.coverage-summary-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem; }
+.coverage-summary-footnote { margin-top: 1rem; margin-bottom: 0; }
+
+.contributor-date { color: var(--muted); }
