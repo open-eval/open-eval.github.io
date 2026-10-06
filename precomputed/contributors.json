@@ -1,10 +1,39 @@
 [
     {
         "section": "data",
+        "name": "Jen-Tse Huang",
+        "date": "Oct 2026",
+        "affiliation": "Johns Hopkins University",
+        "description": "Thanks to Jay for sharing his benchmark, VisFactor, along with the model responses and reasoning traces!",
+        "paper": "Castle-in-the-Air: Probing the Foundational Visual Deficits of MLLMs via Bottom-Up Cognitive Factors",
+        "paper_url": "https://icml.cc/virtual/2026/poster/64260",
+        "bibtex": "@inproceedings{huang2026visfactor,\n\ttitle={Castle-in-the-Air: Probing the Foundational Visual Deficits of MLLMs via Bottom-Up Cognitive Factors},\n\tauthor={Jen-Tse Huang and Dasen Dai and Jen-Yuan Huang and Youliang Yuan and Xiaoyuan Liu and Wenxuan Wang and Wenxiang Jiao and Pinjia He and Zhaopeng Tu and Haodong Duan},\n\tbooktitle={The Fortieth Annual Conference on Neural Information Processing Systems},\n\tyear={2026},\n\turl={https://neurips.cc/virtual/2026/loc/sydney/poster/139489}\n}"
+    },
+    {
+        "section": "data",
+        "name": "Niyati Bafna & Emily Chang",
+        "date": "Oct 2026",
+        "affiliation": "Johns Hopkins University",
+        "description": "Thanks to Niyati and Emily for sharing their benchmarks, Last Translation Benchmark and ChiKhaPo!",
+        "paper": [
+            "Last Translation Benchmark", 
+            "ChiKhaPo: A Large-Scale Multilingual Benchmark for Evaluating Lexical Comprehension and Generation in LLMs"
+        ],
+        "paper_url": [
+            "https://arxiv.org/abs/2609.04173",
+            "https://arxiv.org/abs/2510.16928"
+        ],
+        "bibtex": [
+            "@misc{zouhar2026LTB,\n\ttitle={Last Translation Benchmark},\n\tauthor={Vilém Zouhar and Niyati Bafna and Mukund Choudhary and Maike Züfle and Sara Rajaee and Pinzhen Chen and Jannis Vamvas and Sara Papi and Ona de Gibert and Bhavitvya Malik and others},\n\teprint={2609.04173},\n\tarchivePrefix={arXiv},\n\tprimaryClass={cs.CL},\n\tyear={2026},\n\turl={https://arxiv.org/abs/2609.04173}\n}",
+            "@misc{chang2026chikhapolargescalemultilingualbenchmark,\n\ttitle={ChiKhaPo: A Large-Scale Multilingual Benchmark for Evaluating Lexical Comprehension and Generation in Large Language Models}, \n\tauthor={Emily Chang and Niyati Bafna},\n\tyear={2026},\n\teprint={2510.16928},\n\tarchivePrefix={arXiv},\n\tprimaryClass={cs.CL},\n\turl={https://arxiv.org/abs/2510.16928}, \n}"
+        ]
+    },
+    {
+        "section": "data",
         "name": "Zhuoran Yu",
         "date": "Sep 2026",
         "affiliation": "University of Wisconsin-Madison",
-        "description": "Thanks to Zhuoran for sharing his dataset, DocHop, along with the model responses!",
+        "description": "Thanks to Zhuoran for sharing his benchmark, DocHop, along with the model responses!",
         "paper": "DocHop: Benchmarking Out-of-domain Multi-hop Reasoning in Information-Dense Documents",
         "paper_url": "https://icml.cc/virtual/2026/poster/64260",
         "bibtex": "@inproceedings{yu2026dochop,\n\ttitle={DocHop: Benchmarking Out-of-domain Multi-hop Reasoning in Information-Dense Documents},\n\tauthor={Zhuoran Yu and Le Thien Phuc Nguyen and Jaden Park and Xinyi Gu and Zexue He and Soochahn Lee and Rogerio Feris and Yong Jae Lee},\n\tbooktitle={Forty-third International Conference on Machine Learning},\n\tyear={2026},\n\turl={https://openreview.net/forum?id=PQFkScoGqz}\n}"

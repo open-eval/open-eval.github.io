@@ -1017,12 +1017,15 @@ body.green-page { background: #273929; }
 .contributor-affiliation { color: var(--accent); font-size: 0.7rem; text-align: right; overflow-wrap: anywhere; }
 .contributor-description { color: var(--muted); font-size: 0.65rem; font-style: italic; line-height: 1.4; margin-top: 0.3rem; margin-bottom: 0.5rem; }
 .contributor-info { min-width: 0; }
-.contributor-paper { min-width: 0; margin-top: 0.3rem; }
+.contributor-paper { min-width: 0; margin-top: 0.3rem; font-size: 0.7rem; line-height: 1.5; }
+.contributor-paper + .contributor-paper { margin-top: 0; }
+.contributor-paper + .contributor-paper::before { display: none; }
 .contributor-paper::before {
   content: "";
   display: block;
   width: 40%;
   border-top: 1px solid var(--border);
+  margin-bottom: 0.25rem;
 }
 .contributor-paper p { color: var(--muted); display: inline; font-size: 0.7rem; overflow-wrap: anywhere; }
 .contributor-citation { display: inline; margin-left: 0.65rem; }
@@ -1358,6 +1361,7 @@ body.green-page { background: #273929; }
 .coverage-summary-footnote { margin-top: 1rem; margin-bottom: 0; }
 
 .contributor-date { color: var(--muted); }
+.contributor-name-separator { color: var(--muted); font-weight: 400; }
 
 .people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 13rem), 1fr)); gap: 1rem; list-style: none; }
 .people-grid:empty { display: none; }
