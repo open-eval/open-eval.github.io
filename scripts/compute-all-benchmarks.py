@@ -15,8 +15,11 @@ with tempfile.TemporaryDirectory() as temporary:
     listing = compute.json_fetch('https://datasets-server.huggingface.co/parquet?dataset=Open-Eval-Commons%2FOpenEval', Path(temporary), 'files.json')
 configs = {}
 for entry in listing['parquet_files']:
-    if entry['config'] in ('item', 'response') and entry['split'] != 'all':
-        configs.setdefault(entry['split'], set()).add(entry['config'])
+    benchmark, _, kind = entry['config'].rpartition('.')
+    if benchmark == 'last_translation_bench':
+        benchmark = 'last_translation_benchmark'
+    if benchmark and kind in ('item', 'response') and entry['split'] == 'train':
+        configs.setdefault(benchmark, set()).add(kind)
 failures = []
 for split, available in sorted(configs.items()):
     output = root / 'precomputed/benchmark' / (split + '.json')

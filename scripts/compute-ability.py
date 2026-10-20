@@ -82,6 +82,8 @@ def fit(entries, minimum):
 
 
 def direction(slug, metric):
+    if (slug, metric) in {('last_translation_benchmark', 'passes_all_rules'), ('visfactor', 'correct')}:
+        return 'higher'
     if (slug == 'or_bench' and metric == 'orbench-refusal') or metric in ('logprob', 'do-not-answer_annotation'):
         return None
     if metric in ('attack_success', 'ft-mistral-7b-sorrybench') or (slug == 'health_orsc_bench' and metric == 'refusal-strings'):

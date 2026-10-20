@@ -1,5 +1,9 @@
 /** Declared score ranges, not observed minima/maxima. Raw statistics stay unchanged. */
 export function metricRange(metric: string, benchmark?: string) {
+  if ((benchmark === 'last_translation_benchmark' && metric === 'passes_all_rules') ||
+      (benchmark === 'visfactor' && metric === 'correct')) {
+    return { label: '[0, 1]', min: 0, max: 1 };
+  }
   // Likelihood alone does not indicate better performance or less bias on BOLD.
   if (benchmark === 'bold' && metric === 'logprob') {
     return { label: '(−∞, 0]', directionUnknown: true };

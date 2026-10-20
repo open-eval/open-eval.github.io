@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "last_translation_benchmark",
+  "computedAt": "2026-10-20T03:55:48.364510+00:00",
+  "summarySha256": "d2d3af3b0ed9290aec76bde00e0fd384f406428734e599e4fb726bf119fa6531",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "3e0db5af064971a3526b4694c176f0bc85b2418d",
+    "observedMainRevision": "2b8d1539b06da77c125c666c519e54b1ca2e4eba",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/3e0db5af064971a3526b4694c176f0bc85b2418d/last_translation_bench.item/train/0000.parquet",
+        "rows": 3456,
+        "bytes": 918089,
+        "sha256": "96978ac476fcdafea781763d71845e3bb369177f57df8e9add2a213c419c171e"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/3e0db5af064971a3526b4694c176f0bc85b2418d/last_translation_bench.response/train/0000.parquet",
+        "rows": 98444,
+        "bytes": 6304098,
+        "sha256": "1ab99143f4641c73dd96aca1ae02718ddaa52e3d70a1179186c42ffd8c9a564a"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "passes_all_rules": {
+      "available": true,
+      "itemCount": 3435,
+      "modelCount": 31,
+      "pairCount": 95944,
+      "iterations": 259,
+      "converged": true,
+      "itemDifficulty": {
+        "bins": [
+          1,
+          0,
+          2,
+          16,
+          28,
+          60,
+          139,
+          166,
+          358,
+          290,
+          315,
+          368,
+          17,
+          446,
+          1,
+          515,
+          0,
+          0,
+          18,
+          695
+        ],
+        "min": -4.417805326081906,
+        "max": 2.4833021832191773,
+        "median": -0.2944074495246134
+      },
+      "models": [
+        {
+          "name": "Gemini 3.1 Pro",
+          "theta": 0.205582,
+          "sd": 0.066105,
+          "n": 3435
+        },
+        {
+          "name": "GPT-5.6 Sol",
+          "theta": -0.542161,
+          "sd": 0.066368,
+          "n": 3408
+        },
+        {
+          "name": "GPT-5.6 Luna",
+          "theta": -1.462062,
+          "sd": 0.068752,
+          "n": 3408
+        },
+        {
+          "name": "Gemini 3.5 Flash Lite",
+          "theta": -1.680576,
+          "sd": 0.069701,
+          "n": 3435
+        },
+        {
+          "name": "GPT-5.6 Terra",
+          "theta": -1.724036,
+          "sd": 0.07003,
+          "n": 3408
+        },
+        {
+          "name": "Kimi K3",
+          "theta": -1.765468,
+          "sd": 0.070263,
+          "n": 3408
+        },
+        {
+          "name": "Qwen 3.7 Plus",
+          "theta": -1.882015,
+          "sd": 0.070966,
+          "n": 3408
+        },
+        {
+          "name": "Deepseek V4 Pro",
+          "theta": -2.221659,
+          "sd": 0.074629,
+          "n": 3244
+        },
+        {
+          "name": "Nemotron 3 Ultra",
+          "theta": -2.519243,
+          "sd": 0.077684,
+          "n": 3244
+        },
+        {
+          "name": "Gemini 2.5 Flash",
+          "theta": -2.574877,
+          "sd": 0.081996,
+          "n": 2452
+        },
+        {
+          "name": "Gemma 4",
+          "theta": -2.735518,
+          "sd": 0.078896,
+          "n": 3409
+        },
+        {
+          "name": "Qwen 3.7 Flash",
+          "theta": -2.802042,
+          "sd": 0.079772,
+          "n": 3409
+        },
+        {
+          "name": "TranslateGemma",
+          "theta": -2.880286,
+          "sd": 0.085622,
+          "n": 2909
+        },
+        {
+          "name": "Claude Sonnet 4.5",
+          "theta": -3.325545,
+          "sd": 0.088449,
+          "n": 3408
+        },
+        {
+          "name": "GPT-5.4 Mini",
+          "theta": -3.535726,
+          "sd": 0.092982,
+          "n": 3408
+        },
+        {
+          "name": "QwenMT",
+          "theta": -3.659117,
+          "sd": 0.104772,
+          "n": 2729
+        },
+        {
+          "name": "HY-MT2",
+          "theta": -3.676676,
+          "sd": 0.103174,
+          "n": 2987
+        },
+        {
+          "name": "Seed-X-PPO-7B",
+          "theta": -3.950356,
+          "sd": 0.112197,
+          "n": 2948
+        },
+        {
+          "name": "Command A+",
+          "theta": -3.989669,
+          "sd": 0.105372,
+          "n": 3407
+        },
+        {
+          "name": "GemmaX2-28-9B",
+          "theta": -4.143461,
+          "sd": 0.119268,
+          "n": 2987
+        },
+        {
+          "name": "Llama 4 Maverick",
+          "theta": -4.167235,
+          "sd": 0.111339,
+          "n": 3408
+        },
+        {
+          "name": "Tower+",
+          "theta": -4.314336,
+          "sd": 0.126484,
+          "n": 2987
+        },
+        {
+          "name": "Command A Translate",
+          "theta": -4.381942,
+          "sd": 0.129559,
+          "n": 2987
+        },
+        {
+          "name": "Lara",
+          "theta": -4.403966,
+          "sd": 0.135951,
+          "n": 2544
+        },
+        {
+          "name": "Command A",
+          "theta": -4.476211,
+          "sd": 0.127885,
+          "n": 3244
+        },
+        {
+          "name": "gpt-oss-20b",
+          "theta": -4.545793,
+          "sd": 0.131157,
+          "n": 3244
+        },
+        {
+          "name": "TinyAya Global",
+          "theta": -4.574865,
+          "sd": 0.132566,
+          "n": 3244
+        },
+        {
+          "name": "NLLB 3.3B",
+          "theta": -4.617215,
+          "sd": 0.142069,
+          "n": 2901
+        },
+        {
+          "name": "Google Translate",
+          "theta": -4.807977,
+          "sd": 0.176442,
+          "n": 2050
+        },
+        {
+          "name": "NLLB 54B",
+          "theta": -4.913644,
+          "sd": 0.200408,
+          "n": 1476
+        },
+        {
+          "name": "Claude Haiku 4.5",
+          "theta": -4.954387,
+          "sd": 0.147624,
+          "n": 3408
+        }
+      ],
+      "reverseCoded": false
+    }
+  }
+}

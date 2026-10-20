@@ -1,0 +1,266 @@
+{
+  "itemCount": 3456,
+  "responseCount": 98444,
+  "distinctModelCount": 39,
+  "distinctModelItemPairs": 96160,
+  "duplicateResponsesRemoved": 2284,
+  "conflictingDuplicateRows": 0,
+  "conflictingDuplicateExamples": [],
+  "measurements": [
+    {
+      "metrics": [
+        "passes_all_rules"
+      ],
+      "itemCount": 3456,
+      "totalResponses": 98444,
+      "loadedResponses": 98444,
+      "minimumItems": 346,
+      "modelCount": 31,
+      "scoredResponses": 95986,
+      "excludedModelCount": 8,
+      "avgScore": 0.11036819558958696,
+      "medianScore": 0.05130084279956028,
+      "standardError": 0.02213462695885447,
+      "discrimination": 0.12123634487326566,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "Gemini 3.1 Pro",
+        "n": 3456,
+        "coverage": 1.0,
+        "mean": 0.5347222222222222
+      },
+      "worst": {
+        "name": "Claude Haiku 4.5",
+        "n": 3408,
+        "coverage": 0.9861111111111112,
+        "mean": 0.01584507042253521
+      },
+      "models": [
+        {
+          "name": "Gemini 3.1 Pro",
+          "n": 3456,
+          "coverage": 1.0,
+          "mean": 0.5347222222222222
+        },
+        {
+          "name": "GPT-5.6 Sol",
+          "n": 3408,
+          "coverage": 0.9861111111111112,
+          "mean": 0.40874413145539906
+        },
+        {
+          "name": "GPT-5.6 Luna",
+          "n": 3408,
+          "coverage": 0.9861111111111112,
+          "mean": 0.261443661971831
+        },
+        {
+          "name": "Gemini 3.5 Flash Lite",
+          "n": 3456,
+          "coverage": 1.0,
+          "mean": 0.22800925925925927
+        },
+        {
+          "name": "GPT-5.6 Terra",
+          "n": 3408,
+          "coverage": 0.9861111111111112,
+          "mean": 0.2244718309859155
+        },
+        {
+          "name": "Kimi K3",
+          "n": 3408,
+          "coverage": 0.9861111111111112,
+          "mean": 0.21889671361502347
+        },
+        {
+          "name": "Qwen 3.7 Plus",
+          "n": 3408,
+          "coverage": 0.9861111111111112,
+          "mean": 0.20363849765258216
+        },
+        {
+          "name": "Deepseek V4 Pro",
+          "n": 3244,
+          "coverage": 0.9386574074074074,
+          "mean": 0.15906288532675708
+        },
+        {
+          "name": "Gemini 2.5 Flash",
+          "n": 2452,
+          "coverage": 0.7094907407407407,
+          "mean": 0.1468189233278956
+        },
+        {
+          "name": "Nemotron 3 Ultra",
+          "n": 3244,
+          "coverage": 0.9386574074074074,
+          "mean": 0.12854500616522813
+        },
+        {
+          "name": "Gemma 4",
+          "n": 3409,
+          "coverage": 0.9864004629629629,
+          "mean": 0.11234966265767087
+        },
+        {
+          "name": "Qwen 3.7 Flash",
+          "n": 3409,
+          "coverage": 0.9864004629629629,
+          "mean": 0.10677618069815195
+        },
+        {
+          "name": "TranslateGemma",
+          "n": 2909,
+          "coverage": 0.8417245370370371,
+          "mean": 0.09625300790649707
+        },
+        {
+          "name": "Claude Sonnet 4.5",
+          "n": 3408,
+          "coverage": 0.9861111111111112,
+          "mean": 0.07012910798122066
+        },
+        {
+          "name": "GPT-5.4 Mini",
+          "n": 3408,
+          "coverage": 0.9861111111111112,
+          "mean": 0.05868544600938967
+        },
+        {
+          "name": "QwenMT",
+          "n": 2729,
+          "coverage": 0.7896412037037037,
+          "mean": 0.05130084279956028
+        },
+        {
+          "name": "HY-MT2",
+          "n": 2987,
+          "coverage": 0.8642939814814815,
+          "mean": 0.04854368932038835
+        },
+        {
+          "name": "Command A+",
+          "n": 3407,
+          "coverage": 0.9858217592592593,
+          "mean": 0.03933078955092457
+        },
+        {
+          "name": "Seed-X-PPO-7B",
+          "n": 2948,
+          "coverage": 0.8530092592592593,
+          "mean": 0.038331071913161464
+        },
+        {
+          "name": "Llama 4 Maverick",
+          "n": 3408,
+          "coverage": 0.9861111111111112,
+          "mean": 0.03345070422535211
+        },
+        {
+          "name": "GemmaX2-28-9B",
+          "n": 2987,
+          "coverage": 0.8642939814814815,
+          "mean": 0.03180448610646133
+        },
+        {
+          "name": "Tower+",
+          "n": 2987,
+          "coverage": 0.8642939814814815,
+          "mean": 0.02711750920656177
+        },
+        {
+          "name": "Lara",
+          "n": 2544,
+          "coverage": 0.7361111111111112,
+          "mean": 0.026729559748427674
+        },
+        {
+          "name": "Command A Translate",
+          "n": 2987,
+          "coverage": 0.8642939814814815,
+          "mean": 0.025443588885169066
+        },
+        {
+          "name": "Command A",
+          "n": 3244,
+          "coverage": 0.9386574074074074,
+          "mean": 0.02404438964241677
+        },
+        {
+          "name": "gpt-oss-20b",
+          "n": 3244,
+          "coverage": 0.9386574074074074,
+          "mean": 0.02250308261405672
+        },
+        {
+          "name": "TinyAya Global",
+          "n": 3244,
+          "coverage": 0.9386574074074074,
+          "mean": 0.021886559802712702
+        },
+        {
+          "name": "NLLB 3.3B",
+          "n": 2901,
+          "coverage": 0.8394097222222222,
+          "mean": 0.020682523267838676
+        },
+        {
+          "name": "NLLB 54B",
+          "n": 1476,
+          "coverage": 0.4270833333333333,
+          "mean": 0.018292682926829267
+        },
+        {
+          "name": "Google Translate",
+          "n": 2050,
+          "coverage": 0.5931712962962963,
+          "mean": 0.0175609756097561
+        },
+        {
+          "name": "Claude Haiku 4.5",
+          "n": 3408,
+          "coverage": 0.9861111111111112,
+          "mean": 0.01584507042253521
+        }
+      ],
+      "split": "last_translation_benchmark"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "last_translation_benchmark",
+  "computedAt": "2026-10-20T03:54:36.553467+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "3e0db5af064971a3526b4694c176f0bc85b2418d",
+    "observedMainRevision": "2b8d1539b06da77c125c666c519e54b1ca2e4eba",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/3e0db5af064971a3526b4694c176f0bc85b2418d/last_translation_bench.item/train/0000.parquet",
+        "rows": 3456,
+        "bytes": 918089,
+        "sha256": "96978ac476fcdafea781763d71845e3bb369177f57df8e9add2a213c419c171e"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/3e0db5af064971a3526b4694c176f0bc85b2418d/last_translation_bench.response/train/0000.parquet",
+        "rows": 98444,
+        "bytes": 6304098,
+        "sha256": "1ab99143f4641c73dd96aca1ae02718ddaa52e3d70a1179186c42ffd8c9a564a"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

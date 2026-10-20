@@ -6,7 +6,7 @@
         "affiliation": "Johns Hopkins University",
         "description": "Thanks to Jay for sharing his benchmark, VisFactor, along with the model responses and reasoning traces!",
         "paper": "Castle-in-the-Air: Probing the Foundational Visual Deficits of MLLMs via Bottom-Up Cognitive Factors",
-        "paper_url": "https://icml.cc/virtual/2026/poster/64260",
+        "paper_url": "https://neurips.cc/virtual/2026/loc/sydney/poster/139489",
         "bibtex": "@inproceedings{huang2026visfactor,\n\ttitle={Castle-in-the-Air: Probing the Foundational Visual Deficits of MLLMs via Bottom-Up Cognitive Factors},\n\tauthor={Jen-Tse Huang and Dasen Dai and Jen-Yuan Huang and Youliang Yuan and Xiaoyuan Liu and Wenxuan Wang and Wenxiang Jiao and Pinjia He and Zhaopeng Tu and Haodong Duan},\n\tbooktitle={The Fortieth Annual Conference on Neural Information Processing Systems},\n\tyear={2026},\n\turl={https://neurips.cc/virtual/2026/loc/sydney/poster/139489}\n}"
     },
     {

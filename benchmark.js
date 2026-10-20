@@ -12153,6 +12153,9 @@
 
   // tools-src/data/metric-ranges.ts
   function metricRange(metric, benchmark) {
+    if (benchmark === "last_translation_benchmark" && metric === "passes_all_rules" || benchmark === "visfactor" && metric === "correct") {
+      return { label: "[0, 1]", min: 0, max: 1 };
+    }
     if (benchmark === "bold" && metric === "logprob") {
       return { label: "(\u2212\u221E, 0]", directionUnknown: true };
     }
@@ -27891,6 +27894,274 @@
     }
   };
 
+  // precomputed/benchmark/last_translation_benchmark.json
+  var last_translation_benchmark_default = {
+    itemCount: 3456,
+    responseCount: 98444,
+    distinctModelCount: 39,
+    distinctModelItemPairs: 96160,
+    duplicateResponsesRemoved: 2284,
+    conflictingDuplicateRows: 0,
+    conflictingDuplicateExamples: [],
+    measurements: [
+      {
+        metrics: [
+          "passes_all_rules"
+        ],
+        itemCount: 3456,
+        totalResponses: 98444,
+        loadedResponses: 98444,
+        minimumItems: 346,
+        modelCount: 31,
+        scoredResponses: 95986,
+        excludedModelCount: 8,
+        avgScore: 0.11036819558958696,
+        medianScore: 0.05130084279956028,
+        standardError: 0.02213462695885447,
+        discrimination: 0.12123634487326566,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "Gemini 3.1 Pro",
+          n: 3456,
+          coverage: 1,
+          mean: 0.5347222222222222
+        },
+        worst: {
+          name: "Claude Haiku 4.5",
+          n: 3408,
+          coverage: 0.9861111111111112,
+          mean: 0.01584507042253521
+        },
+        models: [
+          {
+            name: "Gemini 3.1 Pro",
+            n: 3456,
+            coverage: 1,
+            mean: 0.5347222222222222
+          },
+          {
+            name: "GPT-5.6 Sol",
+            n: 3408,
+            coverage: 0.9861111111111112,
+            mean: 0.40874413145539906
+          },
+          {
+            name: "GPT-5.6 Luna",
+            n: 3408,
+            coverage: 0.9861111111111112,
+            mean: 0.261443661971831
+          },
+          {
+            name: "Gemini 3.5 Flash Lite",
+            n: 3456,
+            coverage: 1,
+            mean: 0.22800925925925927
+          },
+          {
+            name: "GPT-5.6 Terra",
+            n: 3408,
+            coverage: 0.9861111111111112,
+            mean: 0.2244718309859155
+          },
+          {
+            name: "Kimi K3",
+            n: 3408,
+            coverage: 0.9861111111111112,
+            mean: 0.21889671361502347
+          },
+          {
+            name: "Qwen 3.7 Plus",
+            n: 3408,
+            coverage: 0.9861111111111112,
+            mean: 0.20363849765258216
+          },
+          {
+            name: "Deepseek V4 Pro",
+            n: 3244,
+            coverage: 0.9386574074074074,
+            mean: 0.15906288532675708
+          },
+          {
+            name: "Gemini 2.5 Flash",
+            n: 2452,
+            coverage: 0.7094907407407407,
+            mean: 0.1468189233278956
+          },
+          {
+            name: "Nemotron 3 Ultra",
+            n: 3244,
+            coverage: 0.9386574074074074,
+            mean: 0.12854500616522813
+          },
+          {
+            name: "Gemma 4",
+            n: 3409,
+            coverage: 0.9864004629629629,
+            mean: 0.11234966265767087
+          },
+          {
+            name: "Qwen 3.7 Flash",
+            n: 3409,
+            coverage: 0.9864004629629629,
+            mean: 0.10677618069815195
+          },
+          {
+            name: "TranslateGemma",
+            n: 2909,
+            coverage: 0.8417245370370371,
+            mean: 0.09625300790649707
+          },
+          {
+            name: "Claude Sonnet 4.5",
+            n: 3408,
+            coverage: 0.9861111111111112,
+            mean: 0.07012910798122066
+          },
+          {
+            name: "GPT-5.4 Mini",
+            n: 3408,
+            coverage: 0.9861111111111112,
+            mean: 0.05868544600938967
+          },
+          {
+            name: "QwenMT",
+            n: 2729,
+            coverage: 0.7896412037037037,
+            mean: 0.05130084279956028
+          },
+          {
+            name: "HY-MT2",
+            n: 2987,
+            coverage: 0.8642939814814815,
+            mean: 0.04854368932038835
+          },
+          {
+            name: "Command A+",
+            n: 3407,
+            coverage: 0.9858217592592593,
+            mean: 0.03933078955092457
+          },
+          {
+            name: "Seed-X-PPO-7B",
+            n: 2948,
+            coverage: 0.8530092592592593,
+            mean: 0.038331071913161464
+          },
+          {
+            name: "Llama 4 Maverick",
+            n: 3408,
+            coverage: 0.9861111111111112,
+            mean: 0.03345070422535211
+          },
+          {
+            name: "GemmaX2-28-9B",
+            n: 2987,
+            coverage: 0.8642939814814815,
+            mean: 0.03180448610646133
+          },
+          {
+            name: "Tower+",
+            n: 2987,
+            coverage: 0.8642939814814815,
+            mean: 0.02711750920656177
+          },
+          {
+            name: "Lara",
+            n: 2544,
+            coverage: 0.7361111111111112,
+            mean: 0.026729559748427674
+          },
+          {
+            name: "Command A Translate",
+            n: 2987,
+            coverage: 0.8642939814814815,
+            mean: 0.025443588885169066
+          },
+          {
+            name: "Command A",
+            n: 3244,
+            coverage: 0.9386574074074074,
+            mean: 0.02404438964241677
+          },
+          {
+            name: "gpt-oss-20b",
+            n: 3244,
+            coverage: 0.9386574074074074,
+            mean: 0.02250308261405672
+          },
+          {
+            name: "TinyAya Global",
+            n: 3244,
+            coverage: 0.9386574074074074,
+            mean: 0.021886559802712702
+          },
+          {
+            name: "NLLB 3.3B",
+            n: 2901,
+            coverage: 0.8394097222222222,
+            mean: 0.020682523267838676
+          },
+          {
+            name: "NLLB 54B",
+            n: 1476,
+            coverage: 0.4270833333333333,
+            mean: 0.018292682926829267
+          },
+          {
+            name: "Google Translate",
+            n: 2050,
+            coverage: 0.5931712962962963,
+            mean: 0.0175609756097561
+          },
+          {
+            name: "Claude Haiku 4.5",
+            n: 3408,
+            coverage: 0.9861111111111112,
+            mean: 0.01584507042253521
+          }
+        ],
+        split: "last_translation_benchmark"
+      }
+    ],
+    schemaVersion: 1,
+    benchmark: "last_translation_benchmark",
+    computedAt: "2026-10-20T03:54:36.553467+00:00",
+    source: {
+      dataset: "Open-Eval-Commons/OpenEval",
+      parquetRevision: "3e0db5af064971a3526b4694c176f0bc85b2418d",
+      observedMainRevision: "2b8d1539b06da77c125c666c519e54b1ca2e4eba",
+      files: [
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/3e0db5af064971a3526b4694c176f0bc85b2418d/last_translation_bench.item/train/0000.parquet",
+          rows: 3456,
+          bytes: 918089,
+          sha256: "96978ac476fcdafea781763d71845e3bb369177f57df8e9add2a213c419c171e"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/3e0db5af064971a3526b4694c176f0bc85b2418d/last_translation_bench.response/train/0000.parquet",
+          rows: 98444,
+          bytes: 6304098,
+          sha256: "1ab99143f4641c73dd96aca1ae02718ddaa52e3d70a1179186c42ffd8c9a564a"
+        }
+      ]
+    },
+    rules: {
+      coverageThreshold: 0.1,
+      coverageDenominator: "Distinct benchmark item IDs",
+      coverageNumerator: "Distinct items with a finite score for the metric after deduplication",
+      deduplication: "One response per model.name \xD7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+      aggregation: "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+      standardError: "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+      metricHandling: "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+      itemSet: "All available items per retained model; no common-item intersection",
+      limitations: "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+    }
+  };
+
   // precomputed/benchmark/mmlu_pro.json
   var mmlu_pro_default = {
     itemCount: 12032,
@@ -41560,6 +41831,322 @@
     }
   };
 
+  // precomputed/benchmark/visfactor.json
+  var visfactor_default = {
+    itemCount: 3046,
+    responseCount: 118794,
+    distinctModelCount: 39,
+    distinctModelItemPairs: 118794,
+    duplicateResponsesRemoved: 0,
+    conflictingDuplicateRows: 0,
+    conflictingDuplicateExamples: [],
+    measurements: [
+      {
+        metrics: [
+          "correct"
+        ],
+        itemCount: 3046,
+        totalResponses: 118794,
+        loadedResponses: 118794,
+        minimumItems: 305,
+        modelCount: 39,
+        scoredResponses: 118794,
+        excludedModelCount: 0,
+        avgScore: 0.6297287741805142,
+        medianScore: 0.618187787261983,
+        standardError: 0.014768325946211852,
+        discrimination: 0.0910380752632384,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "Gemini-3.1-Pro",
+          n: 3046,
+          coverage: 1,
+          mean: 0.8204202232435982
+        },
+        worst: {
+          name: "LLaMA-3.2-11B-Vision",
+          n: 3046,
+          coverage: 1,
+          mean: 0.40643466841759684
+        },
+        models: [
+          {
+            name: "Gemini-3.1-Pro",
+            n: 3046,
+            coverage: 1,
+            mean: 0.8204202232435982
+          },
+          {
+            name: "GPT-5.5-2026-04-23",
+            n: 3046,
+            coverage: 1,
+            mean: 0.8128693368351937
+          },
+          {
+            name: "Gemini-3.0-Pro",
+            n: 3046,
+            coverage: 1,
+            mean: 0.7810242941562705
+          },
+          {
+            name: "Seed-2.0-Lite",
+            n: 3046,
+            coverage: 1,
+            mean: 0.7728168089297439
+          },
+          {
+            name: "Gemini-3.0-Flash",
+            n: 3046,
+            coverage: 1,
+            mean: 0.742284963887065
+          },
+          {
+            name: "Seed-2.0-Pro",
+            n: 3046,
+            coverage: 1,
+            mean: 0.7330925804333552
+          },
+          {
+            name: "Qwen-3.5-Plus",
+            n: 3046,
+            coverage: 1,
+            mean: 0.7288246881155613
+          },
+          {
+            name: "Qwen-3.6-Plus",
+            n: 3046,
+            coverage: 1,
+            mean: 0.7248850952068286
+          },
+          {
+            name: "GPT-5.2-2025-12-11",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6812212738017072
+          },
+          {
+            name: "GLM-5V-Turbo",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6736703873933026
+          },
+          {
+            name: "o3-2025-04-16",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6628365068942876
+          },
+          {
+            name: "GPT-5.1-2025-11-13",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6520026263952725
+          },
+          {
+            name: "Qwen-VL-Plus",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6441234405778069
+          },
+          {
+            name: "Kimi-K2.5",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6431385423506237
+          },
+          {
+            name: "Qwen-VL-Max",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6408404464871963
+          },
+          {
+            name: "o4-Mini-2025-04-16",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6329612606697308
+          },
+          {
+            name: "Claude-Sonnet-3.7",
+            n: 3046,
+            coverage: 1,
+            mean: 0.628693368351937
+          },
+          {
+            name: "Claude-Opus-4.5",
+            n: 3046,
+            coverage: 1,
+            mean: 0.623768877216021
+          },
+          {
+            name: "GPT-5-Mini-2025-08-07",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6211424819435325
+          },
+          {
+            name: "Claude-Sonnet-4.6",
+            n: 3046,
+            coverage: 1,
+            mean: 0.618187787261983
+          },
+          {
+            name: "Seed-1.6-Thinking",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6178594878529219
+          },
+          {
+            name: "Qwen-3-VL-235B-A22B",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6175311884438608
+          },
+          {
+            name: "Qwen-2.5-VL-72B",
+            n: 3046,
+            coverage: 1,
+            mean: 0.613591595535128
+          },
+          {
+            name: "Seed-2.0-Mini",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6099803020354564
+          },
+          {
+            name: "Seed-1.5-VL",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6076822061720288
+          },
+          {
+            name: "GPT-4.1-2025-04-14",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6073539067629679
+          },
+          {
+            name: "Claude-Sonnet-4.5",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6060407091267236
+          },
+          {
+            name: "Gemini-2.5-Pro",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6053841103086014
+          },
+          {
+            name: "o1-2024-12-17",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6011162179908076
+          },
+          {
+            name: "GPT-4o-2024-11-20",
+            n: 3046,
+            coverage: 1,
+            mean: 0.6004596191726855
+          },
+          {
+            name: "GPT-4o-Mini-2024-07-18",
+            n: 3046,
+            coverage: 1,
+            mean: 0.5981615233092581
+          },
+          {
+            name: "Claude-Sonnet-4",
+            n: 3046,
+            coverage: 1,
+            mean: 0.5925804333552199
+          },
+          {
+            name: "Claude-Sonnet-3.5",
+            n: 3046,
+            coverage: 1,
+            mean: 0.56172028890348
+          },
+          {
+            name: "Qwen-2-VL-72B",
+            n: 3046,
+            coverage: 1,
+            mean: 0.5249507550886409
+          },
+          {
+            name: "Qwen-2.5-VL-32B",
+            n: 3046,
+            coverage: 1,
+            mean: 0.5216677609980302
+          },
+          {
+            name: "Gemini-2.5-Flash",
+            n: 3046,
+            coverage: 1,
+            mean: 0.5157583716349311
+          },
+          {
+            name: "Moonshot-V1-128K-Vision",
+            n: 3046,
+            coverage: 1,
+            mean: 0.4967170059093894
+          },
+          {
+            name: "LLaMA-3.2-90B-Vision",
+            n: 3046,
+            coverage: 1,
+            mean: 0.4156270518713066
+          },
+          {
+            name: "LLaMA-3.2-11B-Vision",
+            n: 3046,
+            coverage: 1,
+            mean: 0.40643466841759684
+          }
+        ],
+        split: "visfactor"
+      }
+    ],
+    schemaVersion: 1,
+    benchmark: "visfactor",
+    computedAt: "2026-10-20T03:54:39.743740+00:00",
+    source: {
+      dataset: "Open-Eval-Commons/OpenEval",
+      parquetRevision: "3e0db5af064971a3526b4694c176f0bc85b2418d",
+      observedMainRevision: "2b8d1539b06da77c125c666c519e54b1ca2e4eba",
+      files: [
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/3e0db5af064971a3526b4694c176f0bc85b2418d/visfactor.item/train/0000.parquet",
+          rows: 3046,
+          bytes: 234522,
+          sha256: "e47817b8566a5fdea6e94946d9a0dc0dc8e7b637ebdf5cee2d74f8b13c56d1f1"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/3e0db5af064971a3526b4694c176f0bc85b2418d/visfactor.response/train/0000.parquet",
+          rows: 118794,
+          bytes: 17918545,
+          sha256: "404983b791dc288bf1580a9019255064b26e63aab36f791e9f0043634573b273"
+        }
+      ]
+    },
+    rules: {
+      coverageThreshold: 0.1,
+      coverageDenominator: "Distinct benchmark item IDs",
+      coverageNumerator: "Distinct items with a finite score for the metric after deduplication",
+      deduplication: "One response per model.name \xD7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+      aggregation: "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+      standardError: "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+      metricHandling: "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+      itemSet: "All available items per retained model; no common-item intersection",
+      limitations: "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+    }
+  };
+
   // precomputed/benchmark/wildbench.json
   var wildbench_default = {
     itemCount: 1024,
@@ -47162,6 +47749,7 @@
     "hi_tom": hi_tom_default,
     "ifeval": ifeval_default,
     "imdb": imdb_default,
+    "last_translation_benchmark": last_translation_benchmark_default,
     "mmlu_pro": mmlu_pro_default,
     "moralbench": moralbench_default,
     "omni_math": omni_math_default,
@@ -47171,13 +47759,48 @@
     "simplesafetytests": simplesafetytests_default,
     "sorry_bench": sorry_bench_default,
     "truthfulqa": truthfulqa_default,
+    "visfactor": visfactor_default,
     "wildbench": wildbench_default,
     "xstest": xstest_default,
     "xsum": xsum_default
   };
 
+  // tools-src/data/types.ts
+  var ITEM_SPLITS = [
+    { slug: "mmlu_pro", label: "MMLU-Pro" },
+    { slug: "gpqa", label: "GPQA" },
+    { slug: "omni_math", label: "Omni-MATH" },
+    { slug: "ifeval", label: "IFEval" },
+    { slug: "truthfulqa", label: "TruthfulQA" },
+    { slug: "boolq", label: "BoolQ" },
+    { slug: "bbq", label: "BBQ" },
+    { slug: "bold", label: "BOLD" },
+    { slug: "culturalbench", label: "CulturalBench" },
+    { slug: "emobench", label: "EmoBench" },
+    { slug: "hi_tom", label: "Hi-ToM" },
+    { slug: "moralbench", label: "MoralBench" },
+    { slug: "opentom", label: "OpenToM" },
+    { slug: "wildbench", label: "WildBench" },
+    { slug: "cnndm", label: "CNN/DailyMail" },
+    { slug: "xsum", label: "XSum" },
+    { slug: "imdb", label: "IMDB" },
+    { slug: "disinformation", label: "Disinformation" },
+    { slug: "salad_bench", label: "SALAD-Bench" },
+    { slug: "harmbench", label: "HarmBench" },
+    { slug: "xstest", label: "XSTest" },
+    { slug: "simplesafetytests", label: "SimpleSafetyTests" },
+    { slug: "do_not_answer", label: "Do-Not-Answer" },
+    { slug: "anthropic_red_teaming", label: "Anthropic Red-Teaming" }
+  ];
+  var ITEM_SPLIT_SLUGS = new Set(ITEM_SPLITS.map((s) => s.slug));
+  function benchmarkSlug(name) {
+    const slug = name.trim().toLowerCase().replace(/-/g, "_");
+    return slug === "last_translation_bench" ? "last_translation_benchmark" : slug;
+  }
+
   // tools-src/data/client.ts
   var BASE = "https://datasets-server.huggingface.co";
+  var hfPrefix = (slug) => slug === "last_translation_benchmark" ? "last_translation_bench" : slug;
   var DATASET = "Open-Eval-Commons/OpenEval";
   var requests = /* @__PURE__ */ new Map();
   var activeRequests = 0;
@@ -47252,7 +47875,7 @@
     const rows = [];
     let total = Infinity;
     while (rows.length < total) {
-      const data = await dsFetch("/rows", { config: "bench", split: "train", offset: rows.length, length: 100 }, true);
+      const data = await dsFetch("/rows", { config: "_all_benchmarks", split: "train", offset: rows.length, length: 100 }, true);
       const page = data.rows ?? [];
       rows.push(...page);
       total = typeof data.num_rows_total === "number" ? data.num_rows_total : rows.length;
@@ -47260,8 +47883,9 @@
     }
     return rows.map((r) => {
       const row = r.row;
+      const name = String(pick(row, "benchmark_name") ?? "");
       return {
-        name: String(pick(row, "benchmark_name") ?? ""),
+        name: benchmarkSlug(name) === "last_translation_benchmark" ? "last-translation-benchmark" : name,
         version: String(pick(row, "benchmark_version") ?? ""),
         tags: asArray(pick(row, "benchmark_tags")),
         paperUrl: pick(row, "paper_url") || void 0,
@@ -47273,8 +47897,8 @@
     const { split, query, offset = 0, length = 20 } = opts;
     const useSearch = !!query && query.trim().length > 0;
     const params = {
-      config: "item",
-      split,
+      config: `${hfPrefix(split)}.item`,
+      split: "train",
       offset,
       length
     };
@@ -47299,7 +47923,7 @@
       let offset = 0, total = Infinity;
       while (offset < Math.min(total, limit)) {
         options.signal?.throwIfAborted();
-        const data = await dsFetch("/rows", { config, split, offset, length: Math.min(100, limit - offset) }, true);
+        const data = await dsFetch("/rows", { config: `${hfPrefix(split)}.${config}`, split: "train", offset, length: Math.min(100, limit - offset) }, true);
         options.signal?.throwIfAborted();
         if (typeof data.num_rows_total !== "number") throw new Error("HF did not return a complete row count.");
         if (Number.isFinite(total) && total !== data.num_rows_total) throw new Error("HF data changed while loading. Please retry.");
@@ -47505,38 +48129,6 @@
   // node_modules/@tabler/icons-react/dist/esm/icons/IconShieldCheck.mjs
   var __iconNode7 = [["path", { "d": "M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06", "key": "svg-0" }], ["path", { "d": "M15 19l2 2l4 -4", "key": "svg-1" }]];
   var IconShieldCheck = createReactComponent("outline", "shield-check", "ShieldCheck", __iconNode7);
-
-  // tools-src/data/types.ts
-  var ITEM_SPLITS = [
-    { slug: "mmlu_pro", label: "MMLU-Pro" },
-    { slug: "gpqa", label: "GPQA" },
-    { slug: "omni_math", label: "Omni-MATH" },
-    { slug: "ifeval", label: "IFEval" },
-    { slug: "truthfulqa", label: "TruthfulQA" },
-    { slug: "boolq", label: "BoolQ" },
-    { slug: "bbq", label: "BBQ" },
-    { slug: "bold", label: "BOLD" },
-    { slug: "culturalbench", label: "CulturalBench" },
-    { slug: "emobench", label: "EmoBench" },
-    { slug: "hi_tom", label: "Hi-ToM" },
-    { slug: "moralbench", label: "MoralBench" },
-    { slug: "opentom", label: "OpenToM" },
-    { slug: "wildbench", label: "WildBench" },
-    { slug: "cnndm", label: "CNN/DailyMail" },
-    { slug: "xsum", label: "XSum" },
-    { slug: "imdb", label: "IMDB" },
-    { slug: "disinformation", label: "Disinformation" },
-    { slug: "salad_bench", label: "SALAD-Bench" },
-    { slug: "harmbench", label: "HarmBench" },
-    { slug: "xstest", label: "XSTest" },
-    { slug: "simplesafetytests", label: "SimpleSafetyTests" },
-    { slug: "do_not_answer", label: "Do-Not-Answer" },
-    { slug: "anthropic_red_teaming", label: "Anthropic Red-Teaming" }
-  ];
-  var ITEM_SPLIT_SLUGS = new Set(ITEM_SPLITS.map((s) => s.slug));
-  function benchmarkSlug(name) {
-    return name.trim().toLowerCase().replace(/-/g, "_");
-  }
 
   // tools-src/components/benchmark/benchmark_browser_client.tsx
   var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
@@ -47771,7 +48363,7 @@
     ] });
   }
   function MeasurementPanel({ m, benchmark, computedAt, measurements, metricIndex, onMetricChange }) {
-    const rangeLabel = metricRange(m.metrics[0] || "").label;
+    const rangeLabel = metricRange(m.metrics[0] || "", benchmarkSlug(benchmark.name)).label;
     const statistic = (value) => value == null ? "\u2014" : value.toFixed(3);
     return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", { className: "rounded-2xl border border-border bg-surface p-5 shadow-soft", children: [
       /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "flex items-center gap-2", children: [

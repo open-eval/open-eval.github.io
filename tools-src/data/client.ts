@@ -2,8 +2,11 @@
 // Queries Open-Eval-Commons/OpenEval live — no 8 GB download.
 
 import type { OEBenchmark, OEItem, OEMeasurement, OEModelScore } from "./types";
+import { benchmarkSlug } from "./types";
 
 const BASE = "https://datasets-server.huggingface.co";
+// HF currently retains the shorter config prefix; UI and snapshots use the full name.
+const hfPrefix = (slug: string) => slug === "last_translation_benchmark" ? "last_translation_bench" : slug;
 const DATASET = "Open-Eval-Commons/OpenEval";
 
 // Public dataset queries only. Never put a Hugging Face token in browser code.
@@ -89,7 +92,7 @@ export async function listBenchmarks(): Promise<OEBenchmark[]> {
   const rows: DsRow[] = [];
   let total = Infinity;
   while (rows.length < total) {
-    const data = await dsFetch('/rows', { config: 'bench', split: 'train', offset: rows.length, length: 100 }, true);
+    const data = await dsFetch('/rows', { config: '_all_benchmarks', split: 'train', offset: rows.length, length: 100 }, true);
     const page = (data.rows as DsRow[]) ?? [];
     rows.push(...page);
     total = typeof data.num_rows_total === 'number' ? data.num_rows_total : rows.length;
@@ -98,8 +101,9 @@ export async function listBenchmarks(): Promise<OEBenchmark[]> {
   return rows
     .map((r) => {
       const row = r.row;
+      const name = String(pick(row, "benchmark_name") ?? "");
       return {
-        name: String(pick(row, "benchmark_name") ?? ""),
+        name: benchmarkSlug(name) === "last_translation_benchmark" ? "last-translation-benchmark" : name,
         version: String(pick(row, "benchmark_version") ?? ""),
         tags: asArray(pick(row, "benchmark_tags")),
         paperUrl: (pick(row, "paper_url") as string) || undefined,
@@ -118,8 +122,8 @@ export async function searchItems(opts: {
   const { split, query, offset = 0, length = 20 } = opts;
   const useSearch = !!query && query.trim().length > 0;
   const params: Record<string, string | number> = {
-    config: "item",
-    split,
+    config: `${hfPrefix(split)}.item`,
+    split: "train",
     offset,
     length,
   };
@@ -158,7 +162,7 @@ export async function getMeasurement(split: string, options: {
     let offset = 0, total = Infinity;
     while (offset < Math.min(total, limit)) {
       options.signal?.throwIfAborted();
-      const data = await dsFetch('/rows', { config, split, offset, length: Math.min(100, limit - offset) }, true);
+      const data = await dsFetch('/rows', { config: `${hfPrefix(split)}.${config}`, split: 'train', offset, length: Math.min(100, limit - offset) }, true);
       options.signal?.throwIfAborted();
       if (typeof data.num_rows_total !== 'number') throw new Error('HF did not return a complete row count.');
       if (Number.isFinite(total) && total !== data.num_rows_total) throw new Error('HF data changed while loading. Please retry.');

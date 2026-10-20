@@ -1,0 +1,314 @@
+{
+  "itemCount": 3046,
+  "responseCount": 118794,
+  "distinctModelCount": 39,
+  "distinctModelItemPairs": 118794,
+  "duplicateResponsesRemoved": 0,
+  "conflictingDuplicateRows": 0,
+  "conflictingDuplicateExamples": [],
+  "measurements": [
+    {
+      "metrics": [
+        "correct"
+      ],
+      "itemCount": 3046,
+      "totalResponses": 118794,
+      "loadedResponses": 118794,
+      "minimumItems": 305,
+      "modelCount": 39,
+      "scoredResponses": 118794,
+      "excludedModelCount": 0,
+      "avgScore": 0.6297287741805142,
+      "medianScore": 0.618187787261983,
+      "standardError": 0.014768325946211852,
+      "discrimination": 0.0910380752632384,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "Gemini-3.1-Pro",
+        "n": 3046,
+        "coverage": 1.0,
+        "mean": 0.8204202232435982
+      },
+      "worst": {
+        "name": "LLaMA-3.2-11B-Vision",
+        "n": 3046,
+        "coverage": 1.0,
+        "mean": 0.40643466841759684
+      },
+      "models": [
+        {
+          "name": "Gemini-3.1-Pro",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.8204202232435982
+        },
+        {
+          "name": "GPT-5.5-2026-04-23",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.8128693368351937
+        },
+        {
+          "name": "Gemini-3.0-Pro",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.7810242941562705
+        },
+        {
+          "name": "Seed-2.0-Lite",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.7728168089297439
+        },
+        {
+          "name": "Gemini-3.0-Flash",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.742284963887065
+        },
+        {
+          "name": "Seed-2.0-Pro",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.7330925804333552
+        },
+        {
+          "name": "Qwen-3.5-Plus",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.7288246881155613
+        },
+        {
+          "name": "Qwen-3.6-Plus",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.7248850952068286
+        },
+        {
+          "name": "GPT-5.2-2025-12-11",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6812212738017072
+        },
+        {
+          "name": "GLM-5V-Turbo",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6736703873933026
+        },
+        {
+          "name": "o3-2025-04-16",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6628365068942876
+        },
+        {
+          "name": "GPT-5.1-2025-11-13",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6520026263952725
+        },
+        {
+          "name": "Qwen-VL-Plus",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6441234405778069
+        },
+        {
+          "name": "Kimi-K2.5",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6431385423506237
+        },
+        {
+          "name": "Qwen-VL-Max",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6408404464871963
+        },
+        {
+          "name": "o4-Mini-2025-04-16",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6329612606697308
+        },
+        {
+          "name": "Claude-Sonnet-3.7",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.628693368351937
+        },
+        {
+          "name": "Claude-Opus-4.5",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.623768877216021
+        },
+        {
+          "name": "GPT-5-Mini-2025-08-07",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6211424819435325
+        },
+        {
+          "name": "Claude-Sonnet-4.6",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.618187787261983
+        },
+        {
+          "name": "Seed-1.6-Thinking",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6178594878529219
+        },
+        {
+          "name": "Qwen-3-VL-235B-A22B",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6175311884438608
+        },
+        {
+          "name": "Qwen-2.5-VL-72B",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.613591595535128
+        },
+        {
+          "name": "Seed-2.0-Mini",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6099803020354564
+        },
+        {
+          "name": "Seed-1.5-VL",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6076822061720288
+        },
+        {
+          "name": "GPT-4.1-2025-04-14",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6073539067629679
+        },
+        {
+          "name": "Claude-Sonnet-4.5",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6060407091267236
+        },
+        {
+          "name": "Gemini-2.5-Pro",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6053841103086014
+        },
+        {
+          "name": "o1-2024-12-17",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6011162179908076
+        },
+        {
+          "name": "GPT-4o-2024-11-20",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.6004596191726855
+        },
+        {
+          "name": "GPT-4o-Mini-2024-07-18",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.5981615233092581
+        },
+        {
+          "name": "Claude-Sonnet-4",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.5925804333552199
+        },
+        {
+          "name": "Claude-Sonnet-3.5",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.56172028890348
+        },
+        {
+          "name": "Qwen-2-VL-72B",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.5249507550886409
+        },
+        {
+          "name": "Qwen-2.5-VL-32B",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.5216677609980302
+        },
+        {
+          "name": "Gemini-2.5-Flash",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.5157583716349311
+        },
+        {
+          "name": "Moonshot-V1-128K-Vision",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.4967170059093894
+        },
+        {
+          "name": "LLaMA-3.2-90B-Vision",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.4156270518713066
+        },
+        {
+          "name": "LLaMA-3.2-11B-Vision",
+          "n": 3046,
+          "coverage": 1.0,
+          "mean": 0.40643466841759684
+        }
+      ],
+      "split": "visfactor"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "visfactor",
+  "computedAt": "2026-10-20T03:54:39.743740+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "3e0db5af064971a3526b4694c176f0bc85b2418d",
+    "observedMainRevision": "2b8d1539b06da77c125c666c519e54b1ca2e4eba",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/3e0db5af064971a3526b4694c176f0bc85b2418d/visfactor.item/train/0000.parquet",
+        "rows": 3046,
+        "bytes": 234522,
+        "sha256": "e47817b8566a5fdea6e94946d9a0dc0dc8e7b637ebdf5cee2d74f8b13c56d1f1"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/3e0db5af064971a3526b4694c176f0bc85b2418d/visfactor.response/train/0000.parquet",
+        "rows": 118794,
+        "bytes": 17918545,
+        "sha256": "404983b791dc288bf1580a9019255064b26e63aab36f791e9f0043634573b273"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

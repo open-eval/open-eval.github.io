@@ -314,7 +314,7 @@ function MeasurementPanel({ m, benchmark, computedAt, measurements, metricIndex,
   metricIndex: number;
   onMetricChange: (index: number) => void;
 }) {
-  const rangeLabel = metricRange(m.metrics[0] || "").label;
+  const rangeLabel = metricRange(m.metrics[0] || "", benchmarkSlug(benchmark.name)).label;
   const statistic = (value: number | null) => value == null ? "—" : value.toFixed(3);
   return (
     <section className="rounded-2xl border border-border bg-surface p-5 shadow-soft">

@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "visfactor",
+  "computedAt": "2026-10-20T03:55:51.440585+00:00",
+  "summarySha256": "44be56cc1e7c7a0c3aca235241007af30d928ae7d82019503e58ed22280548a4",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "3e0db5af064971a3526b4694c176f0bc85b2418d",
+    "observedMainRevision": "2b8d1539b06da77c125c666c519e54b1ca2e4eba",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/3e0db5af064971a3526b4694c176f0bc85b2418d/visfactor.item/train/0000.parquet",
+        "rows": 3046,
+        "bytes": 234522,
+        "sha256": "e47817b8566a5fdea6e94946d9a0dc0dc8e7b637ebdf5cee2d74f8b13c56d1f1"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/3e0db5af064971a3526b4694c176f0bc85b2418d/visfactor.response/train/0000.parquet",
+        "rows": 118794,
+        "bytes": 17918545,
+        "sha256": "404983b791dc288bf1580a9019255064b26e63aab36f791e9f0043634573b273"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "correct": {
+      "available": true,
+      "itemCount": 3046,
+      "modelCount": 39,
+      "pairCount": 118794,
+      "iterations": 183,
+      "converged": true,
+      "itemDifficulty": {
+        "bins": [
+          112,
+          0,
+          158,
+          134,
+          91,
+          197,
+          177,
+          289,
+          406,
+          469,
+          379,
+          274,
+          131,
+          88,
+          42,
+          26,
+          9,
+          17,
+          0,
+          47
+        ],
+        "min": -3.870893357814894,
+        "max": 5.143466901634322,
+        "median": 0.15218265658936242
+      },
+      "models": [
+        {
+          "name": "Gemini-3.1-Pro",
+          "theta": 2.075835,
+          "sd": 0.076548,
+          "n": 3046
+        },
+        {
+          "name": "GPT-5.5-2026-04-23",
+          "theta": 2.0094,
+          "sd": 0.075956,
+          "n": 3046
+        },
+        {
+          "name": "Gemini-3.0-Pro",
+          "theta": 1.748993,
+          "sd": 0.073926,
+          "n": 3046
+        },
+        {
+          "name": "Seed-2.0-Lite",
+          "theta": 1.686212,
+          "sd": 0.0735,
+          "n": 3046
+        },
+        {
+          "name": "Gemini-3.0-Flash",
+          "theta": 1.464794,
+          "sd": 0.072182,
+          "n": 3046
+        },
+        {
+          "name": "Seed-2.0-Pro",
+          "theta": 1.401311,
+          "sd": 0.071854,
+          "n": 3046
+        },
+        {
+          "name": "Qwen-3.5-Plus",
+          "theta": 1.372271,
+          "sd": 0.07171,
+          "n": 3046
+        },
+        {
+          "name": "Qwen-3.6-Plus",
+          "theta": 1.345695,
+          "sd": 0.071583,
+          "n": 3046
+        },
+        {
+          "name": "GPT-5.2-2025-12-11",
+          "theta": 1.063689,
+          "sd": 0.070441,
+          "n": 3046
+        },
+        {
+          "name": "GLM-5V-Turbo",
+          "theta": 1.016878,
+          "sd": 0.070287,
+          "n": 3046
+        },
+        {
+          "name": "o3-2025-04-16",
+          "theta": 0.950523,
+          "sd": 0.070084,
+          "n": 3046
+        },
+        {
+          "name": "GPT-5.1-2025-11-13",
+          "theta": 0.885041,
+          "sd": 0.069902,
+          "n": 3046
+        },
+        {
+          "name": "Qwen-VL-Plus",
+          "theta": 0.837908,
+          "sd": 0.069782,
+          "n": 3046
+        },
+        {
+          "name": "Kimi-K2.5",
+          "theta": 0.832044,
+          "sd": 0.069767,
+          "n": 3046
+        },
+        {
+          "name": "Qwen-VL-Max",
+          "theta": 0.818382,
+          "sd": 0.069735,
+          "n": 3046
+        },
+        {
+          "name": "o4-Mini-2025-04-16",
+          "theta": 0.771769,
+          "sd": 0.069628,
+          "n": 3046
+        },
+        {
+          "name": "Claude-Sonnet-3.7",
+          "theta": 0.746659,
+          "sd": 0.069575,
+          "n": 3046
+        },
+        {
+          "name": "Claude-Opus-4.5",
+          "theta": 0.717802,
+          "sd": 0.069516,
+          "n": 3046
+        },
+        {
+          "name": "GPT-5-Mini-2025-08-07",
+          "theta": 0.702459,
+          "sd": 0.069486,
+          "n": 3046
+        },
+        {
+          "name": "Claude-Sonnet-4.6",
+          "theta": 0.685236,
+          "sd": 0.069453,
+          "n": 3046
+        },
+        {
+          "name": "Seed-1.6-Thinking",
+          "theta": 0.683325,
+          "sd": 0.06945,
+          "n": 3046
+        },
+        {
+          "name": "Qwen-3-VL-235B-A22B",
+          "theta": 0.681414,
+          "sd": 0.069446,
+          "n": 3046
+        },
+        {
+          "name": "Qwen-2.5-VL-72B",
+          "theta": 0.658518,
+          "sd": 0.069405,
+          "n": 3046
+        },
+        {
+          "name": "Seed-2.0-Mini",
+          "theta": 0.637587,
+          "sd": 0.069369,
+          "n": 3046
+        },
+        {
+          "name": "Seed-1.5-VL",
+          "theta": 0.624295,
+          "sd": 0.069347,
+          "n": 3046
+        },
+        {
+          "name": "GPT-4.1-2025-04-14",
+          "theta": 0.622398,
+          "sd": 0.069344,
+          "n": 3046
+        },
+        {
+          "name": "Claude-Sonnet-4.5",
+          "theta": 0.614813,
+          "sd": 0.069332,
+          "n": 3046
+        },
+        {
+          "name": "Gemini-2.5-Pro",
+          "theta": 0.611023,
+          "sd": 0.069326,
+          "n": 3046
+        },
+        {
+          "name": "o1-2024-12-17",
+          "theta": 0.586426,
+          "sd": 0.069288,
+          "n": 3046
+        },
+        {
+          "name": "GPT-4o-2024-11-20",
+          "theta": 0.582648,
+          "sd": 0.069282,
+          "n": 3046
+        },
+        {
+          "name": "GPT-4o-Mini-2024-07-18",
+          "theta": 0.569435,
+          "sd": 0.069263,
+          "n": 3046
+        },
+        {
+          "name": "Claude-Sonnet-4",
+          "theta": 0.537418,
+          "sd": 0.069219,
+          "n": 3046
+        },
+        {
+          "name": "Claude-Sonnet-3.5",
+          "theta": 0.361809,
+          "sd": 0.069044,
+          "n": 3046
+        },
+        {
+          "name": "Qwen-2-VL-72B",
+          "theta": 0.15431,
+          "sd": 0.068973,
+          "n": 3046
+        },
+        {
+          "name": "Qwen-2.5-VL-32B",
+          "theta": 0.135801,
+          "sd": 0.068974,
+          "n": 3046
+        },
+        {
+          "name": "Gemini-2.5-Flash",
+          "theta": 0.102474,
+          "sd": 0.068978,
+          "n": 3046
+        },
+        {
+          "name": "Moonshot-V1-128K-Vision",
+          "theta": -0.005073,
+          "sd": 0.069015,
+          "n": 3046
+        },
+        {
+          "name": "LLaMA-3.2-90B-Vision",
+          "theta": -0.472632,
+          "sd": 0.069604,
+          "n": 3046
+        },
+        {
+          "name": "LLaMA-3.2-11B-Vision",
+          "theta": -0.527303,
+          "sd": 0.069718,
+          "n": 3046
+        }
+      ],
+      "reverseCoded": false
+    }
+  }
+}

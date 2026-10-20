@@ -82,7 +82,8 @@ export function splitLabel(slug: string): string {
   return ITEM_SPLITS.find((s) => s.slug === slug)?.label ?? slug;
 }
 
-/** bench-table names use hyphens (mmlu-pro); item splits use underscores (mmlu_pro). */
+/** Map catalog display names to HF config prefixes and saved summary keys. */
 export function benchmarkSlug(name: string): string {
-  return name.trim().toLowerCase().replace(/-/g, "_");
+  const slug = name.trim().toLowerCase().replace(/-/g, "_");
+  return slug === "last_translation_bench" ? "last_translation_benchmark" : slug;
 }

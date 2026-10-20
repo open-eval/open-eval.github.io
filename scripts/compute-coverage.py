@@ -39,8 +39,16 @@ def main():
     revision=api(base)['sha']
     manifest=api(f'https://datasets-server.huggingface.co/parquet?dataset={REPO}')
     if manifest.get('partial') or manifest.get('pending') or manifest.get('failed'): raise ValueError('Incomplete manifest')
-    files=[f for f in manifest['parquet_files'] if f['config'] in ('item','response') and f['split']!='all']
-    merge_path = ROOT.parent / 'model_name_merges_normalized.json'
+    files=[]
+    for entry in manifest['parquet_files']:
+        benchmark, _, kind = entry['config'].rpartition('.')
+        if benchmark and kind in ('item', 'response') and entry['split'] == 'train':
+            if benchmark == 'last_translation_bench':
+                benchmark = 'last_translation_benchmark'
+            files.append(dict(entry, config=kind, split=benchmark))
+    if not files:
+        raise ValueError('No benchmark coverage files found')
+    merge_path = ROOT.parent / 'model_alias_merge.json'
     merge_bytes = merge_path.read_bytes()
     names = json.loads(merge_bytes)['_name_map']
     previous = json.loads((ROOT/'precomputed'/'coverage.json').read_text())

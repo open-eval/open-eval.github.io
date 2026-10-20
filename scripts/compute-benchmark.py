@@ -136,6 +136,9 @@ def main():
     parser.add_argument('benchmark')
     parser.add_argument('--output', type=Path, default=Path(__file__).resolve().parents[1] / 'precomputed' / 'benchmark')
     args = parser.parse_args()
+    if args.benchmark == 'last_translation_bench':
+        args.benchmark = 'last_translation_benchmark'
+    hf_benchmark = 'last_translation_bench' if args.benchmark == 'last_translation_benchmark' else args.benchmark
     with tempfile.TemporaryDirectory(prefix='openeval-benchmark-') as temporary:
         directory = Path(temporary)
         base = 'https://huggingface.co/api/datasets/' + DATASET
@@ -146,7 +149,7 @@ def main():
             raise ValueError('HF Parquet conversion is incomplete; retry after conversion finishes.')
         files, tables = [], {'item': [], 'response': []}
         for config in tables:
-            entries = [f for f in listing['parquet_files'] if f['config'] == config and f['split'] == args.benchmark]
+            entries = [f for f in listing['parquet_files'] if f['config'] == hf_benchmark + '.' + config and f['split'] == 'train']
             if not entries:
                 raise ValueError('No Parquet files for ' + config + '/' + args.benchmark)
             for index, entry in enumerate(sorted(entries, key=lambda f: f['filename'])):

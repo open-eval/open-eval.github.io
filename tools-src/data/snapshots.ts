@@ -17,18 +17,20 @@ import snapshot13 from "../../precomputed/benchmark/health_orsc_bench.json";
 import snapshot14 from "../../precomputed/benchmark/hi_tom.json";
 import snapshot15 from "../../precomputed/benchmark/ifeval.json";
 import snapshot16 from "../../precomputed/benchmark/imdb.json";
-import snapshot17 from "../../precomputed/benchmark/mmlu_pro.json";
-import snapshot18 from "../../precomputed/benchmark/moralbench.json";
-import snapshot19 from "../../precomputed/benchmark/omni_math.json";
-import snapshot20 from "../../precomputed/benchmark/opentom.json";
-import snapshot21 from "../../precomputed/benchmark/or_bench.json";
-import snapshot22 from "../../precomputed/benchmark/salad_bench.json";
-import snapshot23 from "../../precomputed/benchmark/simplesafetytests.json";
-import snapshot24 from "../../precomputed/benchmark/sorry_bench.json";
-import snapshot25 from "../../precomputed/benchmark/truthfulqa.json";
-import snapshot26 from "../../precomputed/benchmark/wildbench.json";
-import snapshot27 from "../../precomputed/benchmark/xstest.json";
-import snapshot28 from "../../precomputed/benchmark/xsum.json";
+import snapshot17 from "../../precomputed/benchmark/last_translation_benchmark.json";
+import snapshot18 from "../../precomputed/benchmark/mmlu_pro.json";
+import snapshot19 from "../../precomputed/benchmark/moralbench.json";
+import snapshot20 from "../../precomputed/benchmark/omni_math.json";
+import snapshot21 from "../../precomputed/benchmark/opentom.json";
+import snapshot22 from "../../precomputed/benchmark/or_bench.json";
+import snapshot23 from "../../precomputed/benchmark/salad_bench.json";
+import snapshot24 from "../../precomputed/benchmark/simplesafetytests.json";
+import snapshot25 from "../../precomputed/benchmark/sorry_bench.json";
+import snapshot26 from "../../precomputed/benchmark/truthfulqa.json";
+import snapshot27 from "../../precomputed/benchmark/visfactor.json";
+import snapshot28 from "../../precomputed/benchmark/wildbench.json";
+import snapshot29 from "../../precomputed/benchmark/xstest.json";
+import snapshot30 from "../../precomputed/benchmark/xsum.json";
 export const benchmarkSnapshots: Record<string, { benchmark: string; computedAt: string; measurements: OEMeasurement[] }> = {
   "advbench": snapshot0,
   "anthropic_red_teaming": snapshot1,
@@ -47,16 +49,18 @@ export const benchmarkSnapshots: Record<string, { benchmark: string; computedAt:
   "hi_tom": snapshot14,
   "ifeval": snapshot15,
   "imdb": snapshot16,
-  "mmlu_pro": snapshot17,
-  "moralbench": snapshot18,
-  "omni_math": snapshot19,
-  "opentom": snapshot20,
-  "or_bench": snapshot21,
-  "salad_bench": snapshot22,
-  "simplesafetytests": snapshot23,
-  "sorry_bench": snapshot24,
-  "truthfulqa": snapshot25,
-  "wildbench": snapshot26,
-  "xstest": snapshot27,
-  "xsum": snapshot28,
+  "last_translation_benchmark": snapshot17,
+  "mmlu_pro": snapshot18,
+  "moralbench": snapshot19,
+  "omni_math": snapshot20,
+  "opentom": snapshot21,
+  "or_bench": snapshot22,
+  "salad_bench": snapshot23,
+  "simplesafetytests": snapshot24,
+  "sorry_bench": snapshot25,
+  "truthfulqa": snapshot26,
+  "visfactor": snapshot27,
+  "wildbench": snapshot28,
+  "xstest": snapshot29,
+  "xsum": snapshot30,
 };

@@ -179,11 +179,18 @@
       if (data.partial || data.pending?.length || data.failed?.length) {
         throw new Error('Dataset counts are incomplete');
       }
-      // Hugging Face supplies the total row count for each subset/config.
+      // Each benchmark has <benchmark>.item and <benchmark>.response configs.
       const configs = data.size?.configs;
-      const benchmarks = configs?.find(row => row.config === 'bench')?.num_rows;
-      const items = configs?.find(row => row.config === 'item')?.num_rows;
-      const responses = configs?.find(row => row.config === 'response')?.num_rows;
+      const benchmarks = configs?.find(row => row.config === '_all_benchmarks')?.num_rows;
+      function totalRows(suffix) {
+        const rows = configs?.filter(row => row.config.endsWith(suffix));
+        if (!rows?.length || rows.some(row => !Number.isSafeInteger(row.num_rows) || row.num_rows < 0)) {
+          throw new Error('Dataset counts are unavailable');
+        }
+        return rows.reduce((sum, row) => sum + row.num_rows, 0);
+      }
+      const items = totalRows('.item');
+      const responses = totalRows('.response');
       if (![benchmarks, items, responses].every(count => Number.isSafeInteger(count) && count >= 0)) {
         throw new Error('Dataset counts are unavailable');
       }
