@@ -309,7 +309,9 @@ export function RedundancyView() {
                   style={{ maxWidth: 160 }}
                 >
                   <span className="text-[11px] font-bold tabular-nums text-muted">{rowIdx + 1}.</span>{" "}
-                  {benches[ri].label}
+                  {benches[ri].slug === "last_translation_benchmark"
+                    ? <>last-translation-<br />benchmark</>
+                    : benches[ri].label}
                 </th>
                 {order.map((ci, colIdx) => {
                   const { background, label } = cellStyle(ri, ci);

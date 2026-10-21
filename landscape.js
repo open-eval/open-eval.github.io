@@ -65300,7 +65300,11 @@
                   "."
                 ] }),
                 " ",
-                benches[ri].label
+                benches[ri].slug === "last_translation_benchmark" ? /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+                  "last-translation-",
+                  /* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
+                  "benchmark"
+                ] }) : benches[ri].label
               ]
             }
           ),
