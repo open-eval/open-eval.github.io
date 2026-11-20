@@ -21,16 +21,24 @@
 <nav aria-label="Main navigation">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo" style="text-decoration:none;">
-      OpenEval
+      Open Eval Commons
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="schema.html" aria-current="page">Data</a></li>
-      <li><a href="landscape.html">Evaluation Landscape</a></li>
-      <li><a href="benchmark.html">Benchmark Browser</a></li>
-      <li><a href="model.html">Model Performance</a></li>
+      <li class="nav-menu is-active">
+        <a href="schema.html" class="nav-menu-trigger" aria-haspopup="true">OpenEval</a>
+        <ul class="nav-submenu" aria-label="OpenEval data tools">
+          <li><a href="schema.html" aria-current="page">Data &amp; Schema</a></li>
+          <li><a href="benchmark.html">Benchmark Browser</a></li>
+          <li><a href="model.html">Model Performance</a></li>
+          <li><a href="landscape.html">Evaluation Landscape</a></li>
+        </ul>
+      </li>
+      <!-- Blog Posts hidden for now: <li><a href="blog.html">Blog Posts</a></li> -->
+      <li><a href="tools-papers.html">Research &amp; Tools</a></li>
+      <li><a href="events.html">Events</a></li>
       <li>
-        <a href="contribution.html">Contribution
+        <a href="contribution.html">Contribute
           <span aria-hidden="true" class="notification-dot"></span>
         </a>
       </li>
@@ -46,6 +54,57 @@
   </div>
 </nav>
 <main>
+<section class="home-band" id="openeval">
+  <div class="container">
+    <div class="band-head">
+      <div>
+        <h2>OpenEval</h2>
+        <p class="band-lede">
+          An open, item-level repository of evaluation results under a unified schema.
+          It makes it possible to audit individual items, compare models question by question, and
+          reuse evaluation data across studies instead of rebuilding it each time.
+        </p>
+        <div class="band-actions">
+          <a href="https://arxiv.org/abs/2604.03244" target="_blank" rel="noopener" class="pill-link">Read the NeurIPS 2026 position paper <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        </div>
+      </div>
+      <div class="band-tools" role="list" aria-label="OpenEval tools">
+        <a role="listitem" href="#schema-details"><strong>Data &amp; Schema</strong><span>See how every item is structured</span></a>
+        <a role="listitem" href="benchmark.html"><strong>Benchmark Browser</strong><span>Inspect benchmarks item by item</span></a>
+        <a role="listitem" href="model.html"><strong>Model Performance</strong><span>Compare models on shared items</span></a>
+      </div>
+    </div>
+
+    <div class="footer-partners band-partners">
+      <span class="footer-partners-label">Affiliated with</span>
+      <a href="https://www.jhu.edu/" target="_blank" rel="noopener"><img src="logos/jhu-logo.svg" class="partner-logo partner-logo-jhu" alt="Johns Hopkins University"></a>
+      <a href="https://illinois.edu/" target="_blank" rel="noopener"><img src="logos/uiuc-logo.svg" class="partner-logo partner-logo-uiuc" alt="University of Illinois at Urbana-Champaign"></a>
+      <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target="_blank" rel="noopener"><img src="logos/msr-logo.svg" class="partner-logo partner-logo-msr" alt="Microsoft Research"></a>
+      <a href="https://www.stanford.edu/" target="_blank" rel="noopener"><img src="logos/stanford-logo.svg" class="partner-logo partner-logo-stf" alt="Stanford University"></a>
+      <a href="https://www.ncsu.edu/" target="_blank" rel="noopener"><img src="logos/ncsu-logo.svg" class="partner-logo partner-logo-ncsu" alt="North Carolina State University"></a>
+      <a href="https://www.tsinghua.edu.cn/en/" target="_blank" rel="noopener"><img src="logos/thu-logo.svg" class="partner-logo partner-logo-thu" alt="Tsinghua University"></a>
+    </div>
+
+    <h3 class="band-subhead">Why item-level data</h3>
+    <div class="band-grid band-grid-4">
+      <div><h4>Where aggregate scores fall short</h4><p>Aggregate scores can obscure low-quality items, construct misalignment, and uneven model behavior, limiting the validity evidence available for evaluative claims.</p></div>
+      <div><h4>What item-level data enables</h4><p>Item content, statistics, responses, and test environments support validation, auditing, replication, and analyses that benchmark-level scores cannot.</p></div>
+      <div><h4>Why standardization matters</h4><p>A consistent format makes results comparable and reusable across benchmarks, models, and studies, reducing one-off processing and duplicated curation.</p></div>
+      <div><h4>How to make it practical</h4><p>OpenEval provides shared evaluation data infrastructure for the community to build on, extend, and maintain together over time.</p></div>
+    </div>
+
+    <h3 class="band-subhead">What makes OpenEval different</h3>
+    <div class="band-grid band-grid-3">
+      <div><h4>Item-centricity</h4><p>Results are archived as unique items with associated fields, so they can be reassembled and analyzed however you need.</p></div>
+      <div><h4>Broad coverage</h4><p id="repository-coverage" aria-live="polite">A growing repository of evaluation items and model responses, covering diverse models, tasks, and constructs.</p></div>
+      <div><h4>Unified schema</h4><p>One JSON schema standardizes results across different formats and benchmarks.</p></div>
+      <div><h4>Faithful snapshots</h4><p>Each item captures its full experimental context, including adaptations and environments, for reproducibility.</p></div>
+      <div><h4>Traceable archive</h4><p>Every item is timestamped and linked to its original source, with metadata for auditing.</p></div>
+      <div><h4>Open access</h4><p>All data is publicly available and freely reusable, and anyone can share their own evaluation results.</p></div>
+    </div>
+  </div>
+</section>
+
 <div class="site-section theme-green" id="schema">
 <section class="section" id="schema-details">
   <div class="container">
@@ -247,11 +306,17 @@
 </main>
 <footer>
   <div class="footer-inner">
+    <div class="footer-logos">
+      <a href="https://www.jhu.edu/" target="_blank" rel="noopener"><img src="logos/jhu-logo.svg" class="footer-affil-logo footer-affil-jhu" alt="Johns Hopkins University"></a>
+      <a href="https://illinois.edu/" target="_blank" rel="noopener"><img src="logos/uiuc-logo.svg" class="footer-affil-logo footer-affil-uiuc" alt="University of Illinois at Urbana-Champaign"></a>
+    </div>
+  </div>
+  <div class="footer-affil">
     <a href="index.html" class="footer-logo" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
-      OpenEval
-      <span style="font-family:var(--mono);font-size:0.65rem;font-weight:600;background:#e8e5de;color:#273929;padding:2px 7px;border-radius:4px;letter-spacing:0.02em;vertical-align:bottom;">v0.2.1</span>
+      Open Eval Commons
+      <span style="font-family:var(--mono);font-size:0.65rem;font-weight:600;background:#e8e5de;color:#273929;padding:2px 7px;border-radius:4px;letter-spacing:0.02em;vertical-align:bottom;">OpenEval v0.2.1</span>
     </a>
-    <span class="footer-copy">Maintained by the <a href="https://huggingface.co/Open-Eval-Commons" style="color:var(--muted);">Open Eval Commons</a> project. 
+    <span class="footer-copy">A community resource for the open science of AI evaluation. <a href="https://huggingface.co/Open-Eval-Commons" style="color:var(--muted);">Hugging Face</a>&nbsp;&nbsp; 
       <a href="mailto:hjiang66@jh.edu,ziang.xiao@jhu.edu" style="color:var(--muted);">Contact us.</a>
     </span>
   </div>
@@ -282,6 +347,30 @@ function syncSchemaHeight() {
   }
 window.addEventListener('load', syncSchemaHeight);
 if (document.fonts) document.fonts.ready.then(syncSchemaHeight);
+</script>
+<script>
+(async function loadRepositoryCoverage() {
+  const description = document.getElementById('repository-coverage');
+  try {
+    const response = await fetch('https://datasets-server.huggingface.co/size?dataset=Open-Eval-Commons%2FOpenEval',
+      { signal: AbortSignal.timeout(15000) });
+    if (!response.ok) throw new Error('Hugging Face HTTP ' + response.status);
+    const data = await response.json();
+    if (data.partial || data.pending?.length || data.failed?.length) throw new Error('Dataset counts are incomplete');
+    const configs = data.size?.configs || [];
+    const total = suffix => {
+      const rows = configs.filter(row => row.config.endsWith(suffix));
+      if (!rows.length || rows.some(row => !Number.isSafeInteger(row.num_rows) || row.num_rows < 0)) throw new Error('Dataset counts are unavailable');
+      return rows.reduce((sum, row) => sum + row.num_rows, 0);
+    };
+    const fmt = n => n >= 1e6 ? (Math.floor(n / 1e5) / 10).toFixed(1) + 'M+' : n >= 1000 ? Math.floor(n / 1000).toFixed(1) + 'K+' : String(n);
+    description.textContent = 'A growing repository with ' + fmt(total('.item')) + ' items and ' + fmt(total('.response')) +
+      ' responses, covering diverse models, tasks, and constructs.';
+  } catch (error) {
+    // Keep the general description rather than show stale or partial counts.
+    console.warn('OpenEval dataset counts could not be loaded:', error);
+  }
+})();
 </script>
 <script src="schema.js" defer></script>
 </body>

@@ -16,7 +16,7 @@
         "affiliation": "Johns Hopkins University",
         "description": "Thanks to Niyati and Emily for sharing their benchmarks, Last Translation Benchmark and ChiKhaPo!",
         "paper": [
-            "Last Translation Benchmark", 
+            "Last Translation Benchmark",
             "ChiKhaPo: A Large-Scale Multilingual Benchmark for Evaluating Lexical Comprehension and Generation in LLMs"
         ],
         "paper_url": [
@@ -68,31 +68,6 @@
         "section": "team",
         "name": "Susu Zhang",
         "affiliation": "University of Illinois Urbana-Champaign"
-    },
-    {
-        "section": "team",
-        "name": "Dongyao Zhu",
-        "affiliation": "North Carolina State University"
-    },
-    {
-        "section": "team",
-        "name": "Yuzhuo Bai",
-        "affiliation": "Tsinghua University"
-    },
-    {
-        "section": "team",
-        "name": "Sang T. Truong",
-        "affiliation": "Stanford University"
-    },
-    {
-        "section": "team",
-        "name": "Xiaoyuan Yi",
-        "affiliation": "Microsoft Research Asia"
-    },
-    {
-        "section": "team",
-        "name": "Sanmi Koyejo",
-        "affiliation": "Stanford University"
     },
     {
         "section": "team",

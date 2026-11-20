@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Open Eval Commons</title>
+  <meta name="description" content="Open Eval Commons: curated papers, tools, and blog posts on AI evaluation, plus OpenEval, an open item-level evaluation data repository.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Open Eval Commons">
   <meta property="og:image" content="https://open-eval.com/og.png">
@@ -21,16 +22,24 @@
 <nav aria-label="Main navigation">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo" style="text-decoration:none;">
-      OpenEval
+      Open Eval Commons
     </a>
     <ul class="nav-links">
       <li><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="schema.html">Data</a></li>
-      <li><a href="landscape.html">Evaluation Landscape</a></li>
-      <li><a href="benchmark.html">Benchmark Browser</a></li>
-      <li><a href="model.html">Model Performance</a></li>
+      <li class="nav-menu">
+        <a href="schema.html" class="nav-menu-trigger" aria-haspopup="true">OpenEval</a>
+        <ul class="nav-submenu" aria-label="OpenEval data tools">
+          <li><a href="schema.html">Data &amp; Schema</a></li>
+          <li><a href="benchmark.html">Benchmark Browser</a></li>
+          <li><a href="model.html">Model Performance</a></li>
+          <li><a href="landscape.html">Evaluation Landscape</a></li>
+        </ul>
+      </li>
+      <!-- Blog Posts hidden for now: <li><a href="blog.html">Blog Posts</a></li> -->
+      <li><a href="tools-papers.html">Research &amp; Tools</a></li>
+      <li><a href="events.html">Events</a></li>
       <li>
-        <a href="contribution.html">Contribution
+        <a href="contribution.html">Contribute
           <span aria-hidden="true" class="notification-dot"></span>
         </a>
       </li>
@@ -47,112 +56,74 @@
 </nav>
 <main>
 <div class="site-section" id="home">
-<section class="hero" id="hero">
-  <div class="container">
-    <h1>Item by item, toward<br>the open science of AI evaluation.</h1>
-    <p class="hero-sub">
-      <span style="font-family: 'Lobster'; font-size: 1.5em; background: linear-gradient(90deg, #273929,#68725f,#273929);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">OpenEval  </span> is an open-source, item-level repository built on a standardized schema, spanning <span id="hero-benchmark-count" style="color:#273929;font-weight:500;">…</span> benchmarks, <span id="hero-item-count" style="color:#273929;font-weight:500;">…</span> items, and <span id="hero-response-count" style="color:#273929;font-weight:500;">…</span> model responses.
-      It aims to advance open science toward more 
-      accessible, transparent, and rigorous AI evaluation.
-    </p>
-    <div class="hero-actions">
-      <div class="btn-row">
-        <a href="schema.html" class="btn-hero btn-hero-green">
-          <span class="feature-icon" aria-hidden="true">🔬</span> Explore OpenEval
-        </a>
-        <a href="landscape.html" class="btn-hero btn-hero-green">
-          <span class="feature-icon" aria-hidden="true">🔭</span> Evaluation Landscape
-        </a>
+<section class="home-hero" id="hero">
+  <div class="container home-hero-grid">
+    <div class="home-hero-copy">
+      <h1>Shared ground for the science of AI evaluation.</h1>
+      <p class="home-hero-lede">
+        A community-maintained home for the research, tools, writing, and data behind
+        rigorous AI evaluation, curated so anyone can find what is known, reuse what works,
+        and contribute what is missing.
+      </p>
+      <div class="home-hero-actions">
+        <a href="schema.html" class="btn-hero btn-hero-green">Learn about OpenEval</a>
+        <a href="contribution.html" class="text-link">Contribute <span aria-hidden="true">→</span></a>
       </div>
     </div>
+    <aside class="stat-panel" aria-label="OpenEval at a glance">
+      <p class="stat-panel-intro"><strong>OpenEval</strong> is our open, item-level repository of benchmark items and model responses, all under one schema.</p>
+      <dl class="stat-list">
+        <div><dt>Benchmarks</dt><dd id="hero-benchmark-count">…</dd></div>
+        <div><dt>Items</dt><dd id="hero-item-count">…</dd></div>
+        <div><dt>Model responses</dt><dd id="hero-response-count">…</dd></div>
+      </dl>
+      <a href="schema.html" class="stat-panel-link">Browse the data <span aria-hidden="true">→</span></a>
+    </aside>
   </div>
 </section>
-<!-- ── Affiliations ───────────────────────────────────────────── -->
-<div class="footer-partners" style="border-top:none;border-bottom:none;padding-bottom:1.25rem;justify-content:center;">
-  <div style="flex-basis: 100%; height: 1px; background: var(--border); margin: 0.5rem 0;"></div>
-  <span class="footer-partners-label">Affiliated with</span>
-  <a href="https://www.jhu.edu/" target="_blank" rel="noopener"><img src="logos/jhu-logo.svg" class="partner-logo partner-logo-jhu" alt="Johns Hopkins University"></a>
-  <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-asia/" target="_blank" rel="noopener"><img src="logos/msr-logo.svg" class="partner-logo partner-logo-msr" alt="Microsoft Research"></a>
-  <a href="https://illinois.edu/" target="_blank" rel="noopener"><img src="logos/uiuc-logo.svg" class="partner-logo partner-logo-uiuc" alt="University of Illinois at Urbana-Champaign"></a>
-  <a href="https://www.stanford.edu/" target="_blank" rel="noopener"><img src="logos/stanford-logo.svg" class="partner-logo partner-logo-stf" alt="Stanford University"></a>
-  <a href="https://www.ncsu.edu/" target="_blank" rel="noopener"><img src="logos/ncsu-logo.svg" class="partner-logo partner-logo-ncsu" alt="North Carolina State University"></a>
-  <a href="https://www.tsinghua.edu.cn/en/" target="_blank" rel="noopener"><img src="logos/thu-logo.svg" class="partner-logo partner-logo-thu" alt="Tsinghua University"></a>
-</div>
 
-<section class="section theme-green" id="about">
+<section class="home-section home-principles" id="principles">
   <div class="container">
-    <h2 class="section-title" style="font-size: 2rem;">AI evaluation requires standardized item-level data releases</h2>
-    <div style="margin-top:1.5rem;margin-bottom:2rem;text-align:center;">
-      <a href="https://arxiv.org/abs/2604.03244" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.45rem;font-family:var(--sans);font-size:0.875rem;font-weight:600;color:#273929;background:rgba(255,255,255,0.82);border:1.5px solid rgba(255,255,255,0.82);border-radius:100px;padding:0.6rem 1.4rem;text-decoration:none;transition:background 0.15s,border-color 0.15s;" onmouseover="this.style.background='rgba(255,255,255,0.65)';this.style.borderColor='rgba(255,255,255,0.65)'" onmouseout="this.style.background='rgba(255,255,255,0.82)';this.style.borderColor='rgba(255,255,255,0.82)'">Read our NeurIPS 2026 position paper <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+    <div class="home-section-head">
+      <h2>Evaluation knowledge should compound, not scatter.</h2>
+      <p>
+        Methods, code, and results are spread across papers, repositories, and posts, and much of the
+        underlying data is never released. The commons is built on three commitments.
+      </p>
     </div>
-    <div class="about-grid">
-      <div class="about-card">
-        <h3>Where aggregate scores fall short</h3>
-        <p>
-          Aggregate scores can obscure low-quality items, construct misalignment, 
-          and uneven model behavior, limiting the validity evidence available 
-          for assessing evaluative claims.
-        </p>
+    <div class="principle-grid">
+      <div class="principle">
+        <h3>Open by default</h3>
+        <p>Everything we collect and host is freely accessible and reusable, so evaluation claims can be checked by anyone.</p>
       </div>
-      <div class="about-card">
-        <h3>What item-level data enables</h3>
-        <p>
-          Item-level content, statistics, responses, and test environments 
-          support validation, auditing, replication, and deeper analyses that 
-          cannot be recovered from benchmark-level scores alone.
-        </p>
+      <div class="principle">
+        <h3>Granular and traceable</h3>
+        <p>We favor evidence at the level it is produced, down to individual items and responses, with links back to every source.</p>
       </div>
-      <div class="about-card">
-        <h3>Why standardization matters</h3>
-        <p>
-          A consistent data format makes evaluation results comparable 
-          and reusable across benchmarks, models, and studies, 
-          reducing one-off processing and duplicate curation efforts.
-        </p>
-      </div>
-      <div class="about-card">
-        <h3>How to make it practical</h3>
-        <p>
-          OpenEval serves as a large-scale evaluation data infrastructure, 
-          providing a shared foundation for the AI evaluation community 
-          to build on, extend, and maintain collectively over time.
-        </p>
+      <div class="principle">
+        <h3>Built together</h3>
+        <p>The commons grows through community contributions and stays useful because many people maintain it.</p>
       </div>
     </div>
   </div>
 </section>
-<section class="section theme-green" id="features">
+
+<section class="home-section home-join" id="join">
   <div class="container">
-    <h2 class="section-title">What makes OpenEval different</h2>
-    <p class="section-sub">
-      Every design decision prioritizes consistency, transparency, scalability, 
-      and community participation.
-    </p>
-    <div class="features-grid">
-      <div class="feature-card">
-        <h3>Item-Centricity</h3>
-        <p>Results are archived as unique items with associated fields, facilitating customized reassembly and analysis.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Broad Coverage</h3>
-        <p id="repository-coverage" aria-live="polite">A growing repository of evaluation items and model responses, covering diverse models, tasks, and constructs.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Unified Schema</h3>
-        <p>One JSON schema comprehensively standardizes results across different formats and benchmarks.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Faithful Snapshots</h3>
-        <p>Each item captures a full experimental context, including adaptations and environments, for reproducibility.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Traceable Archive</h3>
-        <p>Every item is timestamped and linked to its original source with metadata for in-depth exploration and auditing.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Open Access</h3>
-        <p>All data is publicly available and freely reusable. Anyone can conveniently share their own evaluation results.</p>
-      </div>
+    <div class="home-section-head">
+      <h2>The commons is only as good as what we bring to it.</h2>
+    </div>
+    <div class="join-grid">
+      <a class="join-card" href="contribution.html">
+        <h3>Contribute data</h3>
+        <p>Share item-level results from your benchmark or model evaluations in the OpenEval schema.</p>
+        <span class="text-link">Contribution guide <span aria-hidden="true">→</span></span>
+      </a>
+      <a class="join-card" href="mailto:hjiang66@jh.edu,ziang.xiao@jhu.edu">
+        <h3>Get in touch</h3>
+        <p>Questions, ideas, or collaborations? We would love to hear from you.</p>
+        <span class="text-link">Email the team <span aria-hidden="true">→</span></span>
+      </a>
     </div>
   </div>
 </section>
@@ -160,21 +131,28 @@
 </main>
 <footer>
   <div class="footer-inner">
+    <div class="footer-logos">
+      <a href="https://www.jhu.edu/" target="_blank" rel="noopener"><img src="logos/jhu-logo.svg" class="footer-affil-logo footer-affil-jhu" alt="Johns Hopkins University"></a>
+      <a href="https://illinois.edu/" target="_blank" rel="noopener"><img src="logos/uiuc-logo.svg" class="footer-affil-logo footer-affil-uiuc" alt="University of Illinois at Urbana-Champaign"></a>
+    </div>
+  </div>
+  <div class="footer-affil">
     <a href="index.html" class="footer-logo" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
-      OpenEval
-      <span style="font-family:var(--mono);font-size:0.65rem;font-weight:600;background:#e8e5de;color:#273929;padding:2px 7px;border-radius:4px;letter-spacing:0.02em;vertical-align:bottom;">v0.2.1</span>
+      Open Eval Commons
+      <span style="font-family:var(--mono);font-size:0.65rem;font-weight:600;background:#e8e5de;color:#273929;padding:2px 7px;border-radius:4px;letter-spacing:0.02em;vertical-align:bottom;">OpenEval v0.2.1</span>
     </a>
-    <span class="footer-copy">Maintained by the <a href="https://huggingface.co/Open-Eval-Commons" style="color:var(--muted);">Open Eval Commons</a> project. 
+    <span class="footer-copy">A community resource for the open science of AI evaluation. <a href="https://huggingface.co/Open-Eval-Commons" style="color:var(--muted);">Hugging Face</a>&nbsp;&nbsp; 
       <a href="mailto:hjiang66@jh.edu,ziang.xiao@jhu.edu" style="color:var(--muted);">Contact us.</a>
     </span>
   </div>
 </footer>
+<script src="resources-data.js" defer></script>
+<script src="resources.js" defer></script>
 
 <script>
   // Row counts from the published dataset; no dataset files are downloaded.
   // https://huggingface.co/docs/dataset-viewer/size
   (async function loadRepositoryCounts() {
-    const description = document.getElementById('repository-coverage');
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
     try {
@@ -212,9 +190,6 @@
       document.getElementById('hero-benchmark-count').textContent = format.format(benchmarks);
       document.getElementById('hero-item-count').textContent = format.format(items);
       document.getElementById('hero-response-count').textContent = format.format(responses);
-      description.textContent = 'A growing repository with ' + format.format(items) +
-        ' items and ' + format.format(responses) +
-        ' responses, covering diverse models, tasks, and constructs.';
     } catch (error) {
       for (const id of ['hero-benchmark-count', 'hero-item-count', 'hero-response-count']) {
         const count = document.getElementById(id);

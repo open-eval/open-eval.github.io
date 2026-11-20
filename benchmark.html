@@ -22,16 +22,24 @@
 <nav aria-label="Main navigation">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo" style="text-decoration:none;">
-      OpenEval
+      Open Eval Commons
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="schema.html">Data</a></li>
-      <li><a href="landscape.html">Evaluation Landscape</a></li>
-      <li><a href="benchmark.html" aria-current="page">Benchmark Browser</a></li>
-      <li><a href="model.html">Model Performance</a></li>
+      <li class="nav-menu is-active">
+        <a href="schema.html" class="nav-menu-trigger" aria-haspopup="true">OpenEval</a>
+        <ul class="nav-submenu" aria-label="OpenEval data tools">
+          <li><a href="schema.html">Data &amp; Schema</a></li>
+          <li><a href="benchmark.html" aria-current="page">Benchmark Browser</a></li>
+          <li><a href="model.html">Model Performance</a></li>
+          <li><a href="landscape.html">Evaluation Landscape</a></li>
+        </ul>
+      </li>
+      <!-- Blog Posts hidden for now: <li><a href="blog.html">Blog Posts</a></li> -->
+      <li><a href="tools-papers.html">Research &amp; Tools</a></li>
+      <li><a href="events.html">Events</a></li>
       <li>
-        <a href="contribution.html">Contribution
+        <a href="contribution.html">Contribute
           <span aria-hidden="true" class="notification-dot"></span>
         </a>
       </li>
@@ -61,11 +69,17 @@
 </main>
 <footer>
   <div class="footer-inner">
+    <div class="footer-logos">
+      <a href="https://www.jhu.edu/" target="_blank" rel="noopener"><img src="logos/jhu-logo.svg" class="footer-affil-logo footer-affil-jhu" alt="Johns Hopkins University"></a>
+      <a href="https://illinois.edu/" target="_blank" rel="noopener"><img src="logos/uiuc-logo.svg" class="footer-affil-logo footer-affil-uiuc" alt="University of Illinois at Urbana-Champaign"></a>
+    </div>
+  </div>
+  <div class="footer-affil">
     <a href="index.html" class="footer-logo" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
-      OpenEval
-      <span style="font-family:var(--mono);font-size:0.65rem;font-weight:600;background:#e8e5de;color:#273929;padding:2px 7px;border-radius:4px;letter-spacing:0.02em;vertical-align:bottom;">v0.2.1</span>
+      Open Eval Commons
+      <span style="font-family:var(--mono);font-size:0.65rem;font-weight:600;background:#e8e5de;color:#273929;padding:2px 7px;border-radius:4px;letter-spacing:0.02em;vertical-align:bottom;">OpenEval v0.2.1</span>
     </a>
-    <span class="footer-copy">Maintained by the <a href="https://huggingface.co/Open-Eval-Commons" style="color:var(--muted);">Open Eval Commons</a> project. 
+    <span class="footer-copy">A community resource for the open science of AI evaluation. <a href="https://huggingface.co/Open-Eval-Commons" style="color:var(--muted);">Hugging Face</a>&nbsp;&nbsp; 
       <a href="mailto:hjiang66@jh.edu,ziang.xiao@jhu.edu" style="color:var(--muted);">Contact us.</a>
     </span>
   </div>

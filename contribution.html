@@ -17,19 +17,27 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Lobster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="green-page">
+<body>
 <nav aria-label="Main navigation">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo" style="text-decoration:none;">
-      OpenEval
+      Open Eval Commons
     </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="schema.html">Data</a></li>
-      <li><a href="landscape.html">Evaluation Landscape</a></li>
-      <li><a href="benchmark.html">Benchmark Browser</a></li>
-      <li><a href="model.html">Model Performance</a></li>
-      <li><a href="contribution.html" aria-current="page">Contribution</a></li>
+      <li class="nav-menu">
+        <a href="schema.html" class="nav-menu-trigger" aria-haspopup="true">OpenEval</a>
+        <ul class="nav-submenu" aria-label="OpenEval data tools">
+          <li><a href="schema.html">Data &amp; Schema</a></li>
+          <li><a href="benchmark.html">Benchmark Browser</a></li>
+          <li><a href="model.html">Model Performance</a></li>
+          <li><a href="landscape.html">Evaluation Landscape</a></li>
+        </ul>
+      </li>
+      <!-- Blog Posts hidden for now: <li><a href="blog.html">Blog Posts</a></li> -->
+      <li><a href="tools-papers.html">Research &amp; Tools</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contribution.html" aria-current="page">Contribute</a></li>
     </ul>
     <div style="display:flex;align-items:center;gap:0.6rem;">
       <a href="https://huggingface.co/datasets/Open-Eval-Commons/OpenEval" class="nav-cta" style="text-decoration:none;" target="_blank" rel="noopener">
@@ -42,7 +50,7 @@
   </div>
 </nav>
 <main>
-<div class="site-section theme-green" id="contribute">
+<div class="site-section" id="contribute">
 <section class="section" id="contribution-guide">
   <div class="container">
     <h1 class="section-title">We welcome all item-level data contributions</h1>
@@ -110,9 +118,9 @@
 </section>
 <section class="section" id="team-members">
   <div class="container">
-    <h2 class="section-title">Team members</h2>
-    <p class="section-sub">Meet the team building and maintaining OpenEval.</p>
-    <ul class="people-grid" id="team-member-list" aria-label="Team members"></ul>
+    <h2 class="section-title">Contact</h2>
+    <p class="section-sub">Questions about OpenEval or contributing? Reach out to us.</p>
+    <ul class="people-grid" id="team-member-list" aria-label="Contact"></ul>
   </div>
 </section>
 <section class="section" id="acknowledgements">
@@ -126,16 +134,22 @@
 </main>
 <footer>
   <div class="footer-inner">
+    <div class="footer-logos">
+      <a href="https://www.jhu.edu/" target="_blank" rel="noopener"><img src="logos/jhu-logo.svg" class="footer-affil-logo footer-affil-jhu" alt="Johns Hopkins University"></a>
+      <a href="https://illinois.edu/" target="_blank" rel="noopener"><img src="logos/uiuc-logo.svg" class="footer-affil-logo footer-affil-uiuc" alt="University of Illinois at Urbana-Champaign"></a>
+    </div>
+  </div>
+  <div class="footer-affil">
     <a href="index.html" class="footer-logo" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
-      OpenEval
-      <span style="font-family:var(--mono);font-size:0.65rem;font-weight:600;background:#e8e5de;color:#273929;padding:2px 7px;border-radius:4px;letter-spacing:0.02em;vertical-align:bottom;">v0.2.1</span>
+      Open Eval Commons
+      <span style="font-family:var(--mono);font-size:0.65rem;font-weight:600;background:#e8e5de;color:#273929;padding:2px 7px;border-radius:4px;letter-spacing:0.02em;vertical-align:bottom;">OpenEval v0.2.1</span>
     </a>
-    <span class="footer-copy">Maintained by the <a href="https://huggingface.co/Open-Eval-Commons" style="color:var(--muted);">Open Eval Commons</a> project. 
+    <span class="footer-copy">A community resource for the open science of AI evaluation. <a href="https://huggingface.co/Open-Eval-Commons" style="color:var(--muted);">Hugging Face</a>&nbsp;&nbsp; 
       <a href="mailto:hjiang66@jh.edu,ziang.xiao@jhu.edu" style="color:var(--muted);">Contact us.</a>
     </span>
   </div>
 </footer>
-<script id="contributors-data" type="application/json">[{"section":"data","name":"Jen-Tse Huang","date":"Oct 2026","affiliation":"Johns Hopkins University","description":"Thanks to Jay for sharing his benchmark, VisFactor, along with the model responses and reasoning traces!","paper":"Castle-in-the-Air: Probing the Foundational Visual Deficits of MLLMs via Bottom-Up Cognitive Factors","paper_url":"https://neurips.cc/virtual/2026/loc/sydney/poster/139489","bibtex":"@inproceedings{huang2026visfactor,\n\ttitle={Castle-in-the-Air: Probing the Foundational Visual Deficits of MLLMs via Bottom-Up Cognitive Factors},\n\tauthor={Jen-Tse Huang and Dasen Dai and Jen-Yuan Huang and Youliang Yuan and Xiaoyuan Liu and Wenxuan Wang and Wenxiang Jiao and Pinjia He and Zhaopeng Tu and Haodong Duan},\n\tbooktitle={The Fortieth Annual Conference on Neural Information Processing Systems},\n\tyear={2026},\n\turl={https://neurips.cc/virtual/2026/loc/sydney/poster/139489}\n}"},{"section":"data","name":"Niyati Bafna & Emily Chang","date":"Oct 2026","affiliation":"Johns Hopkins University","description":"Thanks to Niyati and Emily for sharing their benchmarks, Last Translation Benchmark and ChiKhaPo!","paper":["Last Translation Benchmark","ChiKhaPo: A Large-Scale Multilingual Benchmark for Evaluating Lexical Comprehension and Generation in LLMs"],"paper_url":["https://arxiv.org/abs/2609.04173","https://arxiv.org/abs/2510.16928"],"bibtex":["@misc{zouhar2026LTB,\n\ttitle={Last Translation Benchmark},\n\tauthor={Vilém Zouhar and Niyati Bafna and Mukund Choudhary and Maike Züfle and Sara Rajaee and Pinzhen Chen and Jannis Vamvas and Sara Papi and Ona de Gibert and Bhavitvya Malik and others},\n\teprint={2609.04173},\n\tarchivePrefix={arXiv},\n\tprimaryClass={cs.CL},\n\tyear={2026},\n\turl={https://arxiv.org/abs/2609.04173}\n}","@misc{chang2026chikhapolargescalemultilingualbenchmark,\n\ttitle={ChiKhaPo: A Large-Scale Multilingual Benchmark for Evaluating Lexical Comprehension and Generation in Large Language Models}, \n\tauthor={Emily Chang and Niyati Bafna},\n\tyear={2026},\n\teprint={2510.16928},\n\tarchivePrefix={arXiv},\n\tprimaryClass={cs.CL},\n\turl={https://arxiv.org/abs/2510.16928}, \n}"]},{"section":"data","name":"Zhuoran Yu","date":"Sep 2026","affiliation":"University of Wisconsin-Madison","description":"Thanks to Zhuoran for sharing his benchmark, DocHop, along with the model responses!","paper":"DocHop: Benchmarking Out-of-domain Multi-hop Reasoning in Information-Dense Documents","paper_url":"https://icml.cc/virtual/2026/poster/64260","bibtex":"@inproceedings{yu2026dochop,\n\ttitle={DocHop: Benchmarking Out-of-domain Multi-hop Reasoning in Information-Dense Documents},\n\tauthor={Zhuoran Yu and Le Thien Phuc Nguyen and Jaden Park and Xinyi Gu and Zexue He and Soochahn Lee and Rogerio Feris and Yong Jae Lee},\n\tbooktitle={Forty-third International Conference on Machine Learning},\n\tyear={2026},\n\turl={https://openreview.net/forum?id=PQFkScoGqz}\n}"},{"section":"data","name":"Joshua Fonseca Rivera","affiliation":"Independent","date":"Aug 2026","description":"Thanks to Joshua for contributing 755K+ responses across 170+ models and seven datasets, with excellent work converting them into the OpenEval schema!","paper":"Item Response Theory for AI Safety","paper_url":"https://arxiv.org/abs/2608.05086","bibtex":"@misc{rivera2026itemresponsetheoryai,\n\ttitle={Item Response Theory for AI Safety},\n\tauthor={Joshua Fonseca Rivera and Neil Shah and David Demitri Africa and Konstantinos Voudouris},\n\tyear={2026},\n\teprint={2608.05086},\n\tarchivePrefix={arXiv},\n\tprimaryClass={cs.AI},\n\turl={https://arxiv.org/abs/2608.05086},\n}"},{"section":"ack","name":"Ian Arawjo","affiliation":"Université de Montréal"},{"section":"team","name":"Han Jiang","email":"hjiang66@jh.edu","affiliation":"Johns Hopkins University"},{"section":"team","name":"Gabriel Pernell","affiliation":"Johns Hopkins University"},{"section":"team","name":"Susu Zhang","affiliation":"University of Illinois Urbana-Champaign"},{"section":"team","name":"Dongyao Zhu","affiliation":"North Carolina State University"},{"section":"team","name":"Yuzhuo Bai","affiliation":"Tsinghua University"},{"section":"team","name":"Sang T. Truong","affiliation":"Stanford University"},{"section":"team","name":"Xiaoyuan Yi","affiliation":"Microsoft Research Asia"},{"section":"team","name":"Sanmi Koyejo","affiliation":"Stanford University"},{"section":"team","name":"Ziang Xiao","email":"ziang.xiao@jhu.edu","affiliation":"Johns Hopkins University"},{"section":"ack","name":"Yifan Mai","affiliation":"Stanford University"},{"section":"ack","name":"Xing Xie","affiliation":"Microsoft Research Asia"}]</script>
+<script id="contributors-data" type="application/json">[{"section":"data","name":"Jen-Tse Huang","date":"Oct 2026","affiliation":"Johns Hopkins University","description":"Thanks to Jay for sharing his benchmark, VisFactor, along with the model responses and reasoning traces!","paper":"Castle-in-the-Air: Probing the Foundational Visual Deficits of MLLMs via Bottom-Up Cognitive Factors","paper_url":"https://neurips.cc/virtual/2026/loc/sydney/poster/139489","bibtex":"@inproceedings{huang2026visfactor,\n\ttitle={Castle-in-the-Air: Probing the Foundational Visual Deficits of MLLMs via Bottom-Up Cognitive Factors},\n\tauthor={Jen-Tse Huang and Dasen Dai and Jen-Yuan Huang and Youliang Yuan and Xiaoyuan Liu and Wenxuan Wang and Wenxiang Jiao and Pinjia He and Zhaopeng Tu and Haodong Duan},\n\tbooktitle={The Fortieth Annual Conference on Neural Information Processing Systems},\n\tyear={2026},\n\turl={https://neurips.cc/virtual/2026/loc/sydney/poster/139489}\n}"},{"section":"data","name":"Niyati Bafna & Emily Chang","date":"Oct 2026","affiliation":"Johns Hopkins University","description":"Thanks to Niyati and Emily for sharing their benchmarks, Last Translation Benchmark and ChiKhaPo!","paper":["Last Translation Benchmark","ChiKhaPo: A Large-Scale Multilingual Benchmark for Evaluating Lexical Comprehension and Generation in LLMs"],"paper_url":["https://arxiv.org/abs/2609.04173","https://arxiv.org/abs/2510.16928"],"bibtex":["@misc{zouhar2026LTB,\n\ttitle={Last Translation Benchmark},\n\tauthor={Vilém Zouhar and Niyati Bafna and Mukund Choudhary and Maike Züfle and Sara Rajaee and Pinzhen Chen and Jannis Vamvas and Sara Papi and Ona de Gibert and Bhavitvya Malik and others},\n\teprint={2609.04173},\n\tarchivePrefix={arXiv},\n\tprimaryClass={cs.CL},\n\tyear={2026},\n\turl={https://arxiv.org/abs/2609.04173}\n}","@misc{chang2026chikhapolargescalemultilingualbenchmark,\n\ttitle={ChiKhaPo: A Large-Scale Multilingual Benchmark for Evaluating Lexical Comprehension and Generation in Large Language Models}, \n\tauthor={Emily Chang and Niyati Bafna},\n\tyear={2026},\n\teprint={2510.16928},\n\tarchivePrefix={arXiv},\n\tprimaryClass={cs.CL},\n\turl={https://arxiv.org/abs/2510.16928}, \n}"]},{"section":"data","name":"Zhuoran Yu","date":"Sep 2026","affiliation":"University of Wisconsin-Madison","description":"Thanks to Zhuoran for sharing his benchmark, DocHop, along with the model responses!","paper":"DocHop: Benchmarking Out-of-domain Multi-hop Reasoning in Information-Dense Documents","paper_url":"https://icml.cc/virtual/2026/poster/64260","bibtex":"@inproceedings{yu2026dochop,\n\ttitle={DocHop: Benchmarking Out-of-domain Multi-hop Reasoning in Information-Dense Documents},\n\tauthor={Zhuoran Yu and Le Thien Phuc Nguyen and Jaden Park and Xinyi Gu and Zexue He and Soochahn Lee and Rogerio Feris and Yong Jae Lee},\n\tbooktitle={Forty-third International Conference on Machine Learning},\n\tyear={2026},\n\turl={https://openreview.net/forum?id=PQFkScoGqz}\n}"},{"section":"data","name":"Joshua Fonseca Rivera","affiliation":"Independent","date":"Aug 2026","description":"Thanks to Joshua for contributing 755K+ responses across 170+ models and seven datasets, with excellent work converting them into the OpenEval schema!","paper":"Item Response Theory for AI Safety","paper_url":"https://arxiv.org/abs/2608.05086","bibtex":"@misc{rivera2026itemresponsetheoryai,\n\ttitle={Item Response Theory for AI Safety},\n\tauthor={Joshua Fonseca Rivera and Neil Shah and David Demitri Africa and Konstantinos Voudouris},\n\tyear={2026},\n\teprint={2608.05086},\n\tarchivePrefix={arXiv},\n\tprimaryClass={cs.AI},\n\turl={https://arxiv.org/abs/2608.05086},\n}"},{"section":"ack","name":"Ian Arawjo","affiliation":"Université de Montréal"},{"section":"team","name":"Han Jiang","email":"hjiang66@jh.edu","affiliation":"Johns Hopkins University"},{"section":"team","name":"Gabriel Pernell","affiliation":"Johns Hopkins University"},{"section":"team","name":"Susu Zhang","affiliation":"University of Illinois Urbana-Champaign"},{"section":"team","name":"Ziang Xiao","email":"ziang.xiao@jhu.edu","affiliation":"Johns Hopkins University"},{"section":"ack","name":"Yifan Mai","affiliation":"Stanford University"},{"section":"ack","name":"Xing Xie","affiliation":"Microsoft Research Asia"}]</script>
 <script>
   const contributors = JSON.parse(document.getElementById('contributors-data').textContent);
 
@@ -163,7 +177,7 @@
     header.append(nameHeading);
     if (affiliation || date) {
       const meta = element('p', 'contributor-affiliation', affiliation || '');
-      if (date) meta.append(element('span', 'contributor-date', (affiliation ? ' · ' : '') + date));
+      if (date) meta.append(element('span', 'contributor-date', (affiliation ? ', ' : '') + date));
       header.append(meta);
     }
     info.append(header);
