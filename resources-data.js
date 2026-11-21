@@ -205,9 +205,9 @@ window.OEC_RESOURCES = {
     {
       title: "HEAL: Human-centered Evaluation and Auditing of Language Models",
       url: "https://heal-workshop.github.io/",
-      year: 2026,
-      venue: "CHI 2026 workshop, Barcelona",
-      summary: "Brings HCI and AI researchers together to rethink LLM evaluation and auditing from a human-centered perspective. Now in its third year (after CHI 2024 and 2025), with a 2026 theme of AI agents-in-the-loop.",
+      year: 2027,
+      venue: "CHI 2027 workshop",
+      summary: "Brings HCI and AI researchers together to rethink LLM evaluation and auditing from a human-centered perspective. Held at CHI since 2024; the CHI 2027 edition has a special topic, Evaluate Evaluations.",
       tags: ["Workshop", "Human-centered evaluation"],
       added: "2026-11-19",
     },
