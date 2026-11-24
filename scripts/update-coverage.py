@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('benchmarks', nargs='+')
 args = parser.parse_args()
-path = ROOT / 'precomputed/coverage.json'
+path = ROOT / 'openeval_snapshots/coverage.json'
 data = json.loads(path.read_text())
 merge_path = ROOT.parent / 'model_alias_merge.json'
 merge_bytes = merge_path.read_bytes()
@@ -24,7 +24,7 @@ for benchmark in data['benchmarks'].values():
     benchmark.setdefault('sourceRevision', data['dataset'].get('revision'))
     benchmark.setdefault('computedAt', data['generated'])
 for slug in args.benchmarks:
-    source = json.loads((ROOT / 'precomputed/benchmark' / (slug + '.json')).read_text())
+    source = json.loads((ROOT / 'openeval_snapshots/benchmark' / (slug + '.json')).read_text())
     files = []
     for entry in source['source']['files']:
         cached = Path('/tmp/openeval-ability-parquet') / (entry['sha256'] + '.parquet')

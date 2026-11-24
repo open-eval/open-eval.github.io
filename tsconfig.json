@@ -16,6 +16,6 @@
     "resolveJsonModule": true
   },
   "include": [
-    "tools-src"
+    "openeval_tools_src"
   ]
 }

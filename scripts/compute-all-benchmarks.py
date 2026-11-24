@@ -22,7 +22,7 @@ for entry in listing['parquet_files']:
         configs.setdefault(benchmark, set()).add(kind)
 failures = []
 for split, available in sorted(configs.items()):
-    output = root / 'precomputed/benchmark' / (split + '.json')
+    output = root / 'openeval_snapshots/benchmark' / (split + '.json')
     if output.exists():
         print('Already computed: ' + split, flush=True)
         continue

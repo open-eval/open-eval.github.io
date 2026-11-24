@@ -5,7 +5,7 @@ import math
 from pathlib import Path
 import statistics
 
-root = Path(__file__).resolve().parents[1] / 'precomputed/benchmark'
+root = Path(__file__).resolve().parents[1] / 'openeval_snapshots/benchmark'
 files = sorted(root.glob('*.json'))
 assert files, 'No summaries found'
 for path in files:

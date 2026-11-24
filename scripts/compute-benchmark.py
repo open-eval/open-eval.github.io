@@ -134,7 +134,7 @@ def main():
     import pyarrow.parquet as pq
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('benchmark')
-    parser.add_argument('--output', type=Path, default=Path(__file__).resolve().parents[1] / 'precomputed' / 'benchmark')
+    parser.add_argument('--output', type=Path, default=Path(__file__).resolve().parents[1] / 'openeval_snapshots' / 'benchmark')
     args = parser.parse_args()
     if args.benchmark == 'last_translation_bench':
         args.benchmark = 'last_translation_benchmark'

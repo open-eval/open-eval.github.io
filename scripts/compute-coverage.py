@@ -51,12 +51,12 @@ def main():
     merge_path = ROOT.parent / 'model_alias_merge.json'
     merge_bytes = merge_path.read_bytes()
     names = json.loads(merge_bytes)['_name_map']
-    previous = json.loads((ROOT/'precomputed'/'coverage.json').read_text())
+    previous = json.loads((ROOT/'openeval_snapshots'/'coverage.json').read_text())
     groups=defaultdict(list)
     for f in files: groups[f['split']].append(f)
     # Reuse local files only when their exact pinned URL matches.
     cached={}
-    for path in (ROOT/'precomputed/benchmark').glob('*.json'):
+    for path in (ROOT/'openeval_snapshots/benchmark').glob('*.json'):
         for f in json.loads(path.read_text())['source']['files']:
             target=Path('/tmp/openeval-ability-parquet')/(f['sha256']+'.parquet')
             if target.exists(): cached[f['url']]=target
@@ -93,7 +93,7 @@ def main():
     now=datetime.now(timezone.utc)
     result={'as_of':now.strftime('%d %b %Y'),'generated':now.isoformat(),'dataset':{'repo':REPO,'revision':revision,'url':f'https://huggingface.co/datasets/{REPO}','resolve':f'https://huggingface.co/datasets/{REPO}/resolve/{revision}/'},'totals':{'benchmarks':len(benchmarks),'models':len({r[0] for b in benchmarks.values() for r in b['rows']}),'items':sum(b['items'] for b in benchmarks.values()),'responses':sum(b['responses'] for b in benchmarks.values())},'row_fields':['model','items_covered','responses'],'benchmarks':benchmarks}
     result['modelNameMerges'] = {'file': merge_path.name, 'sha256': hashlib.sha256(merge_bytes).hexdigest(), 'rule': 'Apply _name_map; union item IDs across aliases; sum all archived response rows.'}
-    target=ROOT/'precomputed'/'coverage.json'; temp=target.with_suffix('.json.tmp');temp.write_text(json.dumps(result)+'\n');temp.replace(target)
+    target=ROOT/'openeval_snapshots'/'coverage.json'; temp=target.with_suffix('.json.tmp');temp.write_text(json.dumps(result)+'\n');temp.replace(target)
     summary = {name.replace('_', '-'): {model: {'n_items': covered, 'coverage': round(100 * covered / b['items'], 1) if b['items'] else 0.0} for model, covered, responses in b['rows']} for name, b in benchmarks.items()}
     summary_path = ROOT.parent / ('data_summary_' + now.strftime('%m%d%y') + '.json')
     summary_path.write_text(json.dumps(summary, indent=2) + '\n')

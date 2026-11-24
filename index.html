@@ -7,16 +7,16 @@
   <meta name="description" content="Open Eval Commons: curated papers, tools, and blog posts on AI evaluation, plus OpenEval, an open item-level evaluation data repository.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Open Eval Commons">
-  <meta property="og:image" content="https://open-eval.com/og.png">
+  <meta property="og:image" content="https://open-eval.com/preview.png">
   <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="3840">
-  <meta property="og:image:height" content="1916">
+  <meta property="og:image:width" content="2880">
+  <meta property="og:image:height" content="1514">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://open-eval.com/og.png">
+  <meta name="twitter:image" content="https://open-eval.com/preview.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Lobster&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="home-page">
 <nav aria-label="Main navigation">
@@ -27,16 +27,16 @@
     <ul class="nav-links">
       <li><a href="index.html" aria-current="page">Home</a></li>
       <li class="nav-menu">
-        <a href="schema.html" class="nav-menu-trigger" aria-haspopup="true">OpenEval</a>
+        <a href="openeval-overview.html" class="nav-menu-trigger" aria-haspopup="true">OpenEval</a>
         <ul class="nav-submenu" aria-label="OpenEval data tools">
-          <li><a href="schema.html">Data &amp; Schema</a></li>
-          <li><a href="benchmark.html">Benchmark Browser</a></li>
-          <li><a href="model.html">Model Performance</a></li>
-          <li><a href="landscape.html">Evaluation Landscape</a></li>
+          <li><a href="openeval-overview.html">OpenEval Overview</a></li>
+          <li><a href="openeval-benchmark.html">Benchmark Browser</a></li>
+          <li><a href="openeval-model.html">Model Performance</a></li>
+          <li><a href="openeval-landscape.html">Evaluation Landscape</a></li>
         </ul>
       </li>
       <!-- Blog Posts hidden for now: <li><a href="blog.html">Blog Posts</a></li> -->
-      <li><a href="tools-papers.html">Research &amp; Tools</a></li>
+      <li><a href="research-tools.html">Research &amp; Tools</a></li>
       <li><a href="events.html">Events</a></li>
       <li>
         <a href="contribution.html">Contribute
@@ -61,23 +61,24 @@
     <div class="home-hero-copy">
       <h1>Shared ground for the science of AI evaluation.</h1>
       <p class="home-hero-lede">
-        A community-maintained home for the research, tools, writing, and data behind
-        rigorous AI evaluation, curated so anyone can find what is known, reuse what works,
+        A community-maintained home for research, tools, and data that support
+        rigorous AI evaluation. Learn from what is known, build on what works,
         and contribute what is missing.
       </p>
       <div class="home-hero-actions">
-        <a href="schema.html" class="btn-hero btn-hero-green">Learn about OpenEval</a>
+        <a href="openeval-overview.html" class="btn-hero btn-hero-green">Explore OpenEval</a>
         <a href="contribution.html" class="text-link">Contribute <span aria-hidden="true">→</span></a>
       </div>
     </div>
     <aside class="stat-panel" aria-label="OpenEval at a glance">
-      <p class="stat-panel-intro"><strong>OpenEval</strong> is our open, item-level repository of benchmark items and model responses, all under one schema.</p>
+      <p class="stat-panel-intro">
+        <strong>OpenEval</strong> is our community-driven, item-level benchmark data repository built on a unifed schema.</p>
       <dl class="stat-list">
         <div><dt>Benchmarks</dt><dd id="hero-benchmark-count">…</dd></div>
         <div><dt>Items</dt><dd id="hero-item-count">…</dd></div>
         <div><dt>Model responses</dt><dd id="hero-response-count">…</dd></div>
       </dl>
-      <a href="schema.html" class="stat-panel-link">Browse the data <span aria-hidden="true">→</span></a>
+      <a href="openeval-benchmark.html" class="stat-panel-link">Browse benchmarks <span aria-hidden="true">→</span></a>
     </aside>
   </div>
 </section>
@@ -85,14 +86,14 @@
 <section class="home-section home-updates" id="updates">
   <div class="container">
     <div class="home-section-head">
-      <h2>Updates</h2>
+      <h2 class="section-title">Updates</h2>
     </div>
     <ul class="update-list">
-      <li><span class="update-tag">CHI 2027</span><a href="https://heal-workshop.github.io/" target="_blank" rel="noopener">The HEAL workshop returns at CHI 2027 with a special topic: Evaluate Evaluations.</a></li>
-      <li><span class="update-tag">NeurIPS 2026</span><a href="https://iab-agents.github.io/" target="_blank" rel="noopener">The Interpreting Agent Behavior (IAB) workshop will be held at NeurIPS in Sydney.</a></li>
-      <li><span class="update-tag">NeurIPS 2026</span><a href="https://arxiv.org/abs/2604.03244" target="_blank" rel="noopener">Our position paper on item-level data releases will appear at NeurIPS.</a></li>
-      <li><span class="update-tag">NeurIPS 2026</span><a href="https://arxiv.org/abs/2607.15190" target="_blank" rel="noopener">Our paper on whether we can trust IRT for AI evaluation will appear at NeurIPS.</a></li>
-      <li><span class="update-tag">In the news</span><a href="https://www.science.org/content/article/can-researchers-bring-order-confusing-world-ai-benchmarks" target="_blank" rel="noopener"><em>Science</em> covers OpenEval and the push to bring order to AI benchmarks.</a></li>
+      <li><time class="update-date">11/20/2026</time><a href="https://heal-workshop.github.io/" target="_blank" rel="noopener">The HEAL workshop returns at CHI 2027 with a special topic: Evaluate Evaluations.</a></li>
+      <li><time class="update-date">11/10/2026</time><a href="https://www.science.org/content/article/can-researchers-bring-order-confusing-world-ai-benchmarks" target="_blank" rel="noopener"><em>Science</em> covers OpenEval and the push to bring order to AI benchmarks.</a></li>
+      <li><time class="update-date">09/25/2026</time><a href="https://neurips.cc/virtual/2026/poster/139287" target="_blank" rel="noopener">Our paper on whether we can trust IRT for AI evaluation will appear at NeurIPS 2026.</a></li>
+      <li><time class="update-date">09/24/2026</time><a href="https://neurips.cc/virtual/2026/poster/140079" target="_blank" rel="noopener">Our position paper on item-level data releases will appear at NeurIPS 2026.</a></li>
+      <li><time class="update-date">07/11/2026</time><a href="https://iab-agents.github.io/" target="_blank" rel="noopener">The Interpreting Agent Behavior (IAB) workshop will be held at NeurIPS 2026 in Sydney.</a></li>
     </ul>
   </div>
 </section>
@@ -100,7 +101,7 @@
 <section class="home-section home-principles" id="principles">
   <div class="container">
     <div class="home-section-head">
-      <h2>Evaluation knowledge should compound, not scatter.</h2>
+      <h2 class="section-title">Evaluation knowledge should compound, not scatter.</h2>
       <p>
         Methods, code, and results are spread across papers, repositories, and posts, and much of the
         underlying data is never released. The commons is built on three commitments.
@@ -120,13 +121,14 @@
         <p>The commons grows through community contributions and stays useful because many people maintain it.</p>
       </div>
     </div>
+    <hr class="overview-divider">
   </div>
 </section>
 
 <section class="home-section home-join" id="join">
   <div class="container">
     <div class="home-section-head">
-      <h2>The commons is only as good as what we bring to it.</h2>
+      <h2 class="section-title">The commons is only as good as what we bring to it.</h2>
     </div>
     <div class="join-grid">
       <a class="join-card" href="contribution.html">
@@ -154,15 +156,14 @@
   <div class="footer-affil">
     <a href="index.html" class="footer-logo" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
       Open Eval Commons
-      <span style="font-family:var(--mono);font-size:0.65rem;font-weight:600;background:#e8e5de;color:#273929;padding:2px 7px;border-radius:4px;letter-spacing:0.02em;vertical-align:bottom;">OpenEval v0.2.1</span>
     </a>
-    <span class="footer-copy">A community resource for the open science of AI evaluation. <a href="https://huggingface.co/Open-Eval-Commons" style="color:var(--muted);">Hugging Face</a>&nbsp;&nbsp; 
+    <span class="footer-copy">A community resource advancing open science in AI evaluation.
       <a href="mailto:hjiang66@jh.edu,ziang.xiao@jhu.edu" style="color:var(--muted);">Contact us.</a>
     </span>
   </div>
 </footer>
-<script src="resources-data.js" defer></script>
-<script src="resources.js" defer></script>
+<script src="assets/js/resources-data.js" defer></script>
+<script src="assets/js/resources.js" defer></script>
 
 <script>
   // Row counts from the published dataset; no dataset files are downloaded.

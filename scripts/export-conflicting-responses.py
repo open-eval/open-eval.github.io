@@ -29,7 +29,7 @@ def main():
     temporary_output = output.with_suffix('.jsonl.tmp')
     report = []
     with temporary_output.open('w') as stream:
-        for summary_path in sorted((root / 'precomputed/benchmark').glob('*.json')):
+        for summary_path in sorted((root / 'openeval_snapshots/benchmark').glob('*.json')):
             summary = json.loads(summary_path.read_text())
             # Scan all benchmarks, not just the examples/counts retained in summary calculation.
             benchmark = summary['benchmark']

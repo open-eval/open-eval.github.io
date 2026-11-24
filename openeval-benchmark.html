@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Eval Commons - Benchmark Browser</title>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Open Eval Commons - Benchmark Browser">
+  <meta property="og:image" content="https://open-eval.com/preview.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="2880">
+  <meta property="og:image:height" content="1514">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://open-eval.com/preview.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/tools.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="green-page">
+<nav aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" style="text-decoration:none;">
+      Open Eval Commons
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-menu is-active">
+        <a href="openeval-overview.html" class="nav-menu-trigger" aria-haspopup="true">OpenEval</a>
+        <ul class="nav-submenu" aria-label="OpenEval data tools">
+          <li><a href="openeval-overview.html">OpenEval Overview</a></li>
+          <li><a href="openeval-benchmark.html" aria-current="page">Benchmark Browser</a></li>
+          <li><a href="openeval-model.html">Model Performance</a></li>
+          <li><a href="openeval-landscape.html">Evaluation Landscape</a></li>
+        </ul>
+      </li>
+      <!-- Blog Posts hidden for now: <li><a href="blog.html">Blog Posts</a></li> -->
+      <li><a href="research-tools.html">Research &amp; Tools</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li>
+        <a href="contribution.html">Contribute
+          <span aria-hidden="true" class="notification-dot"></span>
+        </a>
+      </li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:0.6rem;">
+      <a href="https://huggingface.co/datasets/Open-Eval-Commons/OpenEval" class="nav-cta" style="text-decoration:none;" target="_blank" rel="noopener">
+        <img src="logos/hf-logo.svg" width="35" height="35" alt="HuggingFace" style="display:block;">
+      </a>
+      <a href="https://github.com/open-eval/OpenEval" class="nav-cta" style="text-decoration:none;" target="_blank" rel="noopener">
+        <img src="logos/github-logo.svg" width="35" height="35" alt="GitHub" style="display:block;">
+      </a>
+    </div>
+  </div>
+</nav>
+<main>
+<div class="site-section theme-green" id="benchmarks">
+<section class="section">
+  <div class="container">
+    <h1 class="section-title">Benchmark Browser</h1>
+    <p class="section-sub">Discover benchmarks, inspect their items, and uncover patterns in evaluation validity.</p>
+    <div id="benchmark-tool" class="oe-tool"><p role="status">Loading benchmarks…</p></div>
+    <noscript>Enable JavaScript to browse benchmarks, or <a href="https://huggingface.co/datasets/Open-Eval-Commons/OpenEval">open the dataset on Hugging Face</a>.</noscript>
+  </div>
+</section>
+
+</div>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logos">
+      <a href="https://www.jhu.edu/" target="_blank" rel="noopener"><img src="logos/jhu-logo.svg" class="footer-affil-logo footer-affil-jhu" alt="Johns Hopkins University"></a>
+      <a href="https://illinois.edu/" target="_blank" rel="noopener"><img src="logos/uiuc-logo.svg" class="footer-affil-logo footer-affil-uiuc" alt="University of Illinois at Urbana-Champaign"></a>
+    </div>
+  </div>
+  <div class="footer-affil">
+    <a href="index.html" class="footer-logo" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
+      Open Eval Commons
+    </a>
+    <span class="footer-copy">A community resource advancing open science in AI evaluation.
+      <a href="mailto:hjiang66@jh.edu,ziang.xiao@jhu.edu" style="color:var(--muted);">Contact us.</a>
+    </span>
+  </div>
+</footer>
+<script src="assets/js/fuzzy-search.js" defer></script>
+<script src="assets/js/bundles/benchmark.js" defer></script>
+</body>
+</html>

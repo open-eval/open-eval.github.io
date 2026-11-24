@@ -9,12 +9,12 @@ import math
 spec=importlib.util.spec_from_file_location('ability',Path(__file__).with_name('compute-ability.py'))
 a=importlib.util.module_from_spec(spec);spec.loader.exec_module(a)
 root=Path(__file__).resolve().parents[1]
-output=root/'precomputed/landscape';output.mkdir(exist_ok=True)
-for path in sorted((root/'precomputed/benchmark').glob('*.json')):
+output=root/'openeval_snapshots/landscape';output.mkdir(exist_ok=True)
+for path in sorted((root/'openeval_snapshots/benchmark').glob('*.json')):
  target=output/path.name
  if target.exists() and json.loads(target.read_text()).get("method") == "rasch-1pl-map" and json.loads(target.read_text()).get("summarySha256") == hashlib.sha256(path.read_bytes()).hexdigest():continue
  source=json.loads(path.read_text());slug=source['benchmark']
- fits=json.loads((root/'precomputed/model'/path.name).read_text())
+ fits=json.loads((root/'openeval_snapshots/model'/path.name).read_text())
  candidates=[m for m in source['measurements'] if fits['metrics'][m['metrics'][0]]['available']]
  results={}
  if candidates:

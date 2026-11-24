@@ -188,9 +188,9 @@ def main():
     parser.add_argument('--force', action='store_true')
     args = parser.parse_args()
     args.cache.mkdir(parents=True, exist_ok=True)
-    out = ROOT / 'precomputed/model'
+    out = ROOT / 'openeval_snapshots/model'
     out.mkdir(exist_ok=True)
-    for path in sorted((ROOT / 'precomputed/benchmark').glob('*.json')):
+    for path in sorted((ROOT / 'openeval_snapshots/benchmark').glob('*.json')):
         if args.benchmarks and path.stem not in args.benchmarks:
             continue
         target = out / path.name
