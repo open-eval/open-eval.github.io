@@ -5,62 +5,82 @@ import snapshot1 from "../../openeval_snapshots/benchmark/anthropic_red_teaming.
 import snapshot2 from "../../openeval_snapshots/benchmark/bbq.json";
 import snapshot3 from "../../openeval_snapshots/benchmark/bold.json";
 import snapshot4 from "../../openeval_snapshots/benchmark/boolq.json";
-import snapshot5 from "../../openeval_snapshots/benchmark/cnndm.json";
-import snapshot6 from "../../openeval_snapshots/benchmark/culturalbench.json";
-import snapshot7 from "../../openeval_snapshots/benchmark/disinformation.json";
-import snapshot8 from "../../openeval_snapshots/benchmark/do_not_answer.json";
-import snapshot9 from "../../openeval_snapshots/benchmark/dochop.json";
-import snapshot10 from "../../openeval_snapshots/benchmark/emobench.json";
-import snapshot11 from "../../openeval_snapshots/benchmark/gpqa.json";
-import snapshot12 from "../../openeval_snapshots/benchmark/harmbench.json";
-import snapshot13 from "../../openeval_snapshots/benchmark/health_orsc_bench.json";
-import snapshot14 from "../../openeval_snapshots/benchmark/hi_tom.json";
-import snapshot15 from "../../openeval_snapshots/benchmark/ifeval.json";
-import snapshot16 from "../../openeval_snapshots/benchmark/imdb.json";
-import snapshot17 from "../../openeval_snapshots/benchmark/last_translation_benchmark.json";
-import snapshot18 from "../../openeval_snapshots/benchmark/mmlu_pro.json";
-import snapshot19 from "../../openeval_snapshots/benchmark/moralbench.json";
-import snapshot20 from "../../openeval_snapshots/benchmark/omni_math.json";
-import snapshot21 from "../../openeval_snapshots/benchmark/opentom.json";
-import snapshot22 from "../../openeval_snapshots/benchmark/or_bench.json";
-import snapshot23 from "../../openeval_snapshots/benchmark/salad_bench.json";
-import snapshot24 from "../../openeval_snapshots/benchmark/simplesafetytests.json";
-import snapshot25 from "../../openeval_snapshots/benchmark/sorry_bench.json";
-import snapshot26 from "../../openeval_snapshots/benchmark/truthfulqa.json";
-import snapshot27 from "../../openeval_snapshots/benchmark/visfactor.json";
-import snapshot28 from "../../openeval_snapshots/benchmark/wildbench.json";
-import snapshot29 from "../../openeval_snapshots/benchmark/xstest.json";
-import snapshot30 from "../../openeval_snapshots/benchmark/xsum.json";
+import snapshot5 from "../../openeval_snapshots/benchmark/chikhapo_wt.json";
+import snapshot6 from "../../openeval_snapshots/benchmark/chikhapo_wtwc.json";
+import snapshot7 from "../../openeval_snapshots/benchmark/cnndm.json";
+import snapshot8 from "../../openeval_snapshots/benchmark/culturalbench.json";
+import snapshot9 from "../../openeval_snapshots/benchmark/disinformation.json";
+import snapshot10 from "../../openeval_snapshots/benchmark/do_not_answer.json";
+import snapshot11 from "../../openeval_snapshots/benchmark/dochop.json";
+import snapshot12 from "../../openeval_snapshots/benchmark/emobench.json";
+import snapshot13 from "../../openeval_snapshots/benchmark/gpqa.json";
+import snapshot14 from "../../openeval_snapshots/benchmark/gsm8k.json";
+import snapshot15 from "../../openeval_snapshots/benchmark/harmbench.json";
+import snapshot16 from "../../openeval_snapshots/benchmark/health_orsc_bench.json";
+import snapshot17 from "../../openeval_snapshots/benchmark/hi_tom.json";
+import snapshot18 from "../../openeval_snapshots/benchmark/hotpotqa.json";
+import snapshot19 from "../../openeval_snapshots/benchmark/ifeval.json";
+import snapshot20 from "../../openeval_snapshots/benchmark/imdb.json";
+import snapshot21 from "../../openeval_snapshots/benchmark/last_translation_benchmark.json";
+import snapshot22 from "../../openeval_snapshots/benchmark/longmemeval.json";
+import snapshot23 from "../../openeval_snapshots/benchmark/medqa.json";
+import snapshot24 from "../../openeval_snapshots/benchmark/mmlu_pro.json";
+import snapshot25 from "../../openeval_snapshots/benchmark/moralbench.json";
+import snapshot26 from "../../openeval_snapshots/benchmark/musique.json";
+import snapshot27 from "../../openeval_snapshots/benchmark/narrativeqa.json";
+import snapshot28 from "../../openeval_snapshots/benchmark/nq_open.json";
+import snapshot29 from "../../openeval_snapshots/benchmark/omni_math.json";
+import snapshot30 from "../../openeval_snapshots/benchmark/openbookqa.json";
+import snapshot31 from "../../openeval_snapshots/benchmark/opentom.json";
+import snapshot32 from "../../openeval_snapshots/benchmark/or_bench.json";
+import snapshot33 from "../../openeval_snapshots/benchmark/salad_bench.json";
+import snapshot34 from "../../openeval_snapshots/benchmark/simplesafetytests.json";
+import snapshot35 from "../../openeval_snapshots/benchmark/sorry_bench.json";
+import snapshot36 from "../../openeval_snapshots/benchmark/truthfulqa.json";
+import snapshot37 from "../../openeval_snapshots/benchmark/visfactor.json";
+import snapshot38 from "../../openeval_snapshots/benchmark/wildbench.json";
+import snapshot39 from "../../openeval_snapshots/benchmark/xstest.json";
+import snapshot40 from "../../openeval_snapshots/benchmark/xsum.json";
 export const benchmarkSnapshots: Record<string, { benchmark: string; computedAt: string; measurements: OEMeasurement[] }> = {
   "advbench": snapshot0,
   "anthropic_red_teaming": snapshot1,
   "bbq": snapshot2,
   "bold": snapshot3,
   "boolq": snapshot4,
-  "cnndm": snapshot5,
-  "culturalbench": snapshot6,
-  "disinformation": snapshot7,
-  "do_not_answer": snapshot8,
-  "dochop": snapshot9,
-  "emobench": snapshot10,
-  "gpqa": snapshot11,
-  "harmbench": snapshot12,
-  "health_orsc_bench": snapshot13,
-  "hi_tom": snapshot14,
-  "ifeval": snapshot15,
-  "imdb": snapshot16,
-  "last_translation_benchmark": snapshot17,
-  "mmlu_pro": snapshot18,
-  "moralbench": snapshot19,
-  "omni_math": snapshot20,
-  "opentom": snapshot21,
-  "or_bench": snapshot22,
-  "salad_bench": snapshot23,
-  "simplesafetytests": snapshot24,
-  "sorry_bench": snapshot25,
-  "truthfulqa": snapshot26,
-  "visfactor": snapshot27,
-  "wildbench": snapshot28,
-  "xstest": snapshot29,
-  "xsum": snapshot30,
+  "chikhapo_wt": snapshot5,
+  "chikhapo_wtwc": snapshot6,
+  "cnndm": snapshot7,
+  "culturalbench": snapshot8,
+  "disinformation": snapshot9,
+  "do_not_answer": snapshot10,
+  "dochop": snapshot11,
+  "emobench": snapshot12,
+  "gpqa": snapshot13,
+  "gsm8k": snapshot14,
+  "harmbench": snapshot15,
+  "health_orsc_bench": snapshot16,
+  "hi_tom": snapshot17,
+  "hotpotqa": snapshot18,
+  "ifeval": snapshot19,
+  "imdb": snapshot20,
+  "last_translation_benchmark": snapshot21,
+  "longmemeval": snapshot22,
+  "medqa": snapshot23,
+  "mmlu_pro": snapshot24,
+  "moralbench": snapshot25,
+  "musique": snapshot26,
+  "narrativeqa": snapshot27,
+  "nq_open": snapshot28,
+  "omni_math": snapshot29,
+  "openbookqa": snapshot30,
+  "opentom": snapshot31,
+  "or_bench": snapshot32,
+  "salad_bench": snapshot33,
+  "simplesafetytests": snapshot34,
+  "sorry_bench": snapshot35,
+  "truthfulqa": snapshot36,
+  "visfactor": snapshot37,
+  "wildbench": snapshot38,
+  "xstest": snapshot39,
+  "xsum": snapshot40,
 };

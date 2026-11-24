@@ -1,0 +1,38 @@
+{
+  "method": "rasch-1pl-map",
+  "benchmark": "musique",
+  "computedAt": "2026-11-24T21:49:35.607294+00:00",
+  "summarySha256": "84b432dae0dbd747c6ee0e08f874507fbed75533600811fa4e061faa45530d44",
+  "metrics": {
+    "LLM_correctness": {
+      "bins": [
+        68,
+        0,
+        42,
+        0,
+        34,
+        21,
+        12,
+        18,
+        18,
+        10,
+        17,
+        14,
+        12,
+        15,
+        15,
+        41,
+        55,
+        0,
+        0,
+        108
+      ],
+      "min": -4.180958584876646,
+      "max": 3.539350936513817,
+      "median": 0.44717186215221183,
+      "items": 500,
+      "archivedItems": 500,
+      "models": 20
+    }
+  }
+}

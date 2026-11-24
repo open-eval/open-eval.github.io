@@ -1,0 +1,38 @@
+{
+  "method": "rasch-1pl-map",
+  "benchmark": "longmemeval",
+  "computedAt": "2026-11-24T21:49:32.946143+00:00",
+  "summarySha256": "1c3207d5e54929dacd4fb997d40d7fb2567230cdc750ff63e0968c9f51c54dae",
+  "metrics": {
+    "LLM_correctness": {
+      "bins": [
+        11,
+        0,
+        20,
+        35,
+        21,
+        28,
+        20,
+        42,
+        23,
+        22,
+        24,
+        24,
+        29,
+        7,
+        23,
+        22,
+        0,
+        26,
+        0,
+        123
+      ],
+      "min": -4.997678572055734,
+      "max": 3.682657973840702,
+      "median": -0.16267352166672305,
+      "items": 500,
+      "archivedItems": 500,
+      "models": 25
+    }
+  }
+}

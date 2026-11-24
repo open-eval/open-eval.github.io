@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "hotpotqa",
+  "computedAt": "2026-11-24T21:46:30.315871+00:00",
+  "summarySha256": "1bf48b2459d8227c2465214c9826ea96f2c1a53c9a9d3dd4d4165a20b9085e27",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+    "observedMainRevision": "527ac42de705d7ab704c5baafa784ade9739e4b7",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/hotpotqa.item/train/0000.parquet",
+        "rows": 500,
+        "bytes": 1766035,
+        "sha256": "a29cfe5ce05aa3986874030b9778f66730af8647f54f70f9ee0d4c9578aed9c4"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/hotpotqa.response/train/0000.parquet",
+        "rows": 45500,
+        "bytes": 7233447,
+        "sha256": "c1d736fb7c5ee7901045fb1124e7f3e2c8184eeee3a8a0ff24863022d087ae13"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "LLM_judge": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "LLM_correctness": {
+      "available": true,
+      "itemCount": 500,
+      "modelCount": 20,
+      "pairCount": 10000,
+      "iterations": 80,
+      "converged": true,
+      "itemDifficulty": {
+        "bins": [
+          59,
+          0,
+          0,
+          48,
+          29,
+          39,
+          27,
+          39,
+          19,
+          33,
+          32,
+          22,
+          10,
+          30,
+          14,
+          21,
+          0,
+          30,
+          0,
+          48
+        ],
+        "min": -3.674807328620262,
+        "max": 4.269492925324454,
+        "median": -0.27105611866178647
+      },
+      "models": [
+        {
+          "name": "deepseek-r1-distill-llama-70b",
+          "theta": 1.532282,
+          "sd": 0.190885,
+          "n": 500
+        },
+        {
+          "name": "llama-3.3-70b-instruct",
+          "theta": 1.194835,
+          "sd": 0.188023,
+          "n": 500
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "theta": 1.122273,
+          "sd": 0.187456,
+          "n": 500
+        },
+        {
+          "name": "llama-3.1-70b-instruct",
+          "theta": 1.050521,
+          "sd": 0.186911,
+          "n": 500
+        },
+        {
+          "name": "claude-3.5-haiku",
+          "theta": 0.909314,
+          "sd": 0.185889,
+          "n": 500
+        },
+        {
+          "name": "qwen3-32b",
+          "theta": 0.68582,
+          "sd": 0.184411,
+          "n": 500
+        },
+        {
+          "name": "seed-2.0-mini",
+          "theta": 0.48528,
+          "sd": 0.18324,
+          "n": 500
+        },
+        {
+          "name": "gemma-3-12b-it",
+          "theta": 0.452335,
+          "sd": 0.183062,
+          "n": 500
+        },
+        {
+          "name": "qwen-2.5-72b-instruct",
+          "theta": 0.435911,
+          "sd": 0.182975,
+          "n": 500
+        },
+        {
+          "name": "gemma-3-27b-it",
+          "theta": 0.419518,
+          "sd": 0.18289,
+          "n": 500
+        },
+        {
+          "name": "grok-4.1-fast",
+          "theta": 0.403156,
+          "sd": 0.182805,
+          "n": 500
+        },
+        {
+          "name": "qwen3-8b",
+          "theta": 0.370522,
+          "sd": 0.18264,
+          "n": 500
+        },
+        {
+          "name": "phi-4",
+          "theta": 0.354249,
+          "sd": 0.182559,
+          "n": 500
+        },
+        {
+          "name": "command-r-08-2024",
+          "theta": 0.193033,
+          "sd": 0.181817,
+          "n": 500
+        },
+        {
+          "name": "qwen3-14b",
+          "theta": 0.193033,
+          "sd": 0.181817,
+          "n": 500
+        },
+        {
+          "name": "llama-4-scout",
+          "theta": 0.177053,
+          "sd": 0.181749,
+          "n": 500
+        },
+        {
+          "name": "olmo-3.1-32b-instruct",
+          "theta": -0.169218,
+          "sd": 0.180564,
+          "n": 500
+        },
+        {
+          "name": "glm-4-32b",
+          "theta": -0.262256,
+          "sd": 0.18034,
+          "n": 500
+        },
+        {
+          "name": "llama-3.1-8b-instruct",
+          "theta": -0.814844,
+          "sd": 0.17992,
+          "n": 500
+        },
+        {
+          "name": "qwen-2.5-7b-instruct",
+          "theta": -0.983781,
+          "sd": 0.180127,
+          "n": 500
+        }
+      ],
+      "reverseCoded": false
+    }
+  }
+}

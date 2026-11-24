@@ -1,0 +1,354 @@
+{
+  "itemCount": 500,
+  "responseCount": 20000,
+  "distinctModelCount": 20,
+  "distinctModelItemPairs": 10000,
+  "duplicateResponsesRemoved": 10000,
+  "conflictingDuplicateRows": 0,
+  "conflictingDuplicateExamples": [],
+  "measurements": [
+    {
+      "metrics": [
+        "LLM_correctness"
+      ],
+      "itemCount": 500,
+      "totalResponses": 20000,
+      "loadedResponses": 20000,
+      "minimumItems": 50,
+      "modelCount": 20,
+      "scoredResponses": 10000,
+      "excludedModelCount": 0,
+      "avgScore": 0.44480000000000003,
+      "medianScore": 0.455,
+      "standardError": 0.0057517045528397825,
+      "discrimination": 0.025071098898931412,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "claude-3.5-haiku",
+        "n": 500,
+        "coverage": 1.0,
+        "mean": 0.482
+      },
+      "worst": {
+        "name": "llama-4-scout",
+        "n": 500,
+        "coverage": 1.0,
+        "mean": 0.394
+      },
+      "models": [
+        {
+          "name": "claude-3.5-haiku",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.482
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.476
+        },
+        {
+          "name": "glm-4-32b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.466
+        },
+        {
+          "name": "qwen3-8b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.464
+        },
+        {
+          "name": "gemma-3-27b-it",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.462
+        },
+        {
+          "name": "olmo-3.1-32b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.46
+        },
+        {
+          "name": "qwen3-32b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.46
+        },
+        {
+          "name": "grok-4.1-fast",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.456
+        },
+        {
+          "name": "llama-3.1-70b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.456
+        },
+        {
+          "name": "llama-3.3-70b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.456
+        },
+        {
+          "name": "seed-2.0-mini",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.454
+        },
+        {
+          "name": "gemma-3-12b-it",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.448
+        },
+        {
+          "name": "qwen3-14b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.448
+        },
+        {
+          "name": "command-r-08-2024",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.442
+        },
+        {
+          "name": "deepseek-r1-distill-llama-70b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.438
+        },
+        {
+          "name": "qwen-2.5-72b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.422
+        },
+        {
+          "name": "phi-4",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.406
+        },
+        {
+          "name": "qwen-2.5-7b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.404
+        },
+        {
+          "name": "llama-3.1-8b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.402
+        },
+        {
+          "name": "llama-4-scout",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.394
+        }
+      ],
+      "split": "musique"
+    },
+    {
+      "metrics": [
+        "LLM_judge"
+      ],
+      "itemCount": 500,
+      "totalResponses": 20000,
+      "loadedResponses": 20000,
+      "minimumItems": 50,
+      "modelCount": 20,
+      "scoredResponses": 10000,
+      "excludedModelCount": 0,
+      "avgScore": 0.9866,
+      "medianScore": 1.004,
+      "standardError": 0.012036873173273604,
+      "discrimination": 0.05246751375851539,
+      "refCoverage": 1.0,
+      "bounded": false,
+      "binary": false,
+      "best": {
+        "name": "gpt-4.1-mini",
+        "n": 500,
+        "coverage": 1.0,
+        "mean": 1.066
+      },
+      "worst": {
+        "name": "qwen-2.5-7b-instruct",
+        "n": 500,
+        "coverage": 1.0,
+        "mean": 0.868
+      },
+      "models": [
+        {
+          "name": "gpt-4.1-mini",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.066
+        },
+        {
+          "name": "claude-3.5-haiku",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.058
+        },
+        {
+          "name": "gemma-3-27b-it",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.026
+        },
+        {
+          "name": "olmo-3.1-32b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.024
+        },
+        {
+          "name": "qwen3-8b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.024
+        },
+        {
+          "name": "gemma-3-12b-it",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.014
+        },
+        {
+          "name": "glm-4-32b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.012
+        },
+        {
+          "name": "llama-3.3-70b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.01
+        },
+        {
+          "name": "seed-2.0-mini",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.01
+        },
+        {
+          "name": "qwen3-32b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.006
+        },
+        {
+          "name": "llama-3.1-70b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.002
+        },
+        {
+          "name": "grok-4.1-fast",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.0
+        },
+        {
+          "name": "qwen3-14b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.982
+        },
+        {
+          "name": "command-r-08-2024",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.976
+        },
+        {
+          "name": "deepseek-r1-distill-llama-70b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.976
+        },
+        {
+          "name": "phi-4",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.952
+        },
+        {
+          "name": "qwen-2.5-72b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.946
+        },
+        {
+          "name": "llama-4-scout",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.9
+        },
+        {
+          "name": "llama-3.1-8b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.88
+        },
+        {
+          "name": "qwen-2.5-7b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.868
+        }
+      ],
+      "split": "musique"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "musique",
+  "computedAt": "2026-11-24T21:35:52.387154+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+    "observedMainRevision": "527ac42de705d7ab704c5baafa784ade9739e4b7",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/musique.item/train/0000.parquet",
+        "rows": 500,
+        "bytes": 3360632,
+        "sha256": "33523ce1e8d387a0e3144bd304bc1c9cd2e6c4d26b6b94f57ec916bc478f32eb"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/musique.response/train/0000.parquet",
+        "rows": 20000,
+        "bytes": 4255358,
+        "sha256": "b796e9cb64cd6d60381ecf25fd023be5ad41908524d116bb96f55ea738b09e6a"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

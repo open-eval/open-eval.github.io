@@ -60,6 +60,7 @@ react/cjs/react-jsx-runtime.production.js:
 @tabler/icons-react/dist/esm/icons/IconArrowLeft.mjs:
 @tabler/icons-react/dist/esm/icons/IconChevronDown.mjs:
 @tabler/icons-react/dist/esm/icons/IconExternalLink.mjs:
+@tabler/icons-react/dist/esm/icons/IconFilter.mjs:
 @tabler/icons-react/dist/esm/icons/IconGauge.mjs:
 @tabler/icons-react/dist/esm/icons/IconLoader2.mjs:
 @tabler/icons-react/dist/esm/icons/IconSearch.mjs:

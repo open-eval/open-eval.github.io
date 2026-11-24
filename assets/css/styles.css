@@ -1406,6 +1406,28 @@ body.green-page { background: #273929; }
 }
 #landscape-tool .landscape-folder-difficulty > div > p { color: #d5ddd2; }
 
+.difficulty-axis-labels {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.3rem;
+}
+.difficulty-axis-labels > :last-child { text-align: right; }
+.difficulty-axis-median {
+  position: absolute;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+@media (max-width: 640px) {
+  .difficulty-axis-median {
+    position: static;
+    transform: none;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
 /* Folder-style navigation, distinct from the binary pill switches. */
 .landscape-folder-tabs { display: flex; align-items: flex-end; gap: 0; padding-left: 0; padding-top: 0.5rem;}
 .oe-tool .landscape-folder-tab { position: relative; padding: 0.4rem 1rem; border: 1px solid var(--border); border-bottom: 0; border-radius: 0.5rem 1.1rem 0 0; background: var(--tool-control); color: var(--muted); font-size: 0.75rem; font-weight: 500; transition: color 160ms ease; }

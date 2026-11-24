@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "longmemeval",
+  "computedAt": "2026-11-24T21:46:30.710050+00:00",
+  "summarySha256": "1c3207d5e54929dacd4fb997d40d7fb2567230cdc750ff63e0968c9f51c54dae",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+    "observedMainRevision": "527ac42de705d7ab704c5baafa784ade9739e4b7",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/longmemeval.item/train/0000.parquet",
+        "rows": 500,
+        "bytes": 122293725,
+        "sha256": "6a79abfdddb19a5fa1c0ed58c37e7a6368130418b1c334a2e2a1caa4f16c4bfd"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/longmemeval.response/train/0000.parquet",
+        "rows": 36508,
+        "bytes": 10495270,
+        "sha256": "5062f55a677e3fdf3743dc81099878df42a9e1f4a4110464e8dd275aa82e4675"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/longmemeval.response/train/0001.parquet",
+        "rows": 36508,
+        "bytes": 11072935,
+        "sha256": "130f381e38f17260a7b2c5d8b205d8e8f2ba1418a6e03b54d237459e54888144"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "LLM_judge": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "LLM_correctness": {
+      "available": true,
+      "itemCount": 500,
+      "modelCount": 25,
+      "pairCount": 12500,
+      "iterations": 73,
+      "converged": true,
+      "itemDifficulty": {
+        "bins": [
+          11,
+          0,
+          20,
+          35,
+          21,
+          28,
+          20,
+          42,
+          23,
+          22,
+          24,
+          24,
+          29,
+          7,
+          23,
+          22,
+          0,
+          26,
+          0,
+          123
+        ],
+        "min": -4.997678572055734,
+        "max": 3.682657973840702,
+        "median": -0.16267352166672305
+      },
+      "models": [
+        {
+          "name": "grok-4.1-fast",
+          "theta": 0.292138,
+          "sd": 0.192109,
+          "n": 500
+        },
+        {
+          "name": "deepseek-r1-distill-llama-70b",
+          "theta": 0.251826,
+          "sd": 0.191946,
+          "n": 500
+        },
+        {
+          "name": "seed-2.0-mini",
+          "theta": 0.211658,
+          "sd": 0.191782,
+          "n": 500
+        },
+        {
+          "name": "llama-3.3-70b-instruct",
+          "theta": 0.072195,
+          "sd": 0.191212,
+          "n": 500
+        },
+        {
+          "name": "qwen3-32b",
+          "theta": 0.072195,
+          "sd": 0.191212,
+          "n": 500
+        },
+        {
+          "name": "qwen3-8b",
+          "theta": 0.052414,
+          "sd": 0.191131,
+          "n": 500
+        },
+        {
+          "name": "claude-3.5-haiku",
+          "theta": -0.085076,
+          "sd": 0.190573,
+          "n": 500
+        },
+        {
+          "name": "qwen3-14b",
+          "theta": -0.085076,
+          "sd": 0.190573,
+          "n": 500
+        },
+        {
+          "name": "qwen-2.5-72b-instruct",
+          "theta": -0.124049,
+          "sd": 0.190417,
+          "n": 500
+        },
+        {
+          "name": "qwen3.6-27b",
+          "theta": -0.182256,
+          "sd": 0.190187,
+          "n": 500
+        },
+        {
+          "name": "gemma-3-27b-it",
+          "theta": -0.374171,
+          "sd": 0.189456,
+          "n": 500
+        },
+        {
+          "name": "llama-3.1-70b-instruct",
+          "theta": -0.487848,
+          "sd": 0.189052,
+          "n": 500
+        },
+        {
+          "name": "mimo-v2.5",
+          "theta": -0.487848,
+          "sd": 0.189052,
+          "n": 500
+        },
+        {
+          "name": "gemma-3-12b-it",
+          "theta": -0.525511,
+          "sd": 0.188924,
+          "n": 500
+        },
+        {
+          "name": "command-r-08-2024",
+          "theta": -0.600511,
+          "sd": 0.188677,
+          "n": 500
+        },
+        {
+          "name": "glm-4-32b",
+          "theta": -0.600511,
+          "sd": 0.188677,
+          "n": 500
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "theta": -0.637852,
+          "sd": 0.188559,
+          "n": 500
+        },
+        {
+          "name": "gpt-4o-mini",
+          "theta": -0.823076,
+          "sd": 0.188031,
+          "n": 500
+        },
+        {
+          "name": "llama-4-scout",
+          "theta": -0.896542,
+          "sd": 0.187849,
+          "n": 500
+        },
+        {
+          "name": "phi-4",
+          "theta": -0.896542,
+          "sd": 0.187849,
+          "n": 500
+        },
+        {
+          "name": "gemma-3-4b-it",
+          "theta": -1.313718,
+          "sd": 0.1872,
+          "n": 500
+        },
+        {
+          "name": "qwen-2.5-7b-instruct",
+          "theta": -1.88865,
+          "sd": 0.187737,
+          "n": 500
+        },
+        {
+          "name": "llama-3.1-8b-instruct",
+          "theta": -2.421812,
+          "sd": 0.190357,
+          "n": 500
+        },
+        {
+          "name": "llama-3.2-3b-instruct",
+          "theta": -2.710787,
+          "sd": 0.192909,
+          "n": 500
+        },
+        {
+          "name": "olmo-3.1-32b-instruct",
+          "theta": -3.122331,
+          "sd": 0.198281,
+          "n": 500
+        }
+      ],
+      "reverseCoded": false
+    }
+  }
+}

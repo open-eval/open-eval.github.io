@@ -1,0 +1,2492 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "medqa",
+  "computedAt": "2026-11-24T21:46:33.074459+00:00",
+  "summarySha256": "824027190c349fa9b65dba74981419889cc945eaf404bf778bf08ef806f56d39",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+    "observedMainRevision": "527ac42de705d7ab704c5baafa784ade9739e4b7",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/medqa.item/train/0000.parquet",
+        "rows": 1000,
+        "bytes": 551277,
+        "sha256": "c9fae2d85958fca03465fffc71bfdf26855ad4471602f0314a15981c89b5b923"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/medqa.response/train/0000.parquet",
+        "rows": 47500,
+        "bytes": 3028794,
+        "sha256": "4255ab9c7553267801e5f06e9ebd4ce21d274cca4d123db99185369bc78f61c2"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/medqa.response/train/0001.parquet",
+        "rows": 47500,
+        "bytes": 2946618,
+        "sha256": "ee4404cd7f333a076b0052b1ab26049f3c2ee84e7ad4eaa22c2283c3eb658b8d"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "exact_match@5": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "max_prob": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "prefix_exact_match@5": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "quasi_exact_match@5": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "quasi_prefix_exact_match@5": {
+      "available": false,
+      "reason": "This metric does not support the binary, direction-defined ability model."
+    },
+    "exact_match": {
+      "available": true,
+      "itemCount": 1000,
+      "modelCount": 95,
+      "pairCount": 95000,
+      "iterations": 88,
+      "converged": true,
+      "itemDifficulty": {
+        "bins": [
+          37,
+          75,
+          74,
+          82,
+          120,
+          102,
+          91,
+          103,
+          79,
+          45,
+          58,
+          51,
+          33,
+          16,
+          14,
+          10,
+          8,
+          0,
+          0,
+          2
+        ],
+        "min": -3.05752357511176,
+        "max": 5.978826158551707,
+        "median": -0.3104815874401881
+      },
+      "models": [
+        {
+          "name": "gpt-4o-2024-08-06",
+          "theta": 2.631038,
+          "sd": 0.140557,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4o-2024-05-13",
+          "theta": 2.534834,
+          "sd": 0.13872,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-5-sonnet-20241022",
+          "theta": 2.442464,
+          "sd": 0.137056,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.1-405b-instruct-turbo",
+          "theta": 2.442464,
+          "sd": 0.137056,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-5-sonnet-20240620",
+          "theta": 2.205222,
+          "sd": 0.133186,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.2-90b-vision-instruct-turbo",
+          "theta": 2.134171,
+          "sd": 0.132132,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.1-70b-instruct-turbo",
+          "theta": 2.094416,
+          "sd": 0.131563,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4-0613",
+          "theta": 2.064982,
+          "sd": 0.13115,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4-1106-preview",
+          "theta": 2.064982,
+          "sd": 0.13115,
+          "n": 1000
+        },
+        {
+          "name": "deepseek-v3",
+          "theta": 2.007056,
+          "sd": 0.130359,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.3-70b-instruct-turbo",
+          "theta": 1.95032,
+          "sd": 0.129611,
+          "n": 1000
+        },
+        {
+          "name": "nova-pro-v1:0",
+          "theta": 1.840144,
+          "sd": 0.128233,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4-turbo-2024-04-09",
+          "theta": 1.78658,
+          "sd": 0.127596,
+          "n": 1000
+        },
+        {
+          "name": "mistral-large-2407",
+          "theta": 1.707981,
+          "sd": 0.1267,
+          "n": 1000
+        },
+        {
+          "name": "palmyra-x-004",
+          "theta": 1.707981,
+          "sd": 0.1267,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-opus-20240229",
+          "theta": 1.690785,
+          "sd": 0.12651,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-pro-002",
+          "theta": 1.639754,
+          "sd": 0.125959,
+          "n": 1000
+        },
+        {
+          "name": "llama-3-70b",
+          "theta": 1.639754,
+          "sd": 0.125959,
+          "n": 1000
+        },
+        {
+          "name": "qwen2.5-72b-instruct-turbo",
+          "theta": 1.523742,
+          "sd": 0.12477,
+          "n": 1000
+        },
+        {
+          "name": "qwen2-72b-instruct",
+          "theta": 1.459229,
+          "sd": 0.124148,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4o-mini-2024-07-18",
+          "theta": 1.427424,
+          "sd": 0.123851,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-5-haiku-20241022",
+          "theta": 1.272541,
+          "sd": 0.122492,
+          "n": 1000
+        },
+        {
+          "name": "gemini-2.0-flash-exp",
+          "theta": 1.264965,
+          "sd": 0.12243,
+          "n": 1000
+        },
+        {
+          "name": "mixtral-8x22b",
+          "theta": 1.153088,
+          "sd": 0.121542,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-pro-preview-0409",
+          "theta": 1.123782,
+          "sd": 0.121321,
+          "n": 1000
+        },
+        {
+          "name": "nova-lite-v1:0",
+          "theta": 1.094687,
+          "sd": 0.121106,
+          "n": 1000
+        },
+        {
+          "name": "phi-3-medium-4k-instruct",
+          "theta": 1.087445,
+          "sd": 0.121054,
+          "n": 1000
+        },
+        {
+          "name": "jamba-1.5-large",
+          "theta": 1.072999,
+          "sd": 0.12095,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-pro-001",
+          "theta": 1.029958,
+          "sd": 0.120646,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-sonnet-20240229",
+          "theta": 1.015707,
+          "sd": 0.120548,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-haiku-20240307",
+          "theta": 0.987345,
+          "sd": 0.120355,
+          "n": 1000
+        },
+        {
+          "name": "solar-pro-241126",
+          "theta": 0.987345,
+          "sd": 0.120355,
+          "n": 1000
+        },
+        {
+          "name": "dbrx-instruct",
+          "theta": 0.952148,
+          "sd": 0.120122,
+          "n": 1000
+        },
+        {
+          "name": "palmyra-x-v3",
+          "theta": 0.952148,
+          "sd": 0.120122,
+          "n": 1000
+        },
+        {
+          "name": "text-unicorn@001",
+          "theta": 0.952148,
+          "sd": 0.120122,
+          "n": 1000
+        },
+        {
+          "name": "gemma-2-27b-it",
+          "theta": 0.896394,
+          "sd": 0.119767,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-72b",
+          "theta": 0.841295,
+          "sd": 0.119431,
+          "n": 1000
+        },
+        {
+          "name": "yi-large-preview",
+          "theta": 0.841295,
+          "sd": 0.119431,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-flash-001",
+          "theta": 0.786812,
+          "sd": 0.119115,
+          "n": 1000
+        },
+        {
+          "name": "yi-34b",
+          "theta": 0.759791,
+          "sd": 0.118964,
+          "n": 1000
+        },
+        {
+          "name": "phi-3-small-8k-instruct",
+          "theta": 0.746335,
+          "sd": 0.11889,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-flash-002",
+          "theta": 0.706172,
+          "sd": 0.118675,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-32b",
+          "theta": 0.699508,
+          "sd": 0.11864,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-110b-chat",
+          "theta": 0.679565,
+          "sd": 0.118536,
+          "n": 1000
+        },
+        {
+          "name": "claude-2.1",
+          "theta": 0.653086,
+          "sd": 0.118402,
+          "n": 1000
+        },
+        {
+          "name": "mixtral-8x7b-32kseqlen",
+          "theta": 0.639893,
+          "sd": 0.118337,
+          "n": 1000
+        },
+        {
+          "name": "claude-2.0",
+          "theta": 0.600492,
+          "sd": 0.118146,
+          "n": 1000
+        },
+        {
+          "name": "jamba-1.5-mini",
+          "theta": 0.52893,
+          "sd": 0.117819,
+          "n": 1000
+        },
+        {
+          "name": "deepseek-llm-67b-chat",
+          "theta": 0.503113,
+          "sd": 0.117707,
+          "n": 1000
+        },
+        {
+          "name": "gpt-3.5-turbo-0613",
+          "theta": 0.483818,
+          "sd": 0.117626,
+          "n": 1000
+        },
+        {
+          "name": "claude-v1.3",
+          "theta": 0.470986,
+          "sd": 0.117572,
+          "n": 1000
+        },
+        {
+          "name": "gemma-2-9b-it",
+          "theta": 0.451784,
+          "sd": 0.117494,
+          "n": 1000
+        },
+        {
+          "name": "mistral-small-2402",
+          "theta": 0.451784,
+          "sd": 0.117494,
+          "n": 1000
+        },
+        {
+          "name": "mistral-medium-2312",
+          "theta": 0.439012,
+          "sd": 0.117443,
+          "n": 1000
+        },
+        {
+          "name": "nova-micro-v1:0",
+          "theta": 0.362866,
+          "sd": 0.117155,
+          "n": 1000
+        },
+        {
+          "name": "llama-2-70b",
+          "theta": 0.306266,
+          "sd": 0.116958,
+          "n": 1000
+        },
+        {
+          "name": "qwen2.5-7b-instruct-turbo",
+          "theta": 0.274991,
+          "sd": 0.116856,
+          "n": 1000
+        },
+        {
+          "name": "palmyra-x-v2",
+          "theta": 0.262514,
+          "sd": 0.116816,
+          "n": 1000
+        },
+        {
+          "name": "open-mistral-nemo-2407",
+          "theta": 0.237614,
+          "sd": 0.116739,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.0-pro-001",
+          "theta": 0.225191,
+          "sd": 0.116702,
+          "n": 1000
+        },
+        {
+          "name": "llama-3-8b",
+          "theta": 0.218986,
+          "sd": 0.116684,
+          "n": 1000
+        },
+        {
+          "name": "command-r-plus",
+          "theta": 0.169502,
+          "sd": 0.116544,
+          "n": 1000
+        },
+        {
+          "name": "snowflake-arctic-instruct",
+          "theta": 0.120269,
+          "sd": 0.116416,
+          "n": 1000
+        },
+        {
+          "name": "claude-instant-1.2",
+          "theta": 0.089612,
+          "sd": 0.116342,
+          "n": 1000
+        },
+        {
+          "name": "claude-instant-v1",
+          "theta": 0.089612,
+          "sd": 0.116342,
+          "n": 1000
+        },
+        {
+          "name": "text-bison@001",
+          "theta": 0.040728,
+          "sd": 0.116233,
+          "n": 1000
+        },
+        {
+          "name": "jamba-instruct",
+          "theta": 0.028538,
+          "sd": 0.116208,
+          "n": 1000
+        },
+        {
+          "name": "command-r",
+          "theta": -0.007963,
+          "sd": 0.116135,
+          "n": 1000
+        },
+        {
+          "name": "text-davinci-003",
+          "theta": -0.020108,
+          "sd": 0.116113,
+          "n": 1000
+        },
+        {
+          "name": "gemma-7b",
+          "theta": -0.07464,
+          "sd": 0.116019,
+          "n": 1000
+        },
+        {
+          "name": "text-davinci-002",
+          "theta": -0.080688,
+          "sd": 0.11601,
+          "n": 1000
+        },
+        {
+          "name": "mistral-7b-v0.1",
+          "theta": -0.10486,
+          "sd": 0.115973,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-14b",
+          "theta": -0.13503,
+          "sd": 0.115931,
+          "n": 1000
+        },
+        {
+          "name": "llama-65b",
+          "theta": -0.195233,
+          "sd": 0.11586,
+          "n": 1000
+        },
+        {
+          "name": "mistral-7b-instruct-v0.3",
+          "theta": -0.219265,
+          "sd": 0.115837,
+          "n": 1000
+        },
+        {
+          "name": "mistral-large-2402",
+          "theta": -0.261263,
+          "sd": 0.115802,
+          "n": 1000
+        },
+        {
+          "name": "yi-6b",
+          "theta": -0.3032,
+          "sd": 0.115775,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.0-pro-002",
+          "theta": -0.416873,
+          "sd": 0.115744,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-7b",
+          "theta": -0.464732,
+          "sd": 0.115749,
+          "n": 1000
+        },
+        {
+          "name": "j2-jumbo",
+          "theta": -0.566563,
+          "sd": 0.115795,
+          "n": 1000
+        },
+        {
+          "name": "command",
+          "theta": -0.590561,
+          "sd": 0.115813,
+          "n": 1000
+        },
+        {
+          "name": "nemotron-4-340b-instruct",
+          "theta": -0.698768,
+          "sd": 0.115931,
+          "n": 1000
+        },
+        {
+          "name": "falcon-40b",
+          "theta": -0.728902,
+          "sd": 0.115974,
+          "n": 1000
+        },
+        {
+          "name": "phi-2",
+          "theta": -0.843922,
+          "sd": 0.11618,
+          "n": 1000
+        },
+        {
+          "name": "j2-grande",
+          "theta": -0.880456,
+          "sd": 0.11626,
+          "n": 1000
+        },
+        {
+          "name": "llama-2-13b",
+          "theta": -0.892658,
+          "sd": 0.116288,
+          "n": 1000
+        },
+        {
+          "name": "llama-2-7b",
+          "theta": -1.034033,
+          "sd": 0.116673,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.2-11b-vision-instruct-turbo",
+          "theta": -1.408988,
+          "sd": 0.118258,
+          "n": 1000
+        },
+        {
+          "name": "command-light",
+          "theta": -1.461699,
+          "sd": 0.118552,
+          "n": 1000
+        },
+        {
+          "name": "luminous-supreme",
+          "theta": -1.623427,
+          "sd": 0.119578,
+          "n": 1000
+        },
+        {
+          "name": "falcon-7b",
+          "theta": -1.644065,
+          "sd": 0.119723,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.1-8b-instruct-turbo",
+          "theta": -1.650967,
+          "sd": 0.119773,
+          "n": 1000
+        },
+        {
+          "name": "luminous-extended",
+          "theta": -1.692629,
+          "sd": 0.120078,
+          "n": 1000
+        },
+        {
+          "name": "luminous-base",
+          "theta": -1.864005,
+          "sd": 0.121482,
+          "n": 1000
+        },
+        {
+          "name": "olmo-7b",
+          "theta": -2.028956,
+          "sd": 0.12308,
+          "n": 1000
+        }
+      ],
+      "reverseCoded": false
+    },
+    "prefix_exact_match": {
+      "available": true,
+      "itemCount": 1000,
+      "modelCount": 95,
+      "pairCount": 95000,
+      "iterations": 88,
+      "converged": true,
+      "itemDifficulty": {
+        "bins": [
+          37,
+          75,
+          74,
+          82,
+          121,
+          103,
+          91,
+          102,
+          79,
+          44,
+          58,
+          51,
+          33,
+          16,
+          14,
+          10,
+          8,
+          0,
+          0,
+          2
+        ],
+        "min": -3.0544029650515694,
+        "max": 5.979868753974101,
+        "median": -0.3079804900278247
+      },
+      "models": [
+        {
+          "name": "gpt-4o-2024-08-06",
+          "theta": 2.630544,
+          "sd": 0.140604,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4o-2024-05-13",
+          "theta": 2.534235,
+          "sd": 0.138767,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-5-sonnet-20241022",
+          "theta": 2.441762,
+          "sd": 0.137102,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.1-405b-instruct-turbo",
+          "theta": 2.441762,
+          "sd": 0.137102,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-5-sonnet-20240620",
+          "theta": 2.204251,
+          "sd": 0.13323,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.2-90b-vision-instruct-turbo",
+          "theta": 2.143164,
+          "sd": 0.132322,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.1-70b-instruct-turbo",
+          "theta": 2.103213,
+          "sd": 0.131746,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4-1106-preview",
+          "theta": 2.073638,
+          "sd": 0.131328,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4-0613",
+          "theta": 2.063851,
+          "sd": 0.131192,
+          "n": 1000
+        },
+        {
+          "name": "deepseek-v3",
+          "theta": 2.005859,
+          "sd": 0.1304,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.3-70b-instruct-turbo",
+          "theta": 1.958445,
+          "sd": 0.129773,
+          "n": 1000
+        },
+        {
+          "name": "nova-pro-v1:0",
+          "theta": 1.84779,
+          "sd": 0.128381,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4-turbo-2024-04-09",
+          "theta": 1.794003,
+          "sd": 0.127738,
+          "n": 1000
+        },
+        {
+          "name": "mistral-large-2407",
+          "theta": 1.706445,
+          "sd": 0.126736,
+          "n": 1000
+        },
+        {
+          "name": "palmyra-x-004",
+          "theta": 1.706445,
+          "sd": 0.126736,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-opus-20240229",
+          "theta": 1.68923,
+          "sd": 0.126546,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-pro-002",
+          "theta": 1.646603,
+          "sd": 0.126083,
+          "n": 1000
+        },
+        {
+          "name": "llama-3-70b",
+          "theta": 1.638146,
+          "sd": 0.125993,
+          "n": 1000
+        },
+        {
+          "name": "qwen2.5-72b-instruct-turbo",
+          "theta": 1.53018,
+          "sd": 0.124883,
+          "n": 1000
+        },
+        {
+          "name": "qwen2-72b-instruct",
+          "theta": 1.465451,
+          "sd": 0.124254,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4o-mini-2024-07-18",
+          "theta": 1.425611,
+          "sd": 0.12388,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-5-haiku-20241022",
+          "theta": 1.27818,
+          "sd": 0.122581,
+          "n": 1000
+        },
+        {
+          "name": "gemini-2.0-flash-exp",
+          "theta": 1.263002,
+          "sd": 0.122455,
+          "n": 1000
+        },
+        {
+          "name": "mixtral-8x22b",
+          "theta": 1.151041,
+          "sd": 0.121564,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-pro-preview-0409",
+          "theta": 1.121715,
+          "sd": 0.121342,
+          "n": 1000
+        },
+        {
+          "name": "nova-lite-v1:0",
+          "theta": 1.099859,
+          "sd": 0.12118,
+          "n": 1000
+        },
+        {
+          "name": "phi-3-medium-4k-instruct",
+          "theta": 1.0926,
+          "sd": 0.121127,
+          "n": 1000
+        },
+        {
+          "name": "jamba-1.5-large",
+          "theta": 1.078119,
+          "sd": 0.121021,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-pro-001",
+          "theta": 1.027828,
+          "sd": 0.120664,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-sonnet-20240229",
+          "theta": 1.020692,
+          "sd": 0.120615,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-haiku-20240307",
+          "theta": 0.999354,
+          "sd": 0.120468,
+          "n": 1000
+        },
+        {
+          "name": "solar-pro-241126",
+          "theta": 0.992265,
+          "sd": 0.12042,
+          "n": 1000
+        },
+        {
+          "name": "palmyra-x-v3",
+          "theta": 0.964022,
+          "sd": 0.120231,
+          "n": 1000
+        },
+        {
+          "name": "text-unicorn@001",
+          "theta": 0.964022,
+          "sd": 0.120231,
+          "n": 1000
+        },
+        {
+          "name": "dbrx-instruct",
+          "theta": 0.949968,
+          "sd": 0.120138,
+          "n": 1000
+        },
+        {
+          "name": "gemma-2-27b-it",
+          "theta": 0.894182,
+          "sd": 0.119781,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-72b",
+          "theta": 0.845912,
+          "sd": 0.119485,
+          "n": 1000
+        },
+        {
+          "name": "yi-large-preview",
+          "theta": 0.845912,
+          "sd": 0.119485,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-flash-001",
+          "theta": 0.784552,
+          "sd": 0.119126,
+          "n": 1000
+        },
+        {
+          "name": "yi-34b",
+          "theta": 0.764265,
+          "sd": 0.119012,
+          "n": 1000
+        },
+        {
+          "name": "phi-3-small-8k-instruct",
+          "theta": 0.757521,
+          "sd": 0.118974,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-flash-002",
+          "theta": 0.703881,
+          "sd": 0.118683,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-32b",
+          "theta": 0.703881,
+          "sd": 0.118683,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-110b-chat",
+          "theta": 0.683906,
+          "sd": 0.118578,
+          "n": 1000
+        },
+        {
+          "name": "claude-2.1",
+          "theta": 0.657387,
+          "sd": 0.118442,
+          "n": 1000
+        },
+        {
+          "name": "mixtral-8x7b-32kseqlen",
+          "theta": 0.644175,
+          "sd": 0.118376,
+          "n": 1000
+        },
+        {
+          "name": "claude-2.0",
+          "theta": 0.604722,
+          "sd": 0.118183,
+          "n": 1000
+        },
+        {
+          "name": "jamba-1.5-mini",
+          "theta": 0.533073,
+          "sd": 0.117851,
+          "n": 1000
+        },
+        {
+          "name": "deepseek-llm-67b-chat",
+          "theta": 0.500781,
+          "sd": 0.117709,
+          "n": 1000
+        },
+        {
+          "name": "gpt-3.5-turbo-0613",
+          "theta": 0.48791,
+          "sd": 0.117654,
+          "n": 1000
+        },
+        {
+          "name": "claude-v1.3",
+          "theta": 0.468651,
+          "sd": 0.117574,
+          "n": 1000
+        },
+        {
+          "name": "gemma-2-9b-it",
+          "theta": 0.455843,
+          "sd": 0.117521,
+          "n": 1000
+        },
+        {
+          "name": "mistral-small-2402",
+          "theta": 0.449449,
+          "sd": 0.117495,
+          "n": 1000
+        },
+        {
+          "name": "mistral-medium-2312",
+          "theta": 0.436677,
+          "sd": 0.117443,
+          "n": 1000
+        },
+        {
+          "name": "nova-micro-v1:0",
+          "theta": 0.366849,
+          "sd": 0.117176,
+          "n": 1000
+        },
+        {
+          "name": "llama-2-70b",
+          "theta": 0.30394,
+          "sd": 0.116954,
+          "n": 1000
+        },
+        {
+          "name": "qwen2.5-7b-instruct-turbo",
+          "theta": 0.278918,
+          "sd": 0.116871,
+          "n": 1000
+        },
+        {
+          "name": "palmyra-x-v2",
+          "theta": 0.266435,
+          "sd": 0.116831,
+          "n": 1000
+        },
+        {
+          "name": "open-mistral-nemo-2407",
+          "theta": 0.241525,
+          "sd": 0.116753,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.0-pro-001",
+          "theta": 0.22289,
+          "sd": 0.116696,
+          "n": 1000
+        },
+        {
+          "name": "llama-3-8b",
+          "theta": 0.22289,
+          "sd": 0.116696,
+          "n": 1000
+        },
+        {
+          "name": "command-r-plus",
+          "theta": 0.173381,
+          "sd": 0.116553,
+          "n": 1000
+        },
+        {
+          "name": "snowflake-arctic-instruct",
+          "theta": 0.117987,
+          "sd": 0.116407,
+          "n": 1000
+        },
+        {
+          "name": "claude-instant-1.2",
+          "theta": 0.087341,
+          "sd": 0.116332,
+          "n": 1000
+        },
+        {
+          "name": "claude-instant-v1",
+          "theta": 0.087341,
+          "sd": 0.116332,
+          "n": 1000
+        },
+        {
+          "name": "text-bison@001",
+          "theta": 0.038479,
+          "sd": 0.116222,
+          "n": 1000
+        },
+        {
+          "name": "jamba-instruct",
+          "theta": 0.026295,
+          "sd": 0.116196,
+          "n": 1000
+        },
+        {
+          "name": "command-r",
+          "theta": -0.010187,
+          "sd": 0.116123,
+          "n": 1000
+        },
+        {
+          "name": "text-davinci-003",
+          "theta": -0.022326,
+          "sd": 0.1161,
+          "n": 1000
+        },
+        {
+          "name": "gemma-7b",
+          "theta": -0.070778,
+          "sd": 0.116015,
+          "n": 1000
+        },
+        {
+          "name": "text-davinci-002",
+          "theta": -0.076824,
+          "sd": 0.116005,
+          "n": 1000
+        },
+        {
+          "name": "mistral-7b-v0.1",
+          "theta": -0.100984,
+          "sd": 0.115967,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-14b",
+          "theta": -0.125111,
+          "sd": 0.115932,
+          "n": 1000
+        },
+        {
+          "name": "llama-65b",
+          "theta": -0.185295,
+          "sd": 0.115856,
+          "n": 1000
+        },
+        {
+          "name": "mistral-7b-instruct-v0.3",
+          "theta": -0.215325,
+          "sd": 0.115825,
+          "n": 1000
+        },
+        {
+          "name": "mistral-large-2402",
+          "theta": -0.263305,
+          "sd": 0.115783,
+          "n": 1000
+        },
+        {
+          "name": "yi-6b",
+          "theta": -0.299243,
+          "sd": 0.115759,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.0-pro-002",
+          "theta": -0.406907,
+          "sd": 0.115722,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-7b",
+          "theta": -0.466685,
+          "sd": 0.115725,
+          "n": 1000
+        },
+        {
+          "name": "j2-jumbo",
+          "theta": -0.56838,
+          "sd": 0.11577,
+          "n": 1000
+        },
+        {
+          "name": "command",
+          "theta": -0.592339,
+          "sd": 0.115787,
+          "n": 1000
+        },
+        {
+          "name": "nemotron-4-340b-instruct",
+          "theta": -0.700399,
+          "sd": 0.115903,
+          "n": 1000
+        },
+        {
+          "name": "falcon-40b",
+          "theta": -0.730509,
+          "sd": 0.115945,
+          "n": 1000
+        },
+        {
+          "name": "phi-2",
+          "theta": -0.839362,
+          "sd": 0.116137,
+          "n": 1000
+        },
+        {
+          "name": "j2-grande",
+          "theta": -0.881924,
+          "sd": 0.116229,
+          "n": 1000
+        },
+        {
+          "name": "llama-2-13b",
+          "theta": -0.881924,
+          "sd": 0.116229,
+          "n": 1000
+        },
+        {
+          "name": "llama-2-7b",
+          "theta": -1.029115,
+          "sd": 0.116622,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.2-11b-vision-instruct-turbo",
+          "theta": -1.409776,
+          "sd": 0.118222,
+          "n": 1000
+        },
+        {
+          "name": "command-light",
+          "theta": -1.449209,
+          "sd": 0.118441,
+          "n": 1000
+        },
+        {
+          "name": "luminous-supreme",
+          "theta": -1.617106,
+          "sd": 0.119495,
+          "n": 1000
+        },
+        {
+          "name": "falcon-7b",
+          "theta": -1.644569,
+          "sd": 0.119688,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.1-8b-instruct-turbo",
+          "theta": -1.651464,
+          "sd": 0.119737,
+          "n": 1000
+        },
+        {
+          "name": "luminous-extended",
+          "theta": -1.693077,
+          "sd": 0.120042,
+          "n": 1000
+        },
+        {
+          "name": "luminous-base",
+          "theta": -1.864235,
+          "sd": 0.121446,
+          "n": 1000
+        },
+        {
+          "name": "olmo-7b",
+          "theta": -2.006016,
+          "sd": 0.122806,
+          "n": 1000
+        }
+      ],
+      "reverseCoded": false
+    },
+    "quasi_exact_match": {
+      "available": true,
+      "itemCount": 1000,
+      "modelCount": 95,
+      "pairCount": 95000,
+      "iterations": 107,
+      "converged": true,
+      "itemDifficulty": {
+        "bins": [
+          37,
+          75,
+          74,
+          82,
+          120,
+          102,
+          91,
+          104,
+          79,
+          45,
+          57,
+          51,
+          33,
+          16,
+          14,
+          10,
+          8,
+          0,
+          0,
+          2
+        ],
+        "min": -3.0564121006653076,
+        "max": 5.975392616655603,
+        "median": -0.3096821127658098
+      },
+      "models": [
+        {
+          "name": "gpt-4o-2024-08-06",
+          "theta": 2.62945,
+          "sd": 0.140566,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4o-2024-05-13",
+          "theta": 2.533224,
+          "sd": 0.138729,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-5-sonnet-20241022",
+          "theta": 2.440835,
+          "sd": 0.137063,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.1-405b-instruct-turbo",
+          "theta": 2.440835,
+          "sd": 0.137063,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-5-sonnet-20240620",
+          "theta": 2.203557,
+          "sd": 0.133189,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.2-90b-vision-instruct-turbo",
+          "theta": 2.132499,
+          "sd": 0.132135,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.1-70b-instruct-turbo",
+          "theta": 2.092741,
+          "sd": 0.131564,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4-0613",
+          "theta": 2.063305,
+          "sd": 0.131151,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4-1106-preview",
+          "theta": 2.063305,
+          "sd": 0.131151,
+          "n": 1000
+        },
+        {
+          "name": "deepseek-v3",
+          "theta": 2.005376,
+          "sd": 0.130359,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.3-70b-instruct-turbo",
+          "theta": 1.948639,
+          "sd": 0.12961,
+          "n": 1000
+        },
+        {
+          "name": "nova-pro-v1:0",
+          "theta": 1.838464,
+          "sd": 0.12823,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4-turbo-2024-04-09",
+          "theta": 1.784902,
+          "sd": 0.127592,
+          "n": 1000
+        },
+        {
+          "name": "mistral-large-2407",
+          "theta": 1.706308,
+          "sd": 0.126695,
+          "n": 1000
+        },
+        {
+          "name": "palmyra-x-004",
+          "theta": 1.706308,
+          "sd": 0.126695,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-opus-20240229",
+          "theta": 1.689114,
+          "sd": 0.126505,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-pro-002",
+          "theta": 1.638092,
+          "sd": 0.125952,
+          "n": 1000
+        },
+        {
+          "name": "llama-3-70b",
+          "theta": 1.638092,
+          "sd": 0.125952,
+          "n": 1000
+        },
+        {
+          "name": "qwen2.5-72b-instruct-turbo",
+          "theta": 1.52211,
+          "sd": 0.124762,
+          "n": 1000
+        },
+        {
+          "name": "qwen2-72b-instruct",
+          "theta": 1.457616,
+          "sd": 0.124138,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4o-mini-2024-07-18",
+          "theta": 1.425821,
+          "sd": 0.123841,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-5-haiku-20241022",
+          "theta": 1.270985,
+          "sd": 0.12248,
+          "n": 1000
+        },
+        {
+          "name": "gemini-2.0-flash-exp",
+          "theta": 1.263412,
+          "sd": 0.122417,
+          "n": 1000
+        },
+        {
+          "name": "mixtral-8x22b",
+          "theta": 1.151587,
+          "sd": 0.121527,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-pro-preview-0409",
+          "theta": 1.122297,
+          "sd": 0.121306,
+          "n": 1000
+        },
+        {
+          "name": "nova-lite-v1:0",
+          "theta": 1.093216,
+          "sd": 0.121091,
+          "n": 1000
+        },
+        {
+          "name": "phi-3-medium-4k-instruct",
+          "theta": 1.085978,
+          "sd": 0.121038,
+          "n": 1000
+        },
+        {
+          "name": "jamba-1.5-large",
+          "theta": 1.07154,
+          "sd": 0.120934,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-pro-001",
+          "theta": 1.035661,
+          "sd": 0.12068,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-sonnet-20240229",
+          "theta": 1.021393,
+          "sd": 0.12058,
+          "n": 1000
+        },
+        {
+          "name": "solar-pro-241126",
+          "theta": 0.993,
+          "sd": 0.120386,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-haiku-20240307",
+          "theta": 0.98593,
+          "sd": 0.120338,
+          "n": 1000
+        },
+        {
+          "name": "palmyra-x-v3",
+          "theta": 0.957764,
+          "sd": 0.120151,
+          "n": 1000
+        },
+        {
+          "name": "text-unicorn@001",
+          "theta": 0.957764,
+          "sd": 0.120151,
+          "n": 1000
+        },
+        {
+          "name": "dbrx-instruct",
+          "theta": 0.950751,
+          "sd": 0.120105,
+          "n": 1000
+        },
+        {
+          "name": "gemma-2-27b-it",
+          "theta": 0.895029,
+          "sd": 0.119749,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-72b",
+          "theta": 0.839965,
+          "sd": 0.119413,
+          "n": 1000
+        },
+        {
+          "name": "yi-large-preview",
+          "theta": 0.839965,
+          "sd": 0.119413,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-flash-001",
+          "theta": 0.78552,
+          "sd": 0.119096,
+          "n": 1000
+        },
+        {
+          "name": "yi-34b",
+          "theta": 0.758519,
+          "sd": 0.118945,
+          "n": 1000
+        },
+        {
+          "name": "phi-3-small-8k-instruct",
+          "theta": 0.751791,
+          "sd": 0.118908,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-flash-002",
+          "theta": 0.704935,
+          "sd": 0.118655,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-32b",
+          "theta": 0.698274,
+          "sd": 0.11862,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-110b-chat",
+          "theta": 0.678343,
+          "sd": 0.118517,
+          "n": 1000
+        },
+        {
+          "name": "claude-2.1",
+          "theta": 0.658485,
+          "sd": 0.118416,
+          "n": 1000
+        },
+        {
+          "name": "mixtral-8x7b-32kseqlen",
+          "theta": 0.638697,
+          "sd": 0.118317,
+          "n": 1000
+        },
+        {
+          "name": "claude-2.0",
+          "theta": 0.605871,
+          "sd": 0.118157,
+          "n": 1000
+        },
+        {
+          "name": "jamba-1.5-mini",
+          "theta": 0.527822,
+          "sd": 0.117798,
+          "n": 1000
+        },
+        {
+          "name": "deepseek-llm-67b-chat",
+          "theta": 0.508463,
+          "sd": 0.117714,
+          "n": 1000
+        },
+        {
+          "name": "gpt-3.5-turbo-0613",
+          "theta": 0.482742,
+          "sd": 0.117605,
+          "n": 1000
+        },
+        {
+          "name": "claude-v1.3",
+          "theta": 0.469919,
+          "sd": 0.117551,
+          "n": 1000
+        },
+        {
+          "name": "gemma-2-9b-it",
+          "theta": 0.450733,
+          "sd": 0.117473,
+          "n": 1000
+        },
+        {
+          "name": "mistral-small-2402",
+          "theta": 0.450733,
+          "sd": 0.117473,
+          "n": 1000
+        },
+        {
+          "name": "mistral-medium-2312",
+          "theta": 0.437972,
+          "sd": 0.117422,
+          "n": 1000
+        },
+        {
+          "name": "nova-micro-v1:0",
+          "theta": 0.361889,
+          "sd": 0.117133,
+          "n": 1000
+        },
+        {
+          "name": "llama-2-70b",
+          "theta": 0.305333,
+          "sd": 0.116937,
+          "n": 1000
+        },
+        {
+          "name": "qwen2.5-7b-instruct-turbo",
+          "theta": 0.274086,
+          "sd": 0.116834,
+          "n": 1000
+        },
+        {
+          "name": "palmyra-x-v2",
+          "theta": 0.26162,
+          "sd": 0.116795,
+          "n": 1000
+        },
+        {
+          "name": "open-mistral-nemo-2407",
+          "theta": 0.236743,
+          "sd": 0.116718,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.0-pro-001",
+          "theta": 0.224331,
+          "sd": 0.116681,
+          "n": 1000
+        },
+        {
+          "name": "llama-3-8b",
+          "theta": 0.218132,
+          "sd": 0.116662,
+          "n": 1000
+        },
+        {
+          "name": "command-r-plus",
+          "theta": 0.174851,
+          "sd": 0.116539,
+          "n": 1000
+        },
+        {
+          "name": "snowflake-arctic-instruct",
+          "theta": 0.119485,
+          "sd": 0.116395,
+          "n": 1000
+        },
+        {
+          "name": "claude-instant-1.2",
+          "theta": 0.094972,
+          "sd": 0.116335,
+          "n": 1000
+        },
+        {
+          "name": "claude-instant-v1",
+          "theta": 0.094972,
+          "sd": 0.116335,
+          "n": 1000
+        },
+        {
+          "name": "text-bison@001",
+          "theta": 0.046105,
+          "sd": 0.116225,
+          "n": 1000
+        },
+        {
+          "name": "jamba-instruct",
+          "theta": 0.027831,
+          "sd": 0.116186,
+          "n": 1000
+        },
+        {
+          "name": "command-r",
+          "theta": -0.008639,
+          "sd": 0.116114,
+          "n": 1000
+        },
+        {
+          "name": "text-davinci-003",
+          "theta": -0.020773,
+          "sd": 0.116091,
+          "n": 1000
+        },
+        {
+          "name": "gemma-7b",
+          "theta": -0.075256,
+          "sd": 0.115998,
+          "n": 1000
+        },
+        {
+          "name": "text-davinci-002",
+          "theta": -0.081298,
+          "sd": 0.115988,
+          "n": 1000
+        },
+        {
+          "name": "mistral-7b-v0.1",
+          "theta": -0.099411,
+          "sd": 0.115961,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-14b",
+          "theta": -0.129558,
+          "sd": 0.115918,
+          "n": 1000
+        },
+        {
+          "name": "llama-65b",
+          "theta": -0.195722,
+          "sd": 0.11584,
+          "n": 1000
+        },
+        {
+          "name": "mistral-7b-instruct-v0.3",
+          "theta": -0.219735,
+          "sd": 0.115816,
+          "n": 1000
+        },
+        {
+          "name": "mistral-large-2402",
+          "theta": -0.26171,
+          "sd": 0.115781,
+          "n": 1000
+        },
+        {
+          "name": "yi-6b",
+          "theta": -0.297647,
+          "sd": 0.115758,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.0-pro-002",
+          "theta": -0.411293,
+          "sd": 0.115724,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-7b",
+          "theta": -0.459121,
+          "sd": 0.115728,
+          "n": 1000
+        },
+        {
+          "name": "j2-jumbo",
+          "theta": -0.566821,
+          "sd": 0.115776,
+          "n": 1000
+        },
+        {
+          "name": "command",
+          "theta": -0.584793,
+          "sd": 0.11579,
+          "n": 1000
+        },
+        {
+          "name": "nemotron-4-340b-instruct",
+          "theta": -0.698886,
+          "sd": 0.115913,
+          "n": 1000
+        },
+        {
+          "name": "falcon-40b",
+          "theta": -0.72298,
+          "sd": 0.115947,
+          "n": 1000
+        },
+        {
+          "name": "phi-2",
+          "theta": -0.843985,
+          "sd": 0.116163,
+          "n": 1000
+        },
+        {
+          "name": "j2-grande",
+          "theta": -0.880495,
+          "sd": 0.116243,
+          "n": 1000
+        },
+        {
+          "name": "llama-2-13b",
+          "theta": -0.89269,
+          "sd": 0.116271,
+          "n": 1000
+        },
+        {
+          "name": "llama-2-7b",
+          "theta": -1.033961,
+          "sd": 0.116657,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.2-11b-vision-instruct-turbo",
+          "theta": -1.408711,
+          "sd": 0.118244,
+          "n": 1000
+        },
+        {
+          "name": "command-light",
+          "theta": -1.461402,
+          "sd": 0.118539,
+          "n": 1000
+        },
+        {
+          "name": "luminous-supreme",
+          "theta": -1.623068,
+          "sd": 0.119566,
+          "n": 1000
+        },
+        {
+          "name": "falcon-7b",
+          "theta": -1.643699,
+          "sd": 0.119711,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.1-8b-instruct-turbo",
+          "theta": -1.650599,
+          "sd": 0.11976,
+          "n": 1000
+        },
+        {
+          "name": "luminous-extended",
+          "theta": -1.692246,
+          "sd": 0.120065,
+          "n": 1000
+        },
+        {
+          "name": "luminous-base",
+          "theta": -1.863545,
+          "sd": 0.12147,
+          "n": 1000
+        },
+        {
+          "name": "olmo-7b",
+          "theta": -2.020754,
+          "sd": 0.12299,
+          "n": 1000
+        }
+      ],
+      "reverseCoded": false
+    },
+    "quasi_prefix_exact_match": {
+      "available": true,
+      "itemCount": 1000,
+      "modelCount": 95,
+      "pairCount": 95000,
+      "iterations": 88,
+      "converged": true,
+      "itemDifficulty": {
+        "bins": [
+          37,
+          75,
+          74,
+          82,
+          121,
+          103,
+          91,
+          103,
+          79,
+          44,
+          57,
+          51,
+          33,
+          16,
+          14,
+          10,
+          8,
+          0,
+          0,
+          2
+        ],
+        "min": -3.0527640541374947,
+        "max": 5.979816999335685,
+        "median": -0.30675767233994317
+      },
+      "models": [
+        {
+          "name": "gpt-4o-2024-08-06",
+          "theta": 2.629373,
+          "sd": 0.140613,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4o-2024-05-13",
+          "theta": 2.533043,
+          "sd": 0.138775,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-5-sonnet-20241022",
+          "theta": 2.440552,
+          "sd": 0.137109,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.1-405b-instruct-turbo",
+          "theta": 2.440552,
+          "sd": 0.137109,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-5-sonnet-20240620",
+          "theta": 2.203007,
+          "sd": 0.133233,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.2-90b-vision-instruct-turbo",
+          "theta": 2.141913,
+          "sd": 0.132324,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.1-70b-instruct-turbo",
+          "theta": 2.10196,
+          "sd": 0.131747,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4-1106-preview",
+          "theta": 2.072383,
+          "sd": 0.13133,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4-0613",
+          "theta": 2.062596,
+          "sd": 0.131193,
+          "n": 1000
+        },
+        {
+          "name": "deepseek-v3",
+          "theta": 2.004601,
+          "sd": 0.1304,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.3-70b-instruct-turbo",
+          "theta": 1.957187,
+          "sd": 0.129773,
+          "n": 1000
+        },
+        {
+          "name": "nova-pro-v1:0",
+          "theta": 1.846534,
+          "sd": 0.128378,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4-turbo-2024-04-09",
+          "theta": 1.792751,
+          "sd": 0.127734,
+          "n": 1000
+        },
+        {
+          "name": "mistral-large-2407",
+          "theta": 1.705203,
+          "sd": 0.126731,
+          "n": 1000
+        },
+        {
+          "name": "palmyra-x-004",
+          "theta": 1.705203,
+          "sd": 0.126731,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-opus-20240229",
+          "theta": 1.68799,
+          "sd": 0.12654,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-pro-002",
+          "theta": 1.645369,
+          "sd": 0.126077,
+          "n": 1000
+        },
+        {
+          "name": "llama-3-70b",
+          "theta": 1.636914,
+          "sd": 0.125987,
+          "n": 1000
+        },
+        {
+          "name": "qwen2.5-72b-instruct-turbo",
+          "theta": 1.528971,
+          "sd": 0.124875,
+          "n": 1000
+        },
+        {
+          "name": "qwen2-72b-instruct",
+          "theta": 1.46426,
+          "sd": 0.124244,
+          "n": 1000
+        },
+        {
+          "name": "gpt-4o-mini-2024-07-18",
+          "theta": 1.424431,
+          "sd": 0.12387,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-5-haiku-20241022",
+          "theta": 1.277052,
+          "sd": 0.122569,
+          "n": 1000
+        },
+        {
+          "name": "gemini-2.0-flash-exp",
+          "theta": 1.26188,
+          "sd": 0.122442,
+          "n": 1000
+        },
+        {
+          "name": "mixtral-8x22b",
+          "theta": 1.149967,
+          "sd": 0.121549,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-pro-preview-0409",
+          "theta": 1.120656,
+          "sd": 0.121327,
+          "n": 1000
+        },
+        {
+          "name": "nova-lite-v1:0",
+          "theta": 1.098811,
+          "sd": 0.121165,
+          "n": 1000
+        },
+        {
+          "name": "phi-3-medium-4k-instruct",
+          "theta": 1.091555,
+          "sd": 0.121111,
+          "n": 1000
+        },
+        {
+          "name": "jamba-1.5-large",
+          "theta": 1.077082,
+          "sd": 0.121006,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-pro-001",
+          "theta": 1.033962,
+          "sd": 0.120698,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-sonnet-20240229",
+          "theta": 1.026818,
+          "sd": 0.120648,
+          "n": 1000
+        },
+        {
+          "name": "claude-3-haiku-20240307",
+          "theta": 0.99836,
+          "sd": 0.120452,
+          "n": 1000
+        },
+        {
+          "name": "solar-pro-241126",
+          "theta": 0.99836,
+          "sd": 0.120452,
+          "n": 1000
+        },
+        {
+          "name": "palmyra-x-v3",
+          "theta": 0.970088,
+          "sd": 0.120261,
+          "n": 1000
+        },
+        {
+          "name": "text-unicorn@001",
+          "theta": 0.970088,
+          "sd": 0.120261,
+          "n": 1000
+        },
+        {
+          "name": "dbrx-instruct",
+          "theta": 0.949002,
+          "sd": 0.120121,
+          "n": 1000
+        },
+        {
+          "name": "gemma-2-27b-it",
+          "theta": 0.893249,
+          "sd": 0.119763,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-72b",
+          "theta": 0.845008,
+          "sd": 0.119467,
+          "n": 1000
+        },
+        {
+          "name": "yi-large-preview",
+          "theta": 0.845008,
+          "sd": 0.119467,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-flash-001",
+          "theta": 0.783687,
+          "sd": 0.119107,
+          "n": 1000
+        },
+        {
+          "name": "phi-3-small-8k-instruct",
+          "theta": 0.763414,
+          "sd": 0.118993,
+          "n": 1000
+        },
+        {
+          "name": "yi-34b",
+          "theta": 0.763414,
+          "sd": 0.118993,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.5-flash-002",
+          "theta": 0.703073,
+          "sd": 0.118664,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-32b",
+          "theta": 0.703073,
+          "sd": 0.118664,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-110b-chat",
+          "theta": 0.683112,
+          "sd": 0.118559,
+          "n": 1000
+        },
+        {
+          "name": "claude-2.1",
+          "theta": 0.663225,
+          "sd": 0.118456,
+          "n": 1000
+        },
+        {
+          "name": "mixtral-8x7b-32kseqlen",
+          "theta": 0.643408,
+          "sd": 0.118356,
+          "n": 1000
+        },
+        {
+          "name": "claude-2.0",
+          "theta": 0.610535,
+          "sd": 0.118194,
+          "n": 1000
+        },
+        {
+          "name": "jamba-1.5-mini",
+          "theta": 0.532385,
+          "sd": 0.11783,
+          "n": 1000
+        },
+        {
+          "name": "deepseek-llm-67b-chat",
+          "theta": 0.506559,
+          "sd": 0.117716,
+          "n": 1000
+        },
+        {
+          "name": "gpt-3.5-turbo-0613",
+          "theta": 0.487259,
+          "sd": 0.117634,
+          "n": 1000
+        },
+        {
+          "name": "claude-v1.3",
+          "theta": 0.468017,
+          "sd": 0.117553,
+          "n": 1000
+        },
+        {
+          "name": "gemma-2-9b-it",
+          "theta": 0.455219,
+          "sd": 0.1175,
+          "n": 1000
+        },
+        {
+          "name": "mistral-small-2402",
+          "theta": 0.44883,
+          "sd": 0.117474,
+          "n": 1000
+        },
+        {
+          "name": "mistral-medium-2312",
+          "theta": 0.436069,
+          "sd": 0.117422,
+          "n": 1000
+        },
+        {
+          "name": "nova-micro-v1:0",
+          "theta": 0.366294,
+          "sd": 0.117155,
+          "n": 1000
+        },
+        {
+          "name": "llama-2-70b",
+          "theta": 0.303433,
+          "sd": 0.116933,
+          "n": 1000
+        },
+        {
+          "name": "qwen2.5-7b-instruct-turbo",
+          "theta": 0.278431,
+          "sd": 0.11685,
+          "n": 1000
+        },
+        {
+          "name": "palmyra-x-v2",
+          "theta": 0.265958,
+          "sd": 0.11681,
+          "n": 1000
+        },
+        {
+          "name": "open-mistral-nemo-2407",
+          "theta": 0.241068,
+          "sd": 0.116731,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.0-pro-001",
+          "theta": 0.222448,
+          "sd": 0.116675,
+          "n": 1000
+        },
+        {
+          "name": "llama-3-8b",
+          "theta": 0.222448,
+          "sd": 0.116675,
+          "n": 1000
+        },
+        {
+          "name": "command-r-plus",
+          "theta": 0.179149,
+          "sd": 0.116549,
+          "n": 1000
+        },
+        {
+          "name": "snowflake-arctic-instruct",
+          "theta": 0.117631,
+          "sd": 0.116386,
+          "n": 1000
+        },
+        {
+          "name": "claude-instant-1.2",
+          "theta": 0.093126,
+          "sd": 0.116325,
+          "n": 1000
+        },
+        {
+          "name": "claude-instant-v1",
+          "theta": 0.093126,
+          "sd": 0.116325,
+          "n": 1000
+        },
+        {
+          "name": "text-bison@001",
+          "theta": 0.044279,
+          "sd": 0.116214,
+          "n": 1000
+        },
+        {
+          "name": "jamba-instruct",
+          "theta": 0.026013,
+          "sd": 0.116175,
+          "n": 1000
+        },
+        {
+          "name": "command-r",
+          "theta": -0.01044,
+          "sd": 0.116101,
+          "n": 1000
+        },
+        {
+          "name": "text-davinci-003",
+          "theta": -0.022569,
+          "sd": 0.116078,
+          "n": 1000
+        },
+        {
+          "name": "gemma-7b",
+          "theta": -0.070982,
+          "sd": 0.115993,
+          "n": 1000
+        },
+        {
+          "name": "text-davinci-002",
+          "theta": -0.077023,
+          "sd": 0.115984,
+          "n": 1000
+        },
+        {
+          "name": "mistral-7b-v0.1",
+          "theta": -0.095132,
+          "sd": 0.115955,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-14b",
+          "theta": -0.119247,
+          "sd": 0.115919,
+          "n": 1000
+        },
+        {
+          "name": "llama-65b",
+          "theta": -0.185407,
+          "sd": 0.115835,
+          "n": 1000
+        },
+        {
+          "name": "mistral-7b-instruct-v0.3",
+          "theta": -0.215413,
+          "sd": 0.115804,
+          "n": 1000
+        },
+        {
+          "name": "mistral-large-2402",
+          "theta": -0.263353,
+          "sd": 0.115762,
+          "n": 1000
+        },
+        {
+          "name": "yi-6b",
+          "theta": -0.293279,
+          "sd": 0.115742,
+          "n": 1000
+        },
+        {
+          "name": "gemini-1.0-pro-002",
+          "theta": -0.40087,
+          "sd": 0.115703,
+          "n": 1000
+        },
+        {
+          "name": "qwen1.5-7b",
+          "theta": -0.460603,
+          "sd": 0.115704,
+          "n": 1000
+        },
+        {
+          "name": "j2-jumbo",
+          "theta": -0.568195,
+          "sd": 0.115751,
+          "n": 1000
+        },
+        {
+          "name": "command",
+          "theta": -0.58615,
+          "sd": 0.115764,
+          "n": 1000
+        },
+        {
+          "name": "nemotron-4-340b-instruct",
+          "theta": -0.700124,
+          "sd": 0.115885,
+          "n": 1000
+        },
+        {
+          "name": "falcon-40b",
+          "theta": -0.724192,
+          "sd": 0.115918,
+          "n": 1000
+        },
+        {
+          "name": "phi-2",
+          "theta": -0.838992,
+          "sd": 0.11612,
+          "n": 1000
+        },
+        {
+          "name": "j2-grande",
+          "theta": -0.881527,
+          "sd": 0.116212,
+          "n": 1000
+        },
+        {
+          "name": "llama-2-13b",
+          "theta": -0.881527,
+          "sd": 0.116212,
+          "n": 1000
+        },
+        {
+          "name": "llama-2-7b",
+          "theta": -1.028627,
+          "sd": 0.116606,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.2-11b-vision-instruct-turbo",
+          "theta": -1.409085,
+          "sd": 0.118209,
+          "n": 1000
+        },
+        {
+          "name": "command-light",
+          "theta": -1.448499,
+          "sd": 0.118428,
+          "n": 1000
+        },
+        {
+          "name": "luminous-supreme",
+          "theta": -1.616322,
+          "sd": 0.119483,
+          "n": 1000
+        },
+        {
+          "name": "falcon-7b",
+          "theta": -1.643773,
+          "sd": 0.119675,
+          "n": 1000
+        },
+        {
+          "name": "llama-3.1-8b-instruct-turbo",
+          "theta": -1.650664,
+          "sd": 0.119724,
+          "n": 1000
+        },
+        {
+          "name": "luminous-extended",
+          "theta": -1.69226,
+          "sd": 0.12003,
+          "n": 1000
+        },
+        {
+          "name": "luminous-base",
+          "theta": -1.863355,
+          "sd": 0.121435,
+          "n": 1000
+        },
+        {
+          "name": "olmo-7b",
+          "theta": -1.99747,
+          "sd": 0.122718,
+          "n": 1000
+        }
+      ],
+      "reverseCoded": false
+    }
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "benchmark": "chikhapo_wtwc",
+  "computedAt": "2026-11-24T21:46:28.409352+00:00",
+  "summarySha256": "bbe4555a3fc01be671211bb5c55457b9029ddedc53c8023cfb52d180013ed4b5",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+    "observedMainRevision": "527ac42de705d7ab704c5baafa784ade9739e4b7",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.item/train/0000.parquet",
+        "rows": 528867,
+        "bytes": 92391005,
+        "sha256": "dab3d6517788f14209f21475c849260d44fd5392dc5ceec2c00951d74fed64bf"
+      },
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.item/train/0001.parquet",
+        "rows": 528866,
+        "bytes": 106934039,
+        "sha256": "f542ae13b373adf296e9479cebc890b580d1627e0420567e0bf42f9c10826a8d"
+      },
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.item/train/0002.parquet",
+        "rows": 528866,
+        "bytes": 144800215,
+        "sha256": "6a4217b6ce5a59afed67d2d2de7b597fbbea29975f093fdeb17b5afdb46bb4cd"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0000.parquet",
+        "rows": 360152,
+        "bytes": 73719912,
+        "sha256": "31544dbacf5177e786cc1f412dc9d9d1496c4b0d8617a5c608cdb4b08405bf4b"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0001.parquet",
+        "rows": 360151,
+        "bytes": 72495459,
+        "sha256": "2824ec55b03254b960403b52a0db854f356743779f5a32a34e203665ef5ea05f"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0002.parquet",
+        "rows": 360151,
+        "bytes": 89696411,
+        "sha256": "890bd78e260bfd9cf74d2730364454d73c03dacfdc959b83666a81a262ba2b1e"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0003.parquet",
+        "rows": 360151,
+        "bytes": 90282499,
+        "sha256": "37351a4a9afbc0002c0ff5102e42774bb0cf790d3348f5a6b7c7765a78142dc1"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0004.parquet",
+        "rows": 360151,
+        "bytes": 79955129,
+        "sha256": "27ca35cd717d597971411502d99d7fd568d742574783c43e4b9f01dc471a1213"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0005.parquet",
+        "rows": 360151,
+        "bytes": 83046957,
+        "sha256": "19b9090e56d3df5426737ce0ac83cbc64ae6f86a66846af0bec09931f6f466ba"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0006.parquet",
+        "rows": 360151,
+        "bytes": 105782466,
+        "sha256": "5991dfac2ad7b9bd8f4b43404cc7bf18d2a546065aae31f9920620ef054a0f20"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0007.parquet",
+        "rows": 360151,
+        "bytes": 118346985,
+        "sha256": "91e3806ffa1d9f8b4a286cff676c9191c9b809f2921a5be732d33c255c49e95c"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0008.parquet",
+        "rows": 360151,
+        "bytes": 138750415,
+        "sha256": "66a11aebb472dd3e1fa2df8310a99578185e819825d2f6914dfb0cfc6d82c8dd"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0009.parquet",
+        "rows": 360151,
+        "bytes": 87428337,
+        "sha256": "758183f01c62931bc4eb5b07ed300fd4bcee2f16466aee27d4bb3e7aa67f5e1d"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0010.parquet",
+        "rows": 360151,
+        "bytes": 111330985,
+        "sha256": "80bdf0d2a370204aba4a5a94ba07a2f2f54a4abd18cde0d54e0b48c99933e9fe"
+      }
+    ]
+  },
+  "method": "Binary Rasch 1PL MAP; theta prior SD=2, item difficulty prior SD=3",
+  "uncertainty": "Joint Laplace posterior SD, including item-difficulty uncertainty via the Schur complement; displayed as theta \u00b1 1 SD",
+  "rules": "Same pinned data and score-independent model-item deduplication as raw summaries. Keep raw-eligible models; require max(20, ceil(10% archived items)) responses per model and 3 models per item iteratively. Fit largest connected component. No fractional-score binarization. Higher theta means more of the direction-defined outcome.",
+  "limitations": "Within-benchmark and within-metric scale only. Assumes one latent dimension and conditionally independent responses; model families may violate independence. Approximate model-based uncertainty, not a guarantee of validity.",
+  "metrics": {
+    "heuristic_correctness": {
+      "available": true,
+      "itemCount": 523644,
+      "modelCount": 6,
+      "pairCount": 2705367,
+      "iterations": 401,
+      "converged": true,
+      "itemDifficulty": {
+        "bins": [
+          995,
+          358,
+          468,
+          5633,
+          849,
+          12927,
+          3139,
+          2973,
+          20924,
+          5452,
+          32663,
+          9695,
+          10365,
+          52789,
+          0,
+          0,
+          0,
+          0,
+          49824,
+          314590
+        ],
+        "min": -5.6538393764697945,
+        "max": 1.052692302268558,
+        "median": 0.9200324308349924
+      },
+      "models": [
+        {
+          "name": "aya-101",
+          "theta": -1.843727,
+          "sd": 0.006577,
+          "n": 450042
+        },
+        {
+          "name": "aya-23-8B",
+          "theta": -2.696018,
+          "sd": 0.007268,
+          "n": 451383
+        },
+        {
+          "name": "Llama-3.1-8B-Instruct",
+          "theta": -3.166619,
+          "sd": 0.007759,
+          "n": 450843
+        },
+        {
+          "name": "gemma-2b-it",
+          "theta": -3.183701,
+          "sd": 0.007776,
+          "n": 451272
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "theta": -3.537049,
+          "sd": 0.008236,
+          "n": 451362
+        },
+        {
+          "name": "bloomz-7b1-mt",
+          "theta": -4.786731,
+          "sd": 0.010784,
+          "n": 450465
+        }
+      ],
+      "reverseCoded": false
+    }
+  }
+}

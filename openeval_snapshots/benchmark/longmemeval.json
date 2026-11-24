@@ -1,0 +1,421 @@
+{
+  "itemCount": 500,
+  "responseCount": 73016,
+  "distinctModelCount": 25,
+  "distinctModelItemPairs": 12500,
+  "duplicateResponsesRemoved": 60516,
+  "conflictingDuplicateRows": 0,
+  "conflictingDuplicateExamples": [],
+  "measurements": [
+    {
+      "metrics": [
+        "LLM_correctness"
+      ],
+      "itemCount": 500,
+      "totalResponses": 73016,
+      "loadedResponses": 73016,
+      "minimumItems": 50,
+      "modelCount": 25,
+      "scoredResponses": 12500,
+      "excludedModelCount": 0,
+      "avgScore": 0.43072,
+      "medianScore": 0.454,
+      "standardError": 0.020016286701916852,
+      "discrimination": 0.09805937792990532,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "grok-4.1-fast",
+        "n": 500,
+        "coverage": 1.0,
+        "mean": 0.534
+      },
+      "worst": {
+        "name": "olmo-3.1-32b-instruct",
+        "n": 500,
+        "coverage": 1.0,
+        "mean": 0.172
+      },
+      "models": [
+        {
+          "name": "grok-4.1-fast",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.534
+        },
+        {
+          "name": "deepseek-r1-distill-llama-70b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.53
+        },
+        {
+          "name": "seed-2.0-mini",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.526
+        },
+        {
+          "name": "llama-3.3-70b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.512
+        },
+        {
+          "name": "qwen3-32b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.512
+        },
+        {
+          "name": "qwen3-8b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.51
+        },
+        {
+          "name": "claude-3.5-haiku",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.496
+        },
+        {
+          "name": "qwen3-14b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.496
+        },
+        {
+          "name": "qwen-2.5-72b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.492
+        },
+        {
+          "name": "qwen3.6-27b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.486
+        },
+        {
+          "name": "gemma-3-27b-it",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.466
+        },
+        {
+          "name": "llama-3.1-70b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.454
+        },
+        {
+          "name": "mimo-v2.5",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.454
+        },
+        {
+          "name": "gemma-3-12b-it",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.45
+        },
+        {
+          "name": "command-r-08-2024",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.442
+        },
+        {
+          "name": "glm-4-32b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.442
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.438
+        },
+        {
+          "name": "gpt-4o-mini",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.418
+        },
+        {
+          "name": "llama-4-scout",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.41
+        },
+        {
+          "name": "phi-4",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.41
+        },
+        {
+          "name": "gemma-3-4b-it",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.364
+        },
+        {
+          "name": "qwen-2.5-7b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.3
+        },
+        {
+          "name": "llama-3.1-8b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.242
+        },
+        {
+          "name": "llama-3.2-3b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.212
+        },
+        {
+          "name": "olmo-3.1-32b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.172
+        }
+      ],
+      "split": "longmemeval"
+    },
+    {
+      "metrics": [
+        "LLM_judge"
+      ],
+      "itemCount": 500,
+      "totalResponses": 73016,
+      "loadedResponses": 73016,
+      "minimumItems": 50,
+      "modelCount": 25,
+      "scoredResponses": 12500,
+      "excludedModelCount": 0,
+      "avgScore": 0.86144,
+      "medianScore": 0.908,
+      "standardError": 0.040032573403833704,
+      "discrimination": 0.19611875585981065,
+      "refCoverage": 1.0,
+      "bounded": false,
+      "binary": false,
+      "best": {
+        "name": "grok-4.1-fast",
+        "n": 500,
+        "coverage": 1.0,
+        "mean": 1.068
+      },
+      "worst": {
+        "name": "olmo-3.1-32b-instruct",
+        "n": 500,
+        "coverage": 1.0,
+        "mean": 0.344
+      },
+      "models": [
+        {
+          "name": "grok-4.1-fast",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.068
+        },
+        {
+          "name": "deepseek-r1-distill-llama-70b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.06
+        },
+        {
+          "name": "seed-2.0-mini",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.052
+        },
+        {
+          "name": "llama-3.3-70b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.024
+        },
+        {
+          "name": "qwen3-32b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.024
+        },
+        {
+          "name": "qwen3-8b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 1.02
+        },
+        {
+          "name": "claude-3.5-haiku",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.992
+        },
+        {
+          "name": "qwen3-14b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.992
+        },
+        {
+          "name": "qwen-2.5-72b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.984
+        },
+        {
+          "name": "qwen3.6-27b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.972
+        },
+        {
+          "name": "gemma-3-27b-it",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.932
+        },
+        {
+          "name": "llama-3.1-70b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.908
+        },
+        {
+          "name": "mimo-v2.5",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.908
+        },
+        {
+          "name": "gemma-3-12b-it",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.9
+        },
+        {
+          "name": "command-r-08-2024",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.884
+        },
+        {
+          "name": "glm-4-32b",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.884
+        },
+        {
+          "name": "gpt-4.1-mini",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.876
+        },
+        {
+          "name": "gpt-4o-mini",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.836
+        },
+        {
+          "name": "llama-4-scout",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.82
+        },
+        {
+          "name": "phi-4",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.82
+        },
+        {
+          "name": "gemma-3-4b-it",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.728
+        },
+        {
+          "name": "qwen-2.5-7b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.6
+        },
+        {
+          "name": "llama-3.1-8b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.484
+        },
+        {
+          "name": "llama-3.2-3b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.424
+        },
+        {
+          "name": "olmo-3.1-32b-instruct",
+          "n": 500,
+          "coverage": 1.0,
+          "mean": 0.344
+        }
+      ],
+      "split": "longmemeval"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "longmemeval",
+  "computedAt": "2026-11-24T21:35:45.828497+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+    "observedMainRevision": "527ac42de705d7ab704c5baafa784ade9739e4b7",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/longmemeval.item/train/0000.parquet",
+        "rows": 500,
+        "bytes": 122293725,
+        "sha256": "6a79abfdddb19a5fa1c0ed58c37e7a6368130418b1c334a2e2a1caa4f16c4bfd"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/longmemeval.response/train/0000.parquet",
+        "rows": 36508,
+        "bytes": 10495270,
+        "sha256": "5062f55a677e3fdf3743dc81099878df42a9e1f4a4110464e8dd275aa82e4675"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/longmemeval.response/train/0001.parquet",
+        "rows": 36508,
+        "bytes": 11072935,
+        "sha256": "130f381e38f17260a7b2c5d8b205d8e8f2ba1418a6e03b54d237459e54888144"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

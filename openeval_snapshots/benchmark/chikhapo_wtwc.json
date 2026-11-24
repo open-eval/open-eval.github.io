@@ -1,0 +1,200 @@
+{
+  "itemCount": 1586599,
+  "responseCount": 3961662,
+  "distinctModelCount": 6,
+  "distinctModelItemPairs": 3961662,
+  "duplicateResponsesRemoved": 0,
+  "conflictingDuplicateRows": 0,
+  "conflictingDuplicateExamples": [],
+  "measurements": [
+    {
+      "metrics": [
+        "heuristic_correctness"
+      ],
+      "itemCount": 1586599,
+      "totalResponses": 3961662,
+      "loadedResponses": 3961662,
+      "minimumItems": 158660,
+      "modelCount": 6,
+      "scoredResponses": 3961662,
+      "excludedModelCount": 0,
+      "avgScore": 0.10111293955187994,
+      "medianScore": 0.09606579373415122,
+      "standardError": 0.02188464282044269,
+      "discrimination": 0.048935549009812576,
+      "refCoverage": 1.0,
+      "bounded": true,
+      "binary": true,
+      "best": {
+        "name": "aya-101",
+        "n": 659341,
+        "coverage": 0.4155687732060842,
+        "mean": 0.19012013510459685
+      },
+      "worst": {
+        "name": "bloomz-7b1-mt",
+        "n": 660485,
+        "coverage": 0.41628981235964474,
+        "mean": 0.028833357305616328
+      },
+      "models": [
+        {
+          "name": "aya-101",
+          "n": 659341,
+          "coverage": 0.4155687732060842,
+          "mean": 0.19012013510459685
+        },
+        {
+          "name": "aya-23-8B",
+          "n": 660403,
+          "coverage": 0.41623812948325317,
+          "mean": 0.12173475892750336
+        },
+        {
+          "name": "gemma-2b-it",
+          "n": 660851,
+          "coverage": 0.4165204944664657,
+          "mean": 0.0971747035262109
+        },
+        {
+          "name": "Llama-3.1-8B-Instruct",
+          "n": 659731,
+          "coverage": 0.4158145820084344,
+          "mean": 0.09495688394209155
+        },
+        {
+          "name": "falcon-7b-instruct",
+          "n": 660851,
+          "coverage": 0.4165204944664657,
+          "mean": 0.07385779850526064
+        },
+        {
+          "name": "bloomz-7b1-mt",
+          "n": 660485,
+          "coverage": 0.41628981235964474,
+          "mean": 0.028833357305616328
+        }
+      ],
+      "split": "chikhapo_wtwc"
+    }
+  ],
+  "schemaVersion": 1,
+  "benchmark": "chikhapo_wtwc",
+  "computedAt": "2026-11-24T21:35:33.267751+00:00",
+  "source": {
+    "dataset": "Open-Eval-Commons/OpenEval",
+    "parquetRevision": "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+    "observedMainRevision": "527ac42de705d7ab704c5baafa784ade9739e4b7",
+    "files": [
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.item/train/0000.parquet",
+        "rows": 528867,
+        "bytes": 92391005,
+        "sha256": "dab3d6517788f14209f21475c849260d44fd5392dc5ceec2c00951d74fed64bf"
+      },
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.item/train/0001.parquet",
+        "rows": 528866,
+        "bytes": 106934039,
+        "sha256": "f542ae13b373adf296e9479cebc890b580d1627e0420567e0bf42f9c10826a8d"
+      },
+      {
+        "config": "item",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.item/train/0002.parquet",
+        "rows": 528866,
+        "bytes": 144800215,
+        "sha256": "6a4217b6ce5a59afed67d2d2de7b597fbbea29975f093fdeb17b5afdb46bb4cd"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0000.parquet",
+        "rows": 360152,
+        "bytes": 73719912,
+        "sha256": "31544dbacf5177e786cc1f412dc9d9d1496c4b0d8617a5c608cdb4b08405bf4b"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0001.parquet",
+        "rows": 360151,
+        "bytes": 72495459,
+        "sha256": "2824ec55b03254b960403b52a0db854f356743779f5a32a34e203665ef5ea05f"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0002.parquet",
+        "rows": 360151,
+        "bytes": 89696411,
+        "sha256": "890bd78e260bfd9cf74d2730364454d73c03dacfdc959b83666a81a262ba2b1e"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0003.parquet",
+        "rows": 360151,
+        "bytes": 90282499,
+        "sha256": "37351a4a9afbc0002c0ff5102e42774bb0cf790d3348f5a6b7c7765a78142dc1"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0004.parquet",
+        "rows": 360151,
+        "bytes": 79955129,
+        "sha256": "27ca35cd717d597971411502d99d7fd568d742574783c43e4b9f01dc471a1213"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0005.parquet",
+        "rows": 360151,
+        "bytes": 83046957,
+        "sha256": "19b9090e56d3df5426737ce0ac83cbc64ae6f86a66846af0bec09931f6f466ba"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0006.parquet",
+        "rows": 360151,
+        "bytes": 105782466,
+        "sha256": "5991dfac2ad7b9bd8f4b43404cc7bf18d2a546065aae31f9920620ef054a0f20"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0007.parquet",
+        "rows": 360151,
+        "bytes": 118346985,
+        "sha256": "91e3806ffa1d9f8b4a286cff676c9191c9b809f2921a5be732d33c255c49e95c"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0008.parquet",
+        "rows": 360151,
+        "bytes": 138750415,
+        "sha256": "66a11aebb472dd3e1fa2df8310a99578185e819825d2f6914dfb0cfc6d82c8dd"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0009.parquet",
+        "rows": 360151,
+        "bytes": 87428337,
+        "sha256": "758183f01c62931bc4eb5b07ed300fd4bcee2f16466aee27d4bb3e7aa67f5e1d"
+      },
+      {
+        "config": "response",
+        "url": "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0010.parquet",
+        "rows": 360151,
+        "bytes": 111330985,
+        "sha256": "80bdf0d2a370204aba4a5a94ba07a2f2f54a4abd18cde0d54e0b48c99933e9fe"
+      }
+    ]
+  },
+  "rules": {
+    "coverageThreshold": 0.1,
+    "coverageDenominator": "Distinct benchmark item IDs",
+    "coverageNumerator": "Distinct items with a finite score for the metric after deduplication",
+    "deduplication": "One response per model.name \u00d7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+    "aggregation": "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+    "standardError": "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+    "metricHandling": "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+    "itemSet": "All available items per retained model; no common-item intersection",
+    "limitations": "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+  }
+}

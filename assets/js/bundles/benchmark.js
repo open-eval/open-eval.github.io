@@ -14867,6 +14867,431 @@
     }
   };
 
+  // openeval_snapshots/benchmark/chikhapo_wt.json
+  var chikhapo_wt_default = {
+    itemCount: 2986035,
+    responseCount: 7734969,
+    distinctModelCount: 6,
+    distinctModelItemPairs: 7734969,
+    duplicateResponsesRemoved: 0,
+    conflictingDuplicateRows: 0,
+    conflictingDuplicateExamples: [],
+    measurements: [
+      {
+        metrics: [
+          "heuristic_correctness"
+        ],
+        itemCount: 2986035,
+        totalResponses: 7734969,
+        loadedResponses: 7734969,
+        minimumItems: 298604,
+        modelCount: 6,
+        scoredResponses: 7734969,
+        excludedModelCount: 0,
+        avgScore: 0.04223177447388897,
+        medianScore: 0.03603113448941031,
+        standardError: 0.009654380120133733,
+        discrimination: 0.02158785022924161,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "Llama-3.1-8B-Instruct",
+          n: 1291770,
+          coverage: 0.4326037705519192,
+          mean: 0.08375175147278541
+        },
+        worst: {
+          name: "falcon-7b-instruct",
+          n: 1288842,
+          coverage: 0.4316232060240419,
+          mean: 0.018138763323976095
+        },
+        models: [
+          {
+            name: "Llama-3.1-8B-Instruct",
+            n: 1291770,
+            coverage: 0.4326037705519192,
+            mean: 0.08375175147278541
+          },
+          {
+            name: "bloomz-7b1-mt",
+            n: 1288646,
+            coverage: 0.43155756714171134,
+            mean: 0.053833248231089065
+          },
+          {
+            name: "aya-101",
+            n: 1288441,
+            coverage: 0.43148891422906965,
+            mean: 0.03742352191524486
+          },
+          {
+            name: "aya-23-8B",
+            n: 1288557,
+            coverage: 0.43152776173085716,
+            mean: 0.03463874706357577
+          },
+          {
+            name: "gemma-2b-it",
+            n: 1288713,
+            coverage: 0.43158000492291615,
+            mean: 0.025604614836662622
+          },
+          {
+            name: "falcon-7b-instruct",
+            n: 1288842,
+            coverage: 0.4316232060240419,
+            mean: 0.018138763323976095
+          }
+        ],
+        split: "chikhapo_wt"
+      }
+    ],
+    schemaVersion: 1,
+    benchmark: "chikhapo_wt",
+    computedAt: "2026-11-24T21:34:16.078979+00:00",
+    source: {
+      dataset: "Open-Eval-Commons/OpenEval",
+      parquetRevision: "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+      observedMainRevision: "527ac42de705d7ab704c5baafa784ade9739e4b7",
+      files: [
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.item/train/0000.parquet",
+          rows: 995345,
+          bytes: 39643036,
+          sha256: "9bb88da589c35b7522d2e954f2b166816866f5ae6e169122257f2a7cffa21801"
+        },
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.item/train/0001.parquet",
+          rows: 995345,
+          bytes: 40204036,
+          sha256: "10bb12b14d96f566c2c4d0ff31888637e5b637d07b805c3d78f800926ae19ce6"
+        },
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.item/train/0002.parquet",
+          rows: 995345,
+          bytes: 40746966,
+          sha256: "408e572fe27178d89913728b11d84f7919c67bc701342f765795110b473b7183"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.response/train/0000.parquet",
+          rows: 552498,
+          bytes: 51438853,
+          sha256: "564c42f21885acc7500479ca0fd49e29961cea0ff11495cf4d355f2d1a627ed2"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.response/train/0001.parquet",
+          rows: 552498,
+          bytes: 52606638,
+          sha256: "ebe5454766ea51289ede92cd60002c8c9343e854d76f042a44512b0915a3baa8"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.response/train/0002.parquet",
+          rows: 552498,
+          bytes: 52539811,
+          sha256: "7cd4bdb20b806fbd53326c09491474ded5977e2c18c539af18fdd04f9226b385"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.response/train/0003.parquet",
+          rows: 552498,
+          bytes: 51203008,
+          sha256: "b7836ec4e7dbe19f01ce132943a798c19dc6730825341ec36345c8550c14b6eb"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.response/train/0004.parquet",
+          rows: 552498,
+          bytes: 51964010,
+          sha256: "b7dc1c41a894d9addf47cdc58637d86526101ea09817f25b25a3f95e6691f674"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.response/train/0005.parquet",
+          rows: 552498,
+          bytes: 52208871,
+          sha256: "f04ced21f52b4a8adc955fdfc6cf69b3a87a7e0d6ea8c35380e0684898e70f37"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.response/train/0006.parquet",
+          rows: 552498,
+          bytes: 51518698,
+          sha256: "fa852a39934d6b3fd46005ba323d67e5effd016f5ba7b9a381d35d1d8350b77e"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.response/train/0007.parquet",
+          rows: 552498,
+          bytes: 51927408,
+          sha256: "54679eb79fee778aa9f0ede0dcfa24a535f43eea43f38b2a35fa67384c30b152"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.response/train/0008.parquet",
+          rows: 552498,
+          bytes: 52873419,
+          sha256: "4a4ba28a9e9607297583019686568eb74c4563ac8bc48a385186943ee093678d"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.response/train/0009.parquet",
+          rows: 552498,
+          bytes: 52676169,
+          sha256: "b42fe5b8ae74a6ba3f6a89d39e6c98c2935e00bf6f0cf022f28ec3b3b6ff23fd"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.response/train/0010.parquet",
+          rows: 552498,
+          bytes: 51627003,
+          sha256: "a9ca0629781ffca3bf94c11822f9e1d5b3ed1a8a03c6b13292e1466451cd4c29"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.response/train/0011.parquet",
+          rows: 552497,
+          bytes: 51861572,
+          sha256: "72084928c435a9bcf5149dfc9174d35c8c514a285dce7a3bee95c77807806932"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.response/train/0012.parquet",
+          rows: 552497,
+          bytes: 52793098,
+          sha256: "897d24b8d49cfca351b50aef62e62aa07cec97ef596a812fc0c20714032b7c1d"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wt.response/train/0013.parquet",
+          rows: 552497,
+          bytes: 52286287,
+          sha256: "29fa35051c05326aeb3341086674313d1dcaecbbe76020b4b566eb896040057b"
+        }
+      ]
+    },
+    rules: {
+      coverageThreshold: 0.1,
+      coverageDenominator: "Distinct benchmark item IDs",
+      coverageNumerator: "Distinct items with a finite score for the metric after deduplication",
+      deduplication: "One response per model.name \xD7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+      aggregation: "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+      standardError: "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+      metricHandling: "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+      itemSet: "All available items per retained model; no common-item intersection",
+      limitations: "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+    }
+  };
+
+  // openeval_snapshots/benchmark/chikhapo_wtwc.json
+  var chikhapo_wtwc_default = {
+    itemCount: 1586599,
+    responseCount: 3961662,
+    distinctModelCount: 6,
+    distinctModelItemPairs: 3961662,
+    duplicateResponsesRemoved: 0,
+    conflictingDuplicateRows: 0,
+    conflictingDuplicateExamples: [],
+    measurements: [
+      {
+        metrics: [
+          "heuristic_correctness"
+        ],
+        itemCount: 1586599,
+        totalResponses: 3961662,
+        loadedResponses: 3961662,
+        minimumItems: 158660,
+        modelCount: 6,
+        scoredResponses: 3961662,
+        excludedModelCount: 0,
+        avgScore: 0.10111293955187994,
+        medianScore: 0.09606579373415122,
+        standardError: 0.02188464282044269,
+        discrimination: 0.048935549009812576,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "aya-101",
+          n: 659341,
+          coverage: 0.4155687732060842,
+          mean: 0.19012013510459685
+        },
+        worst: {
+          name: "bloomz-7b1-mt",
+          n: 660485,
+          coverage: 0.41628981235964474,
+          mean: 0.028833357305616328
+        },
+        models: [
+          {
+            name: "aya-101",
+            n: 659341,
+            coverage: 0.4155687732060842,
+            mean: 0.19012013510459685
+          },
+          {
+            name: "aya-23-8B",
+            n: 660403,
+            coverage: 0.41623812948325317,
+            mean: 0.12173475892750336
+          },
+          {
+            name: "gemma-2b-it",
+            n: 660851,
+            coverage: 0.4165204944664657,
+            mean: 0.0971747035262109
+          },
+          {
+            name: "Llama-3.1-8B-Instruct",
+            n: 659731,
+            coverage: 0.4158145820084344,
+            mean: 0.09495688394209155
+          },
+          {
+            name: "falcon-7b-instruct",
+            n: 660851,
+            coverage: 0.4165204944664657,
+            mean: 0.07385779850526064
+          },
+          {
+            name: "bloomz-7b1-mt",
+            n: 660485,
+            coverage: 0.41628981235964474,
+            mean: 0.028833357305616328
+          }
+        ],
+        split: "chikhapo_wtwc"
+      }
+    ],
+    schemaVersion: 1,
+    benchmark: "chikhapo_wtwc",
+    computedAt: "2026-11-24T21:35:33.267751+00:00",
+    source: {
+      dataset: "Open-Eval-Commons/OpenEval",
+      parquetRevision: "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+      observedMainRevision: "527ac42de705d7ab704c5baafa784ade9739e4b7",
+      files: [
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.item/train/0000.parquet",
+          rows: 528867,
+          bytes: 92391005,
+          sha256: "dab3d6517788f14209f21475c849260d44fd5392dc5ceec2c00951d74fed64bf"
+        },
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.item/train/0001.parquet",
+          rows: 528866,
+          bytes: 106934039,
+          sha256: "f542ae13b373adf296e9479cebc890b580d1627e0420567e0bf42f9c10826a8d"
+        },
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.item/train/0002.parquet",
+          rows: 528866,
+          bytes: 144800215,
+          sha256: "6a4217b6ce5a59afed67d2d2de7b597fbbea29975f093fdeb17b5afdb46bb4cd"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0000.parquet",
+          rows: 360152,
+          bytes: 73719912,
+          sha256: "31544dbacf5177e786cc1f412dc9d9d1496c4b0d8617a5c608cdb4b08405bf4b"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0001.parquet",
+          rows: 360151,
+          bytes: 72495459,
+          sha256: "2824ec55b03254b960403b52a0db854f356743779f5a32a34e203665ef5ea05f"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0002.parquet",
+          rows: 360151,
+          bytes: 89696411,
+          sha256: "890bd78e260bfd9cf74d2730364454d73c03dacfdc959b83666a81a262ba2b1e"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0003.parquet",
+          rows: 360151,
+          bytes: 90282499,
+          sha256: "37351a4a9afbc0002c0ff5102e42774bb0cf790d3348f5a6b7c7765a78142dc1"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0004.parquet",
+          rows: 360151,
+          bytes: 79955129,
+          sha256: "27ca35cd717d597971411502d99d7fd568d742574783c43e4b9f01dc471a1213"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0005.parquet",
+          rows: 360151,
+          bytes: 83046957,
+          sha256: "19b9090e56d3df5426737ce0ac83cbc64ae6f86a66846af0bec09931f6f466ba"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0006.parquet",
+          rows: 360151,
+          bytes: 105782466,
+          sha256: "5991dfac2ad7b9bd8f4b43404cc7bf18d2a546065aae31f9920620ef054a0f20"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0007.parquet",
+          rows: 360151,
+          bytes: 118346985,
+          sha256: "91e3806ffa1d9f8b4a286cff676c9191c9b809f2921a5be732d33c255c49e95c"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0008.parquet",
+          rows: 360151,
+          bytes: 138750415,
+          sha256: "66a11aebb472dd3e1fa2df8310a99578185e819825d2f6914dfb0cfc6d82c8dd"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0009.parquet",
+          rows: 360151,
+          bytes: 87428337,
+          sha256: "758183f01c62931bc4eb5b07ed300fd4bcee2f16466aee27d4bb3e7aa67f5e1d"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/chikhapo_wtwc.response/train/0010.parquet",
+          rows: 360151,
+          bytes: 111330985,
+          sha256: "80bdf0d2a370204aba4a5a94ba07a2f2f54a4abd18cde0d54e0b48c99933e9fe"
+        }
+      ]
+    },
+    rules: {
+      coverageThreshold: 0.1,
+      coverageDenominator: "Distinct benchmark item IDs",
+      coverageNumerator: "Distinct items with a finite score for the metric after deduplication",
+      deduplication: "One response per model.name \xD7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+      aggregation: "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+      standardError: "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+      metricHandling: "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+      itemSet: "All available items per retained model; no common-item intersection",
+      limitations: "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+    }
+  };
+
   // openeval_snapshots/benchmark/cnndm.json
   var cnndm_default = {
     itemCount: 1e3,
@@ -21762,6 +22187,1855 @@
     }
   };
 
+  // openeval_snapshots/benchmark/gsm8k.json
+  var gsm8k_default = {
+    itemCount: 1e3,
+    responseCount: 94e3,
+    distinctModelCount: 94,
+    distinctModelItemPairs: 94e3,
+    duplicateResponsesRemoved: 0,
+    conflictingDuplicateRows: 0,
+    conflictingDuplicateExamples: [],
+    measurements: [
+      {
+        metrics: [
+          "exact_match_indicator"
+        ],
+        itemCount: 1e3,
+        totalResponses: 94e3,
+        loadedResponses: 94e3,
+        minimumItems: 100,
+        modelCount: 94,
+        scoredResponses: 94e3,
+        excludedModelCount: 0,
+        avgScore: 0.5093404255319149,
+        medianScore: 0.5445,
+        standardError: 0.029295727672257226,
+        discrimination: 0.2825177664604058,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "claude-3-5-sonnet-20241022",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.943
+        },
+        worst: {
+          name: "luminous-base",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.021
+        },
+        models: [
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.943
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "gpt-4-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.924
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.914
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.912
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.908
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.896
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.866
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.861
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.858
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.843
+          },
+          {
+            name: "solar-pro-241126",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.826
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.817
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.816
+          },
+          {
+            name: "text-unicorn@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.814
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.803
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.789
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.788
+          },
+          {
+            name: "llama-3-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.782
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.774
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.767
+          },
+          {
+            name: "deepseek-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.742
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.723
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.716
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.711
+          },
+          {
+            name: "mistral-small-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.707
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.707
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.706
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.697
+          },
+          {
+            name: "mistral-large-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.677
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.677
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.667
+          },
+          {
+            name: "dbrx-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.658
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.655
+          },
+          {
+            name: "claude-v1.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.65
+          },
+          {
+            name: "jamba-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.647
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.639
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.609
+          },
+          {
+            name: "text-bison@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.602
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.59
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.581
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.58
+          },
+          {
+            name: "yi-large-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.555
+          },
+          {
+            name: "gemma-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.549
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.54
+          },
+          {
+            name: "mistral-large-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.535
+          },
+          {
+            name: "text-davinci-003",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.533
+          },
+          {
+            name: "phi-2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.526
+          },
+          {
+            name: "llama-2-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.495
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.479
+          },
+          {
+            name: "llama-3-8b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.475
+          },
+          {
+            name: "llama-65b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.463
+          },
+          {
+            name: "command-r-plus",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.449
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.433
+          },
+          {
+            name: "text-davinci-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.433
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.406
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.405
+          },
+          {
+            name: "palmyra-x-004",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.39
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.387
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.372
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.367
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.362
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.318
+          },
+          {
+            name: "command",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.303
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.301
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.291
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "llama-2-13b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.256
+          },
+          {
+            name: "falcon-40b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.248
+          },
+          {
+            name: "command-r",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.246
+          },
+          {
+            name: "j2-jumbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.228
+          },
+          {
+            name: "yi-6b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.205
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.194
+          },
+          {
+            name: "j2-grande",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.15
+          },
+          {
+            name: "llama-2-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.14
+          },
+          {
+            name: "claude-2.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.133
+          },
+          {
+            name: "command-light",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.123
+          },
+          {
+            name: "luminous-supreme",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.12
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.102
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.098
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.097
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.073
+          },
+          {
+            name: "claude-instant-v1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.073
+          },
+          {
+            name: "luminous-extended",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.071
+          },
+          {
+            name: "yi-34b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.071
+          },
+          {
+            name: "claude-2.0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.07
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.063
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.054
+          },
+          {
+            name: "falcon-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.041
+          },
+          {
+            name: "olmo-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.036
+          },
+          {
+            name: "luminous-base",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.021
+          }
+        ],
+        split: "gsm8k"
+      },
+      {
+        metrics: [
+          "final_number_exact_match"
+        ],
+        itemCount: 1e3,
+        totalResponses: 94e3,
+        loadedResponses: 94e3,
+        minimumItems: 100,
+        modelCount: 94,
+        scoredResponses: 94e3,
+        excludedModelCount: 0,
+        avgScore: 0.6788617021276596,
+        medianScore: 0.765,
+        standardError: 0.025167803806598936,
+        discrimination: 0.24270951033202923,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "claude-3-5-sonnet-20241022",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.956
+        },
+        worst: {
+          name: "luminous-base",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.028
+        },
+        models: [
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.956
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.949
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.949
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.942
+          },
+          {
+            name: "deepseek-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.94
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.936
+          },
+          {
+            name: "gpt-4-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.924
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "mistral-large-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.912
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.909
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.907
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.905
+          },
+          {
+            name: "palmyra-x-004",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.905
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.9
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.899
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "solar-pro-241126",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.871
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.87
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.846
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.843
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.836
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.831
+          },
+          {
+            name: "text-unicorn@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.831
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.83
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.829
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.824
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.823
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.817
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.816
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.815
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.815
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.812
+          },
+          {
+            name: "llama-3-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.805
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.8
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.799
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.798
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.795
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.794
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.785
+          },
+          {
+            name: "claude-v1.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.784
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.783
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.782
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.773
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.768
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.762
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.747
+          },
+          {
+            name: "command-r-plus",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.738
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.735
+          },
+          {
+            name: "mistral-small-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.734
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.721
+          },
+          {
+            name: "claude-instant-v1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.721
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.706
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.699
+          },
+          {
+            name: "mistral-large-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.694
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.693
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.691
+          },
+          {
+            name: "yi-large-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.69
+          },
+          {
+            name: "dbrx-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.671
+          },
+          {
+            name: "jamba-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.67
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.668
+          },
+          {
+            name: "yi-34b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.648
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.622
+          },
+          {
+            name: "text-davinci-003",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.615
+          },
+          {
+            name: "text-bison@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.61
+          },
+          {
+            name: "claude-2.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.604
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.6
+          },
+          {
+            name: "claude-2.0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.583
+          },
+          {
+            name: "phi-2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.581
+          },
+          {
+            name: "llama-2-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.567
+          },
+          {
+            name: "gemma-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.559
+          },
+          {
+            name: "command-r",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.551
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.538
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.501
+          },
+          {
+            name: "llama-3-8b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.499
+          },
+          {
+            name: "llama-65b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.489
+          },
+          {
+            name: "text-davinci-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.479
+          },
+          {
+            name: "command",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.452
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.377
+          },
+          {
+            name: "yi-6b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.375
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.328
+          },
+          {
+            name: "falcon-40b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.267
+          },
+          {
+            name: "llama-2-13b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.266
+          },
+          {
+            name: "j2-jumbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.239
+          },
+          {
+            name: "j2-grande",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.159
+          },
+          {
+            name: "llama-2-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.154
+          },
+          {
+            name: "command-light",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.149
+          },
+          {
+            name: "luminous-supreme",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.137
+          },
+          {
+            name: "luminous-extended",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.075
+          },
+          {
+            name: "falcon-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.055
+          },
+          {
+            name: "olmo-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.044
+          },
+          {
+            name: "luminous-base",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.028
+          }
+        ],
+        split: "gsm8k"
+      },
+      {
+        metrics: [
+          "max_prob"
+        ],
+        itemCount: 1e3,
+        totalResponses: 94e3,
+        loadedResponses: 94e3,
+        minimumItems: 100,
+        modelCount: 94,
+        scoredResponses: 94e3,
+        excludedModelCount: 0,
+        avgScore: 0.8949809759782164,
+        medianScore: 1,
+        standardError: 0.03157726958925723,
+        discrimination: 0.30452015990452025,
+        refCoverage: 1,
+        bounded: true,
+        binary: false,
+        best: {
+          name: "claude-2.0",
+          n: 1e3,
+          coverage: 1,
+          mean: 1
+        },
+        worst: {
+          name: "luminous-base",
+          n: 1e3,
+          coverage: 1,
+          mean: 1266973318362369e-26
+        },
+        models: [
+          {
+            name: "claude-2.0",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-2.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-instant-v1",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-v1.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "command-r",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "command-r-plus",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "dbrx-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "deepseek-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "falcon-40b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "falcon-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemma-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "jamba-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-2-13b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-2-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-2-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3-8b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-65b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-large-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-large-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-small-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "olmo-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "palmyra-x-004",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "phi-2",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "solar-pro-241126",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "text-bison@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "text-unicorn@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "yi-34b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "yi-6b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "yi-large-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.09646394940943916
+          },
+          {
+            name: "command",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.026047848282856636
+          },
+          {
+            name: "text-davinci-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.004740218308493425
+          },
+          {
+            name: "text-davinci-003",
+            n: 1e3,
+            coverage: 1,
+            mean: 4719775846266521e-19
+          },
+          {
+            name: "command-light",
+            n: 1e3,
+            coverage: 1,
+            mean: 4310044450620951e-19
+          },
+          {
+            name: "j2-grande",
+            n: 1e3,
+            coverage: 1,
+            mean: 4369406862845494e-20
+          },
+          {
+            name: "j2-jumbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 13041039957909708e-21
+          },
+          {
+            name: "luminous-supreme",
+            n: 1e3,
+            coverage: 1,
+            mean: 8627308665715656e-24
+          },
+          {
+            name: "luminous-extended",
+            n: 1e3,
+            coverage: 1,
+            mean: 17329724358801217e-26
+          },
+          {
+            name: "luminous-base",
+            n: 1e3,
+            coverage: 1,
+            mean: 1266973318362369e-26
+          }
+        ],
+        split: "gsm8k"
+      }
+    ],
+    schemaVersion: 1,
+    benchmark: "gsm8k",
+    computedAt: "2026-11-24T21:35:36.821517+00:00",
+    source: {
+      dataset: "Open-Eval-Commons/OpenEval",
+      parquetRevision: "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+      observedMainRevision: "527ac42de705d7ab704c5baafa784ade9739e4b7",
+      files: [
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/gsm8k.item/train/0000.parquet",
+          rows: 1e3,
+          bytes: 332836,
+          sha256: "b88eabd46c177dde6a3f6e208fd473f39d9b0a83bcd853b2c2de2921653d64f5"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/gsm8k.response/train/0000.parquet",
+          rows: 47e3,
+          bytes: 7299368,
+          sha256: "4911a98a23626c7359560c18bf7a7627d6ad1def0b27d08d63bd993fb8bd1cf9"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/gsm8k.response/train/0001.parquet",
+          rows: 47e3,
+          bytes: 7483088,
+          sha256: "626b33ab41992daf15c1051e5a4ebfe55087b2d7cbcc97fe7c122be5af4de65a"
+        }
+      ]
+    },
+    rules: {
+      coverageThreshold: 0.1,
+      coverageDenominator: "Distinct benchmark item IDs",
+      coverageNumerator: "Distinct items with a finite score for the metric after deduplication",
+      deduplication: "One response per model.name \xD7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+      aggregation: "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+      standardError: "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+      metricHandling: "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+      itemSet: "All available items per retained model; no common-item intersection",
+      limitations: "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+    }
+  };
+
   // openeval_snapshots/benchmark/harmbench.json
   var harmbench_default = {
     itemCount: 400,
@@ -26345,6 +28619,362 @@
     }
   };
 
+  // openeval_snapshots/benchmark/hotpotqa.json
+  var hotpotqa_default = {
+    itemCount: 500,
+    responseCount: 45500,
+    distinctModelCount: 20,
+    distinctModelItemPairs: 1e4,
+    duplicateResponsesRemoved: 35500,
+    conflictingDuplicateRows: 0,
+    conflictingDuplicateExamples: [],
+    measurements: [
+      {
+        metrics: [
+          "LLM_correctness"
+        ],
+        itemCount: 500,
+        totalResponses: 45500,
+        loadedResponses: 45500,
+        minimumItems: 50,
+        modelCount: 20,
+        scoredResponses: 1e4,
+        excludedModelCount: 0,
+        avgScore: 0.5678,
+        medianScore: 0.573,
+        standardError: 0.017220489631769902,
+        discrimination: 0.07506237406317495,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "deepseek-r1-distill-llama-70b",
+          n: 500,
+          coverage: 1,
+          mean: 0.7
+        },
+        worst: {
+          name: "qwen-2.5-7b-instruct",
+          n: 500,
+          coverage: 1,
+          mean: 0.394
+        },
+        models: [
+          {
+            name: "deepseek-r1-distill-llama-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.7
+          },
+          {
+            name: "llama-3.3-70b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.664
+          },
+          {
+            name: "gpt-4.1-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.656
+          },
+          {
+            name: "llama-3.1-70b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.648
+          },
+          {
+            name: "claude-3.5-haiku",
+            n: 500,
+            coverage: 1,
+            mean: 0.632
+          },
+          {
+            name: "qwen3-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.606
+          },
+          {
+            name: "seed-2.0-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.582
+          },
+          {
+            name: "gemma-3-12b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.578
+          },
+          {
+            name: "qwen-2.5-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.576
+          },
+          {
+            name: "gemma-3-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.574
+          },
+          {
+            name: "grok-4.1-fast",
+            n: 500,
+            coverage: 1,
+            mean: 0.572
+          },
+          {
+            name: "qwen3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 0.568
+          },
+          {
+            name: "phi-4",
+            n: 500,
+            coverage: 1,
+            mean: 0.566
+          },
+          {
+            name: "command-r-08-2024",
+            n: 500,
+            coverage: 1,
+            mean: 0.546
+          },
+          {
+            name: "qwen3-14b",
+            n: 500,
+            coverage: 1,
+            mean: 0.546
+          },
+          {
+            name: "llama-4-scout",
+            n: 500,
+            coverage: 1,
+            mean: 0.544
+          },
+          {
+            name: "olmo-3.1-32b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.5
+          },
+          {
+            name: "glm-4-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.488
+          },
+          {
+            name: "llama-3.1-8b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.416
+          },
+          {
+            name: "qwen-2.5-7b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.394
+          }
+        ],
+        split: "hotpotqa"
+      },
+      {
+        metrics: [
+          "LLM_judge"
+        ],
+        itemCount: 500,
+        totalResponses: 45500,
+        loadedResponses: 45500,
+        minimumItems: 50,
+        modelCount: 20,
+        scoredResponses: 1e4,
+        excludedModelCount: 0,
+        avgScore: 1.2252,
+        medianScore: 1.2349999999999999,
+        standardError: 0.035008089290754975,
+        discrimination: 0.15259672342484945,
+        refCoverage: 1,
+        bounded: false,
+        binary: false,
+        best: {
+          name: "deepseek-r1-distill-llama-70b",
+          n: 500,
+          coverage: 1,
+          mean: 1.5
+        },
+        worst: {
+          name: "qwen-2.5-7b-instruct",
+          n: 500,
+          coverage: 1,
+          mean: 0.854
+        },
+        models: [
+          {
+            name: "deepseek-r1-distill-llama-70b",
+            n: 500,
+            coverage: 1,
+            mean: 1.5
+          },
+          {
+            name: "llama-3.3-70b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 1.408
+          },
+          {
+            name: "gpt-4.1-mini",
+            n: 500,
+            coverage: 1,
+            mean: 1.384
+          },
+          {
+            name: "llama-3.1-70b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 1.376
+          },
+          {
+            name: "claude-3.5-haiku",
+            n: 500,
+            coverage: 1,
+            mean: 1.368
+          },
+          {
+            name: "qwen3-32b",
+            n: 500,
+            coverage: 1,
+            mean: 1.292
+          },
+          {
+            name: "gemma-3-12b-it",
+            n: 500,
+            coverage: 1,
+            mean: 1.262
+          },
+          {
+            name: "gemma-3-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 1.262
+          },
+          {
+            name: "seed-2.0-mini",
+            n: 500,
+            coverage: 1,
+            mean: 1.242
+          },
+          {
+            name: "qwen-2.5-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 1.238
+          },
+          {
+            name: "grok-4.1-fast",
+            n: 500,
+            coverage: 1,
+            mean: 1.232
+          },
+          {
+            name: "phi-4",
+            n: 500,
+            coverage: 1,
+            mean: 1.226
+          },
+          {
+            name: "qwen3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 1.224
+          },
+          {
+            name: "command-r-08-2024",
+            n: 500,
+            coverage: 1,
+            mean: 1.206
+          },
+          {
+            name: "llama-4-scout",
+            n: 500,
+            coverage: 1,
+            mean: 1.186
+          },
+          {
+            name: "qwen3-14b",
+            n: 500,
+            coverage: 1,
+            mean: 1.178
+          },
+          {
+            name: "olmo-3.1-32b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 1.094
+          },
+          {
+            name: "glm-4-32b",
+            n: 500,
+            coverage: 1,
+            mean: 1.046
+          },
+          {
+            name: "llama-3.1-8b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "qwen-2.5-7b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.854
+          }
+        ],
+        split: "hotpotqa"
+      }
+    ],
+    schemaVersion: 1,
+    benchmark: "hotpotqa",
+    computedAt: "2026-11-24T21:35:38.970541+00:00",
+    source: {
+      dataset: "Open-Eval-Commons/OpenEval",
+      parquetRevision: "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+      observedMainRevision: "527ac42de705d7ab704c5baafa784ade9739e4b7",
+      files: [
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/hotpotqa.item/train/0000.parquet",
+          rows: 500,
+          bytes: 1766035,
+          sha256: "a29cfe5ce05aa3986874030b9778f66730af8647f54f70f9ee0d4c9578aed9c4"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/hotpotqa.response/train/0000.parquet",
+          rows: 45500,
+          bytes: 7233447,
+          sha256: "c1d736fb7c5ee7901045fb1124e7f3e2c8184eeee3a8a0ff24863022d087ae13"
+        }
+      ]
+    },
+    rules: {
+      coverageThreshold: 0.1,
+      coverageDenominator: "Distinct benchmark item IDs",
+      coverageNumerator: "Distinct items with a finite score for the metric after deduplication",
+      deduplication: "One response per model.name \xD7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+      aggregation: "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+      standardError: "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+      metricHandling: "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+      itemSet: "All available items per retained model; no common-item intersection",
+      limitations: "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+    }
+  };
+
   // openeval_snapshots/benchmark/ifeval.json
   var ifeval_default = {
     itemCount: 541,
@@ -28162,6 +30792,5920 @@
     }
   };
 
+  // openeval_snapshots/benchmark/longmemeval.json
+  var longmemeval_default = {
+    itemCount: 500,
+    responseCount: 73016,
+    distinctModelCount: 25,
+    distinctModelItemPairs: 12500,
+    duplicateResponsesRemoved: 60516,
+    conflictingDuplicateRows: 0,
+    conflictingDuplicateExamples: [],
+    measurements: [
+      {
+        metrics: [
+          "LLM_correctness"
+        ],
+        itemCount: 500,
+        totalResponses: 73016,
+        loadedResponses: 73016,
+        minimumItems: 50,
+        modelCount: 25,
+        scoredResponses: 12500,
+        excludedModelCount: 0,
+        avgScore: 0.43072,
+        medianScore: 0.454,
+        standardError: 0.020016286701916852,
+        discrimination: 0.09805937792990532,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "grok-4.1-fast",
+          n: 500,
+          coverage: 1,
+          mean: 0.534
+        },
+        worst: {
+          name: "olmo-3.1-32b-instruct",
+          n: 500,
+          coverage: 1,
+          mean: 0.172
+        },
+        models: [
+          {
+            name: "grok-4.1-fast",
+            n: 500,
+            coverage: 1,
+            mean: 0.534
+          },
+          {
+            name: "deepseek-r1-distill-llama-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.53
+          },
+          {
+            name: "seed-2.0-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.526
+          },
+          {
+            name: "llama-3.3-70b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.512
+          },
+          {
+            name: "qwen3-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.512
+          },
+          {
+            name: "qwen3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 0.51
+          },
+          {
+            name: "claude-3.5-haiku",
+            n: 500,
+            coverage: 1,
+            mean: 0.496
+          },
+          {
+            name: "qwen3-14b",
+            n: 500,
+            coverage: 1,
+            mean: 0.496
+          },
+          {
+            name: "qwen-2.5-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.492
+          },
+          {
+            name: "qwen3.6-27b",
+            n: 500,
+            coverage: 1,
+            mean: 0.486
+          },
+          {
+            name: "gemma-3-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.466
+          },
+          {
+            name: "llama-3.1-70b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.454
+          },
+          {
+            name: "mimo-v2.5",
+            n: 500,
+            coverage: 1,
+            mean: 0.454
+          },
+          {
+            name: "gemma-3-12b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.45
+          },
+          {
+            name: "command-r-08-2024",
+            n: 500,
+            coverage: 1,
+            mean: 0.442
+          },
+          {
+            name: "glm-4-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.442
+          },
+          {
+            name: "gpt-4.1-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.438
+          },
+          {
+            name: "gpt-4o-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.418
+          },
+          {
+            name: "llama-4-scout",
+            n: 500,
+            coverage: 1,
+            mean: 0.41
+          },
+          {
+            name: "phi-4",
+            n: 500,
+            coverage: 1,
+            mean: 0.41
+          },
+          {
+            name: "gemma-3-4b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.364
+          },
+          {
+            name: "qwen-2.5-7b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.3
+          },
+          {
+            name: "llama-3.1-8b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.242
+          },
+          {
+            name: "llama-3.2-3b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.212
+          },
+          {
+            name: "olmo-3.1-32b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.172
+          }
+        ],
+        split: "longmemeval"
+      },
+      {
+        metrics: [
+          "LLM_judge"
+        ],
+        itemCount: 500,
+        totalResponses: 73016,
+        loadedResponses: 73016,
+        minimumItems: 50,
+        modelCount: 25,
+        scoredResponses: 12500,
+        excludedModelCount: 0,
+        avgScore: 0.86144,
+        medianScore: 0.908,
+        standardError: 0.040032573403833704,
+        discrimination: 0.19611875585981065,
+        refCoverage: 1,
+        bounded: false,
+        binary: false,
+        best: {
+          name: "grok-4.1-fast",
+          n: 500,
+          coverage: 1,
+          mean: 1.068
+        },
+        worst: {
+          name: "olmo-3.1-32b-instruct",
+          n: 500,
+          coverage: 1,
+          mean: 0.344
+        },
+        models: [
+          {
+            name: "grok-4.1-fast",
+            n: 500,
+            coverage: 1,
+            mean: 1.068
+          },
+          {
+            name: "deepseek-r1-distill-llama-70b",
+            n: 500,
+            coverage: 1,
+            mean: 1.06
+          },
+          {
+            name: "seed-2.0-mini",
+            n: 500,
+            coverage: 1,
+            mean: 1.052
+          },
+          {
+            name: "llama-3.3-70b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 1.024
+          },
+          {
+            name: "qwen3-32b",
+            n: 500,
+            coverage: 1,
+            mean: 1.024
+          },
+          {
+            name: "qwen3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 1.02
+          },
+          {
+            name: "claude-3.5-haiku",
+            n: 500,
+            coverage: 1,
+            mean: 0.992
+          },
+          {
+            name: "qwen3-14b",
+            n: 500,
+            coverage: 1,
+            mean: 0.992
+          },
+          {
+            name: "qwen-2.5-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.984
+          },
+          {
+            name: "qwen3.6-27b",
+            n: 500,
+            coverage: 1,
+            mean: 0.972
+          },
+          {
+            name: "gemma-3-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "llama-3.1-70b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.908
+          },
+          {
+            name: "mimo-v2.5",
+            n: 500,
+            coverage: 1,
+            mean: 0.908
+          },
+          {
+            name: "gemma-3-12b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.9
+          },
+          {
+            name: "command-r-08-2024",
+            n: 500,
+            coverage: 1,
+            mean: 0.884
+          },
+          {
+            name: "glm-4-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.884
+          },
+          {
+            name: "gpt-4.1-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.876
+          },
+          {
+            name: "gpt-4o-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.836
+          },
+          {
+            name: "llama-4-scout",
+            n: 500,
+            coverage: 1,
+            mean: 0.82
+          },
+          {
+            name: "phi-4",
+            n: 500,
+            coverage: 1,
+            mean: 0.82
+          },
+          {
+            name: "gemma-3-4b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.728
+          },
+          {
+            name: "qwen-2.5-7b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.6
+          },
+          {
+            name: "llama-3.1-8b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.484
+          },
+          {
+            name: "llama-3.2-3b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.424
+          },
+          {
+            name: "olmo-3.1-32b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.344
+          }
+        ],
+        split: "longmemeval"
+      }
+    ],
+    schemaVersion: 1,
+    benchmark: "longmemeval",
+    computedAt: "2026-11-24T21:35:45.828497+00:00",
+    source: {
+      dataset: "Open-Eval-Commons/OpenEval",
+      parquetRevision: "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+      observedMainRevision: "527ac42de705d7ab704c5baafa784ade9739e4b7",
+      files: [
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/longmemeval.item/train/0000.parquet",
+          rows: 500,
+          bytes: 122293725,
+          sha256: "6a79abfdddb19a5fa1c0ed58c37e7a6368130418b1c334a2e2a1caa4f16c4bfd"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/longmemeval.response/train/0000.parquet",
+          rows: 36508,
+          bytes: 10495270,
+          sha256: "5062f55a677e3fdf3743dc81099878df42a9e1f4a4110464e8dd275aa82e4675"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/longmemeval.response/train/0001.parquet",
+          rows: 36508,
+          bytes: 11072935,
+          sha256: "130f381e38f17260a7b2c5d8b205d8e8f2ba1418a6e03b54d237459e54888144"
+        }
+      ]
+    },
+    rules: {
+      coverageThreshold: 0.1,
+      coverageDenominator: "Distinct benchmark item IDs",
+      coverageNumerator: "Distinct items with a finite score for the metric after deduplication",
+      deduplication: "One response per model.name \xD7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+      aggregation: "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+      standardError: "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+      metricHandling: "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+      itemSet: "All available items per retained model; no common-item intersection",
+      limitations: "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+    }
+  };
+
+  // openeval_snapshots/benchmark/medqa.json
+  var medqa_default = {
+    itemCount: 1e3,
+    responseCount: 95e3,
+    distinctModelCount: 95,
+    distinctModelItemPairs: 95e3,
+    duplicateResponsesRemoved: 0,
+    conflictingDuplicateRows: 0,
+    conflictingDuplicateExamples: [],
+    measurements: [
+      {
+        metrics: [
+          "exact_match"
+        ],
+        itemCount: 1e3,
+        totalResponses: 95e3,
+        loadedResponses: 95e3,
+        minimumItems: 100,
+        modelCount: 95,
+        scoredResponses: 95e3,
+        excludedModelCount: 0,
+        avgScore: 0.6032105263157894,
+        medianScore: 0.617,
+        standardError: 0.016489895747249943,
+        discrimination: 0.15987547092967747,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "gpt-4o-2024-08-06",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.869
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.214
+        },
+        models: [
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.869
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.861
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.831
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.824
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.82
+          },
+          {
+            name: "gpt-4-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.817
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.817
+          },
+          {
+            name: "deepseek-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.811
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.805
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.793
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.787
+          },
+          {
+            name: "mistral-large-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "palmyra-x-004",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.77
+          },
+          {
+            name: "llama-3-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.77
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.756
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.748
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.744
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.724
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.723
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.708
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.704
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.7
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.699
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.697
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.691
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.689
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.685
+          },
+          {
+            name: "solar-pro-241126",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.685
+          },
+          {
+            name: "dbrx-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.68
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.68
+          },
+          {
+            name: "text-unicorn@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.68
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.672
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.664
+          },
+          {
+            name: "yi-large-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.664
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.656
+          },
+          {
+            name: "yi-34b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.652
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.65
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.644
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.643
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.64
+          },
+          {
+            name: "claude-2.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.636
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.634
+          },
+          {
+            name: "claude-2.0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.628
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.617
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.613
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.61
+          },
+          {
+            name: "claude-v1.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.608
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.605
+          },
+          {
+            name: "mistral-small-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.605
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.603
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.591
+          },
+          {
+            name: "llama-2-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.582
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.577
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.575
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.571
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.569
+          },
+          {
+            name: "llama-3-8b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.568
+          },
+          {
+            name: "command-r-plus",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.56
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.552
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.547
+          },
+          {
+            name: "claude-instant-v1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.547
+          },
+          {
+            name: "text-bison@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.539
+          },
+          {
+            name: "jamba-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.537
+          },
+          {
+            name: "command-r",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.531
+          },
+          {
+            name: "text-davinci-003",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.529
+          },
+          {
+            name: "gemma-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.52
+          },
+          {
+            name: "text-davinci-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.519
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.515
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.51
+          },
+          {
+            name: "llama-65b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.5
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.496
+          },
+          {
+            name: "mistral-large-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.489
+          },
+          {
+            name: "yi-6b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.482
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.463
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.455
+          },
+          {
+            name: "j2-jumbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.438
+          },
+          {
+            name: "command",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.434
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.416
+          },
+          {
+            name: "falcon-40b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.411
+          },
+          {
+            name: "phi-2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.392
+          },
+          {
+            name: "j2-grande",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.386
+          },
+          {
+            name: "llama-2-13b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.384
+          },
+          {
+            name: "llama-2-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.361
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.302
+          },
+          {
+            name: "command-light",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.294
+          },
+          {
+            name: "luminous-supreme",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.27
+          },
+          {
+            name: "falcon-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.267
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.266
+          },
+          {
+            name: "luminous-extended",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "luminous-base",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.236
+          },
+          {
+            name: "olmo-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.214
+          }
+        ],
+        split: "medqa"
+      },
+      {
+        metrics: [
+          "exact_match@5"
+        ],
+        itemCount: 1e3,
+        totalResponses: 95e3,
+        loadedResponses: 95e3,
+        minimumItems: 100,
+        modelCount: 95,
+        scoredResponses: 95e3,
+        excludedModelCount: 0,
+        avgScore: 0.6032105263157894,
+        medianScore: 0.617,
+        standardError: 0.016489895747249943,
+        discrimination: 0.15987547092967747,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "gpt-4o-2024-08-06",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.869
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.214
+        },
+        models: [
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.869
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.861
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.831
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.824
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.82
+          },
+          {
+            name: "gpt-4-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.817
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.817
+          },
+          {
+            name: "deepseek-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.811
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.805
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.793
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.787
+          },
+          {
+            name: "mistral-large-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "palmyra-x-004",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.77
+          },
+          {
+            name: "llama-3-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.77
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.756
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.748
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.744
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.724
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.723
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.708
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.704
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.7
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.699
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.697
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.691
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.689
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.685
+          },
+          {
+            name: "solar-pro-241126",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.685
+          },
+          {
+            name: "dbrx-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.68
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.68
+          },
+          {
+            name: "text-unicorn@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.68
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.672
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.664
+          },
+          {
+            name: "yi-large-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.664
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.656
+          },
+          {
+            name: "yi-34b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.652
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.65
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.644
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.643
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.64
+          },
+          {
+            name: "claude-2.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.636
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.634
+          },
+          {
+            name: "claude-2.0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.628
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.617
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.613
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.61
+          },
+          {
+            name: "claude-v1.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.608
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.605
+          },
+          {
+            name: "mistral-small-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.605
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.603
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.591
+          },
+          {
+            name: "llama-2-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.582
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.577
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.575
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.571
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.569
+          },
+          {
+            name: "llama-3-8b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.568
+          },
+          {
+            name: "command-r-plus",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.56
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.552
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.547
+          },
+          {
+            name: "claude-instant-v1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.547
+          },
+          {
+            name: "text-bison@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.539
+          },
+          {
+            name: "jamba-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.537
+          },
+          {
+            name: "command-r",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.531
+          },
+          {
+            name: "text-davinci-003",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.529
+          },
+          {
+            name: "gemma-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.52
+          },
+          {
+            name: "text-davinci-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.519
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.515
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.51
+          },
+          {
+            name: "llama-65b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.5
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.496
+          },
+          {
+            name: "mistral-large-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.489
+          },
+          {
+            name: "yi-6b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.482
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.463
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.455
+          },
+          {
+            name: "j2-jumbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.438
+          },
+          {
+            name: "command",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.434
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.416
+          },
+          {
+            name: "falcon-40b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.411
+          },
+          {
+            name: "phi-2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.392
+          },
+          {
+            name: "j2-grande",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.386
+          },
+          {
+            name: "llama-2-13b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.384
+          },
+          {
+            name: "llama-2-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.361
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.302
+          },
+          {
+            name: "command-light",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.294
+          },
+          {
+            name: "luminous-supreme",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.27
+          },
+          {
+            name: "falcon-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.267
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.266
+          },
+          {
+            name: "luminous-extended",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "luminous-base",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.236
+          },
+          {
+            name: "olmo-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.214
+          }
+        ],
+        split: "medqa"
+      },
+      {
+        metrics: [
+          "max_prob"
+        ],
+        itemCount: 1e3,
+        totalResponses: 95e3,
+        loadedResponses: 95e3,
+        minimumItems: 100,
+        modelCount: 95,
+        scoredResponses: 95e3,
+        excludedModelCount: 0,
+        avgScore: 0.9619027029616379,
+        medianScore: 1,
+        standardError: 0.014578847670778456,
+        discrimination: 0.14134717239594735,
+        refCoverage: 1,
+        bounded: true,
+        binary: false,
+        best: {
+          name: "claude-2.0",
+          n: 1e3,
+          coverage: 1,
+          mean: 1
+        },
+        worst: {
+          name: "luminous-base",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.2529407888429715
+        },
+        models: [
+          {
+            name: "claude-2.0",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-2.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-instant-v1",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-v1.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "command-r",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "command-r-plus",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "dbrx-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "deepseek-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "falcon-40b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "falcon-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemma-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "jamba-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-2-13b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-2-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-2-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3-8b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-65b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-large-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-large-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-small-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "olmo-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "palmyra-x-004",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "phi-2",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "solar-pro-241126",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "text-bison@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "text-unicorn@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "yi-34b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "yi-6b",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "yi-large-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.9964999999933337
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.9919999999847627
+          },
+          {
+            name: "text-davinci-003",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.9169231380024115
+          },
+          {
+            name: "command",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.9141651243004517
+          },
+          {
+            name: "text-davinci-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.7257431208657884
+          },
+          {
+            name: "j2-jumbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.7030864460402478
+          },
+          {
+            name: "j2-grande",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.6810625735495639
+          },
+          {
+            name: "command-light",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.6778992844272118
+          },
+          {
+            name: "luminous-supreme",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.2651510169471468
+          },
+          {
+            name: "luminous-extended",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.25528528840170917
+          },
+          {
+            name: "luminous-base",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.2529407888429715
+          }
+        ],
+        split: "medqa"
+      },
+      {
+        metrics: [
+          "prefix_exact_match"
+        ],
+        itemCount: 1e3,
+        totalResponses: 95e3,
+        loadedResponses: 95e3,
+        minimumItems: 100,
+        modelCount: 95,
+        scoredResponses: 95e3,
+        excludedModelCount: 0,
+        avgScore: 0.6038526315789474,
+        medianScore: 0.618,
+        standardError: 0.01648218671565418,
+        discrimination: 0.15980072909530352,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "gpt-4o-2024-08-06",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.869
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.217
+        },
+        models: [
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.869
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.861
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.831
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.825
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.821
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.818
+          },
+          {
+            name: "gpt-4-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.817
+          },
+          {
+            name: "deepseek-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.811
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.806
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.794
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.788
+          },
+          {
+            name: "mistral-large-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "palmyra-x-004",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.771
+          },
+          {
+            name: "llama-3-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.77
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.757
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.749
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.744
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.725
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.723
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.708
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.704
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.701
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.7
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.698
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.691
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.69
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.687
+          },
+          {
+            name: "solar-pro-241126",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.686
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.682
+          },
+          {
+            name: "text-unicorn@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.682
+          },
+          {
+            name: "dbrx-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.68
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.672
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.665
+          },
+          {
+            name: "yi-large-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.665
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.656
+          },
+          {
+            name: "yi-34b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.653
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.652
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.644
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.644
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.641
+          },
+          {
+            name: "claude-2.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.637
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.635
+          },
+          {
+            name: "claude-2.0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.629
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.618
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.613
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.611
+          },
+          {
+            name: "claude-v1.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.608
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.606
+          },
+          {
+            name: "mistral-small-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.605
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.603
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.592
+          },
+          {
+            name: "llama-2-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.582
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.578
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.576
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.572
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.569
+          },
+          {
+            name: "llama-3-8b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.569
+          },
+          {
+            name: "command-r-plus",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.561
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.552
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.547
+          },
+          {
+            name: "claude-instant-v1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.547
+          },
+          {
+            name: "text-bison@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.539
+          },
+          {
+            name: "jamba-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.537
+          },
+          {
+            name: "command-r",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.531
+          },
+          {
+            name: "text-davinci-003",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.529
+          },
+          {
+            name: "gemma-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.521
+          },
+          {
+            name: "text-davinci-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.52
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.516
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.512
+          },
+          {
+            name: "llama-65b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.502
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.497
+          },
+          {
+            name: "mistral-large-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.489
+          },
+          {
+            name: "yi-6b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.483
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.465
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.455
+          },
+          {
+            name: "j2-jumbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.438
+          },
+          {
+            name: "command",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.434
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.416
+          },
+          {
+            name: "falcon-40b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.411
+          },
+          {
+            name: "phi-2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.393
+          },
+          {
+            name: "j2-grande",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.386
+          },
+          {
+            name: "llama-2-13b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.386
+          },
+          {
+            name: "llama-2-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.362
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.302
+          },
+          {
+            name: "command-light",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.296
+          },
+          {
+            name: "luminous-supreme",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.271
+          },
+          {
+            name: "falcon-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.267
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.266
+          },
+          {
+            name: "luminous-extended",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "luminous-base",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.236
+          },
+          {
+            name: "olmo-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.217
+          }
+        ],
+        split: "medqa"
+      },
+      {
+        metrics: [
+          "prefix_exact_match@5"
+        ],
+        itemCount: 1e3,
+        totalResponses: 95e3,
+        loadedResponses: 95e3,
+        minimumItems: 100,
+        modelCount: 95,
+        scoredResponses: 95e3,
+        excludedModelCount: 0,
+        avgScore: 0.6038526315789474,
+        medianScore: 0.618,
+        standardError: 0.01648218671565418,
+        discrimination: 0.15980072909530352,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "gpt-4o-2024-08-06",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.869
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.217
+        },
+        models: [
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.869
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.861
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.831
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.825
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.821
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.818
+          },
+          {
+            name: "gpt-4-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.817
+          },
+          {
+            name: "deepseek-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.811
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.806
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.794
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.788
+          },
+          {
+            name: "mistral-large-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "palmyra-x-004",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.771
+          },
+          {
+            name: "llama-3-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.77
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.757
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.749
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.744
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.725
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.723
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.708
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.704
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.701
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.7
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.698
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.691
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.69
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.687
+          },
+          {
+            name: "solar-pro-241126",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.686
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.682
+          },
+          {
+            name: "text-unicorn@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.682
+          },
+          {
+            name: "dbrx-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.68
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.672
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.665
+          },
+          {
+            name: "yi-large-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.665
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.656
+          },
+          {
+            name: "yi-34b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.653
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.652
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.644
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.644
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.641
+          },
+          {
+            name: "claude-2.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.637
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.635
+          },
+          {
+            name: "claude-2.0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.629
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.618
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.613
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.611
+          },
+          {
+            name: "claude-v1.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.608
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.606
+          },
+          {
+            name: "mistral-small-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.605
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.603
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.592
+          },
+          {
+            name: "llama-2-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.582
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.578
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.576
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.572
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.569
+          },
+          {
+            name: "llama-3-8b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.569
+          },
+          {
+            name: "command-r-plus",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.561
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.552
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.547
+          },
+          {
+            name: "claude-instant-v1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.547
+          },
+          {
+            name: "text-bison@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.539
+          },
+          {
+            name: "jamba-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.537
+          },
+          {
+            name: "command-r",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.531
+          },
+          {
+            name: "text-davinci-003",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.529
+          },
+          {
+            name: "gemma-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.521
+          },
+          {
+            name: "text-davinci-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.52
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.516
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.512
+          },
+          {
+            name: "llama-65b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.502
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.497
+          },
+          {
+            name: "mistral-large-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.489
+          },
+          {
+            name: "yi-6b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.483
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.465
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.455
+          },
+          {
+            name: "j2-jumbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.438
+          },
+          {
+            name: "command",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.434
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.416
+          },
+          {
+            name: "falcon-40b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.411
+          },
+          {
+            name: "phi-2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.393
+          },
+          {
+            name: "j2-grande",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.386
+          },
+          {
+            name: "llama-2-13b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.386
+          },
+          {
+            name: "llama-2-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.362
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.302
+          },
+          {
+            name: "command-light",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.296
+          },
+          {
+            name: "luminous-supreme",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.271
+          },
+          {
+            name: "falcon-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.267
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.266
+          },
+          {
+            name: "luminous-extended",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "luminous-base",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.236
+          },
+          {
+            name: "olmo-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.217
+          }
+        ],
+        split: "medqa"
+      },
+      {
+        metrics: [
+          "quasi_exact_match"
+        ],
+        itemCount: 1e3,
+        totalResponses: 95e3,
+        loadedResponses: 95e3,
+        minimumItems: 100,
+        modelCount: 95,
+        scoredResponses: 95e3,
+        excludedModelCount: 0,
+        avgScore: 0.6034315789473684,
+        medianScore: 0.617,
+        standardError: 0.016482897938213507,
+        discrimination: 0.1598076246538535,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "gpt-4o-2024-08-06",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.869
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.215
+        },
+        models: [
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.869
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.861
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.831
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.824
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.82
+          },
+          {
+            name: "gpt-4-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.817
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.817
+          },
+          {
+            name: "deepseek-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.811
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.805
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.793
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.787
+          },
+          {
+            name: "mistral-large-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "palmyra-x-004",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.77
+          },
+          {
+            name: "llama-3-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.77
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.756
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.748
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.744
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.724
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.723
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.708
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.704
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.7
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.699
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.697
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.692
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.69
+          },
+          {
+            name: "solar-pro-241126",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.686
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.685
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.681
+          },
+          {
+            name: "text-unicorn@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.681
+          },
+          {
+            name: "dbrx-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.68
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.672
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.664
+          },
+          {
+            name: "yi-large-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.664
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.656
+          },
+          {
+            name: "yi-34b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.652
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.651
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.644
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.643
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.64
+          },
+          {
+            name: "claude-2.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.637
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.634
+          },
+          {
+            name: "claude-2.0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.629
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.617
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.614
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.61
+          },
+          {
+            name: "claude-v1.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.608
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.605
+          },
+          {
+            name: "mistral-small-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.605
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.603
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.591
+          },
+          {
+            name: "llama-2-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.582
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.577
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.575
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.571
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.569
+          },
+          {
+            name: "llama-3-8b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.568
+          },
+          {
+            name: "command-r-plus",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.561
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.552
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.548
+          },
+          {
+            name: "claude-instant-v1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.548
+          },
+          {
+            name: "text-bison@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.54
+          },
+          {
+            name: "jamba-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.537
+          },
+          {
+            name: "command-r",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.531
+          },
+          {
+            name: "text-davinci-003",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.529
+          },
+          {
+            name: "gemma-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.52
+          },
+          {
+            name: "text-davinci-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.519
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.516
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.511
+          },
+          {
+            name: "llama-65b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.5
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.496
+          },
+          {
+            name: "mistral-large-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.489
+          },
+          {
+            name: "yi-6b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.483
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.464
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.456
+          },
+          {
+            name: "j2-jumbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.438
+          },
+          {
+            name: "command",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.435
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.416
+          },
+          {
+            name: "falcon-40b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.412
+          },
+          {
+            name: "phi-2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.392
+          },
+          {
+            name: "j2-grande",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.386
+          },
+          {
+            name: "llama-2-13b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.384
+          },
+          {
+            name: "llama-2-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.361
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.302
+          },
+          {
+            name: "command-light",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.294
+          },
+          {
+            name: "luminous-supreme",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.27
+          },
+          {
+            name: "falcon-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.267
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.266
+          },
+          {
+            name: "luminous-extended",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "luminous-base",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.236
+          },
+          {
+            name: "olmo-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.215
+          }
+        ],
+        split: "medqa"
+      },
+      {
+        metrics: [
+          "quasi_exact_match@5"
+        ],
+        itemCount: 1e3,
+        totalResponses: 95e3,
+        loadedResponses: 95e3,
+        minimumItems: 100,
+        modelCount: 95,
+        scoredResponses: 95e3,
+        excludedModelCount: 0,
+        avgScore: 0.6034315789473684,
+        medianScore: 0.617,
+        standardError: 0.016482897938213507,
+        discrimination: 0.1598076246538535,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "gpt-4o-2024-08-06",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.869
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.215
+        },
+        models: [
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.869
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.861
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.831
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.824
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.82
+          },
+          {
+            name: "gpt-4-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.817
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.817
+          },
+          {
+            name: "deepseek-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.811
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.805
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.793
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.787
+          },
+          {
+            name: "mistral-large-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "palmyra-x-004",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.77
+          },
+          {
+            name: "llama-3-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.77
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.756
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.748
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.744
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.724
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.723
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.708
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.704
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.7
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.699
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.697
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.692
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.69
+          },
+          {
+            name: "solar-pro-241126",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.686
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.685
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.681
+          },
+          {
+            name: "text-unicorn@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.681
+          },
+          {
+            name: "dbrx-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.68
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.672
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.664
+          },
+          {
+            name: "yi-large-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.664
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.656
+          },
+          {
+            name: "yi-34b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.652
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.651
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.644
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.643
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.64
+          },
+          {
+            name: "claude-2.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.637
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.634
+          },
+          {
+            name: "claude-2.0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.629
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.617
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.614
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.61
+          },
+          {
+            name: "claude-v1.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.608
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.605
+          },
+          {
+            name: "mistral-small-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.605
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.603
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.591
+          },
+          {
+            name: "llama-2-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.582
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.577
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.575
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.571
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.569
+          },
+          {
+            name: "llama-3-8b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.568
+          },
+          {
+            name: "command-r-plus",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.561
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.552
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.548
+          },
+          {
+            name: "claude-instant-v1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.548
+          },
+          {
+            name: "text-bison@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.54
+          },
+          {
+            name: "jamba-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.537
+          },
+          {
+            name: "command-r",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.531
+          },
+          {
+            name: "text-davinci-003",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.529
+          },
+          {
+            name: "gemma-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.52
+          },
+          {
+            name: "text-davinci-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.519
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.516
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.511
+          },
+          {
+            name: "llama-65b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.5
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.496
+          },
+          {
+            name: "mistral-large-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.489
+          },
+          {
+            name: "yi-6b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.483
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.464
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.456
+          },
+          {
+            name: "j2-jumbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.438
+          },
+          {
+            name: "command",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.435
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.416
+          },
+          {
+            name: "falcon-40b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.412
+          },
+          {
+            name: "phi-2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.392
+          },
+          {
+            name: "j2-grande",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.386
+          },
+          {
+            name: "llama-2-13b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.384
+          },
+          {
+            name: "llama-2-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.361
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.302
+          },
+          {
+            name: "command-light",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.294
+          },
+          {
+            name: "luminous-supreme",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.27
+          },
+          {
+            name: "falcon-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.267
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.266
+          },
+          {
+            name: "luminous-extended",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "luminous-base",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.236
+          },
+          {
+            name: "olmo-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.215
+          }
+        ],
+        split: "medqa"
+      },
+      {
+        metrics: [
+          "quasi_prefix_exact_match"
+        ],
+        itemCount: 1e3,
+        totalResponses: 95e3,
+        loadedResponses: 95e3,
+        minimumItems: 100,
+        modelCount: 95,
+        scoredResponses: 95e3,
+        excludedModelCount: 0,
+        avgScore: 0.6040736842105263,
+        medianScore: 0.618,
+        standardError: 0.016475229920077956,
+        discrimination: 0.15973328045972948,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "gpt-4o-2024-08-06",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.869
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.218
+        },
+        models: [
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.869
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.861
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.831
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.825
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.821
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.818
+          },
+          {
+            name: "gpt-4-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.817
+          },
+          {
+            name: "deepseek-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.811
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.806
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.794
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.788
+          },
+          {
+            name: "mistral-large-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "palmyra-x-004",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.771
+          },
+          {
+            name: "llama-3-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.77
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.757
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.749
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.744
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.725
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.723
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.708
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.704
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.701
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.7
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.698
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.692
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.691
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.687
+          },
+          {
+            name: "solar-pro-241126",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.687
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.683
+          },
+          {
+            name: "text-unicorn@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.683
+          },
+          {
+            name: "dbrx-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.68
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.672
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.665
+          },
+          {
+            name: "yi-large-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.665
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.656
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.653
+          },
+          {
+            name: "yi-34b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.653
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.644
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.644
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.641
+          },
+          {
+            name: "claude-2.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.638
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.635
+          },
+          {
+            name: "claude-2.0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.63
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.618
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.614
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.611
+          },
+          {
+            name: "claude-v1.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.608
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.606
+          },
+          {
+            name: "mistral-small-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.605
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.603
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.592
+          },
+          {
+            name: "llama-2-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.582
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.578
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.576
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.572
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.569
+          },
+          {
+            name: "llama-3-8b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.569
+          },
+          {
+            name: "command-r-plus",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.562
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.552
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.548
+          },
+          {
+            name: "claude-instant-v1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.548
+          },
+          {
+            name: "text-bison@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.54
+          },
+          {
+            name: "jamba-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.537
+          },
+          {
+            name: "command-r",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.531
+          },
+          {
+            name: "text-davinci-003",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.529
+          },
+          {
+            name: "gemma-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.521
+          },
+          {
+            name: "text-davinci-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.52
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.517
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.513
+          },
+          {
+            name: "llama-65b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.502
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.497
+          },
+          {
+            name: "mistral-large-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.489
+          },
+          {
+            name: "yi-6b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.484
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.466
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.456
+          },
+          {
+            name: "j2-jumbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.438
+          },
+          {
+            name: "command",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.435
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.416
+          },
+          {
+            name: "falcon-40b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.412
+          },
+          {
+            name: "phi-2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.393
+          },
+          {
+            name: "j2-grande",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.386
+          },
+          {
+            name: "llama-2-13b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.386
+          },
+          {
+            name: "llama-2-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.362
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.302
+          },
+          {
+            name: "command-light",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.296
+          },
+          {
+            name: "luminous-supreme",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.271
+          },
+          {
+            name: "falcon-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.267
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.266
+          },
+          {
+            name: "luminous-extended",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "luminous-base",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.236
+          },
+          {
+            name: "olmo-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.218
+          }
+        ],
+        split: "medqa"
+      },
+      {
+        metrics: [
+          "quasi_prefix_exact_match@5"
+        ],
+        itemCount: 1e3,
+        totalResponses: 95e3,
+        loadedResponses: 95e3,
+        minimumItems: 100,
+        modelCount: 95,
+        scoredResponses: 95e3,
+        excludedModelCount: 0,
+        avgScore: 0.6040736842105263,
+        medianScore: 0.618,
+        standardError: 0.016475229920077956,
+        discrimination: 0.15973328045972948,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "gpt-4o-2024-08-06",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.869
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 1e3,
+          coverage: 1,
+          mean: 0.218
+        },
+        models: [
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.869
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.861
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.853
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.831
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.825
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.821
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.818
+          },
+          {
+            name: "gpt-4-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.817
+          },
+          {
+            name: "deepseek-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.811
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.806
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.794
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.788
+          },
+          {
+            name: "mistral-large-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "palmyra-x-004",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.778
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.771
+          },
+          {
+            name: "llama-3-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.77
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.757
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.749
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.744
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.725
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.723
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.708
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.704
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.701
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.7
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.698
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.692
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.691
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.687
+          },
+          {
+            name: "solar-pro-241126",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.687
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.683
+          },
+          {
+            name: "text-unicorn@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.683
+          },
+          {
+            name: "dbrx-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.68
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.672
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.665
+          },
+          {
+            name: "yi-large-preview",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.665
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.656
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.653
+          },
+          {
+            name: "yi-34b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.653
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.644
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.644
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.641
+          },
+          {
+            name: "claude-2.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.638
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.635
+          },
+          {
+            name: "claude-2.0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.63
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.618
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.614
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.611
+          },
+          {
+            name: "claude-v1.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.608
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.606
+          },
+          {
+            name: "mistral-small-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.605
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.603
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.592
+          },
+          {
+            name: "llama-2-70b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.582
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.578
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.576
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.572
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.569
+          },
+          {
+            name: "llama-3-8b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.569
+          },
+          {
+            name: "command-r-plus",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.562
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.552
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.548
+          },
+          {
+            name: "claude-instant-v1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.548
+          },
+          {
+            name: "text-bison@001",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.54
+          },
+          {
+            name: "jamba-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.537
+          },
+          {
+            name: "command-r",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.531
+          },
+          {
+            name: "text-davinci-003",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.529
+          },
+          {
+            name: "gemma-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.521
+          },
+          {
+            name: "text-davinci-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.52
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.517
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.513
+          },
+          {
+            name: "llama-65b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.502
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.497
+          },
+          {
+            name: "mistral-large-2402",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.489
+          },
+          {
+            name: "yi-6b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.484
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.466
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.456
+          },
+          {
+            name: "j2-jumbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.438
+          },
+          {
+            name: "command",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.435
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.416
+          },
+          {
+            name: "falcon-40b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.412
+          },
+          {
+            name: "phi-2",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.393
+          },
+          {
+            name: "j2-grande",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.386
+          },
+          {
+            name: "llama-2-13b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.386
+          },
+          {
+            name: "llama-2-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.362
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.302
+          },
+          {
+            name: "command-light",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.296
+          },
+          {
+            name: "luminous-supreme",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.271
+          },
+          {
+            name: "falcon-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.267
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.266
+          },
+          {
+            name: "luminous-extended",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "luminous-base",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.236
+          },
+          {
+            name: "olmo-7b",
+            n: 1e3,
+            coverage: 1,
+            mean: 0.218
+          }
+        ],
+        split: "medqa"
+      }
+    ],
+    schemaVersion: 1,
+    benchmark: "medqa",
+    computedAt: "2026-11-24T21:35:50.575723+00:00",
+    source: {
+      dataset: "Open-Eval-Commons/OpenEval",
+      parquetRevision: "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+      observedMainRevision: "527ac42de705d7ab704c5baafa784ade9739e4b7",
+      files: [
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/medqa.item/train/0000.parquet",
+          rows: 1e3,
+          bytes: 551277,
+          sha256: "c9fae2d85958fca03465fffc71bfdf26855ad4471602f0314a15981c89b5b923"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/medqa.response/train/0000.parquet",
+          rows: 47500,
+          bytes: 3028794,
+          sha256: "4255ab9c7553267801e5f06e9ebd4ce21d274cca4d123db99185369bc78f61c2"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/medqa.response/train/0001.parquet",
+          rows: 47500,
+          bytes: 2946618,
+          sha256: "ee4404cd7f333a076b0052b1ab26049f3c2ee84e7ad4eaa22c2283c3eb658b8d"
+        }
+      ]
+    },
+    rules: {
+      coverageThreshold: 0.1,
+      coverageDenominator: "Distinct benchmark item IDs",
+      coverageNumerator: "Distinct items with a finite score for the metric after deduplication",
+      deduplication: "One response per model.name \xD7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+      aggregation: "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+      standardError: "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+      metricHandling: "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+      itemSet: "All available items per retained model; no common-item intersection",
+      limitations: "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+    }
+  };
+
   // openeval_snapshots/benchmark/mmlu_pro.json
   var mmlu_pro_default = {
     itemCount: 12032,
@@ -28582,6 +37126,5008 @@
           rows: 968,
           bytes: 52009,
           sha256: "171790eb0597033182742440948644390f1c877614e80281b29f02534d5263d5"
+        }
+      ]
+    },
+    rules: {
+      coverageThreshold: 0.1,
+      coverageDenominator: "Distinct benchmark item IDs",
+      coverageNumerator: "Distinct items with a finite score for the metric after deduplication",
+      deduplication: "One response per model.name \xD7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+      aggregation: "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+      standardError: "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+      metricHandling: "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+      itemSet: "All available items per retained model; no common-item intersection",
+      limitations: "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+    }
+  };
+
+  // openeval_snapshots/benchmark/musique.json
+  var musique_default = {
+    itemCount: 500,
+    responseCount: 2e4,
+    distinctModelCount: 20,
+    distinctModelItemPairs: 1e4,
+    duplicateResponsesRemoved: 1e4,
+    conflictingDuplicateRows: 0,
+    conflictingDuplicateExamples: [],
+    measurements: [
+      {
+        metrics: [
+          "LLM_correctness"
+        ],
+        itemCount: 500,
+        totalResponses: 2e4,
+        loadedResponses: 2e4,
+        minimumItems: 50,
+        modelCount: 20,
+        scoredResponses: 1e4,
+        excludedModelCount: 0,
+        avgScore: 0.44480000000000003,
+        medianScore: 0.455,
+        standardError: 0.0057517045528397825,
+        discrimination: 0.025071098898931412,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "claude-3.5-haiku",
+          n: 500,
+          coverage: 1,
+          mean: 0.482
+        },
+        worst: {
+          name: "llama-4-scout",
+          n: 500,
+          coverage: 1,
+          mean: 0.394
+        },
+        models: [
+          {
+            name: "claude-3.5-haiku",
+            n: 500,
+            coverage: 1,
+            mean: 0.482
+          },
+          {
+            name: "gpt-4.1-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.476
+          },
+          {
+            name: "glm-4-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.466
+          },
+          {
+            name: "qwen3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 0.464
+          },
+          {
+            name: "gemma-3-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.462
+          },
+          {
+            name: "olmo-3.1-32b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.46
+          },
+          {
+            name: "qwen3-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.46
+          },
+          {
+            name: "grok-4.1-fast",
+            n: 500,
+            coverage: 1,
+            mean: 0.456
+          },
+          {
+            name: "llama-3.1-70b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.456
+          },
+          {
+            name: "llama-3.3-70b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.456
+          },
+          {
+            name: "seed-2.0-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.454
+          },
+          {
+            name: "gemma-3-12b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.448
+          },
+          {
+            name: "qwen3-14b",
+            n: 500,
+            coverage: 1,
+            mean: 0.448
+          },
+          {
+            name: "command-r-08-2024",
+            n: 500,
+            coverage: 1,
+            mean: 0.442
+          },
+          {
+            name: "deepseek-r1-distill-llama-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.438
+          },
+          {
+            name: "qwen-2.5-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.422
+          },
+          {
+            name: "phi-4",
+            n: 500,
+            coverage: 1,
+            mean: 0.406
+          },
+          {
+            name: "qwen-2.5-7b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.404
+          },
+          {
+            name: "llama-3.1-8b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.402
+          },
+          {
+            name: "llama-4-scout",
+            n: 500,
+            coverage: 1,
+            mean: 0.394
+          }
+        ],
+        split: "musique"
+      },
+      {
+        metrics: [
+          "LLM_judge"
+        ],
+        itemCount: 500,
+        totalResponses: 2e4,
+        loadedResponses: 2e4,
+        minimumItems: 50,
+        modelCount: 20,
+        scoredResponses: 1e4,
+        excludedModelCount: 0,
+        avgScore: 0.9866,
+        medianScore: 1.004,
+        standardError: 0.012036873173273604,
+        discrimination: 0.05246751375851539,
+        refCoverage: 1,
+        bounded: false,
+        binary: false,
+        best: {
+          name: "gpt-4.1-mini",
+          n: 500,
+          coverage: 1,
+          mean: 1.066
+        },
+        worst: {
+          name: "qwen-2.5-7b-instruct",
+          n: 500,
+          coverage: 1,
+          mean: 0.868
+        },
+        models: [
+          {
+            name: "gpt-4.1-mini",
+            n: 500,
+            coverage: 1,
+            mean: 1.066
+          },
+          {
+            name: "claude-3.5-haiku",
+            n: 500,
+            coverage: 1,
+            mean: 1.058
+          },
+          {
+            name: "gemma-3-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 1.026
+          },
+          {
+            name: "olmo-3.1-32b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 1.024
+          },
+          {
+            name: "qwen3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 1.024
+          },
+          {
+            name: "gemma-3-12b-it",
+            n: 500,
+            coverage: 1,
+            mean: 1.014
+          },
+          {
+            name: "glm-4-32b",
+            n: 500,
+            coverage: 1,
+            mean: 1.012
+          },
+          {
+            name: "llama-3.3-70b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 1.01
+          },
+          {
+            name: "seed-2.0-mini",
+            n: 500,
+            coverage: 1,
+            mean: 1.01
+          },
+          {
+            name: "qwen3-32b",
+            n: 500,
+            coverage: 1,
+            mean: 1.006
+          },
+          {
+            name: "llama-3.1-70b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 1.002
+          },
+          {
+            name: "grok-4.1-fast",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen3-14b",
+            n: 500,
+            coverage: 1,
+            mean: 0.982
+          },
+          {
+            name: "command-r-08-2024",
+            n: 500,
+            coverage: 1,
+            mean: 0.976
+          },
+          {
+            name: "deepseek-r1-distill-llama-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.976
+          },
+          {
+            name: "phi-4",
+            n: 500,
+            coverage: 1,
+            mean: 0.952
+          },
+          {
+            name: "qwen-2.5-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "llama-4-scout",
+            n: 500,
+            coverage: 1,
+            mean: 0.9
+          },
+          {
+            name: "llama-3.1-8b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.88
+          },
+          {
+            name: "qwen-2.5-7b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.868
+          }
+        ],
+        split: "musique"
+      }
+    ],
+    schemaVersion: 1,
+    benchmark: "musique",
+    computedAt: "2026-11-24T21:35:52.387154+00:00",
+    source: {
+      dataset: "Open-Eval-Commons/OpenEval",
+      parquetRevision: "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+      observedMainRevision: "527ac42de705d7ab704c5baafa784ade9739e4b7",
+      files: [
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/musique.item/train/0000.parquet",
+          rows: 500,
+          bytes: 3360632,
+          sha256: "33523ce1e8d387a0e3144bd304bc1c9cd2e6c4d26b6b94f57ec916bc478f32eb"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/musique.response/train/0000.parquet",
+          rows: 2e4,
+          bytes: 4255358,
+          sha256: "b796e9cb64cd6d60381ecf25fd023be5ad41908524d116bb96f55ea738b09e6a"
+        }
+      ]
+    },
+    rules: {
+      coverageThreshold: 0.1,
+      coverageDenominator: "Distinct benchmark item IDs",
+      coverageNumerator: "Distinct items with a finite score for the metric after deduplication",
+      deduplication: "One response per model.name \xD7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+      aggregation: "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+      standardError: "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+      metricHandling: "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+      itemSet: "All available items per retained model; no common-item intersection",
+      limitations: "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+    }
+  };
+
+  // openeval_snapshots/benchmark/narrativeqa.json
+  var narrativeqa_default = {
+    itemCount: 470,
+    responseCount: 44650,
+    distinctModelCount: 95,
+    distinctModelItemPairs: 44650,
+    duplicateResponsesRemoved: 0,
+    conflictingDuplicateRows: 0,
+    conflictingDuplicateExamples: [],
+    measurements: [
+      {
+        metrics: [
+          "bleu_1"
+        ],
+        itemCount: 470,
+        totalResponses: 44650,
+        loadedResponses: 44650,
+        minimumItems: 47,
+        modelCount: 95,
+        scoredResponses: 44650,
+        excludedModelCount: 0,
+        avgScore: 0.5312368988873886,
+        medianScore: 0.5611175173240215,
+        standardError: 0.010844608347309482,
+        discrimination: 0.10514237889364231,
+        refCoverage: 1,
+        bounded: true,
+        binary: false,
+        best: {
+          name: "gpt-4-0613",
+          n: 470,
+          coverage: 1,
+          mean: 0.6389483090639171
+        },
+        worst: {
+          name: "claude-3-sonnet-20240229",
+          n: 470,
+          coverage: 1,
+          mean: 0.08639862936006629
+        },
+        models: [
+          {
+            name: "gpt-4-0613",
+            n: 470,
+            coverage: 1,
+            mean: 0.6389483090639171
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.6337108461516575
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 470,
+            coverage: 1,
+            mean: 0.6303038409277725
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.6296081430990353
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 470,
+            coverage: 1,
+            mean: 0.6288938003940739
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.6266766896104353
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 470,
+            coverage: 1,
+            mean: 0.6246288744006292
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.6236179128561387
+          },
+          {
+            name: "palmyra-x-004",
+            n: 470,
+            coverage: 1,
+            mean: 0.6187322852247571
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.6171491907010817
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 470,
+            coverage: 1,
+            mean: 0.6167560884283865
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 470,
+            coverage: 1,
+            mean: 0.6160422542609585
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.612895813207334
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 470,
+            coverage: 1,
+            mean: 0.6128760317994612
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.6071992640401372
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 470,
+            coverage: 1,
+            mean: 0.607048349133029
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.6066622789489658
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 470,
+            coverage: 1,
+            mean: 0.6044309732302684
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 470,
+            coverage: 1,
+            mean: 0.6039284687092387
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 470,
+            coverage: 1,
+            mean: 0.6034645256140739
+          },
+          {
+            name: "text-davinci-003",
+            n: 470,
+            coverage: 1,
+            mean: 0.6021853166375751
+          },
+          {
+            name: "text-davinci-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.598580370076891
+          },
+          {
+            name: "llama-3-70b",
+            n: 470,
+            coverage: 1,
+            mean: 0.59641256616767
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.5939772026520445
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.5922814587704059
+          },
+          {
+            name: "llama-3-8b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5887984496634738
+          },
+          {
+            name: "deepseek-v3",
+            n: 470,
+            coverage: 1,
+            mean: 0.5882395232764073
+          },
+          {
+            name: "claude-v1.3",
+            n: 470,
+            coverage: 1,
+            mean: 0.5822335375167824
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.5817712366817954
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.5807048495220856
+          },
+          {
+            name: "gemma-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5801515245651794
+          },
+          {
+            name: "yi-34b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5801287207385178
+          },
+          {
+            name: "claude-2.0",
+            n: 470,
+            coverage: 1,
+            mean: 0.5795758434402282
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 470,
+            coverage: 1,
+            mean: 0.5793821215667153
+          },
+          {
+            name: "mistral-large-2407",
+            n: 470,
+            coverage: 1,
+            mean: 0.5793504362273063
+          },
+          {
+            name: "phi-2",
+            n: 470,
+            coverage: 1,
+            mean: 0.579264803120634
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 470,
+            coverage: 1,
+            mean: 0.5789648869505041
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 470,
+            coverage: 1,
+            mean: 0.5755088450824247
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.5744343776354695
+          },
+          {
+            name: "j2-jumbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.5739451247840647
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 470,
+            coverage: 1,
+            mean: 0.5717397627984385
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.5715206900558626
+          },
+          {
+            name: "command",
+            n: 470,
+            coverage: 1,
+            mean: 0.5689270635695529
+          },
+          {
+            name: "llama-2-70b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5684962065528784
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 470,
+            coverage: 1,
+            mean: 0.5663437346766884
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 470,
+            coverage: 1,
+            mean: 0.5646562598286023
+          },
+          {
+            name: "j2-grande",
+            n: 470,
+            coverage: 1,
+            mean: 0.5627311002771113
+          },
+          {
+            name: "luminous-supreme",
+            n: 470,
+            coverage: 1,
+            mean: 0.5611175173240215
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.5574881373441326
+          },
+          {
+            name: "llama-2-13b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5573199508206532
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.5567223583230998
+          },
+          {
+            name: "llama-65b",
+            n: 470,
+            coverage: 1,
+            mean: 0.556394524178734
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 470,
+            coverage: 1,
+            mean: 0.5507767921561689
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 470,
+            coverage: 1,
+            mean: 0.5494695591424006
+          },
+          {
+            name: "solar-pro-241126",
+            n: 470,
+            coverage: 1,
+            mean: 0.5490542816034085
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 470,
+            coverage: 1,
+            mean: 0.548647379281427
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 470,
+            coverage: 1,
+            mean: 0.5485396899371034
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.5465673420443512
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.5463985585251911
+          },
+          {
+            name: "command-r-plus",
+            n: 470,
+            coverage: 1,
+            mean: 0.5386321979370903
+          },
+          {
+            name: "falcon-40b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5359275777844984
+          },
+          {
+            name: "command-r",
+            n: 470,
+            coverage: 1,
+            mean: 0.5358932058091849
+          },
+          {
+            name: "llama-2-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5344331690000249
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.5342802438618847
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.5300945839514807
+          },
+          {
+            name: "text-bison@001",
+            n: 470,
+            coverage: 1,
+            mean: 0.5298497192890876
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5295108111790603
+          },
+          {
+            name: "yi-6b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5268152735125882
+          },
+          {
+            name: "luminous-extended",
+            n: 470,
+            coverage: 1,
+            mean: 0.5184451353015456
+          },
+          {
+            name: "claude-2.1",
+            n: 470,
+            coverage: 1,
+            mean: 0.5181470960643189
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 470,
+            coverage: 1,
+            mean: 0.5180311051769878
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 470,
+            coverage: 1,
+            mean: 0.5104704196443107
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.5011072539234587
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 470,
+            coverage: 1,
+            mean: 0.4987752692294606
+          },
+          {
+            name: "claude-instant-v1",
+            n: 470,
+            coverage: 1,
+            mean: 0.4987752692294606
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 470,
+            coverage: 1,
+            mean: 0.49652900137134626
+          },
+          {
+            name: "command-light",
+            n: 470,
+            coverage: 1,
+            mean: 0.48867172770842227
+          },
+          {
+            name: "luminous-base",
+            n: 470,
+            coverage: 1,
+            mean: 0.4884150930880337
+          },
+          {
+            name: "jamba-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.47875454994729433
+          },
+          {
+            name: "olmo-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.46984500617445785
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 470,
+            coverage: 1,
+            mean: 0.4669295561549059
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 470,
+            coverage: 1,
+            mean: 0.46512397690202
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 470,
+            coverage: 1,
+            mean: 0.4632976815478528
+          },
+          {
+            name: "falcon-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.4542144339493872
+          },
+          {
+            name: "text-unicorn@001",
+            n: 470,
+            coverage: 1,
+            mean: 0.4519233738735427
+          },
+          {
+            name: "mistral-small-2402",
+            n: 470,
+            coverage: 1,
+            mean: 0.40852306572688335
+          },
+          {
+            name: "dbrx-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.39258597176270843
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.34618912960953435
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 470,
+            coverage: 1,
+            mean: 0.3399613237236897
+          },
+          {
+            name: "mistral-large-2402",
+            n: 470,
+            coverage: 1,
+            mean: 0.3394006249552295
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 470,
+            coverage: 1,
+            mean: 0.27889311769836594
+          },
+          {
+            name: "yi-large-preview",
+            n: 470,
+            coverage: 1,
+            mean: 0.2612289307838297
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.1432715443078883
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 470,
+            coverage: 1,
+            mean: 0.13578428144466154
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 470,
+            coverage: 1,
+            mean: 0.08639862936006629
+          }
+        ],
+        split: "narrativeqa"
+      },
+      {
+        metrics: [
+          "bleu_4"
+        ],
+        itemCount: 470,
+        totalResponses: 44650,
+        loadedResponses: 44650,
+        minimumItems: 47,
+        modelCount: 95,
+        scoredResponses: 44650,
+        excludedModelCount: 0,
+        avgScore: 0.08053154044842319,
+        medianScore: 0.08156355302600278,
+        standardError: 0.002475287254230811,
+        discrimination: 0.02399880032730815,
+        refCoverage: 1,
+        bounded: true,
+        binary: false,
+        best: {
+          name: "llama-3.3-70b-instruct-turbo",
+          n: 470,
+          coverage: 1,
+          mean: 0.1314243365872605
+        },
+        worst: {
+          name: "claude-3-sonnet-20240229",
+          n: 470,
+          coverage: 1,
+          mean: 0.005610440950757208
+        },
+        models: [
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.1314243365872605
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.13032200665080282
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.12637428354559804
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.12076246497157399
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.11972391839412183
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.11967847469701177
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 470,
+            coverage: 1,
+            mean: 0.11288242071933917
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 470,
+            coverage: 1,
+            mean: 0.11188864968641431
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 470,
+            coverage: 1,
+            mean: 0.11184363578181598
+          },
+          {
+            name: "command",
+            n: 470,
+            coverage: 1,
+            mean: 0.1103441494566447
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 470,
+            coverage: 1,
+            mean: 0.10875812639936155
+          },
+          {
+            name: "command-light",
+            n: 470,
+            coverage: 1,
+            mean: 0.10753665649035882
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 470,
+            coverage: 1,
+            mean: 0.10745211424533045
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.10714604931267088
+          },
+          {
+            name: "llama-3-70b",
+            n: 470,
+            coverage: 1,
+            mean: 0.10488319194453563
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.1039359457259987
+          },
+          {
+            name: "gpt-4-0613",
+            n: 470,
+            coverage: 1,
+            mean: 0.10274923422512591
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.10110500914255882
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.09958825884853068
+          },
+          {
+            name: "text-davinci-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.09842512626445041
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 470,
+            coverage: 1,
+            mean: 0.09823464841964342
+          },
+          {
+            name: "palmyra-x-004",
+            n: 470,
+            coverage: 1,
+            mean: 0.09736827537606046
+          },
+          {
+            name: "text-davinci-003",
+            n: 470,
+            coverage: 1,
+            mean: 0.09679422025863511
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 470,
+            coverage: 1,
+            mean: 0.09545075198450803
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 470,
+            coverage: 1,
+            mean: 0.0951683869881572
+          },
+          {
+            name: "phi-2",
+            n: 470,
+            coverage: 1,
+            mean: 0.09497172231320208
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.09390490164281633
+          },
+          {
+            name: "deepseek-v3",
+            n: 470,
+            coverage: 1,
+            mean: 0.0934604277850118
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 470,
+            coverage: 1,
+            mean: 0.09328362670214947
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.0928011294408584
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 470,
+            coverage: 1,
+            mean: 0.09215620541385762
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 470,
+            coverage: 1,
+            mean: 0.09164954277042557
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 470,
+            coverage: 1,
+            mean: 0.09134291448217069
+          },
+          {
+            name: "gemma-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.09011505872580701
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 470,
+            coverage: 1,
+            mean: 0.08931997163858163
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 470,
+            coverage: 1,
+            mean: 0.08740491741124139
+          },
+          {
+            name: "claude-2.0",
+            n: 470,
+            coverage: 1,
+            mean: 0.08571935576480268
+          },
+          {
+            name: "llama-65b",
+            n: 470,
+            coverage: 1,
+            mean: 0.08566842710395214
+          },
+          {
+            name: "llama-3-8b",
+            n: 470,
+            coverage: 1,
+            mean: 0.0853816934923045
+          },
+          {
+            name: "claude-v1.3",
+            n: 470,
+            coverage: 1,
+            mean: 0.08490233479891793
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.08479776149996894
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.08457742929451498
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 470,
+            coverage: 1,
+            mean: 0.0838212607739011
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 470,
+            coverage: 1,
+            mean: 0.08337257740759882
+          },
+          {
+            name: "llama-2-70b",
+            n: 470,
+            coverage: 1,
+            mean: 0.083193614591184
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 470,
+            coverage: 1,
+            mean: 0.08201646266653219
+          },
+          {
+            name: "jamba-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.08166097032319324
+          },
+          {
+            name: "luminous-supreme",
+            n: 470,
+            coverage: 1,
+            mean: 0.08156355302600278
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.08101664479029602
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.0806032381166488
+          },
+          {
+            name: "solar-pro-241126",
+            n: 470,
+            coverage: 1,
+            mean: 0.08035383318749416
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 470,
+            coverage: 1,
+            mean: 0.0800397057527279
+          },
+          {
+            name: "yi-34b",
+            n: 470,
+            coverage: 1,
+            mean: 0.07944410665579543
+          },
+          {
+            name: "mistral-large-2407",
+            n: 470,
+            coverage: 1,
+            mean: 0.0789292587219316
+          },
+          {
+            name: "llama-2-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.07869699949825319
+          },
+          {
+            name: "j2-jumbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.07759749626811732
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 470,
+            coverage: 1,
+            mean: 0.07654840305483764
+          },
+          {
+            name: "falcon-40b",
+            n: 470,
+            coverage: 1,
+            mean: 0.07624922143911725
+          },
+          {
+            name: "text-bison@001",
+            n: 470,
+            coverage: 1,
+            mean: 0.07464354140995066
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 470,
+            coverage: 1,
+            mean: 0.07383254820546109
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.07378001734382869
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.07286966657893003
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 470,
+            coverage: 1,
+            mean: 0.07200611096625406
+          },
+          {
+            name: "command-r",
+            n: 470,
+            coverage: 1,
+            mean: 0.07152338033355832
+          },
+          {
+            name: "j2-grande",
+            n: 470,
+            coverage: 1,
+            mean: 0.07133305764535218
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 470,
+            coverage: 1,
+            mean: 0.07013637712505362
+          },
+          {
+            name: "llama-2-13b",
+            n: 470,
+            coverage: 1,
+            mean: 0.07001828039759331
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 470,
+            coverage: 1,
+            mean: 0.06977969573457427
+          },
+          {
+            name: "text-unicorn@001",
+            n: 470,
+            coverage: 1,
+            mean: 0.06890539483754418
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 470,
+            coverage: 1,
+            mean: 0.06853698593102676
+          },
+          {
+            name: "claude-instant-v1",
+            n: 470,
+            coverage: 1,
+            mean: 0.06853698593102676
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.06755838976085682
+          },
+          {
+            name: "luminous-extended",
+            n: 470,
+            coverage: 1,
+            mean: 0.06734009794280173
+          },
+          {
+            name: "yi-6b",
+            n: 470,
+            coverage: 1,
+            mean: 0.0670355082246918
+          },
+          {
+            name: "claude-2.1",
+            n: 470,
+            coverage: 1,
+            mean: 0.0660122611321021
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.06437551442786474
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 470,
+            coverage: 1,
+            mean: 0.06287616235207588
+          },
+          {
+            name: "command-r-plus",
+            n: 470,
+            coverage: 1,
+            mean: 0.061562697785990196
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 470,
+            coverage: 1,
+            mean: 0.05766452350628547
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 470,
+            coverage: 1,
+            mean: 0.05685503244443874
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 470,
+            coverage: 1,
+            mean: 0.05637676945251194
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.056279860241626345
+          },
+          {
+            name: "mistral-large-2402",
+            n: 470,
+            coverage: 1,
+            mean: 0.05605076442163891
+          },
+          {
+            name: "luminous-base",
+            n: 470,
+            coverage: 1,
+            mean: 0.05519029766923696
+          },
+          {
+            name: "mistral-small-2402",
+            n: 470,
+            coverage: 1,
+            mean: 0.055050796896981065
+          },
+          {
+            name: "olmo-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.05488447333644456
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 470,
+            coverage: 1,
+            mean: 0.05148325268943953
+          },
+          {
+            name: "dbrx-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.0500954922607664
+          },
+          {
+            name: "falcon-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.044869374013339736
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.0408175186262022
+          },
+          {
+            name: "yi-large-preview",
+            n: 470,
+            coverage: 1,
+            mean: 0.03049449359757215
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 470,
+            coverage: 1,
+            mean: 0.028365538055445255
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.023259104408777057
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 470,
+            coverage: 1,
+            mean: 0.01808083329147828
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 470,
+            coverage: 1,
+            mean: 0.005610440950757208
+          }
+        ],
+        split: "narrativeqa"
+      },
+      {
+        metrics: [
+          "exact_match"
+        ],
+        itemCount: 470,
+        totalResponses: 44650,
+        loadedResponses: 44650,
+        minimumItems: 47,
+        modelCount: 95,
+        scoredResponses: 44650,
+        excludedModelCount: 0,
+        avgScore: 0.27713325867861144,
+        medianScore: 0.31063829787234043,
+        standardError: 0.008278441710185918,
+        discrimination: 0.08026247025852691,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "llama-3.2-90b-vision-instruct-turbo",
+          n: 470,
+          coverage: 1,
+          mean: 0.3659574468085106
+        },
+        worst: {
+          name: "nemotron-4-340b-instruct",
+          n: 470,
+          coverage: 1,
+          mean: 0
+        },
+        models: [
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.3659574468085106
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 470,
+            coverage: 1,
+            mean: 0.3638297872340426
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.3595744680851064
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.3574468085106383
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.35319148936170214
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 470,
+            coverage: 1,
+            mean: 0.35106382978723405
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 470,
+            coverage: 1,
+            mean: 0.35106382978723405
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 470,
+            coverage: 1,
+            mean: 0.35106382978723405
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 470,
+            coverage: 1,
+            mean: 0.34893617021276596
+          },
+          {
+            name: "gpt-4-0613",
+            n: 470,
+            coverage: 1,
+            mean: 0.3468085106382979
+          },
+          {
+            name: "llama-3-70b",
+            n: 470,
+            coverage: 1,
+            mean: 0.3468085106382979
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.3446808510638298
+          },
+          {
+            name: "palmyra-x-004",
+            n: 470,
+            coverage: 1,
+            mean: 0.3446808510638298
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 470,
+            coverage: 1,
+            mean: 0.3404255319148936
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.3382978723404255
+          },
+          {
+            name: "gemma-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.33617021276595743
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.33617021276595743
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 470,
+            coverage: 1,
+            mean: 0.33617021276595743
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 470,
+            coverage: 1,
+            mean: 0.33404255319148934
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 470,
+            coverage: 1,
+            mean: 0.3276595744680851
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.3276595744680851
+          },
+          {
+            name: "mistral-large-2407",
+            n: 470,
+            coverage: 1,
+            mean: 0.3276595744680851
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.3276595744680851
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.32553191489361705
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 470,
+            coverage: 1,
+            mean: 0.32553191489361705
+          },
+          {
+            name: "llama-2-70b",
+            n: 470,
+            coverage: 1,
+            mean: 0.32553191489361705
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.32553191489361705
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 470,
+            coverage: 1,
+            mean: 0.32340425531914896
+          },
+          {
+            name: "j2-jumbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.32340425531914896
+          },
+          {
+            name: "phi-2",
+            n: 470,
+            coverage: 1,
+            mean: 0.32340425531914896
+          },
+          {
+            name: "deepseek-v3",
+            n: 470,
+            coverage: 1,
+            mean: 0.32127659574468087
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.32127659574468087
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.32127659574468087
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.3191489361702128
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 470,
+            coverage: 1,
+            mean: 0.3170212765957447
+          },
+          {
+            name: "luminous-supreme",
+            n: 470,
+            coverage: 1,
+            mean: 0.3170212765957447
+          },
+          {
+            name: "claude-2.0",
+            n: 470,
+            coverage: 1,
+            mean: 0.3148936170212766
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.3148936170212766
+          },
+          {
+            name: "llama-65b",
+            n: 470,
+            coverage: 1,
+            mean: 0.3148936170212766
+          },
+          {
+            name: "yi-34b",
+            n: 470,
+            coverage: 1,
+            mean: 0.3148936170212766
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 470,
+            coverage: 1,
+            mean: 0.3127659574468085
+          },
+          {
+            name: "llama-2-13b",
+            n: 470,
+            coverage: 1,
+            mean: 0.3127659574468085
+          },
+          {
+            name: "llama-2-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.3127659574468085
+          },
+          {
+            name: "llama-3-8b",
+            n: 470,
+            coverage: 1,
+            mean: 0.3127659574468085
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 470,
+            coverage: 1,
+            mean: 0.3127659574468085
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 470,
+            coverage: 1,
+            mean: 0.3127659574468085
+          },
+          {
+            name: "claude-v1.3",
+            n: 470,
+            coverage: 1,
+            mean: 0.31063829787234043
+          },
+          {
+            name: "text-davinci-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.31063829787234043
+          },
+          {
+            name: "text-davinci-003",
+            n: 470,
+            coverage: 1,
+            mean: 0.30851063829787234
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.30638297872340425
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 470,
+            coverage: 1,
+            mean: 0.30425531914893617
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 470,
+            coverage: 1,
+            mean: 0.3021276595744681
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.2978723404255319
+          },
+          {
+            name: "j2-grande",
+            n: 470,
+            coverage: 1,
+            mean: 0.2978723404255319
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 470,
+            coverage: 1,
+            mean: 0.2936170212765957
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 470,
+            coverage: 1,
+            mean: 0.2936170212765957
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 470,
+            coverage: 1,
+            mean: 0.2936170212765957
+          },
+          {
+            name: "yi-6b",
+            n: 470,
+            coverage: 1,
+            mean: 0.2936170212765957
+          },
+          {
+            name: "command-r-plus",
+            n: 470,
+            coverage: 1,
+            mean: 0.28936170212765955
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.2872340425531915
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.28297872340425534
+          },
+          {
+            name: "luminous-extended",
+            n: 470,
+            coverage: 1,
+            mean: 0.28085106382978725
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.27872340425531916
+          },
+          {
+            name: "falcon-40b",
+            n: 470,
+            coverage: 1,
+            mean: 0.2765957446808511
+          },
+          {
+            name: "solar-pro-241126",
+            n: 470,
+            coverage: 1,
+            mean: 0.274468085106383
+          },
+          {
+            name: "luminous-base",
+            n: 470,
+            coverage: 1,
+            mean: 0.2723404255319149
+          },
+          {
+            name: "text-bison@001",
+            n: 470,
+            coverage: 1,
+            mean: 0.2702127659574468
+          },
+          {
+            name: "claude-2.1",
+            n: 470,
+            coverage: 1,
+            mean: 0.2680851063829787
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 470,
+            coverage: 1,
+            mean: 0.2680851063829787
+          },
+          {
+            name: "claude-instant-v1",
+            n: 470,
+            coverage: 1,
+            mean: 0.2680851063829787
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 470,
+            coverage: 1,
+            mean: 0.26595744680851063
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.26595744680851063
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 470,
+            coverage: 1,
+            mean: 0.26382978723404255
+          },
+          {
+            name: "olmo-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.25957446808510637
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 470,
+            coverage: 1,
+            mean: 0.2425531914893617
+          },
+          {
+            name: "falcon-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.2297872340425532
+          },
+          {
+            name: "command",
+            n: 470,
+            coverage: 1,
+            mean: 0.22340425531914893
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 470,
+            coverage: 1,
+            mean: 0.22340425531914893
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 470,
+            coverage: 1,
+            mean: 0.2170212765957447
+          },
+          {
+            name: "text-unicorn@001",
+            n: 470,
+            coverage: 1,
+            mean: 0.2
+          },
+          {
+            name: "dbrx-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.19574468085106383
+          },
+          {
+            name: "command-r",
+            n: 470,
+            coverage: 1,
+            mean: 0.17659574468085107
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 470,
+            coverage: 1,
+            mean: 0.17659574468085107
+          },
+          {
+            name: "mistral-small-2402",
+            n: 470,
+            coverage: 1,
+            mean: 0.17446808510638298
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 470,
+            coverage: 1,
+            mean: 0.16808510638297872
+          },
+          {
+            name: "command-light",
+            n: 470,
+            coverage: 1,
+            mean: 0.15531914893617021
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 470,
+            coverage: 1,
+            mean: 0.14042553191489363
+          },
+          {
+            name: "jamba-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.13617021276595745
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.11914893617021277
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 470,
+            coverage: 1,
+            mean: 0.1148936170212766
+          },
+          {
+            name: "mistral-large-2402",
+            n: 470,
+            coverage: 1,
+            mean: 0.09361702127659574
+          },
+          {
+            name: "yi-large-preview",
+            n: 470,
+            coverage: 1,
+            mean: 0.06808510638297872
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 470,
+            coverage: 1,
+            mean: 0.029787234042553193
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 470,
+            coverage: 1,
+            mean: 0.014893617021276596
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0
+          }
+        ],
+        split: "narrativeqa"
+      },
+      {
+        metrics: [
+          "f1_score"
+        ],
+        itemCount: 470,
+        totalResponses: 44650,
+        loadedResponses: 44650,
+        minimumItems: 47,
+        modelCount: 95,
+        scoredResponses: 44650,
+        excludedModelCount: 0,
+        avgScore: 0.6951960379928225,
+        medianScore: 0.7419025853197947,
+        standardError: 0.013275903703575502,
+        discrimination: 0.1287146619456436,
+        refCoverage: 1,
+        bounded: true,
+        binary: false,
+        best: {
+          name: "gpt-4o-2024-05-13",
+          n: 470,
+          coverage: 1,
+          mean: 0.807637968122093
+        },
+        worst: {
+          name: "claude-3-sonnet-20240229",
+          n: 470,
+          coverage: 1,
+          mean: 0.11731297881938049
+        },
+        models: [
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 470,
+            coverage: 1,
+            mean: 0.807637968122093
+          },
+          {
+            name: "llama-3-70b",
+            n: 470,
+            coverage: 1,
+            mean: 0.8030793048617818
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 470,
+            coverage: 1,
+            mean: 0.8014012000468398
+          },
+          {
+            name: "deepseek-v3",
+            n: 470,
+            coverage: 1,
+            mean: 0.796385049901266
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.7921893851681928
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 470,
+            coverage: 1,
+            mean: 0.7918219755354646
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7918079021280781
+          },
+          {
+            name: "yi-34b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7902513720924279
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.7883437082755639
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 470,
+            coverage: 1,
+            mean: 0.7868682208415099
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7854975725796288
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.7815302739806066
+          },
+          {
+            name: "mistral-large-2407",
+            n: 470,
+            coverage: 1,
+            mean: 0.7814052144826767
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 470,
+            coverage: 1,
+            mean: 0.7807942114622418
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 470,
+            coverage: 1,
+            mean: 0.7797281004099171
+          },
+          {
+            name: "gpt-4-0613",
+            n: 470,
+            coverage: 1,
+            mean: 0.7786734805974572
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7786661706939547
+          },
+          {
+            name: "palmyra-x-004",
+            n: 470,
+            coverage: 1,
+            mean: 0.7764230242955437
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 470,
+            coverage: 1,
+            mean: 0.7754792805391623
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7751362358843709
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 470,
+            coverage: 1,
+            mean: 0.774218309656898
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 470,
+            coverage: 1,
+            mean: 0.7732483580864681
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 470,
+            coverage: 1,
+            mean: 0.7731362432259936
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.7670427217035655
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.7666909352379248
+          },
+          {
+            name: "llama-65b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7662576203854474
+          },
+          {
+            name: "gemma-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7658560375238358
+          },
+          {
+            name: "llama-2-70b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7652962055176434
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 470,
+            coverage: 1,
+            mean: 0.7645099341926584
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7625227827972106
+          },
+          {
+            name: "solar-pro-241126",
+            n: 470,
+            coverage: 1,
+            mean: 0.7622985558908396
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7618522224787838
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.7615640522018732
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 470,
+            coverage: 1,
+            mean: 0.7608522591634626
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.7588899408904346
+          },
+          {
+            name: "j2-grande",
+            n: 470,
+            coverage: 1,
+            mean: 0.7584570723235649
+          },
+          {
+            name: "llama-3-8b",
+            n: 470,
+            coverage: 1,
+            mean: 0.757371131128314
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7570122594604363
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 470,
+            coverage: 1,
+            mean: 0.7558571330856428
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.7538869370674752
+          },
+          {
+            name: "command",
+            n: 470,
+            coverage: 1,
+            mean: 0.7525615050387446
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7520895143399147
+          },
+          {
+            name: "llama-2-13b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7505939032298177
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.7477100729014305
+          },
+          {
+            name: "luminous-supreme",
+            n: 470,
+            coverage: 1,
+            mean: 0.747239176005039
+          },
+          {
+            name: "command-r-plus",
+            n: 470,
+            coverage: 1,
+            mean: 0.7451532022713104
+          },
+          {
+            name: "j2-jumbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7421270789865014
+          },
+          {
+            name: "text-davinci-003",
+            n: 470,
+            coverage: 1,
+            mean: 0.7419025853197947
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7405430755597354
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 470,
+            coverage: 1,
+            mean: 0.7402077458164612
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.7389478932672628
+          },
+          {
+            name: "text-davinci-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.7373204464282681
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.7373116098324412
+          },
+          {
+            name: "claude-v1.3",
+            n: 470,
+            coverage: 1,
+            mean: 0.7346415706555864
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 470,
+            coverage: 1,
+            mean: 0.7336409414122447
+          },
+          {
+            name: "command-r",
+            n: 470,
+            coverage: 1,
+            mean: 0.732873843928287
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 470,
+            coverage: 1,
+            mean: 0.7304282336055927
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 470,
+            coverage: 1,
+            mean: 0.7288620138653223
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 470,
+            coverage: 1,
+            mean: 0.7228852817690212
+          },
+          {
+            name: "text-bison@001",
+            n: 470,
+            coverage: 1,
+            mean: 0.721725715109421
+          },
+          {
+            name: "phi-2",
+            n: 470,
+            coverage: 1,
+            mean: 0.7202429270193441
+          },
+          {
+            name: "claude-2.0",
+            n: 470,
+            coverage: 1,
+            mean: 0.7196188494113127
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7184463780947558
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 470,
+            coverage: 1,
+            mean: 0.7179677128334356
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 470,
+            coverage: 1,
+            mean: 0.7144393962576546
+          },
+          {
+            name: "yi-6b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7124062595255354
+          },
+          {
+            name: "llama-2-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7007936735173748
+          },
+          {
+            name: "luminous-extended",
+            n: 470,
+            coverage: 1,
+            mean: 0.6846990963505935
+          },
+          {
+            name: "claude-2.1",
+            n: 470,
+            coverage: 1,
+            mean: 0.6796229480938349
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 470,
+            coverage: 1,
+            mean: 0.6794262495206659
+          },
+          {
+            name: "falcon-40b",
+            n: 470,
+            coverage: 1,
+            mean: 0.6729134800449937
+          },
+          {
+            name: "jamba-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.667812688533454
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.6579747133891153
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 470,
+            coverage: 1,
+            mean: 0.652219962005598
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.6503331553086579
+          },
+          {
+            name: "command-light",
+            n: 470,
+            coverage: 1,
+            mean: 0.6442222837721272
+          },
+          {
+            name: "luminous-base",
+            n: 470,
+            coverage: 1,
+            mean: 0.6401253871947112
+          },
+          {
+            name: "falcon-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.6329631667923591
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 470,
+            coverage: 1,
+            mean: 0.6295852664617004
+          },
+          {
+            name: "claude-instant-v1",
+            n: 470,
+            coverage: 1,
+            mean: 0.6295852664617004
+          },
+          {
+            name: "olmo-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.6128209311992692
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 470,
+            coverage: 1,
+            mean: 0.6056529773745178
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 470,
+            coverage: 1,
+            mean: 0.5924851105759319
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5907257168663447
+          },
+          {
+            name: "text-unicorn@001",
+            n: 470,
+            coverage: 1,
+            mean: 0.5799807925909432
+          },
+          {
+            name: "mistral-small-2402",
+            n: 470,
+            coverage: 1,
+            mean: 0.5383697226593908
+          },
+          {
+            name: "dbrx-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.5064214704980096
+          },
+          {
+            name: "mistral-large-2402",
+            n: 470,
+            coverage: 1,
+            mean: 0.45978900733951555
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.45703054822518036
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 470,
+            coverage: 1,
+            mean: 0.4505252752902348
+          },
+          {
+            name: "yi-large-preview",
+            n: 470,
+            coverage: 1,
+            mean: 0.38099028563595017
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 470,
+            coverage: 1,
+            mean: 0.3511769696755236
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.24420975935760755
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 470,
+            coverage: 1,
+            mean: 0.24202742936196756
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 470,
+            coverage: 1,
+            mean: 0.11731297881938049
+          }
+        ],
+        split: "narrativeqa"
+      },
+      {
+        metrics: [
+          "max_prob"
+        ],
+        itemCount: 470,
+        totalResponses: 44650,
+        loadedResponses: 44650,
+        minimumItems: 47,
+        modelCount: 95,
+        scoredResponses: 44650,
+        excludedModelCount: 0,
+        avgScore: 0.9396359662542118,
+        medianScore: 1,
+        standardError: 0.01901208898311993,
+        discrimination: 0.1843290416217547,
+        refCoverage: 1,
+        bounded: true,
+        binary: false,
+        best: {
+          name: "claude-2.0",
+          n: 470,
+          coverage: 1,
+          mean: 1
+        },
+        worst: {
+          name: "command-light",
+          n: 470,
+          coverage: 1,
+          mean: 0.18584759978480395
+        },
+        models: [
+          {
+            name: "claude-2.0",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-2.1",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-instant-v1",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-v1.3",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "command-r",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "command-r-plus",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "dbrx-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "deepseek-v3",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "falcon-40b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "falcon-7b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemma-7b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4-0613",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "jamba-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-2-13b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-2-70b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-2-7b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3-70b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3-8b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-65b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-large-2402",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-large-2407",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-small-2402",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "olmo-7b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "palmyra-x-004",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "phi-2",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "solar-pro-241126",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "text-bison@001",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "text-unicorn@001",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "yi-34b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "yi-6b",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "yi-large-preview",
+            n: 470,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.9484042552082194
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.8160128543852905
+          },
+          {
+            name: "text-davinci-003",
+            n: 470,
+            coverage: 1,
+            mean: 0.6608910528560841
+          },
+          {
+            name: "text-davinci-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.5633011392614921
+          },
+          {
+            name: "command",
+            n: 470,
+            coverage: 1,
+            mean: 0.45012455012035063
+          },
+          {
+            name: "j2-grande",
+            n: 470,
+            coverage: 1,
+            mean: 0.39165791268205274
+          },
+          {
+            name: "luminous-supreme",
+            n: 470,
+            coverage: 1,
+            mean: 0.3709673906997718
+          },
+          {
+            name: "j2-jumbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.30262584129753634
+          },
+          {
+            name: "luminous-base",
+            n: 470,
+            coverage: 1,
+            mean: 0.28874741699878104
+          },
+          {
+            name: "luminous-extended",
+            n: 470,
+            coverage: 1,
+            mean: 0.286836780855737
+          },
+          {
+            name: "command-light",
+            n: 470,
+            coverage: 1,
+            mean: 0.18584759978480395
+          }
+        ],
+        split: "narrativeqa"
+      },
+      {
+        metrics: [
+          "quasi_exact_match"
+        ],
+        itemCount: 470,
+        totalResponses: 44650,
+        loadedResponses: 44650,
+        minimumItems: 47,
+        modelCount: 95,
+        scoredResponses: 44650,
+        excludedModelCount: 0,
+        avgScore: 0.45314669652855544,
+        medianScore: 0.502127659574468,
+        standardError: 0.01321638242383821,
+        discrimination: 0.12813758172790338,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "llama-3-70b",
+          n: 470,
+          coverage: 1,
+          mean: 0.5765957446808511
+        },
+        worst: {
+          name: "nemotron-4-340b-instruct",
+          n: 470,
+          coverage: 1,
+          mean: 0
+        },
+        models: [
+          {
+            name: "llama-3-70b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5765957446808511
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 470,
+            coverage: 1,
+            mean: 0.5702127659574469
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.5680851063829787
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 470,
+            coverage: 1,
+            mean: 0.5680851063829787
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.5680851063829787
+          },
+          {
+            name: "deepseek-v3",
+            n: 470,
+            coverage: 1,
+            mean: 0.5638297872340425
+          },
+          {
+            name: "yi-34b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5617021276595745
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 470,
+            coverage: 1,
+            mean: 0.548936170212766
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 470,
+            coverage: 1,
+            mean: 0.548936170212766
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.5468085106382978
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.5446808510638298
+          },
+          {
+            name: "llama-65b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5446808510638298
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.5425531914893617
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.5404255319148936
+          },
+          {
+            name: "mistral-large-2407",
+            n: 470,
+            coverage: 1,
+            mean: 0.5404255319148936
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 470,
+            coverage: 1,
+            mean: 0.5382978723404256
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 470,
+            coverage: 1,
+            mean: 0.5382978723404256
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5382978723404256
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 470,
+            coverage: 1,
+            mean: 0.5361702127659574
+          },
+          {
+            name: "palmyra-x-004",
+            n: 470,
+            coverage: 1,
+            mean: 0.5361702127659574
+          },
+          {
+            name: "llama-2-70b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5340425531914894
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 470,
+            coverage: 1,
+            mean: 0.5319148936170213
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 470,
+            coverage: 1,
+            mean: 0.5319148936170213
+          },
+          {
+            name: "solar-pro-241126",
+            n: 470,
+            coverage: 1,
+            mean: 0.5319148936170213
+          },
+          {
+            name: "llama-2-13b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5297872340425532
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.5297872340425532
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.5297872340425532
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.5276595744680851
+          },
+          {
+            name: "command-r-plus",
+            n: 470,
+            coverage: 1,
+            mean: 0.5255319148936171
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 470,
+            coverage: 1,
+            mean: 0.5255319148936171
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 470,
+            coverage: 1,
+            mean: 0.5234042553191489
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.5234042553191489
+          },
+          {
+            name: "j2-grande",
+            n: 470,
+            coverage: 1,
+            mean: 0.5234042553191489
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.5234042553191489
+          },
+          {
+            name: "gemma-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.5212765957446809
+          },
+          {
+            name: "gpt-4-0613",
+            n: 470,
+            coverage: 1,
+            mean: 0.5191489361702127
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.5191489361702127
+          },
+          {
+            name: "luminous-supreme",
+            n: 470,
+            coverage: 1,
+            mean: 0.5170212765957447
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.5148936170212766
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.5127659574468085
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.5106382978723404
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.5106382978723404
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 470,
+            coverage: 1,
+            mean: 0.5085106382978724
+          },
+          {
+            name: "text-bison@001",
+            n: 470,
+            coverage: 1,
+            mean: 0.5085106382978724
+          },
+          {
+            name: "llama-3-8b",
+            n: 470,
+            coverage: 1,
+            mean: 0.502127659574468
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.502127659574468
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.502127659574468
+          },
+          {
+            name: "yi-6b",
+            n: 470,
+            coverage: 1,
+            mean: 0.502127659574468
+          },
+          {
+            name: "command-r",
+            n: 470,
+            coverage: 1,
+            mean: 0.4978723404255319
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 470,
+            coverage: 1,
+            mean: 0.49361702127659574
+          },
+          {
+            name: "j2-jumbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.49148936170212765
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 470,
+            coverage: 1,
+            mean: 0.49148936170212765
+          },
+          {
+            name: "claude-v1.3",
+            n: 470,
+            coverage: 1,
+            mean: 0.48936170212765956
+          },
+          {
+            name: "phi-2",
+            n: 470,
+            coverage: 1,
+            mean: 0.48723404255319147
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 470,
+            coverage: 1,
+            mean: 0.4851063829787234
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 470,
+            coverage: 1,
+            mean: 0.4829787234042553
+          },
+          {
+            name: "text-davinci-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.4829787234042553
+          },
+          {
+            name: "text-davinci-003",
+            n: 470,
+            coverage: 1,
+            mean: 0.4829787234042553
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 470,
+            coverage: 1,
+            mean: 0.4808510638297872
+          },
+          {
+            name: "command",
+            n: 470,
+            coverage: 1,
+            mean: 0.4787234042553192
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 470,
+            coverage: 1,
+            mean: 0.4787234042553192
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 470,
+            coverage: 1,
+            mean: 0.4787234042553192
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.4765957446808511
+          },
+          {
+            name: "claude-2.0",
+            n: 470,
+            coverage: 1,
+            mean: 0.474468085106383
+          },
+          {
+            name: "llama-2-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.4723404255319149
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.4595744680851064
+          },
+          {
+            name: "luminous-extended",
+            n: 470,
+            coverage: 1,
+            mean: 0.4553191489361702
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 470,
+            coverage: 1,
+            mean: 0.44680851063829785
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 470,
+            coverage: 1,
+            mean: 0.44042553191489364
+          },
+          {
+            name: "claude-2.1",
+            n: 470,
+            coverage: 1,
+            mean: 0.43829787234042555
+          },
+          {
+            name: "jamba-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.4340425531914894
+          },
+          {
+            name: "falcon-40b",
+            n: 470,
+            coverage: 1,
+            mean: 0.4276595744680851
+          },
+          {
+            name: "luminous-base",
+            n: 470,
+            coverage: 1,
+            mean: 0.4276595744680851
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 470,
+            coverage: 1,
+            mean: 0.42127659574468085
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.40425531914893614
+          },
+          {
+            name: "command-light",
+            n: 470,
+            coverage: 1,
+            mean: 0.39787234042553193
+          },
+          {
+            name: "falcon-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.39574468085106385
+          },
+          {
+            name: "olmo-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.39148936170212767
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 470,
+            coverage: 1,
+            mean: 0.3851063829787234
+          },
+          {
+            name: "claude-instant-v1",
+            n: 470,
+            coverage: 1,
+            mean: 0.3851063829787234
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 470,
+            coverage: 1,
+            mean: 0.3851063829787234
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 470,
+            coverage: 1,
+            mean: 0.32340425531914896
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 470,
+            coverage: 1,
+            mean: 0.3148936170212766
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 470,
+            coverage: 1,
+            mean: 0.30851063829787234
+          },
+          {
+            name: "dbrx-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.2851063829787234
+          },
+          {
+            name: "text-unicorn@001",
+            n: 470,
+            coverage: 1,
+            mean: 0.2723404255319149
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 470,
+            coverage: 1,
+            mean: 0.23617021276595745
+          },
+          {
+            name: "mistral-small-2402",
+            n: 470,
+            coverage: 1,
+            mean: 0.23404255319148937
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.16595744680851063
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 470,
+            coverage: 1,
+            mean: 0.15319148936170213
+          },
+          {
+            name: "mistral-large-2402",
+            n: 470,
+            coverage: 1,
+            mean: 0.11914893617021277
+          },
+          {
+            name: "yi-large-preview",
+            n: 470,
+            coverage: 1,
+            mean: 0.09787234042553192
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 470,
+            coverage: 1,
+            mean: 0.03404255319148936
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 470,
+            coverage: 1,
+            mean: 0.019148936170212766
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0
+          }
+        ],
+        split: "narrativeqa"
+      },
+      {
+        metrics: [
+          "rouge_l"
+        ],
+        itemCount: 470,
+        totalResponses: 44650,
+        loadedResponses: 44650,
+        minimumItems: 47,
+        modelCount: 95,
+        scoredResponses: 44650,
+        excludedModelCount: 0,
+        avgScore: 0.6882777354989991,
+        medianScore: 0.7318793596314036,
+        standardError: 0.013374487240032562,
+        discrimination: 0.12967046479355512,
+        refCoverage: 1,
+        bounded: true,
+        binary: false,
+        best: {
+          name: "gpt-4o-2024-05-13",
+          n: 470,
+          coverage: 1,
+          mean: 0.8044494645689573
+        },
+        worst: {
+          name: "claude-3-sonnet-20240229",
+          n: 470,
+          coverage: 1,
+          mean: 0.11401574870220992
+        },
+        models: [
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 470,
+            coverage: 1,
+            mean: 0.8044494645689573
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 470,
+            coverage: 1,
+            mean: 0.7989254698714167
+          },
+          {
+            name: "deepseek-v3",
+            n: 470,
+            coverage: 1,
+            mean: 0.7966334981835698
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.793712417929705
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.7892843086851316
+          },
+          {
+            name: "llama-3-70b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7867630798109234
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 470,
+            coverage: 1,
+            mean: 0.7820306722145767
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 470,
+            coverage: 1,
+            mean: 0.7818579119199074
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.7817847735678563
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.7815897748546814
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 470,
+            coverage: 1,
+            mean: 0.7784199996975293
+          },
+          {
+            name: "yi-34b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7782289500642563
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7765641466517204
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 470,
+            coverage: 1,
+            mean: 0.776334415257843
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 470,
+            coverage: 1,
+            mean: 0.7752744656143911
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 470,
+            coverage: 1,
+            mean: 0.7745730187340018
+          },
+          {
+            name: "mistral-large-2407",
+            n: 470,
+            coverage: 1,
+            mean: 0.7724112270872265
+          },
+          {
+            name: "gpt-4-0613",
+            n: 470,
+            coverage: 1,
+            mean: 0.7723495830735063
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7701497682080688
+          },
+          {
+            name: "palmyra-x-004",
+            n: 470,
+            coverage: 1,
+            mean: 0.7691446179874079
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.7687096404380962
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 470,
+            coverage: 1,
+            mean: 0.7654466402692088
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.765049165022523
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7645716650644451
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 470,
+            coverage: 1,
+            mean: 0.7640201072563326
+          },
+          {
+            name: "llama-2-70b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7632297923821162
+          },
+          {
+            name: "llama-65b",
+            n: 470,
+            coverage: 1,
+            mean: 0.761930631853029
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.761114958238331
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 470,
+            coverage: 1,
+            mean: 0.758209265735047
+          },
+          {
+            name: "solar-pro-241126",
+            n: 470,
+            coverage: 1,
+            mean: 0.7556802278169495
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.7550564584218958
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 470,
+            coverage: 1,
+            mean: 0.7550561897978143
+          },
+          {
+            name: "gemma-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7529764910511858
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 470,
+            coverage: 1,
+            mean: 0.7524945610603355
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.7513997717821577
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.747096556574732
+          },
+          {
+            name: "llama-3-8b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7450053237677383
+          },
+          {
+            name: "command",
+            n: 470,
+            coverage: 1,
+            mean: 0.7437095397612702
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.743333402196663
+          },
+          {
+            name: "llama-2-13b",
+            n: 470,
+            coverage: 1,
+            mean: 0.741649851319404
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 470,
+            coverage: 1,
+            mean: 0.741315593585377
+          },
+          {
+            name: "command-r-plus",
+            n: 470,
+            coverage: 1,
+            mean: 0.7402547801533876
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7401490932389959
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 470,
+            coverage: 1,
+            mean: 0.7394954687750818
+          },
+          {
+            name: "j2-grande",
+            n: 470,
+            coverage: 1,
+            mean: 0.7383483832212937
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7377089616852424
+          },
+          {
+            name: "text-davinci-003",
+            n: 470,
+            coverage: 1,
+            mean: 0.7364321990267774
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 470,
+            coverage: 1,
+            mean: 0.7318793596314036
+          },
+          {
+            name: "j2-jumbo",
+            n: 470,
+            coverage: 1,
+            mean: 0.7306957648837353
+          },
+          {
+            name: "command-r",
+            n: 470,
+            coverage: 1,
+            mean: 0.730194024218268
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.7297708300054008
+          },
+          {
+            name: "luminous-supreme",
+            n: 470,
+            coverage: 1,
+            mean: 0.7286591983730281
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.728516084438647
+          },
+          {
+            name: "text-davinci-002",
+            n: 470,
+            coverage: 1,
+            mean: 0.7283647919779791
+          },
+          {
+            name: "claude-v1.3",
+            n: 470,
+            coverage: 1,
+            mean: 0.7268768153460442
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 470,
+            coverage: 1,
+            mean: 0.7231251001625683
+          },
+          {
+            name: "phi-2",
+            n: 470,
+            coverage: 1,
+            mean: 0.7219162089223766
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 470,
+            coverage: 1,
+            mean: 0.7205915056950212
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 470,
+            coverage: 1,
+            mean: 0.7186695844647705
+          },
+          {
+            name: "claude-2.0",
+            n: 470,
+            coverage: 1,
+            mean: 0.7180198676803543
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 470,
+            coverage: 1,
+            mean: 0.7161064037217727
+          },
+          {
+            name: "text-bison@001",
+            n: 470,
+            coverage: 1,
+            mean: 0.7151852743690883
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7141291864562838
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 470,
+            coverage: 1,
+            mean: 0.7106487167320471
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 470,
+            coverage: 1,
+            mean: 0.7082024765761444
+          },
+          {
+            name: "yi-6b",
+            n: 470,
+            coverage: 1,
+            mean: 0.7026848427228837
+          },
+          {
+            name: "llama-2-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.6982752339145832
+          },
+          {
+            name: "luminous-extended",
+            n: 470,
+            coverage: 1,
+            mean: 0.6766274083263898
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 470,
+            coverage: 1,
+            mean: 0.6733977824467441
+          },
+          {
+            name: "claude-2.1",
+            n: 470,
+            coverage: 1,
+            mean: 0.6728497032676614
+          },
+          {
+            name: "falcon-40b",
+            n: 470,
+            coverage: 1,
+            mean: 0.6642835568415089
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.6578051589430817
+          },
+          {
+            name: "jamba-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.657383952195642
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 470,
+            coverage: 1,
+            mean: 0.6491697294836322
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 470,
+            coverage: 1,
+            mean: 0.6472639983365096
+          },
+          {
+            name: "command-light",
+            n: 470,
+            coverage: 1,
+            mean: 0.6385739117600142
+          },
+          {
+            name: "luminous-base",
+            n: 470,
+            coverage: 1,
+            mean: 0.6311101670606003
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 470,
+            coverage: 1,
+            mean: 0.623331176231721
+          },
+          {
+            name: "claude-instant-v1",
+            n: 470,
+            coverage: 1,
+            mean: 0.623331176231721
+          },
+          {
+            name: "falcon-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.6209573509790112
+          },
+          {
+            name: "olmo-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.6064890084534259
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 470,
+            coverage: 1,
+            mean: 0.6021726398212535
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 470,
+            coverage: 1,
+            mean: 0.59130500533831
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 470,
+            coverage: 1,
+            mean: 0.5863756031794698
+          },
+          {
+            name: "text-unicorn@001",
+            n: 470,
+            coverage: 1,
+            mean: 0.5742655244764684
+          },
+          {
+            name: "mistral-small-2402",
+            n: 470,
+            coverage: 1,
+            mean: 0.5303885406002944
+          },
+          {
+            name: "dbrx-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.5033252702158638
+          },
+          {
+            name: "mistral-large-2402",
+            n: 470,
+            coverage: 1,
+            mean: 0.4522896115526786
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 470,
+            coverage: 1,
+            mean: 0.4510567011300561
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 470,
+            coverage: 1,
+            mean: 0.4449581392729906
+          },
+          {
+            name: "yi-large-preview",
+            n: 470,
+            coverage: 1,
+            mean: 0.37806233349467655
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 470,
+            coverage: 1,
+            mean: 0.3476377170987662
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 470,
+            coverage: 1,
+            mean: 0.22130234386379338
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 470,
+            coverage: 1,
+            mean: 0.21421805932991353
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 470,
+            coverage: 1,
+            mean: 0.11401574870220992
+          }
+        ],
+        split: "narrativeqa"
+      }
+    ],
+    schemaVersion: 1,
+    benchmark: "narrativeqa",
+    computedAt: "2026-11-24T21:35:55.747035+00:00",
+    source: {
+      dataset: "Open-Eval-Commons/OpenEval",
+      parquetRevision: "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+      observedMainRevision: "527ac42de705d7ab704c5baafa784ade9739e4b7",
+      files: [
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/narrativeqa.item/train/0000.parquet",
+          rows: 470,
+          bytes: 2185402,
+          sha256: "a0b1496a5bcf108784dd6ccf9e0023ae8265479111872a28ca96a067894307d8"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/narrativeqa.response/train/0000.parquet",
+          rows: 14884,
+          bytes: 6527066,
+          sha256: "45f5a7754fecee9e64804f3ff72e0310322187eeb36ae25a99459866e942dbf7"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/narrativeqa.response/train/0001.parquet",
+          rows: 14883,
+          bytes: 6722703,
+          sha256: "ef27a0d3e4e2480a3b4462cf62ba56c1bdbcbfa0faaa04ad4f5dbc0f64a0ae3a"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/narrativeqa.response/train/0002.parquet",
+          rows: 14883,
+          bytes: 6735586,
+          sha256: "d3a8a33adca7fd93e6d3b4de4c487a0467ef70650e245947756fd5e7200c787b"
+        }
+      ]
+    },
+    rules: {
+      coverageThreshold: 0.1,
+      coverageDenominator: "Distinct benchmark item IDs",
+      coverageNumerator: "Distinct items with a finite score for the metric after deduplication",
+      deduplication: "One response per model.name \xD7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+      aggregation: "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+      standardError: "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+      metricHandling: "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+      itemSet: "All available items per retained model; no common-item intersection",
+      limitations: "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+    }
+  };
+
+  // openeval_snapshots/benchmark/nq_open.json
+  var nq_open_default = {
+    itemCount: 324,
+    responseCount: 31428,
+    distinctModelCount: 20,
+    distinctModelItemPairs: 6480,
+    duplicateResponsesRemoved: 24948,
+    conflictingDuplicateRows: 0,
+    conflictingDuplicateExamples: [],
+    measurements: [
+      {
+        metrics: [
+          "LLM_correctness"
+        ],
+        itemCount: 324,
+        totalResponses: 31428,
+        loadedResponses: 31428,
+        minimumItems: 33,
+        modelCount: 20,
+        scoredResponses: 6480,
+        excludedModelCount: 0,
+        avgScore: 0.5621913580246913,
+        medianScore: 0.5725308641975309,
+        standardError: 0.009931405758193089,
+        discrimination: 0.04328999406726162,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "deepseek-r1-distill-llama-70b",
+          n: 324,
+          coverage: 1,
+          mean: 0.6358024691358025
+        },
+        worst: {
+          name: "olmo-3.1-32b-instruct",
+          n: 324,
+          coverage: 1,
+          mean: 0.47530864197530864
+        },
+        models: [
+          {
+            name: "deepseek-r1-distill-llama-70b",
+            n: 324,
+            coverage: 1,
+            mean: 0.6358024691358025
+          },
+          {
+            name: "grok-4.1-fast",
+            n: 324,
+            coverage: 1,
+            mean: 0.6111111111111112
+          },
+          {
+            name: "glm-4-32b",
+            n: 324,
+            coverage: 1,
+            mean: 0.6080246913580247
+          },
+          {
+            name: "qwen3-32b",
+            n: 324,
+            coverage: 1,
+            mean: 0.6049382716049383
+          },
+          {
+            name: "llama-3.3-70b-instruct",
+            n: 324,
+            coverage: 1,
+            mean: 0.5987654320987654
+          },
+          {
+            name: "command-r-08-2024",
+            n: 324,
+            coverage: 1,
+            mean: 0.595679012345679
+          },
+          {
+            name: "gemma-3-27b-it",
+            n: 324,
+            coverage: 1,
+            mean: 0.5864197530864198
+          },
+          {
+            name: "qwen3-8b",
+            n: 324,
+            coverage: 1,
+            mean: 0.5771604938271605
+          },
+          {
+            name: "seed-2.0-mini",
+            n: 324,
+            coverage: 1,
+            mean: 0.5771604938271605
+          },
+          {
+            name: "gpt-4.1-mini",
+            n: 324,
+            coverage: 1,
+            mean: 0.5740740740740741
+          },
+          {
+            name: "qwen3-14b",
+            n: 324,
+            coverage: 1,
+            mean: 0.5709876543209876
+          },
+          {
+            name: "phi-4",
+            n: 324,
+            coverage: 1,
+            mean: 0.5679012345679012
+          },
+          {
+            name: "llama-3.1-70b-instruct",
+            n: 324,
+            coverage: 1,
+            mean: 0.5493827160493827
+          },
+          {
+            name: "llama-4-scout",
+            n: 324,
+            coverage: 1,
+            mean: 0.5432098765432098
+          },
+          {
+            name: "qwen-2.5-72b-instruct",
+            n: 324,
+            coverage: 1,
+            mean: 0.5370370370370371
+          },
+          {
+            name: "gemma-3-12b-it",
+            n: 324,
+            coverage: 1,
+            mean: 0.5277777777777778
+          },
+          {
+            name: "claude-3.5-haiku",
+            n: 324,
+            coverage: 1,
+            mean: 0.5246913580246914
+          },
+          {
+            name: "llama-3.1-8b-instruct",
+            n: 324,
+            coverage: 1,
+            mean: 0.49382716049382713
+          },
+          {
+            name: "qwen-2.5-7b-instruct",
+            n: 324,
+            coverage: 1,
+            mean: 0.4845679012345679
+          },
+          {
+            name: "olmo-3.1-32b-instruct",
+            n: 324,
+            coverage: 1,
+            mean: 0.47530864197530864
+          }
+        ],
+        split: "nq_open"
+      },
+      {
+        metrics: [
+          "LLM_judge"
+        ],
+        itemCount: 324,
+        totalResponses: 31428,
+        loadedResponses: 31428,
+        minimumItems: 33,
+        modelCount: 20,
+        scoredResponses: 6480,
+        excludedModelCount: 0,
+        avgScore: 1.3010802469135803,
+        medianScore: 1.3441358024691357,
+        standardError: 0.024517617907694522,
+        discrimination: 0.10686981879598355,
+        refCoverage: 1,
+        bounded: false,
+        binary: false,
+        best: {
+          name: "deepseek-r1-distill-llama-70b",
+          n: 324,
+          coverage: 1,
+          mean: 1.441358024691358
+        },
+        worst: {
+          name: "qwen-2.5-7b-instruct",
+          n: 324,
+          coverage: 1,
+          mean: 1.0895061728395061
+        },
+        models: [
+          {
+            name: "deepseek-r1-distill-llama-70b",
+            n: 324,
+            coverage: 1,
+            mean: 1.441358024691358
+          },
+          {
+            name: "grok-4.1-fast",
+            n: 324,
+            coverage: 1,
+            mean: 1.4104938271604939
+          },
+          {
+            name: "llama-3.3-70b-instruct",
+            n: 324,
+            coverage: 1,
+            mean: 1.404320987654321
+          },
+          {
+            name: "seed-2.0-mini",
+            n: 324,
+            coverage: 1,
+            mean: 1.404320987654321
+          },
+          {
+            name: "qwen3-32b",
+            n: 324,
+            coverage: 1,
+            mean: 1.3950617283950617
+          },
+          {
+            name: "glm-4-32b",
+            n: 324,
+            coverage: 1,
+            mean: 1.3919753086419753
+          },
+          {
+            name: "qwen3-8b",
+            n: 324,
+            coverage: 1,
+            mean: 1.376543209876543
+          },
+          {
+            name: "command-r-08-2024",
+            n: 324,
+            coverage: 1,
+            mean: 1.367283950617284
+          },
+          {
+            name: "gemma-3-27b-it",
+            n: 324,
+            coverage: 1,
+            mean: 1.3611111111111112
+          },
+          {
+            name: "qwen3-14b",
+            n: 324,
+            coverage: 1,
+            mean: 1.3611111111111112
+          },
+          {
+            name: "phi-4",
+            n: 324,
+            coverage: 1,
+            mean: 1.3271604938271604
+          },
+          {
+            name: "gpt-4.1-mini",
+            n: 324,
+            coverage: 1,
+            mean: 1.2993827160493827
+          },
+          {
+            name: "llama-4-scout",
+            n: 324,
+            coverage: 1,
+            mean: 1.2777777777777777
+          },
+          {
+            name: "llama-3.1-70b-instruct",
+            n: 324,
+            coverage: 1,
+            mean: 1.2314814814814814
+          },
+          {
+            name: "qwen-2.5-72b-instruct",
+            n: 324,
+            coverage: 1,
+            mean: 1.2222222222222223
+          },
+          {
+            name: "gemma-3-12b-it",
+            n: 324,
+            coverage: 1,
+            mean: 1.2191358024691359
+          },
+          {
+            name: "claude-3.5-haiku",
+            n: 324,
+            coverage: 1,
+            mean: 1.2006172839506173
+          },
+          {
+            name: "llama-3.1-8b-instruct",
+            n: 324,
+            coverage: 1,
+            mean: 1.1512345679012346
+          },
+          {
+            name: "olmo-3.1-32b-instruct",
+            n: 324,
+            coverage: 1,
+            mean: 1.0895061728395061
+          },
+          {
+            name: "qwen-2.5-7b-instruct",
+            n: 324,
+            coverage: 1,
+            mean: 1.0895061728395061
+          }
+        ],
+        split: "nq_open"
+      }
+    ],
+    schemaVersion: 1,
+    benchmark: "nq_open",
+    computedAt: "2026-11-24T21:35:57.460346+00:00",
+    source: {
+      dataset: "Open-Eval-Commons/OpenEval",
+      parquetRevision: "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+      observedMainRevision: "527ac42de705d7ab704c5baafa784ade9739e4b7",
+      files: [
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/nq_open.item/train/0000.parquet",
+          rows: 324,
+          bytes: 28269,
+          sha256: "5a052feee9c77d85c3c493ad83e9d100b7202ea2cd8c1120f31e0ca2e2f432d5"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/nq_open.response/train/0000.parquet",
+          rows: 31428,
+          bytes: 8456522,
+          sha256: "2db4448fc0eda312918212f229952da2392e6a3c30446e1a29cb03ec8764397d"
         }
       ]
     },
@@ -31660,6 +45206,6094 @@
           rows: 9143,
           bytes: 43233594,
           sha256: "befc7bbf4f937eb0e28e3cc31a765340bf0f941c8bd50f442b6a992a80a9b5cc"
+        }
+      ]
+    },
+    rules: {
+      coverageThreshold: 0.1,
+      coverageDenominator: "Distinct benchmark item IDs",
+      coverageNumerator: "Distinct items with a finite score for the metric after deduplication",
+      deduplication: "One response per model.name \xD7 item_id; lexicographically smallest response_id; identical IDs use the first row in sorted Parquet filename and row order",
+      aggregation: "Each model mean uses its available items; average, median and SE are across equally weighted model means",
+      standardError: "Sample standard deviation of model means / sqrt(number of retained models); null for fewer than two",
+      metricHandling: "Separate statistics and coverage filtering per metric; exclude -1 for safety_llama_score and *_correctness before coverage and aggregation",
+      itemSet: "All available items per retained model; no common-item intersection",
+      limitations: "Models can cover different item sets; SE assumes independent model means. Converted Parquet revision pins the exact data; observed main revision is recorded separately."
+    }
+  };
+
+  // openeval_snapshots/benchmark/openbookqa.json
+  var openbookqa_default = {
+    itemCount: 500,
+    responseCount: 47500,
+    distinctModelCount: 95,
+    distinctModelItemPairs: 47500,
+    duplicateResponsesRemoved: 0,
+    conflictingDuplicateRows: 0,
+    conflictingDuplicateExamples: [],
+    measurements: [
+      {
+        metrics: [
+          "exact_match"
+        ],
+        itemCount: 500,
+        totalResponses: 47500,
+        loadedResponses: 47500,
+        minimumItems: 50,
+        modelCount: 95,
+        scoredResponses: 47500,
+        excludedModelCount: 0,
+        avgScore: 0.8341894736842105,
+        medianScore: 0.884,
+        standardError: 0.017060857374831852,
+        discrimination: 0.16541114929245038,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "claude-3-5-sonnet-20240620",
+          n: 500,
+          coverage: 1,
+          mean: 0.972
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 500,
+          coverage: 1,
+          mean: 0.222
+        },
+        models: [
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 500,
+            coverage: 1,
+            mean: 0.972
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 500,
+            coverage: 1,
+            mean: 0.97
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 500,
+            coverage: 1,
+            mean: 0.968
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.962
+          },
+          {
+            name: "gpt-4-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.956
+          },
+          {
+            name: "deepseek-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.952
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 500,
+            coverage: 1,
+            mean: 0.948
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "yi-large-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.942
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.94
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "text-unicorn@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "llama-3-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.934
+          },
+          {
+            name: "mistral-large-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 500,
+            coverage: 1,
+            mean: 0.93
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "palmyra-x-004",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "solar-pro-241126",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "yi-34b",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.916
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.914
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.912
+          },
+          {
+            name: "dbrx-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "claude-v1.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.908
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.902
+          },
+          {
+            name: "mistral-large-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.894
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.89
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.888
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.884
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 500,
+            coverage: 1,
+            mean: 0.882
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.88
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "text-bison@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "claude-2.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.872
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 500,
+            coverage: 1,
+            mean: 0.868
+          },
+          {
+            name: "claude-2.0",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "mistral-small-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.854
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-instant-v1",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "llama-2-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 500,
+            coverage: 1,
+            mean: 0.83
+          },
+          {
+            name: "command-r-plus",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "text-davinci-003",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.822
+          },
+          {
+            name: "gemma-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.808
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.806
+          },
+          {
+            name: "yi-6b",
+            n: 500,
+            coverage: 1,
+            mean: 0.8
+          },
+          {
+            name: "phi-2",
+            n: 500,
+            coverage: 1,
+            mean: 0.798
+          },
+          {
+            name: "jamba-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "text-davinci-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.79
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.788
+          },
+          {
+            name: "command-r",
+            n: 500,
+            coverage: 1,
+            mean: 0.782
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "command",
+            n: 500,
+            coverage: 1,
+            mean: 0.774
+          },
+          {
+            name: "llama-3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 0.766
+          },
+          {
+            name: "llama-65b",
+            n: 500,
+            coverage: 1,
+            mean: 0.754
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.74
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.724
+          },
+          {
+            name: "j2-jumbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.688
+          },
+          {
+            name: "falcon-40b",
+            n: 500,
+            coverage: 1,
+            mean: 0.662
+          },
+          {
+            name: "llama-2-13b",
+            n: 500,
+            coverage: 1,
+            mean: 0.634
+          },
+          {
+            name: "j2-grande",
+            n: 500,
+            coverage: 1,
+            mean: 0.614
+          },
+          {
+            name: "llama-2-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.544
+          },
+          {
+            name: "command-light",
+            n: 500,
+            coverage: 1,
+            mean: 0.398
+          },
+          {
+            name: "luminous-base",
+            n: 500,
+            coverage: 1,
+            mean: 0.286
+          },
+          {
+            name: "luminous-supreme",
+            n: 500,
+            coverage: 1,
+            mean: 0.284
+          },
+          {
+            name: "luminous-extended",
+            n: 500,
+            coverage: 1,
+            mean: 0.272
+          },
+          {
+            name: "falcon-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "olmo-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.222
+          }
+        ],
+        split: "openbookqa"
+      },
+      {
+        metrics: [
+          "exact_match@5"
+        ],
+        itemCount: 500,
+        totalResponses: 47500,
+        loadedResponses: 47500,
+        minimumItems: 50,
+        modelCount: 95,
+        scoredResponses: 47500,
+        excludedModelCount: 0,
+        avgScore: 0.8341894736842105,
+        medianScore: 0.884,
+        standardError: 0.017060857374831852,
+        discrimination: 0.16541114929245038,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "claude-3-5-sonnet-20240620",
+          n: 500,
+          coverage: 1,
+          mean: 0.972
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 500,
+          coverage: 1,
+          mean: 0.222
+        },
+        models: [
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 500,
+            coverage: 1,
+            mean: 0.972
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 500,
+            coverage: 1,
+            mean: 0.97
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 500,
+            coverage: 1,
+            mean: 0.968
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.962
+          },
+          {
+            name: "gpt-4-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.956
+          },
+          {
+            name: "deepseek-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.952
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 500,
+            coverage: 1,
+            mean: 0.948
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "yi-large-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.942
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.94
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "text-unicorn@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "llama-3-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.934
+          },
+          {
+            name: "mistral-large-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 500,
+            coverage: 1,
+            mean: 0.93
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "palmyra-x-004",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "solar-pro-241126",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "yi-34b",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.916
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.914
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.912
+          },
+          {
+            name: "dbrx-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "claude-v1.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.908
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.902
+          },
+          {
+            name: "mistral-large-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.894
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.89
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.888
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.884
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 500,
+            coverage: 1,
+            mean: 0.882
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.88
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "text-bison@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "claude-2.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.872
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 500,
+            coverage: 1,
+            mean: 0.868
+          },
+          {
+            name: "claude-2.0",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "mistral-small-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.854
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-instant-v1",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "llama-2-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 500,
+            coverage: 1,
+            mean: 0.83
+          },
+          {
+            name: "command-r-plus",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "text-davinci-003",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.822
+          },
+          {
+            name: "gemma-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.808
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.806
+          },
+          {
+            name: "yi-6b",
+            n: 500,
+            coverage: 1,
+            mean: 0.8
+          },
+          {
+            name: "phi-2",
+            n: 500,
+            coverage: 1,
+            mean: 0.798
+          },
+          {
+            name: "jamba-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "text-davinci-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.79
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.788
+          },
+          {
+            name: "command-r",
+            n: 500,
+            coverage: 1,
+            mean: 0.782
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "command",
+            n: 500,
+            coverage: 1,
+            mean: 0.774
+          },
+          {
+            name: "llama-3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 0.766
+          },
+          {
+            name: "llama-65b",
+            n: 500,
+            coverage: 1,
+            mean: 0.754
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.74
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.724
+          },
+          {
+            name: "j2-jumbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.688
+          },
+          {
+            name: "falcon-40b",
+            n: 500,
+            coverage: 1,
+            mean: 0.662
+          },
+          {
+            name: "llama-2-13b",
+            n: 500,
+            coverage: 1,
+            mean: 0.634
+          },
+          {
+            name: "j2-grande",
+            n: 500,
+            coverage: 1,
+            mean: 0.614
+          },
+          {
+            name: "llama-2-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.544
+          },
+          {
+            name: "command-light",
+            n: 500,
+            coverage: 1,
+            mean: 0.398
+          },
+          {
+            name: "luminous-base",
+            n: 500,
+            coverage: 1,
+            mean: 0.286
+          },
+          {
+            name: "luminous-supreme",
+            n: 500,
+            coverage: 1,
+            mean: 0.284
+          },
+          {
+            name: "luminous-extended",
+            n: 500,
+            coverage: 1,
+            mean: 0.272
+          },
+          {
+            name: "falcon-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "olmo-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.222
+          }
+        ],
+        split: "openbookqa"
+      },
+      {
+        metrics: [
+          "logprob"
+        ],
+        itemCount: 500,
+        totalResponses: 47500,
+        loadedResponses: 47500,
+        minimumItems: 50,
+        modelCount: 95,
+        scoredResponses: 47500,
+        excludedModelCount: 0,
+        avgScore: -0.06091270458684223,
+        medianScore: 0,
+        standardError: 0.02499234924370172,
+        discrimination: 0.24230981603641405,
+        refCoverage: 1,
+        bounded: false,
+        binary: false,
+        best: {
+          name: "claude-2.0",
+          n: 500,
+          coverage: 1,
+          mean: 0
+        },
+        worst: {
+          name: "luminous-base",
+          n: 500,
+          coverage: 1,
+          mean: -1.3872922942
+        },
+        models: [
+          {
+            name: "claude-2.0",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "claude-2.1",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "claude-instant-v1",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "claude-v1.3",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "command-r",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "command-r-plus",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "dbrx-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "deepseek-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "falcon-40b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "falcon-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gemma-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gpt-4-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "jamba-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "llama-2-13b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "llama-2-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "llama-2-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "llama-3-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "llama-3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "llama-65b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "mistral-large-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "mistral-large-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "mistral-small-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "olmo-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "palmyra-x-004",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "phi-2",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "solar-pro-241126",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "text-bison@001",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "text-unicorn@001",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "yi-34b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "yi-6b",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "yi-large-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: -0.0013862943649291992
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: -0.004158883094787597
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: -0.00615704707870898
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: -0.0111906118651181
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: -0.01212408922029146
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 500,
+            coverage: 1,
+            mean: -0.01757331869393336
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: -0.030143030683826
+          },
+          {
+            name: "text-davinci-003",
+            n: 500,
+            coverage: 1,
+            mean: -0.030854494650292
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: -0.03313147686801082
+          },
+          {
+            name: "command",
+            n: 500,
+            coverage: 1,
+            mean: -0.033489622437974
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 500,
+            coverage: 1,
+            mean: -0.06860985024258
+          },
+          {
+            name: "text-davinci-002",
+            n: 500,
+            coverage: 1,
+            mean: -0.0952258975082
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: -0.10014653210693
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 500,
+            coverage: 1,
+            mean: -0.15337610268080606
+          },
+          {
+            name: "j2-jumbo",
+            n: 500,
+            coverage: 1,
+            mean: -0.1788089322014057
+          },
+          {
+            name: "j2-grande",
+            n: 500,
+            coverage: 1,
+            mean: -0.20606666693741862
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: -0.300320846544
+          },
+          {
+            name: "command-light",
+            n: 500,
+            coverage: 1,
+            mean: -0.4341338511508
+          },
+          {
+            name: "luminous-supreme",
+            n: 500,
+            coverage: 1,
+            mean: -1.30491461976
+          },
+          {
+            name: "luminous-extended",
+            n: 500,
+            coverage: 1,
+            mean: -1.37760247346
+          },
+          {
+            name: "luminous-base",
+            n: 500,
+            coverage: 1,
+            mean: -1.3872922942
+          }
+        ],
+        split: "openbookqa"
+      },
+      {
+        metrics: [
+          "max_prob"
+        ],
+        itemCount: 500,
+        totalResponses: 47500,
+        loadedResponses: 47500,
+        minimumItems: 50,
+        modelCount: 95,
+        scoredResponses: 47500,
+        excludedModelCount: 0,
+        avgScore: 0.968850763681357,
+        medianScore: 1,
+        standardError: 0.01372653928978218,
+        discrimination: 0.1330837360542218,
+        refCoverage: 1,
+        bounded: true,
+        binary: false,
+        best: {
+          name: "claude-2.0",
+          n: 500,
+          coverage: 1,
+          mean: 1
+        },
+        worst: {
+          name: "luminous-base",
+          n: 500,
+          coverage: 1,
+          mean: 0.25203688308165
+        },
+        models: [
+          {
+            name: "claude-2.0",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-2.1",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-instant-v1",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "claude-v1.3",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "command-r",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "command-r-plus",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "dbrx-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "deepseek-v3",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "falcon-40b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "falcon-7b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gemma-7b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4-0613",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "jamba-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-2-13b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-2-70b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-2-7b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3-70b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "llama-65b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-large-2402",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-large-2407",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mistral-small-2402",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "olmo-7b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "palmyra-x-004",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "phi-2",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "solar-pro-241126",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "text-bison@001",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "text-unicorn@001",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "yi-34b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "yi-6b",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "yi-large-preview",
+            n: 500,
+            coverage: 1,
+            mean: 1
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.9989999999980953
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.996999999994286
+          },
+          {
+            name: "text-davinci-003",
+            n: 500,
+            coverage: 1,
+            mean: 0.9737712853650132
+          },
+          {
+            name: "command",
+            n: 500,
+            coverage: 1,
+            mean: 0.9723080354418716
+          },
+          {
+            name: "text-davinci-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.9224079617666515
+          },
+          {
+            name: "j2-jumbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.8630252891052373
+          },
+          {
+            name: "j2-grande",
+            n: 500,
+            coverage: 1,
+            mean: 0.8389674722414758
+          },
+          {
+            name: "command-light",
+            n: 500,
+            coverage: 1,
+            mean: 0.6771859479718526
+          },
+          {
+            name: "luminous-supreme",
+            n: 500,
+            coverage: 1,
+            mean: 0.289483428645623
+          },
+          {
+            name: "luminous-extended",
+            n: 500,
+            coverage: 1,
+            mean: 0.2556362461171562
+          },
+          {
+            name: "luminous-base",
+            n: 500,
+            coverage: 1,
+            mean: 0.25203688308165
+          }
+        ],
+        split: "openbookqa"
+      },
+      {
+        metrics: [
+          "prefix_exact_match"
+        ],
+        itemCount: 500,
+        totalResponses: 47500,
+        loadedResponses: 47500,
+        minimumItems: 50,
+        modelCount: 95,
+        scoredResponses: 47500,
+        excludedModelCount: 0,
+        avgScore: 0.8341894736842105,
+        medianScore: 0.884,
+        standardError: 0.017060857374831852,
+        discrimination: 0.16541114929245038,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "claude-3-5-sonnet-20240620",
+          n: 500,
+          coverage: 1,
+          mean: 0.972
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 500,
+          coverage: 1,
+          mean: 0.222
+        },
+        models: [
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 500,
+            coverage: 1,
+            mean: 0.972
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 500,
+            coverage: 1,
+            mean: 0.97
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 500,
+            coverage: 1,
+            mean: 0.968
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.962
+          },
+          {
+            name: "gpt-4-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.956
+          },
+          {
+            name: "deepseek-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.952
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 500,
+            coverage: 1,
+            mean: 0.948
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "yi-large-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.942
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.94
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "text-unicorn@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "llama-3-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.934
+          },
+          {
+            name: "mistral-large-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 500,
+            coverage: 1,
+            mean: 0.93
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "palmyra-x-004",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "solar-pro-241126",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "yi-34b",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.916
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.914
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.912
+          },
+          {
+            name: "dbrx-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "claude-v1.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.908
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.902
+          },
+          {
+            name: "mistral-large-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.894
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.89
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.888
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.884
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 500,
+            coverage: 1,
+            mean: 0.882
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.88
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "text-bison@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "claude-2.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.872
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 500,
+            coverage: 1,
+            mean: 0.868
+          },
+          {
+            name: "claude-2.0",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "mistral-small-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.854
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-instant-v1",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "llama-2-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 500,
+            coverage: 1,
+            mean: 0.83
+          },
+          {
+            name: "command-r-plus",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "text-davinci-003",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.822
+          },
+          {
+            name: "gemma-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.808
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.806
+          },
+          {
+            name: "yi-6b",
+            n: 500,
+            coverage: 1,
+            mean: 0.8
+          },
+          {
+            name: "phi-2",
+            n: 500,
+            coverage: 1,
+            mean: 0.798
+          },
+          {
+            name: "jamba-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "text-davinci-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.79
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.788
+          },
+          {
+            name: "command-r",
+            n: 500,
+            coverage: 1,
+            mean: 0.782
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "command",
+            n: 500,
+            coverage: 1,
+            mean: 0.774
+          },
+          {
+            name: "llama-3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 0.766
+          },
+          {
+            name: "llama-65b",
+            n: 500,
+            coverage: 1,
+            mean: 0.754
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.74
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.724
+          },
+          {
+            name: "j2-jumbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.688
+          },
+          {
+            name: "falcon-40b",
+            n: 500,
+            coverage: 1,
+            mean: 0.662
+          },
+          {
+            name: "llama-2-13b",
+            n: 500,
+            coverage: 1,
+            mean: 0.634
+          },
+          {
+            name: "j2-grande",
+            n: 500,
+            coverage: 1,
+            mean: 0.614
+          },
+          {
+            name: "llama-2-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.544
+          },
+          {
+            name: "command-light",
+            n: 500,
+            coverage: 1,
+            mean: 0.398
+          },
+          {
+            name: "luminous-base",
+            n: 500,
+            coverage: 1,
+            mean: 0.286
+          },
+          {
+            name: "luminous-supreme",
+            n: 500,
+            coverage: 1,
+            mean: 0.284
+          },
+          {
+            name: "luminous-extended",
+            n: 500,
+            coverage: 1,
+            mean: 0.272
+          },
+          {
+            name: "falcon-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "olmo-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.222
+          }
+        ],
+        split: "openbookqa"
+      },
+      {
+        metrics: [
+          "prefix_exact_match@5"
+        ],
+        itemCount: 500,
+        totalResponses: 47500,
+        loadedResponses: 47500,
+        minimumItems: 50,
+        modelCount: 95,
+        scoredResponses: 47500,
+        excludedModelCount: 0,
+        avgScore: 0.8341894736842105,
+        medianScore: 0.884,
+        standardError: 0.017060857374831852,
+        discrimination: 0.16541114929245038,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "claude-3-5-sonnet-20240620",
+          n: 500,
+          coverage: 1,
+          mean: 0.972
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 500,
+          coverage: 1,
+          mean: 0.222
+        },
+        models: [
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 500,
+            coverage: 1,
+            mean: 0.972
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 500,
+            coverage: 1,
+            mean: 0.97
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 500,
+            coverage: 1,
+            mean: 0.968
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.962
+          },
+          {
+            name: "gpt-4-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.956
+          },
+          {
+            name: "deepseek-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.952
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 500,
+            coverage: 1,
+            mean: 0.948
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "yi-large-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.942
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.94
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "text-unicorn@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "llama-3-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.934
+          },
+          {
+            name: "mistral-large-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 500,
+            coverage: 1,
+            mean: 0.93
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "palmyra-x-004",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "solar-pro-241126",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "yi-34b",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.916
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.914
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.912
+          },
+          {
+            name: "dbrx-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "claude-v1.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.908
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.902
+          },
+          {
+            name: "mistral-large-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.894
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.89
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.888
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.884
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 500,
+            coverage: 1,
+            mean: 0.882
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.88
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "text-bison@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "claude-2.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.872
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 500,
+            coverage: 1,
+            mean: 0.868
+          },
+          {
+            name: "claude-2.0",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "mistral-small-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.854
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-instant-v1",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "llama-2-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 500,
+            coverage: 1,
+            mean: 0.83
+          },
+          {
+            name: "command-r-plus",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "text-davinci-003",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.822
+          },
+          {
+            name: "gemma-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.808
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.806
+          },
+          {
+            name: "yi-6b",
+            n: 500,
+            coverage: 1,
+            mean: 0.8
+          },
+          {
+            name: "phi-2",
+            n: 500,
+            coverage: 1,
+            mean: 0.798
+          },
+          {
+            name: "jamba-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "text-davinci-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.79
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.788
+          },
+          {
+            name: "command-r",
+            n: 500,
+            coverage: 1,
+            mean: 0.782
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "command",
+            n: 500,
+            coverage: 1,
+            mean: 0.774
+          },
+          {
+            name: "llama-3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 0.766
+          },
+          {
+            name: "llama-65b",
+            n: 500,
+            coverage: 1,
+            mean: 0.754
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.74
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.724
+          },
+          {
+            name: "j2-jumbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.688
+          },
+          {
+            name: "falcon-40b",
+            n: 500,
+            coverage: 1,
+            mean: 0.662
+          },
+          {
+            name: "llama-2-13b",
+            n: 500,
+            coverage: 1,
+            mean: 0.634
+          },
+          {
+            name: "j2-grande",
+            n: 500,
+            coverage: 1,
+            mean: 0.614
+          },
+          {
+            name: "llama-2-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.544
+          },
+          {
+            name: "command-light",
+            n: 500,
+            coverage: 1,
+            mean: 0.398
+          },
+          {
+            name: "luminous-base",
+            n: 500,
+            coverage: 1,
+            mean: 0.286
+          },
+          {
+            name: "luminous-supreme",
+            n: 500,
+            coverage: 1,
+            mean: 0.284
+          },
+          {
+            name: "luminous-extended",
+            n: 500,
+            coverage: 1,
+            mean: 0.272
+          },
+          {
+            name: "falcon-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "olmo-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.222
+          }
+        ],
+        split: "openbookqa"
+      },
+      {
+        metrics: [
+          "quasi_exact_match"
+        ],
+        itemCount: 500,
+        totalResponses: 47500,
+        loadedResponses: 47500,
+        minimumItems: 50,
+        modelCount: 95,
+        scoredResponses: 47500,
+        excludedModelCount: 0,
+        avgScore: 0.8341894736842105,
+        medianScore: 0.884,
+        standardError: 0.017060857374831852,
+        discrimination: 0.16541114929245038,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "claude-3-5-sonnet-20240620",
+          n: 500,
+          coverage: 1,
+          mean: 0.972
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 500,
+          coverage: 1,
+          mean: 0.222
+        },
+        models: [
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 500,
+            coverage: 1,
+            mean: 0.972
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 500,
+            coverage: 1,
+            mean: 0.97
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 500,
+            coverage: 1,
+            mean: 0.968
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.962
+          },
+          {
+            name: "gpt-4-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.956
+          },
+          {
+            name: "deepseek-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.952
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 500,
+            coverage: 1,
+            mean: 0.948
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "yi-large-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.942
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.94
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "text-unicorn@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "llama-3-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.934
+          },
+          {
+            name: "mistral-large-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 500,
+            coverage: 1,
+            mean: 0.93
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "palmyra-x-004",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "solar-pro-241126",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "yi-34b",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.916
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.914
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.912
+          },
+          {
+            name: "dbrx-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "claude-v1.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.908
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.902
+          },
+          {
+            name: "mistral-large-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.894
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.89
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.888
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.884
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 500,
+            coverage: 1,
+            mean: 0.882
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.88
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "text-bison@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "claude-2.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.872
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 500,
+            coverage: 1,
+            mean: 0.868
+          },
+          {
+            name: "claude-2.0",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "mistral-small-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.854
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-instant-v1",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "llama-2-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 500,
+            coverage: 1,
+            mean: 0.83
+          },
+          {
+            name: "command-r-plus",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "text-davinci-003",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.822
+          },
+          {
+            name: "gemma-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.808
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.806
+          },
+          {
+            name: "yi-6b",
+            n: 500,
+            coverage: 1,
+            mean: 0.8
+          },
+          {
+            name: "phi-2",
+            n: 500,
+            coverage: 1,
+            mean: 0.798
+          },
+          {
+            name: "jamba-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "text-davinci-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.79
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.788
+          },
+          {
+            name: "command-r",
+            n: 500,
+            coverage: 1,
+            mean: 0.782
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "command",
+            n: 500,
+            coverage: 1,
+            mean: 0.774
+          },
+          {
+            name: "llama-3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 0.766
+          },
+          {
+            name: "llama-65b",
+            n: 500,
+            coverage: 1,
+            mean: 0.754
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.74
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.724
+          },
+          {
+            name: "j2-jumbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.688
+          },
+          {
+            name: "falcon-40b",
+            n: 500,
+            coverage: 1,
+            mean: 0.662
+          },
+          {
+            name: "llama-2-13b",
+            n: 500,
+            coverage: 1,
+            mean: 0.634
+          },
+          {
+            name: "j2-grande",
+            n: 500,
+            coverage: 1,
+            mean: 0.614
+          },
+          {
+            name: "llama-2-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.544
+          },
+          {
+            name: "command-light",
+            n: 500,
+            coverage: 1,
+            mean: 0.398
+          },
+          {
+            name: "luminous-base",
+            n: 500,
+            coverage: 1,
+            mean: 0.286
+          },
+          {
+            name: "luminous-supreme",
+            n: 500,
+            coverage: 1,
+            mean: 0.284
+          },
+          {
+            name: "luminous-extended",
+            n: 500,
+            coverage: 1,
+            mean: 0.272
+          },
+          {
+            name: "falcon-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "olmo-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.222
+          }
+        ],
+        split: "openbookqa"
+      },
+      {
+        metrics: [
+          "quasi_exact_match@5"
+        ],
+        itemCount: 500,
+        totalResponses: 47500,
+        loadedResponses: 47500,
+        minimumItems: 50,
+        modelCount: 95,
+        scoredResponses: 47500,
+        excludedModelCount: 0,
+        avgScore: 0.8341894736842105,
+        medianScore: 0.884,
+        standardError: 0.017060857374831852,
+        discrimination: 0.16541114929245038,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "claude-3-5-sonnet-20240620",
+          n: 500,
+          coverage: 1,
+          mean: 0.972
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 500,
+          coverage: 1,
+          mean: 0.222
+        },
+        models: [
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 500,
+            coverage: 1,
+            mean: 0.972
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 500,
+            coverage: 1,
+            mean: 0.97
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 500,
+            coverage: 1,
+            mean: 0.968
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.962
+          },
+          {
+            name: "gpt-4-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.956
+          },
+          {
+            name: "deepseek-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.952
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 500,
+            coverage: 1,
+            mean: 0.948
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "yi-large-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.942
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.94
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "text-unicorn@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "llama-3-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.934
+          },
+          {
+            name: "mistral-large-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 500,
+            coverage: 1,
+            mean: 0.93
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "palmyra-x-004",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "solar-pro-241126",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "yi-34b",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.916
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.914
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.912
+          },
+          {
+            name: "dbrx-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "claude-v1.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.908
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.902
+          },
+          {
+            name: "mistral-large-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.894
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.89
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.888
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.884
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 500,
+            coverage: 1,
+            mean: 0.882
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.88
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "text-bison@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "claude-2.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.872
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 500,
+            coverage: 1,
+            mean: 0.868
+          },
+          {
+            name: "claude-2.0",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "mistral-small-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.854
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-instant-v1",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "llama-2-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 500,
+            coverage: 1,
+            mean: 0.83
+          },
+          {
+            name: "command-r-plus",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "text-davinci-003",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.822
+          },
+          {
+            name: "gemma-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.808
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.806
+          },
+          {
+            name: "yi-6b",
+            n: 500,
+            coverage: 1,
+            mean: 0.8
+          },
+          {
+            name: "phi-2",
+            n: 500,
+            coverage: 1,
+            mean: 0.798
+          },
+          {
+            name: "jamba-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "text-davinci-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.79
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.788
+          },
+          {
+            name: "command-r",
+            n: 500,
+            coverage: 1,
+            mean: 0.782
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "command",
+            n: 500,
+            coverage: 1,
+            mean: 0.774
+          },
+          {
+            name: "llama-3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 0.766
+          },
+          {
+            name: "llama-65b",
+            n: 500,
+            coverage: 1,
+            mean: 0.754
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.74
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.724
+          },
+          {
+            name: "j2-jumbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.688
+          },
+          {
+            name: "falcon-40b",
+            n: 500,
+            coverage: 1,
+            mean: 0.662
+          },
+          {
+            name: "llama-2-13b",
+            n: 500,
+            coverage: 1,
+            mean: 0.634
+          },
+          {
+            name: "j2-grande",
+            n: 500,
+            coverage: 1,
+            mean: 0.614
+          },
+          {
+            name: "llama-2-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.544
+          },
+          {
+            name: "command-light",
+            n: 500,
+            coverage: 1,
+            mean: 0.398
+          },
+          {
+            name: "luminous-base",
+            n: 500,
+            coverage: 1,
+            mean: 0.286
+          },
+          {
+            name: "luminous-supreme",
+            n: 500,
+            coverage: 1,
+            mean: 0.284
+          },
+          {
+            name: "luminous-extended",
+            n: 500,
+            coverage: 1,
+            mean: 0.272
+          },
+          {
+            name: "falcon-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "olmo-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.222
+          }
+        ],
+        split: "openbookqa"
+      },
+      {
+        metrics: [
+          "quasi_prefix_exact_match"
+        ],
+        itemCount: 500,
+        totalResponses: 47500,
+        loadedResponses: 47500,
+        minimumItems: 50,
+        modelCount: 95,
+        scoredResponses: 47500,
+        excludedModelCount: 0,
+        avgScore: 0.8341894736842105,
+        medianScore: 0.884,
+        standardError: 0.017060857374831852,
+        discrimination: 0.16541114929245038,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "claude-3-5-sonnet-20240620",
+          n: 500,
+          coverage: 1,
+          mean: 0.972
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 500,
+          coverage: 1,
+          mean: 0.222
+        },
+        models: [
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 500,
+            coverage: 1,
+            mean: 0.972
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 500,
+            coverage: 1,
+            mean: 0.97
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 500,
+            coverage: 1,
+            mean: 0.968
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.962
+          },
+          {
+            name: "gpt-4-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.956
+          },
+          {
+            name: "deepseek-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.952
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 500,
+            coverage: 1,
+            mean: 0.948
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "yi-large-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.942
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.94
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "text-unicorn@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "llama-3-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.934
+          },
+          {
+            name: "mistral-large-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 500,
+            coverage: 1,
+            mean: 0.93
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "palmyra-x-004",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "solar-pro-241126",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "yi-34b",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.916
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.914
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.912
+          },
+          {
+            name: "dbrx-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "claude-v1.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.908
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.902
+          },
+          {
+            name: "mistral-large-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.894
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.89
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.888
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.884
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 500,
+            coverage: 1,
+            mean: 0.882
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.88
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "text-bison@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "claude-2.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.872
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 500,
+            coverage: 1,
+            mean: 0.868
+          },
+          {
+            name: "claude-2.0",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "mistral-small-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.854
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-instant-v1",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "llama-2-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 500,
+            coverage: 1,
+            mean: 0.83
+          },
+          {
+            name: "command-r-plus",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "text-davinci-003",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.822
+          },
+          {
+            name: "gemma-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.808
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.806
+          },
+          {
+            name: "yi-6b",
+            n: 500,
+            coverage: 1,
+            mean: 0.8
+          },
+          {
+            name: "phi-2",
+            n: 500,
+            coverage: 1,
+            mean: 0.798
+          },
+          {
+            name: "jamba-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "text-davinci-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.79
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.788
+          },
+          {
+            name: "command-r",
+            n: 500,
+            coverage: 1,
+            mean: 0.782
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "command",
+            n: 500,
+            coverage: 1,
+            mean: 0.774
+          },
+          {
+            name: "llama-3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 0.766
+          },
+          {
+            name: "llama-65b",
+            n: 500,
+            coverage: 1,
+            mean: 0.754
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.74
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.724
+          },
+          {
+            name: "j2-jumbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.688
+          },
+          {
+            name: "falcon-40b",
+            n: 500,
+            coverage: 1,
+            mean: 0.662
+          },
+          {
+            name: "llama-2-13b",
+            n: 500,
+            coverage: 1,
+            mean: 0.634
+          },
+          {
+            name: "j2-grande",
+            n: 500,
+            coverage: 1,
+            mean: 0.614
+          },
+          {
+            name: "llama-2-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.544
+          },
+          {
+            name: "command-light",
+            n: 500,
+            coverage: 1,
+            mean: 0.398
+          },
+          {
+            name: "luminous-base",
+            n: 500,
+            coverage: 1,
+            mean: 0.286
+          },
+          {
+            name: "luminous-supreme",
+            n: 500,
+            coverage: 1,
+            mean: 0.284
+          },
+          {
+            name: "luminous-extended",
+            n: 500,
+            coverage: 1,
+            mean: 0.272
+          },
+          {
+            name: "falcon-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "olmo-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.222
+          }
+        ],
+        split: "openbookqa"
+      },
+      {
+        metrics: [
+          "quasi_prefix_exact_match@5"
+        ],
+        itemCount: 500,
+        totalResponses: 47500,
+        loadedResponses: 47500,
+        minimumItems: 50,
+        modelCount: 95,
+        scoredResponses: 47500,
+        excludedModelCount: 0,
+        avgScore: 0.8341894736842105,
+        medianScore: 0.884,
+        standardError: 0.017060857374831852,
+        discrimination: 0.16541114929245038,
+        refCoverage: 1,
+        bounded: true,
+        binary: true,
+        best: {
+          name: "claude-3-5-sonnet-20240620",
+          n: 500,
+          coverage: 1,
+          mean: 0.972
+        },
+        worst: {
+          name: "olmo-7b",
+          n: 500,
+          coverage: 1,
+          mean: 0.222
+        },
+        models: [
+          {
+            name: "claude-3-5-sonnet-20240620",
+            n: 500,
+            coverage: 1,
+            mean: 0.972
+          },
+          {
+            name: "gpt-4-turbo-2024-04-09",
+            n: 500,
+            coverage: 1,
+            mean: 0.97
+          },
+          {
+            name: "gpt-4o-2024-08-06",
+            n: 500,
+            coverage: 1,
+            mean: 0.968
+          },
+          {
+            name: "claude-3-5-sonnet-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "gpt-4o-2024-05-13",
+            n: 500,
+            coverage: 1,
+            mean: 0.966
+          },
+          {
+            name: "qwen2.5-72b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.962
+          },
+          {
+            name: "gpt-4-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "nova-pro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.96
+          },
+          {
+            name: "claude-3-opus-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.956
+          },
+          {
+            name: "deepseek-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "qwen2-72b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.954
+          },
+          {
+            name: "gemini-1.5-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.952
+          },
+          {
+            name: "gpt-4-1106-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "nemotron-4-340b-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.95
+          },
+          {
+            name: "jamba-1.5-large",
+            n: 500,
+            coverage: 1,
+            mean: 0.948
+          },
+          {
+            name: "gemini-2.0-flash-exp",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "yi-large-preview",
+            n: 500,
+            coverage: 1,
+            mean: 0.946
+          },
+          {
+            name: "llama-3.2-90b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.942
+          },
+          {
+            name: "llama-3.1-405b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.94
+          },
+          {
+            name: "llama-3.1-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "palmyra-x-v3",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "text-unicorn@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.938
+          },
+          {
+            name: "llama-3-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.934
+          },
+          {
+            name: "mistral-large-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-32b",
+            n: 500,
+            coverage: 1,
+            mean: 0.932
+          },
+          {
+            name: "qwen1.5-72b",
+            n: 500,
+            coverage: 1,
+            mean: 0.93
+          },
+          {
+            name: "gemini-1.5-flash-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "llama-3.3-70b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "nova-lite-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.928
+          },
+          {
+            name: "gemini-1.5-pro-preview-0409",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "palmyra-x-004",
+            n: 500,
+            coverage: 1,
+            mean: 0.926
+          },
+          {
+            name: "qwen1.5-110b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "solar-pro-241126",
+            n: 500,
+            coverage: 1,
+            mean: 0.922
+          },
+          {
+            name: "gpt-4o-mini-2024-07-18",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "yi-34b",
+            n: 500,
+            coverage: 1,
+            mean: 0.92
+          },
+          {
+            name: "claude-3-sonnet-20240229",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "gemma-2-27b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.918
+          },
+          {
+            name: "phi-3-medium-4k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.916
+          },
+          {
+            name: "gemini-1.5-flash-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.914
+          },
+          {
+            name: "phi-3-small-8k-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.912
+          },
+          {
+            name: "dbrx-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "gemma-2-9b-it",
+            n: 500,
+            coverage: 1,
+            mean: 0.91
+          },
+          {
+            name: "claude-v1.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.908
+          },
+          {
+            name: "gemini-1.5-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.902
+          },
+          {
+            name: "mistral-large-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.894
+          },
+          {
+            name: "jamba-1.5-mini",
+            n: 500,
+            coverage: 1,
+            mean: 0.89
+          },
+          {
+            name: "nova-micro-v1:0",
+            n: 500,
+            coverage: 1,
+            mean: 0.888
+          },
+          {
+            name: "gemini-1.0-pro-001",
+            n: 500,
+            coverage: 1,
+            mean: 0.884
+          },
+          {
+            name: "mixtral-8x22b",
+            n: 500,
+            coverage: 1,
+            mean: 0.882
+          },
+          {
+            name: "deepseek-llm-67b-chat",
+            n: 500,
+            coverage: 1,
+            mean: 0.88
+          },
+          {
+            name: "palmyra-x-v2",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "text-bison@001",
+            n: 500,
+            coverage: 1,
+            mean: 0.878
+          },
+          {
+            name: "claude-2.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.872
+          },
+          {
+            name: "mixtral-8x7b-32kseqlen",
+            n: 500,
+            coverage: 1,
+            mean: 0.868
+          },
+          {
+            name: "claude-2.0",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "mistral-small-2402",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen1.5-14b",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "qwen2.5-7b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.862
+          },
+          {
+            name: "claude-3-5-haiku-20241022",
+            n: 500,
+            coverage: 1,
+            mean: 0.854
+          },
+          {
+            name: "claude-instant-1.2",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-instant-v1",
+            n: 500,
+            coverage: 1,
+            mean: 0.844
+          },
+          {
+            name: "claude-3-haiku-20240307",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "gpt-3.5-turbo-0613",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "llama-2-70b",
+            n: 500,
+            coverage: 1,
+            mean: 0.838
+          },
+          {
+            name: "mistral-medium-2312",
+            n: 500,
+            coverage: 1,
+            mean: 0.83
+          },
+          {
+            name: "command-r-plus",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "snowflake-arctic-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "text-davinci-003",
+            n: 500,
+            coverage: 1,
+            mean: 0.828
+          },
+          {
+            name: "open-mistral-nemo-2407",
+            n: 500,
+            coverage: 1,
+            mean: 0.822
+          },
+          {
+            name: "gemma-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.808
+          },
+          {
+            name: "qwen1.5-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.806
+          },
+          {
+            name: "yi-6b",
+            n: 500,
+            coverage: 1,
+            mean: 0.8
+          },
+          {
+            name: "phi-2",
+            n: 500,
+            coverage: 1,
+            mean: 0.798
+          },
+          {
+            name: "jamba-instruct",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "text-davinci-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.796
+          },
+          {
+            name: "mistral-7b-instruct-v0.3",
+            n: 500,
+            coverage: 1,
+            mean: 0.79
+          },
+          {
+            name: "gemini-1.0-pro-002",
+            n: 500,
+            coverage: 1,
+            mean: 0.788
+          },
+          {
+            name: "command-r",
+            n: 500,
+            coverage: 1,
+            mean: 0.782
+          },
+          {
+            name: "mistral-7b-v0.1",
+            n: 500,
+            coverage: 1,
+            mean: 0.776
+          },
+          {
+            name: "command",
+            n: 500,
+            coverage: 1,
+            mean: 0.774
+          },
+          {
+            name: "llama-3-8b",
+            n: 500,
+            coverage: 1,
+            mean: 0.766
+          },
+          {
+            name: "llama-65b",
+            n: 500,
+            coverage: 1,
+            mean: 0.754
+          },
+          {
+            name: "llama-3.1-8b-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.74
+          },
+          {
+            name: "llama-3.2-11b-vision-instruct-turbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.724
+          },
+          {
+            name: "j2-jumbo",
+            n: 500,
+            coverage: 1,
+            mean: 0.688
+          },
+          {
+            name: "falcon-40b",
+            n: 500,
+            coverage: 1,
+            mean: 0.662
+          },
+          {
+            name: "llama-2-13b",
+            n: 500,
+            coverage: 1,
+            mean: 0.634
+          },
+          {
+            name: "j2-grande",
+            n: 500,
+            coverage: 1,
+            mean: 0.614
+          },
+          {
+            name: "llama-2-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.544
+          },
+          {
+            name: "command-light",
+            n: 500,
+            coverage: 1,
+            mean: 0.398
+          },
+          {
+            name: "luminous-base",
+            n: 500,
+            coverage: 1,
+            mean: 0.286
+          },
+          {
+            name: "luminous-supreme",
+            n: 500,
+            coverage: 1,
+            mean: 0.284
+          },
+          {
+            name: "luminous-extended",
+            n: 500,
+            coverage: 1,
+            mean: 0.272
+          },
+          {
+            name: "falcon-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.26
+          },
+          {
+            name: "olmo-7b",
+            n: 500,
+            coverage: 1,
+            mean: 0.222
+          }
+        ],
+        split: "openbookqa"
+      }
+    ],
+    schemaVersion: 1,
+    benchmark: "openbookqa",
+    computedAt: "2026-11-24T21:35:59.668124+00:00",
+    source: {
+      dataset: "Open-Eval-Commons/OpenEval",
+      parquetRevision: "abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc",
+      observedMainRevision: "527ac42de705d7ab704c5baafa784ade9739e4b7",
+      files: [
+        {
+          config: "item",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/openbookqa.item/train/0000.parquet",
+          rows: 500,
+          bytes: 85942,
+          sha256: "ef7f650653dca718cd79319960b11e75cdd400ae28977af1d602e9b0fb3f85ec"
+        },
+        {
+          config: "response",
+          url: "https://huggingface.co/datasets/Open-Eval-Commons/OpenEval/resolve/abee2d61b3cb8eaf7d4c34ae1ed35c7f486d86bc/openbookqa.response/train/0000.parquet",
+          rows: 47500,
+          bytes: 1565389,
+          sha256: "ad55f0694079d432fac84451a67faf61ec5242af75436c626277c9bddef3c4e6"
         }
       ]
     },
@@ -47737,6 +67371,8 @@
     "bbq": bbq_default,
     "bold": bold_default,
     "boolq": boolq_default,
+    "chikhapo_wt": chikhapo_wt_default,
+    "chikhapo_wtwc": chikhapo_wtwc_default,
     "cnndm": cnndm_default,
     "culturalbench": culturalbench_default,
     "disinformation": disinformation_default,
@@ -47744,15 +67380,23 @@
     "dochop": dochop_default,
     "emobench": emobench_default,
     "gpqa": gpqa_default,
+    "gsm8k": gsm8k_default,
     "harmbench": harmbench_default,
     "health_orsc_bench": health_orsc_bench_default,
     "hi_tom": hi_tom_default,
+    "hotpotqa": hotpotqa_default,
     "ifeval": ifeval_default,
     "imdb": imdb_default,
     "last_translation_benchmark": last_translation_benchmark_default,
+    "longmemeval": longmemeval_default,
+    "medqa": medqa_default,
     "mmlu_pro": mmlu_pro_default,
     "moralbench": moralbench_default,
+    "musique": musique_default,
+    "narrativeqa": narrativeqa_default,
+    "nq_open": nq_open_default,
     "omni_math": omni_math_default,
+    "openbookqa": openbookqa_default,
     "opentom": opentom_default,
     "or_bench": or_bench_default,
     "salad_bench": salad_bench_default,
@@ -48114,24 +67758,25 @@
   var __iconNode3 = [["path", { "d": "M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6", "key": "svg-0" }], ["path", { "d": "M11 13l9 -9", "key": "svg-1" }], ["path", { "d": "M15 4h5v5", "key": "svg-2" }]];
   var IconExternalLink = createReactComponent("outline", "external-link", "ExternalLink", __iconNode3);
 
+  // node_modules/@tabler/icons-react/dist/esm/icons/IconFilter.mjs
+  var __iconNode4 = [["path", { "d": "M4 4h16v2.172a2 2 0 0 1 -.586 1.414l-4.414 4.414v7l-6 2v-8.5l-4.48 -4.928a2 2 0 0 1 -.52 -1.345v-2.227", "key": "svg-0" }]];
+  var IconFilter = createReactComponent("outline", "filter", "Filter", __iconNode4);
+
   // node_modules/@tabler/icons-react/dist/esm/icons/IconGauge.mjs
-  var __iconNode4 = [["path", { "d": "M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0", "key": "svg-0" }], ["path", { "d": "M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0", "key": "svg-1" }], ["path", { "d": "M13.41 10.59l2.59 -2.59", "key": "svg-2" }], ["path", { "d": "M7 12a5 5 0 0 1 5 -5", "key": "svg-3" }]];
-  var IconGauge = createReactComponent("outline", "gauge", "Gauge", __iconNode4);
+  var __iconNode5 = [["path", { "d": "M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0", "key": "svg-0" }], ["path", { "d": "M11 12a1 1 0 1 0 2 0a1 1 0 1 0 -2 0", "key": "svg-1" }], ["path", { "d": "M13.41 10.59l2.59 -2.59", "key": "svg-2" }], ["path", { "d": "M7 12a5 5 0 0 1 5 -5", "key": "svg-3" }]];
+  var IconGauge = createReactComponent("outline", "gauge", "Gauge", __iconNode5);
 
   // node_modules/@tabler/icons-react/dist/esm/icons/IconLoader2.mjs
-  var __iconNode5 = [["path", { "d": "M12 3a9 9 0 1 0 9 9", "key": "svg-0" }]];
-  var IconLoader2 = createReactComponent("outline", "loader-2", "Loader2", __iconNode5);
+  var __iconNode6 = [["path", { "d": "M12 3a9 9 0 1 0 9 9", "key": "svg-0" }]];
+  var IconLoader2 = createReactComponent("outline", "loader-2", "Loader2", __iconNode6);
 
   // node_modules/@tabler/icons-react/dist/esm/icons/IconSearch.mjs
-  var __iconNode6 = [["path", { "d": "M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0", "key": "svg-0" }], ["path", { "d": "M21 21l-6 -6", "key": "svg-1" }]];
-  var IconSearch = createReactComponent("outline", "search", "Search", __iconNode6);
-  var IconFilter = createReactComponent("outline", "filter", "Filter", [
-    ["path", { d: "M5.5 5h13a1 1 0 0 1 .8 1.6l-5.3 7.1v4.3l-4 2v-6.3l-5.3 -7.1a1 1 0 0 1 .8 -1.6", key: "filter" }]
-  ]);
+  var __iconNode7 = [["path", { "d": "M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0", "key": "svg-0" }], ["path", { "d": "M21 21l-6 -6", "key": "svg-1" }]];
+  var IconSearch = createReactComponent("outline", "search", "Search", __iconNode7);
 
   // node_modules/@tabler/icons-react/dist/esm/icons/IconShieldCheck.mjs
-  var __iconNode7 = [["path", { "d": "M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06", "key": "svg-0" }], ["path", { "d": "M15 19l2 2l4 -4", "key": "svg-1" }]];
-  var IconShieldCheck = createReactComponent("outline", "shield-check", "ShieldCheck", __iconNode7);
+  var __iconNode8 = [["path", { "d": "M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06", "key": "svg-0" }], ["path", { "d": "M15 19l2 2l4 -4", "key": "svg-1" }]];
+  var IconShieldCheck = createReactComponent("outline", "shield-check", "ShieldCheck", __iconNode8);
 
   // openeval_tools_src/components/openeval-benchmark/benchmark_browser_client.tsx
   var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
@@ -48148,7 +67793,11 @@
         onClick,
         "aria-pressed": active,
         className: `rounded-full border px-3 py-1 text-xs font-medium transition-colors ${active ? "border-ink bg-ink text-white" : "border-border text-muted hover:text-ink"}`,
-        children: [label, " ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "resource-chip-count", children: count })]
+        children: [
+          label,
+          " ",
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { className: "resource-chip-count", children: count })
+        ]
       }
     );
   }
@@ -48204,16 +67853,18 @@
       void loadBenchmarks();
     }, [loadBenchmarks]);
     const { commonTags, otherTags, usage } = (0, import_react2.useMemo)(() => {
-      const usage = /* @__PURE__ */ new Map();
+      const usage2 = /* @__PURE__ */ new Map();
       benchmarks.forEach((b) => new Set(b.tags).forEach((tag) => {
-        if (!usage.has(tag)) usage.set(tag, /* @__PURE__ */ new Set());
-        usage.get(tag).add(b.name);
+        if (!usage2.has(tag)) usage2.set(tag, /* @__PURE__ */ new Set());
+        usage2.get(tag).add(b.name);
       }));
-      const tags = [...usage.keys()].sort((a, b) => usage.get(b).size - usage.get(a).size || a.localeCompare(b, "en"));
+      const tags = [...usage2.keys()].sort(
+        (a, b) => usage2.get(b).size - usage2.get(a).size || a.localeCompare(b, "en")
+      );
       return {
-        usage,
-        commonTags: tags.filter((tag) => usage.get(tag).size > 1),
-        otherTags: tags.filter((tag) => usage.get(tag).size === 1)
+        usage: usage2,
+        commonTags: tags.filter((tag) => usage2.get(tag).size > 1),
+        otherTags: tags.filter((tag) => usage2.get(tag).size === 1)
       };
     }, [benchmarks]);
     const filtered = (0, import_react2.useMemo)(() => {
@@ -48244,16 +67895,19 @@
         ] }),
         /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { className: "benchmark-search benchmark-model-count flex items-center gap-2 rounded-input border border-border bg-surface px-3", children: [
           /* @__PURE__ */ (0, import_jsx_runtime.jsx)(IconFilter, { size: 16, className: "text-muted", "aria-hidden": "true" }),
-          /* @__PURE__ */ (0, import_jsx_runtime.jsx)("input", {
-          type: "number",
-          min: 1,
-          step: 1,
-          "aria-label": "Minimum model count",
-          placeholder: "Min. models",
-          value: minimumModels,
-          onChange: (e) => setMinimumModels(e.currentTarget.validity.valid ? e.currentTarget.value : ""),
-          className: "w-full bg-transparent outline-none"
-          })
+          /* @__PURE__ */ (0, import_jsx_runtime.jsx)(
+            "input",
+            {
+              type: "number",
+              min: 1,
+              step: 1,
+              "aria-label": "Minimum model count",
+              placeholder: "Min. models",
+              value: minimumModels,
+              onChange: (e) => setMinimumModels(e.currentTarget.validity.valid ? e.currentTarget.value : ""),
+              className: "w-full bg-transparent outline-none"
+            }
+          )
         ] })
       ] }),
       commonTags.length + otherTags.length > 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { "aria-label": "Benchmark tags", className: "mt-3 flex flex-wrap gap-1.5", children: [
