@@ -41,7 +41,7 @@ window.OEC_RESOURCES = {
       year: 2026,
       venue: "NeurIPS 2026",
       summary: "Position paper arguing that AI evaluations should release standardized item-level data, the motivation behind OpenEval.",
-      tags: ["Evaluation methodology", "Item-level data"],
+      tags: ["Benchmark design"],
       added: "2026-11-19",
     },
     {
@@ -51,7 +51,7 @@ window.OEC_RESOURCES = {
       year: 2026,
       venue: "NeurIPS 2026",
       summary: "Examines when item response theory can be relied on as a tool for evaluating AI models.",
-      tags: ["Psychometrics", "Item response theory"],
+      tags: ["Psychometrics"],
       added: "2026-11-19",
     },
     {
@@ -61,7 +61,7 @@ window.OEC_RESOURCES = {
       year: 2026,
       venue: "arXiv preprint",
       summary: "Uses a latent space item response model to diagnose how models and benchmark items interact.",
-      tags: ["Psychometrics", "Item response theory", "Benchmark design"],
+      tags: ["Psychometrics", "Benchmark design"],
       added: "2026-11-19",
     },
     {
@@ -71,7 +71,7 @@ window.OEC_RESOURCES = {
       year: 2026,
       venue: "CHI 2026",
       summary: "Studies how practitioners evaluate LLM products in practice and where results fail to become actionable.",
-      tags: ["Human-centered evaluation", "Evaluation practice"],
+      tags: ["Human-centered evaluation"],
       added: "2026-11-19",
     },
     {
@@ -81,7 +81,7 @@ window.OEC_RESOURCES = {
       year: 2026,
       venue: "arXiv preprint",
       summary: "A framework for evaluating how well simulated users match real users in multi-turn conversations.",
-      tags: ["Simulation", "Evaluation methodology"],
+      tags: ["Interactive evaluation"],
       added: "2026-11-19",
     },
     {
@@ -91,7 +91,7 @@ window.OEC_RESOURCES = {
       year: 2026,
       venue: "NeurIPS 2026",
       summary: "Evaluates vision language models through dynamic, multi-turn interactions rather than static tests.",
-      tags: ["Dynamic evaluation", "Multimodal"],
+      tags: ["Interactive evaluation"],
       added: "2026-11-19",
     },
     {
@@ -101,7 +101,7 @@ window.OEC_RESOURCES = {
       year: 2026,
       venue: "arXiv preprint",
       summary: "A validated simulation environment for evaluating AI interviewers.",
-      tags: ["Simulation", "Validity"],
+      tags: ["Interactive evaluation", "Validity evidence"],
       added: "2026-11-19",
     },
     {
@@ -111,7 +111,7 @@ window.OEC_RESOURCES = {
       year: 2025,
       venue: "ICML 2025",
       summary: "Assesses LLM values with generative, evolving tests instead of a fixed benchmark.",
-      tags: ["Dynamic evaluation", "Values"],
+      tags: ["Interactive evaluation"],
       added: "2026-11-19",
     },
     {
@@ -121,7 +121,7 @@ window.OEC_RESOURCES = {
       year: 2025,
       venue: "COLM 2025",
       summary: "Tests whether self-report scales validly measure the designed personality of LLM-based chatbots.",
-      tags: ["Psychometrics", "Validity"],
+      tags: ["Psychometrics", "Validity evidence"],
       added: "2026-11-19",
     },
     {
@@ -131,7 +131,7 @@ window.OEC_RESOURCES = {
       year: 2025,
       venue: "COLM 2025",
       summary: "Studies the criteria domain experts in astronomy use when evaluating LLMs.",
-      tags: ["Human-centered evaluation", "Evaluation practice"],
+      tags: ["Human-centered evaluation"],
       added: "2026-11-19",
     },
     {
@@ -141,7 +141,7 @@ window.OEC_RESOURCES = {
       year: 2024,
       venue: "ACL 2024",
       summary: "A framework for designing NLP benchmarks around the evidence they provide for claims about model capabilities.",
-      tags: ["Benchmark design", "Validity"],
+      tags: ["Benchmark design", "Validity evidence"],
       added: "2026-11-19",
     },
     {
@@ -151,7 +151,7 @@ window.OEC_RESOURCES = {
       year: 2023,
       venue: "EMNLP 2023",
       summary: "Uses measurement theory to analyze the reliability and validity of NLG evaluation metrics.",
-      tags: ["Psychometrics", "Validity", "Metrics"],
+      tags: ["Psychometrics", "Validity evidence"],
       added: "2026-11-19",
     },
     {
@@ -161,7 +161,7 @@ window.OEC_RESOURCES = {
       year: 2023,
       venue: "ICML 2023 Workshop on AI & HCI",
       summary: "Frames model evaluation as narrowing the gap between technical measures and real-world needs.",
-      tags: ["Evaluation methodology", "Human-centered evaluation"],
+      tags: ["Human-centered evaluation"],
       added: "2026-11-19",
     },
   ],
@@ -172,7 +172,7 @@ window.OEC_RESOURCES = {
       authors: "Ziang Xiao, Susu Zhang",
       year: 2023,
       summary: "A Python package for evaluating evaluation metrics: estimates their reliability (stability, consistency) and validity using measurement theory.",
-      tags: ["Metrics", "Psychometrics", "Validity"],
+      tags: ["Psychometrics", "Validity evidence"],
       language: "Python",
       paper: "https://arxiv.org/abs/2305.14889",
       added: "2026-11-19",
@@ -183,7 +183,7 @@ window.OEC_RESOURCES = {
       authors: "Yu Lu Liu, Su Lin Blodgett, Jackie Chi Kit Cheung, Q. Vera Liao, Alexandra Olteanu, Ziang Xiao",
       year: 2024,
       summary: "A template worksheet for documenting a benchmark with Evidence-Centered Benchmark Design: describe, justify, and support each design choice. Includes filled-in worksheets for BoolQ, SuperGLUE, and HELM.",
-      tags: ["Benchmark design", "Validity"],
+      tags: ["Benchmark design", "Validity evidence"],
       paper: "https://arxiv.org/abs/2406.08723",
       added: "2026-11-19",
     },
