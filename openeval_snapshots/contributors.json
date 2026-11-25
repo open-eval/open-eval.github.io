@@ -31,7 +31,7 @@
         "affiliation": "Johns Hopkins University",
         "description": "Thanks to Niyati and Emily for sharing their benchmarks, Last Translation Benchmark and ChiKhaPo!",
         "paper": [
-            "Last Translation Benchmark", 
+            "Last Translation Benchmark",
             "ChiKhaPo: A Large-Scale Multilingual Benchmark for Evaluating Lexical Comprehension and Generation in LLMs"
         ],
         "paper_url": [
@@ -77,8 +77,7 @@
     {
         "section": "contact",
         "name": "Gabriel Pernell",
-        "affiliation": "Johns Hopkins University",
-        "email": "gpernel1@jhu.edu"
+        "affiliation": "Johns Hopkins University"
     },
     {
         "section": "contact",
