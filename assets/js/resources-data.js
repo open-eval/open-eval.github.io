@@ -207,6 +207,16 @@ window.OEC_RESOURCES = {
       paper: "https://arxiv.org/abs/2406.08723",
       added: "2026-11-19",
     },
+    {
+      title: "Act*ONOMY",
+      url: "https://github.com/gaojie058/iab-actonomy",
+      authors: "Jie Gao, Kaiser Sun, Jen-tse Huang, Katherine Van Koevering, Sijie Ji, Heyuan Huang, Weiyan Shi, Zhuoran Lu, Ziang Xiao, Daniel Khashabi, Mark Dredze",
+      year: 2026,
+      summary: "A taxonomy and toolkit for describing and analyzing agent behavior at runtime: a codebook of 10 actions, 46 subactions, and 120 leaf categories, behavior datasets, and assistant skills that annotate agent trajectories and generate interactive reports.",
+      tags: ["Agent behavior"],
+      paper: "https://arxiv.org/abs/2605.13625",
+      added: "2026-11-27",
+    },
   ],
   blogs: [
     // Placeholder entry for layout; replace with a real post.
